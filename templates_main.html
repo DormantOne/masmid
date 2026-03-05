@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Masmid</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --hillel:#5599ff;--shammai:#ff6644;--gold:#d4aa55;--aramaic:#e8d5a0;
+  --bg:#0a0a10;--surface:#101018;--panel:#13131e;--border:#1d1d2e;
+  --text:#ddd8ee;--muted:#5a5a7a;--accent:#7a4aff;--human:#44cc88;
+}
+html,body{height:100%;overflow:hidden}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);
+     display:flex;flex-direction:column}
+header{background:var(--surface);border-bottom:1px solid var(--border);
+       padding:7px 14px;display:flex;align-items:center;gap:8px;flex-shrink:0;flex-wrap:wrap}
+header h1{font-size:1.15rem;color:var(--gold);font-weight:700;letter-spacing:.05em;white-space:nowrap}
+.daf-badge{font-size:0.73rem;padding:3px 10px;border-radius:999px;
+           background:#18180a;color:var(--gold);border:1px solid #3a3a18;
+           white-space:nowrap;max-width:240px;overflow:hidden;text-overflow:ellipsis}
+.hbadge{font-size:0.73rem;color:#c8b870;direction:rtl;white-space:nowrap}
+.btn{cursor:pointer;padding:4px 11px;border-radius:6px;border:1px solid var(--border);
+     background:var(--panel);color:#b8b0d8;font-size:0.75rem;transition:all .15s;white-space:nowrap}
+.btn:hover{background:#1e1e30;border-color:#3a3a5a}
+.btn.on{background:#1a3a1a;border-color:#2a6a2a;color:#88ee88}
+.btn.kg-btn{border-color:var(--accent);color:#c8b8ff}
+.spacer{flex:1}
+.dot{width:7px;height:7px;border-radius:50%;background:#2a2a3a;transition:background .4s}
+.dot.ok{background:#44aa44}
+#turn-lbl{font-size:0.7rem;color:var(--muted);white-space:nowrap}
+.user-badge{font-size:0.72rem;color:var(--human);white-space:nowrap}
+.btn.logout{border-color:#5a2a2a;color:#cc8888}
+.btn.logout:hover{background:#2a1010}
+main{display:flex;flex:1;overflow:hidden;min-height:0}
+#daf-panel{width:320px;flex-shrink:0;display:flex;flex-direction:column;
+           border-right:1px solid var(--border);overflow:hidden}
+#daf-header{padding:8px 12px;border-bottom:1px solid var(--border);flex-shrink:0;
+             display:flex;align-items:center;justify-content:space-between}
+#daf-header span{font-size:0.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.daf-toggle{display:flex;gap:4px}
+.dt-btn{font-size:0.68rem;padding:2px 8px;border-radius:10px;cursor:pointer;
+        border:1px solid var(--border);background:var(--panel);color:var(--muted)}
+.dt-btn.active{background:#1a1408;border-color:var(--gold);color:var(--gold)}
+#daf-scroll{flex:1;overflow-y:auto;padding:12px}
+.daf-he{direction:rtl;font-family:'SBL Hebrew','Ezra SIL','Cardo','Times New Roman',serif;
+        font-size:1.05rem;line-height:1.9;color:var(--aramaic)}
+.daf-en{direction:ltr;font-size:0.8rem;line-height:1.6;color:#a0a0c0}
+.daf-pair{margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #18181e}
+.daf-pair .he-line{direction:rtl;font-family:'SBL Hebrew','Ezra SIL','Cardo','Times New Roman',serif;
+                   font-size:1.05rem;line-height:1.9;color:var(--aramaic);margin-bottom:4px}
+.daf-pair .en-line{font-size:0.75rem;line-height:1.5;color:#707090;font-style:italic}
+/* Daf line highlighting — warm glow that fades gently */
+.daf-line{transition:background 2.5s ease-out, border-color 2.5s ease-out;
+          border-left:2px solid transparent;padding-left:6px;margin-left:-8px;border-radius:3px}
+.daf-line.hl-active{background:rgba(212,170,85,0.12);border-left-color:var(--gold)}
+.daf-line.hl-recent{background:rgba(212,170,85,0.06);border-left-color:rgba(212,170,85,0.3)}
+.daf-line.hl-fading{background:transparent;border-left-color:transparent}
+/* Segment dividers in daf panel */
+.seg-divider{padding:5px 10px;margin:10px -12px 6px -12px;
+             background:linear-gradient(90deg, rgba(212,170,85,0.10) 0%, transparent 100%);
+             border-left:3px solid var(--gold);font-size:0.68rem;color:var(--gold);
+             letter-spacing:0.03em;cursor:default;position:relative}
+.seg-divider .seg-idx{font-weight:700;margin-right:6px;opacity:0.7}
+.seg-divider .seg-title{font-weight:600}
+.seg-divider .seg-summary{display:block;color:var(--muted);font-size:0.62rem;
+                          margin-top:1px;font-style:italic}
+.seg-divider.seg-active{background:linear-gradient(90deg, rgba(212,170,85,0.22) 0%, rgba(212,170,85,0.04) 100%);
+                        border-left-color:#e8c44a}
+.seg-divider.seg-active .seg-title{color:#e8c44a}
+#debate-panel{flex:1;display:flex;flex-direction:column;min-width:0;overflow:hidden}
+#debate-scroll{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.exchange{max-width:85%;padding:10px 14px;border-radius:12px;line-height:1.6;font-size:0.875rem;word-wrap:break-word}
+.exchange.hillel{align-self:flex-start;background:#0d1526;border:1px solid #1a2a50;border-left:3px solid var(--hillel)}
+.exchange.shammai{align-self:flex-end;background:#180d0a;border:1px solid #3a1a10;border-right:3px solid var(--shammai)}
+.exchange.human{align-self:center;background:#0a1a14;border:1px solid #1a3a28;border-left:3px solid var(--human);
+                max-width:75%;font-style:italic}
+.ex-name{font-size:0.68rem;font-weight:700;margin-bottom:4px}
+.ex-name.hillel{color:var(--hillel)}
+.ex-name.shammai{color:var(--shammai)}
+.ex-name.human{color:var(--human)}
+.ex-meta{font-size:0.62rem;color:var(--muted);margin-top:5px}
+.notice{text-align:center;font-size:0.72rem;color:var(--muted);padding:6px;font-style:italic}
+#thinking{font-size:0.73rem;color:var(--muted);padding:3px 14px;min-height:16px;font-style:italic;flex-shrink:0}
+#human-bar{display:flex;gap:8px;padding:8px 14px;border-top:1px solid var(--border);flex-shrink:0;
+           background:var(--surface)}
+#human-input{flex:1;background:var(--panel);border:1px solid var(--border);border-radius:8px;
+             padding:8px 14px;color:var(--text);font-size:0.85rem;outline:none;resize:none;
+             font-family:inherit;min-height:38px;max-height:80px}
+#human-input:focus{border-color:var(--human)}
+#human-input::placeholder{color:var(--muted)}
+#human-send{padding:8px 18px;border-radius:8px;border:1px solid #1a3a28;
+            background:#0a1a14;color:var(--human);font-size:0.82rem;cursor:pointer;
+            transition:all .15s;white-space:nowrap}
+#human-send:hover{background:#0f2a1e;border-color:#2a5a3a}
+#human-send:disabled{opacity:0.4;cursor:default}
+#bottom{height:180px;flex-shrink:0;border-top:1px solid var(--border);display:flex;flex-direction:column}
+#tab-bar{display:flex;border-bottom:1px solid var(--border);flex-shrink:0;align-items:center;padding:0 6px}
+.tab{padding:5px 11px;font-size:0.73rem;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
+.tab.active{color:#c9b3ff;border-bottom-color:var(--accent)}
+#tab-bar .copy-btn{margin-left:auto;font-size:0.7rem;padding:2px 9px}
+#tab-content{flex:1;overflow-y:auto;padding:8px 12px;font-size:0.7rem;
+             font-family:'Cascadia Code','Fira Code',monospace;color:#8a8aaa;white-space:pre-wrap}
+#kg-drawer{position:fixed;top:0;right:0;bottom:0;width:680px;max-width:98vw;
+           background:#0e0e18;border-left:1px solid var(--border);
+           display:flex;flex-direction:column;z-index:100;
+           transform:translateX(100%);transition:transform .3s ease;box-shadow:-8px 0 32px #00000099}
+#kg-drawer.open{transform:translateX(0)}
+#kg-drawer-header{padding:10px 16px;border-bottom:1px solid var(--border);
+                  display:flex;align-items:center;gap:10px;flex-shrink:0}
+#kg-drawer-header h2{font-size:0.95rem;color:var(--gold);flex:1}
+#kg-drawer-body{display:flex;flex:1;overflow:hidden}
+#kg-list-pane{width:230px;flex-shrink:0;border-right:1px solid var(--border);
+              display:flex;flex-direction:column;overflow:hidden}
+#kg-who-tabs{display:flex;border-bottom:1px solid var(--border)}
+.who-tab{flex:1;padding:6px;text-align:center;font-size:0.73rem;cursor:pointer;
+         color:var(--muted);border-bottom:2px solid transparent}
+.who-tab.active.hillel{color:var(--hillel);border-bottom-color:var(--hillel)}
+.who-tab.active.shammai{color:var(--shammai);border-bottom-color:var(--shammai)}
+#kg-type-filter{display:flex;flex-wrap:wrap;gap:3px;padding:6px 8px;border-bottom:1px solid var(--border)}
+.type-chip{font-size:0.65rem;padding:2px 7px;border-radius:10px;cursor:pointer;
+           border:1px solid var(--border);background:var(--panel);color:var(--muted)}
+.type-chip.active{background:#1a0f3a;border-color:var(--accent);color:#d4b8ff}
+#kg-node-list{flex:1;overflow-y:auto}
+.kg-node-item{padding:7px 10px;border-bottom:1px solid #14141e;cursor:pointer;transition:background .12s}
+.kg-node-item:hover{background:#161626}
+.kg-node-item.selected{background:#1a1030;border-left:2px solid var(--accent)}
+.kni-name{font-size:0.78rem;font-weight:600;color:#c9b3ff}
+.kni-type{font-size:0.63rem;text-transform:uppercase;letter-spacing:.05em}
+.kni-type.soul{color:#cc88ff}.kni-type.goal{color:#55cc88}.kni-type.habit{color:#8899ff}
+.kni-type.skill{color:#ffaa55}.kni-type.drive{color:#ff6680}
+.kni-sal{float:right;font-size:0.63rem;color:var(--muted)}
+#kg-detail-pane{flex:1;display:flex;flex-direction:column;overflow:hidden}
+#kg-query-bar{padding:8px 10px;border-bottom:1px solid var(--border);display:flex;gap:6px;flex-shrink:0}
+#kg-query-input{flex:1;background:#0f0f1a;border:1px solid var(--border);border-radius:6px;
+                padding:5px 10px;color:var(--text);font-size:0.78rem}
+#kg-query-input:focus{outline:none;border-color:var(--accent)}
+#kg-detail-scroll{flex:1;overflow-y:auto;padding:12px}
+.detail-section{margin-bottom:14px}
+.detail-section h4{font-size:0.7rem;text-transform:uppercase;letter-spacing:.06em;
+                   color:var(--muted);margin-bottom:6px;padding-bottom:4px;border-bottom:1px solid #18182a}
+.detail-kv{display:flex;gap:8px;margin:3px 0;font-size:0.76rem}
+.detail-kv .dk{color:var(--muted);flex-shrink:0;width:90px}
+.detail-kv .dv{color:#c9c0e8;word-break:break-word}
+.handle-pill{display:inline-block;background:#12122a;border:1px solid #2a2a4a;border-radius:6px;
+             padding:3px 8px;margin:2px;font-size:0.72rem}
+.handle-name{color:var(--gold);font-size:0.66rem;display:block}
+.handle-text{color:#a0a0c0}
+.edge-row{padding:4px 8px;margin:2px 0;background:#0f0f1a;border-radius:5px;border:1px solid var(--border);font-size:0.73rem;cursor:pointer}
+.edge-row:hover{border-color:#3a3a5a}
+.edge-from{color:#5a5a8a;font-size:0.63rem}
+.edge-ch{color:var(--gold);font-size:0.63rem}
+.salience-bar{height:4px;background:#1a1a2a;border-radius:2px;overflow:hidden;margin-top:3px}
+.salience-fill{height:100%;background:linear-gradient(90deg,var(--accent),#c060ff);border-radius:2px}
+.drive-intensity{height:4px;background:#1a0a0a;border-radius:2px;overflow:hidden;margin-top:3px}
+.drive-intensity-fill{height:100%;background:linear-gradient(90deg,#5a1a2a,var(--shammai));border-radius:2px}
+.query-hit{padding:5px 8px;margin:3px 0;background:#0f0f1a;border-radius:5px;border-left:2px solid var(--accent);font-size:0.73rem}
+.qh-score{color:var(--gold);font-size:0.65rem}
+.qh-summary{color:#8888aa;margin-top:2px;font-size:0.68rem}
+.flag-badge{display:inline-block;background:#2a1500;border:1px solid #aa5500;border-radius:4px;
+            padding:2px 6px;font-size:0.65rem;color:#ffaa44;margin:2px}
+#lens-row{padding:6px 10px;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:4px;flex-shrink:0}
+.lens-chip{font-size:0.66rem;padding:2px 8px;border-radius:10px;cursor:pointer;
+           border:1px solid var(--border);background:var(--panel);color:var(--muted);transition:all .12s}
+.lens-chip:hover{border-color:#5a3aaa;color:#c9b3ff}
+.lens-chip.active{background:#1a0f3a;border-color:var(--accent);color:#d4b8ff}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Masmid</h1>
+  <div class="dot" id="dot"></div>
+  <span class="daf-badge" id="daf-en-badge">Loading Daf...</span>
+  <span class="hbadge" id="daf-he-badge"></span>
+  <button class="btn" onclick="loadDaf()">Reload Daf</button>
+  <button class="btn" id="auto-btn" onclick="toggleAuto()">&#9654; Auto</button>
+  <button class="btn" onclick="stepOnce()">Step &rarr;</button>
+  <button class="btn" onclick="triggerDream('hillel')">H Dream</button>
+  <button class="btn" onclick="triggerDream('shammai')">S Dream</button>
+  <button class="btn kg-btn" onclick="toggleKG()">KG Explorer</button>
+  <button class="btn" onclick="newSession()">New Session</button>
+  <span class="spacer"></span>
+  <span class="user-badge" id="user-badge">{{DISPLAY_NAME}}</span>
+  <button class="btn logout" onclick="logout()">Logout</button>
+  <span id="turn-lbl">Turn 0</span>
+</header>
+
+<main>
+  <div id="daf-panel">
+    <div id="daf-header">
+      <span>Daf Text</span>
+      <div class="daf-toggle">
+        <div class="dt-btn active" id="dv-paired" onclick="setDafView('paired')">Paired</div>
+        <div class="dt-btn" id="dv-hebrew" onclick="setDafView('hebrew')">Hebrew</div>
+        <div class="dt-btn" id="dv-english" onclick="setDafView('english')">EN</div>
+      </div>
+    </div>
+    <div id="daf-scroll"><div class="notice">Loading today's Daf...</div></div>
+  </div>
+  <div id="debate-panel">
+    <div id="debate-scroll"></div>
+    <div id="thinking"></div>
+    <div id="human-bar">
+      <textarea id="human-input" rows="1" placeholder="Enter the Beit Midrash - ask the rabbis a question..."
+                onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendHuman()}"></textarea>
+      <button id="human-send" onclick="sendHuman()">Speak</button>
+    </div>
+  </div>
+</main>
+
+<div id="bottom">
+  <div id="tab-bar">
+    <div class="tab active" onclick="switchTab('log',this)">Log</div>
+    <div class="tab" onclick="switchTab('meta',this)">Meta-Log</div>
+    <div class="tab" onclick="switchTab('transcript',this)">Transcript</div>
+    <button class="btn copy-btn" onclick="copyTab()">Copy</button>
+  </div>
+  <div id="tab-content"></div>
+</div>
+
+<div id="kg-drawer">
+  <div id="kg-drawer-header">
+    <h2>KG Explorer</h2>
+    <div id="lens-row-header" style="display:flex;flex-wrap:wrap;gap:4px;flex:1;padding:0 10px"></div>
+    <button class="btn" onclick="toggleKG()">Close</button>
+  </div>
+  <div id="kg-drawer-body">
+    <div id="kg-list-pane">
+      <div id="kg-who-tabs">
+        <div class="who-tab active hillel" id="wt-hillel" onclick="setWho('hillel')">Hillel</div>
+        <div class="who-tab shammai" id="wt-shammai" onclick="setWho('shammai')">Shammai</div>
+      </div>
+      <div id="kg-type-filter">
+        <div class="type-chip active" onclick="toggleType('all',this)">all</div>
+        <div class="type-chip" onclick="toggleType('soul',this)">soul</div>
+        <div class="type-chip" onclick="toggleType('goal',this)">goal</div>
+        <div class="type-chip" onclick="toggleType('habit',this)">habit</div>
+        <div class="type-chip" onclick="toggleType('skill',this)">skill</div>
+        <div class="type-chip" onclick="toggleType('drive',this)">drive</div>
+      </div>
+      <div id="kg-node-list"></div>
+    </div>
+    <div id="kg-detail-pane">
+      <div id="kg-query-bar">
+        <input id="kg-query-input" placeholder="Query both KGs with any text or lens..."
+               onkeydown="if(event.key==='Enter') runKgQuery()">
+        <button class="btn" onclick="runKgQuery()">Search</button>
+      </div>
+      <div id="lens-row"></div>
+      <div id="kg-detail-scroll">
+        <div class="notice">Select a node or run a query.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const BASE = '{{URL_PREFIX}}';
+const LENSES = {{lens_keys}};
+const LENS_MAP = {{lens_map}};
+const DISPLAY_NAME = "{{DISPLAY_NAME}}";
+
+let currentTab = 'log';
+let dafView    = 'paired';
+let dafData    = null;
+let dafSegments = [];   // [{index, title, summary, line_start, line_end}, ...]
+let autoOn     = false;
+let kgOpen     = false;
+let kgWho      = 'hillel';
+let kgTypeFilter = 'all';
+let kgNodes    = {hillel:[], shammai:[]};
+let selectedNode = null;
+let activeLens = null;
+let humanBusy  = false;
+
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function buildLensButtons(containerId) {
+  const c = document.getElementById(containerId);
+  c.innerHTML = '';
+  LENSES.forEach(l => {
+    const b = document.createElement('div');
+    b.className = 'lens-chip';
+    b.textContent = l;
+    b.onclick = () => { activeLens = l; runKgQuery(l); highlightLens(l); };
+    c.appendChild(b);
+  });
+}
+function highlightLens(l) {
+  document.querySelectorAll('.lens-chip').forEach(c=>{
+    c.classList.toggle('active', c.textContent===l);
+  });
+}
+buildLensButtons('lens-row');
+buildLensButtons('lens-row-header');
+
+async function loadDaf(ref) {
+  setThinking('Fetching Daf from Sefaria...');
+  try {
+    const r = await fetch(BASE+'/api/load_daf', {method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(ref ? {ref} : {})});
+    const d = await r.json();
+    dafData = d.text;
+    if(dafData) {
+      dafSegments = d.segments || [];
+      document.getElementById('daf-en-badge').textContent = dafData.title || dafData.ref;
+      document.getElementById('daf-he-badge').textContent = dafData.he_title || '';
+      document.getElementById('dot').classList.add('ok');
+      renderDaf();
+      const segCount = dafSegments.length;
+      appendNotice('Daf loaded: ' + (dafData.title||'') + ' (' + dafData.length + ' passages, ' + segCount + ' segments)');
+      return true;
+    }
+  } catch(e){ appendNotice('[Error loading Daf: '+e.message+']'); }
+  setThinking('');
+  return false;
+}
+
+function renderDaf() {
+  if(!dafData) return;
+  const el   = document.getElementById('daf-scroll');
+  const heL  = dafData.he_lines || [];
+  const enL  = dafData.en_lines || [];
+  const maxL = Math.max(heL.length, enL.length);
+
+  // Build a map of line_index -> segment for divider insertion
+  const segAtLine = {};
+  dafSegments.forEach(seg => { segAtLine[seg.line_start] = seg; });
+
+  function segDiv(seg) {
+    return '<div class="seg-divider" data-seg-idx="'+seg.index+'">' +
+      '<span class="seg-idx">['+seg.index+']</span>' +
+      '<span class="seg-title">'+esc(seg.title)+'</span>' +
+      '<span class="seg-summary">'+esc(seg.summary)+'</span>' +
+      '</div>';
+  }
+
+  if(dafView === 'hebrew') {
+    let html = '';
+    for(let i=0; i<heL.length; i++) {
+      if(segAtLine[i]) html += segDiv(segAtLine[i]);
+      html += '<p class="daf-line" data-line-idx="'+i+'">'+esc(heL[i])+'</p>';
+    }
+    el.innerHTML = '<div class="daf-he">'+html+'</div>';
+  } else if(dafView === 'english') {
+    let html = '';
+    for(let i=0; i<enL.length; i++) {
+      if(segAtLine[i]) html += segDiv(segAtLine[i]);
+      html += '<p class="daf-line" data-line-idx="'+i+'">'+esc(enL[i])+'</p>';
+    }
+    el.innerHTML = '<div class="daf-en">'+html+'</div>';
+  } else {
+    let html = '';
+    for(let i=0; i<maxL; i++) {
+      if(segAtLine[i]) html += segDiv(segAtLine[i]);
+      const he = heL[i] || '';
+      const en = enL[i] || '';
+      html += '<div class="daf-pair daf-line" data-line-idx="'+i+'">' +
+        (he ? '<div class="he-line">'+esc(he)+'</div>' : '') +
+        (en ? '<div class="en-line">'+esc(en)+'</div>' : '') +
+        '</div>';
+    }
+    el.innerHTML = html || '<div class="notice">No text available.</div>';
+  }
+}
+
+function setDafView(v) {
+  dafView = v;
+  ['paired','hebrew','english'].forEach(x=>{
+    document.getElementById('dv-'+x).classList.toggle('active', x===v);
+  });
+  renderDaf();
+}
+
+async function stepOnce() {
+  if(!dafData){appendNotice('Load a Daf first.');return;}
+  setThinking('Debating...');
+  try {
+    const r = await fetch(BASE+'/api/step',{method:'POST'});
+    const d = await r.json();
+    if(d.exchange) appendExchange(d.exchange);
+    document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
+    if(currentTab==='log'||currentTab==='transcript') refreshTab();
+  } catch(e){ appendNotice('[Error: '+e.message+']'); }
+  setThinking('');
+}
+
+function toggleAuto() {
+  autoOn = !autoOn;
+  const btn = document.getElementById('auto-btn');
+  btn.textContent = autoOn ? 'Pause Auto' : 'Auto';
+  btn.classList.toggle('on', autoOn);
+  fetch(BASE+'/api/auto',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({enabled:autoOn})});
+  if(autoOn) pollDebate();
+}
+
+function pollDebate() {
+  if(!autoOn) return;
+  fetch(BASE+'/api/debate_status').then(r=>r.json()).then(d=>{
+    if(d.last) syncExchanges(d.exchanges||[]);
+    document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
+  }).finally(()=>{ if(autoOn) setTimeout(pollDebate, 4000); });
+}
+
+let renderedTurns = new Set();
+function syncExchanges(exchanges) {
+  for(const ex of exchanges) {
+    if(!renderedTurns.has(ex.turn)) {
+      appendExchange(ex);
+      renderedTurns.add(ex.turn);
+    }
+  }
+}
+
+function appendExchange(ex) {
+  const s = document.getElementById('debate-scroll');
+  let side;
+  if(ex.is_human) { side = 'human'; }
+  else if(ex.rabbi.toLowerCase().includes('hillel')) { side = 'hillel'; }
+  else { side = 'shammai'; }
+  const ts  = (ex.ts||'').slice(11,19);
+  const tag = ex.tag ? ' ['+ex.tag+']' : '';
+  const div = document.createElement('div');
+  div.className = 'exchange ' + side;
+  const label = ex.is_human ? esc(ex.rabbi) : esc(ex.rabbi);
+  const meta_extra = ex.responding_to_human ? ' - responding to student' : '';
+  div.innerHTML = '<div class="ex-name '+side+'">'+label+'</div>' +
+    '<div>'+esc(ex.text)+'</div>' +
+    '<div class="ex-meta">Turn '+ex.turn+' - '+ts+meta_extra+'<span style="color:var(--gold);margin-left:6px">'+esc(tag)+'</span></div>';
+  s.appendChild(div);
+  s.scrollTop = s.scrollHeight;
+  renderedTurns.add(ex.turn);
+  // Highlight the daf segments this exchange used
+  if(ex.seg_ranges && ex.seg_ranges.length > 0) {
+    highlightDafLines(ex.seg_ranges);
+  }
+}
+
+// ── Daf line highlighting with gentle fade ──────────────────────────────
+let _hlTimeout = null;
+function highlightDafLines(segRanges) {
+  // 1. Demote current active highlights to "recent" (gentle glow)
+  document.querySelectorAll('.daf-line.hl-active').forEach(el => {
+    el.classList.remove('hl-active');
+    el.classList.add('hl-recent');
+  });
+  document.querySelectorAll('.seg-divider.seg-active').forEach(el => {
+    el.classList.remove('seg-active');
+  });
+  // 2. Fade out old "recent" highlights
+  document.querySelectorAll('.daf-line.hl-fading').forEach(el => {
+    el.classList.remove('hl-fading');
+  });
+  document.querySelectorAll('.daf-line.hl-recent').forEach(el => {
+    el.classList.remove('hl-recent');
+    el.classList.add('hl-fading');
+  });
+
+  // 3. Apply new highlights to lines AND segment dividers
+  let firstHighlighted = null;
+  for(const seg of segRanges) {
+    const start = seg.line_start || 0;
+    const end   = seg.line_end || start + 1;
+    // Highlight the segment divider
+    const divider = document.querySelector('.seg-divider[data-seg-idx="'+seg.index+'"]');
+    if(divider) {
+      divider.classList.add('seg-active');
+      if(!firstHighlighted) firstHighlighted = divider;
+    }
+    // Highlight the text lines
+    for(let i = start; i < end; i++) {
+      const el = document.querySelector('.daf-line[data-line-idx="'+i+'"]');
+      if(el) {
+        el.classList.remove('hl-fading', 'hl-recent');
+        el.classList.add('hl-active');
+        if(!firstHighlighted) firstHighlighted = el;
+      }
+    }
+  }
+  // 4. Scroll the daf panel to show the first highlighted segment divider
+  if(firstHighlighted) {
+    firstHighlighted.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  // 5. After 20 seconds, demote active to fading
+  if(_hlTimeout) clearTimeout(_hlTimeout);
+  _hlTimeout = setTimeout(() => {
+    document.querySelectorAll('.daf-line.hl-active').forEach(el => {
+      el.classList.remove('hl-active');
+      el.classList.add('hl-fading');
+    });
+    document.querySelectorAll('.seg-divider.seg-active').forEach(el => {
+      el.classList.remove('seg-active');
+    });
+  }, 20000);
+}
+
+function appendNotice(msg) {
+  const div = document.createElement('div');
+  div.className = 'notice';
+  div.textContent = msg;
+  document.getElementById('debate-scroll').appendChild(div);
+}
+
+function setThinking(msg) {
+  document.getElementById('thinking').textContent = msg;
+}
+
+async function sendHuman() {
+  if(humanBusy) return;
+  const input = document.getElementById('human-input');
+  const text  = input.value.trim();
+  if(!text) return;
+  if(!dafData){appendNotice('Wait for the Daf to load...');return;}
+  humanBusy = true;
+  document.getElementById('human-send').disabled = true;
+  input.value = '';
+  const nowTs = new Date().toISOString();
+  appendExchange({rabbi: DISPLAY_NAME, text: text, turn: '?', ts: nowTs, is_human: true});
+  setThinking('The rabbis consider your words...');
+  const wasAuto = autoOn;
+  if(wasAuto) {
+    autoOn = false;
+    fetch(BASE+'/api/auto',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({enabled:false})});
+  }
+  try {
+    const r = await fetch(BASE+'/api/human_say',{method:'POST',
+      headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+    const d = await r.json();
+    if(d.error) { appendNotice(d.error); }
+    else {
+      if(d.human && d.human.turn !== undefined) renderedTurns.add(d.human.turn);
+      if(d.hillel) appendExchange(d.hillel);
+      if(d.shammai) appendExchange(d.shammai);
+      document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
+    }
+    if(currentTab==='log'||currentTab==='transcript') refreshTab();
+  } catch(e){ appendNotice('[Error: '+e.message+']'); }
+  setThinking('');
+  humanBusy = false;
+  document.getElementById('human-send').disabled = false;
+  if(wasAuto) {
+    autoOn = true;
+    document.getElementById('auto-btn').textContent = 'Pause Auto';
+    document.getElementById('auto-btn').classList.add('on');
+    fetch(BASE+'/api/auto',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({enabled:true})});
+    pollDebate();
+  }
+  // No extra step() here — human_say already returned both rabbis' responses.
+  // Next step() comes from Auto mode or manual "Step" button.
+}
+
+function toggleKG() {
+  kgOpen = !kgOpen;
+  document.getElementById('kg-drawer').classList.toggle('open', kgOpen);
+  if(kgOpen) loadKgNodes();
+}
+
+function setWho(who) {
+  kgWho = who;
+  document.getElementById('wt-hillel').className = 'who-tab' + (who==='hillel'?' active hillel':'');
+  document.getElementById('wt-shammai').className= 'who-tab' + (who==='shammai'?' active shammai':'');
+  renderNodeList();
+}
+
+function toggleType(type, el) {
+  kgTypeFilter = type;
+  document.querySelectorAll('.type-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  renderNodeList();
+}
+
+async function loadKgNodes() {
+  try {
+    const [rh, rs] = await Promise.all([
+      fetch(BASE+'/api/kg_full/hillel').then(r=>r.json()),
+      fetch(BASE+'/api/kg_full/shammai').then(r=>r.json()),
+    ]);
+    kgNodes.hillel  = rh.nodes || [];
+    kgNodes.shammai = rs.nodes || [];
+    renderNodeList();
+  } catch(e){ console.error(e); }
+}
+
+function renderNodeList() {
+  const nodes = kgNodes[kgWho] || [];
+  const filtered = kgTypeFilter === 'all' ? nodes : nodes.filter(n=>n.type===kgTypeFilter);
+  const el = document.getElementById('kg-node-list');
+  el.innerHTML = filtered.map(n=>
+    '<div class="kg-node-item '+(selectedNode&&selectedNode.id===n.id?'selected':'')+'" onclick="selectNode(\''+n.id+'\')">' +
+    '<span class="kni-sal">'+n.salience.toFixed(2)+'</span>' +
+    '<div class="kni-name">'+esc(n.name)+'</div>' +
+    '<div class="kni-type '+n.type+'">'+n.type+'</div>' +
+    '<div class="salience-bar"><div class="salience-fill" style="width:'+(n.salience*100).toFixed(1)+'%"></div></div>' +
+    '</div>').join('');
+}
+
+function selectNode(id) {
+  const nodes = kgNodes[kgWho] || [];
+  const n = nodes.find(x=>x.id===id);
+  if(!n) return;
+  selectedNode = n;
+  renderNodeList();
+  renderNodeDetail(n);
+}
+
+function renderNodeDetail(n) {
+  const el = document.getElementById('kg-detail-scroll');
+  const typeColour = {soul:'#cc88ff',goal:'#55cc88',habit:'#8899ff',skill:'#ffaa55',drive:'#ff6680'};
+  const col = typeColour[n.type] || '#aaaacc';
+  let html = '<div class="detail-section">' +
+    '<h4 style="color:'+col+'">'+esc(n.name)+' <small style="color:var(--muted)">'+n.type+' / '+n.id+'</small></h4>' +
+    '<div class="salience-bar" style="height:6px;margin-bottom:8px">' +
+    '<div class="salience-fill" style="width:'+(n.salience*100).toFixed(1)+'%"></div></div>';
+  const skipKeys = ['name'];
+  Object.entries(n.content).filter(([k])=>!skipKeys.includes(k)).forEach(([k,v])=>{
+    html += '<div class="detail-kv"><span class="dk">'+esc(k)+'</span>' +
+      '<span class="dv">'+(Array.isArray(v)?v.map(x=>'<em>'+esc(x)+'</em>').join(', '):esc(String(v)))+'</span></div>';
+  });
+  if(n.type==='drive') {
+    const intensity = n.content.intensity || 0;
+    html += '<div style="margin-top:6px"><div class="detail-kv"><span class="dk">intensity</span>' +
+      '<span class="dv">'+intensity.toFixed(3)+'</span></div>' +
+      '<div class="drive-intensity"><div class="drive-intensity-fill" style="width:'+(intensity*100).toFixed(1)+'%"></div></div></div>';
+  }
+  html += '</div>';
+  html += '<div class="detail-section"><h4>Handles</h4>';
+  Object.entries(n.handles||{}).forEach(([hname, htext])=>{
+    html += '<div class="handle-pill"><span class="handle-name">'+esc(hname)+'</span>' +
+      '<span class="handle-text">'+esc(htext)+'</span></div>';
+  });
+  html += '</div>';
+  if(n.edges && n.edges.length) {
+    html += '<div class="detail-section"><h4>Edges ('+n.edges.length+')</h4>';
+    n.edges.forEach(e=>{
+      const arrow = e.direction==='out' ? '&rarr;' : '&larr;';
+      html += '<div class="edge-row" onclick="selectNodeById(\''+e.other_id+'\')">' +
+        '<span class="edge-from">'+e.edge_id+'</span> '+arrow+' <strong>'+esc(e.other_name)+'</strong>' +
+        ' <span style="color:var(--muted)">('+e.other_type+')</span>' +
+        ' <span class="edge-ch">'+e.dominant_channel+'='+e.channel_val+'</span>' +
+        ' <span style="color:var(--muted);font-size:.62rem">total='+e.total+'</span></div>';
+    });
+    html += '</div>';
+  }
+  if(n.flags && n.flags.length) {
+    html += '<div class="detail-section"><h4>Flags</h4>';
+    n.flags.forEach(f=>{ html += '<div class="flag-badge">'+esc(f.message)+'</div>'; });
+    html += '</div>';
+  }
+  html += '<div class="detail-section"><h4>Summary</h4>' +
+    '<div style="font-size:.73rem;color:#8888aa;line-height:1.5">'+esc(n.summary)+'</div></div>';
+  el.innerHTML = html;
+}
+
+function selectNodeById(id) {
+  const nodes = kgNodes[kgWho] || [];
+  const n = nodes.find(x=>x.id===id);
+  if(n) { selectedNode = n; renderNodeList(); renderNodeDetail(n); }
+}
+
+async function runKgQuery(lensOverride) {
+  const q = lensOverride ? (LENS_MAP[lensOverride] || lensOverride) : document.getElementById('kg-query-input').value.trim();
+  if(!q) return;
+  try {
+    const r = await fetch(BASE+'/api/kg_survey?lens=' + encodeURIComponent(q));
+    const d = await r.json();
+    renderQueryResults(d, lensOverride || q);
+  } catch(e){ console.error(e); }
+}
+
+function renderQueryResults(d, label) {
+  const el = document.getElementById('kg-detail-scroll');
+  const typeColour = {soul:'#cc88ff',goal:'#55cc88',habit:'#8899ff',skill:'#ffaa55',drive:'#ff6680'};
+  function section(name, hits, cls) {
+    if(!hits||!hits.length) return '';
+    return '<div class="detail-section"><h4 style="color:'+cls+'">Rabbi '+name+' - "'+esc(label)+'"</h4>' +
+      hits.map(h=>
+        '<div class="query-hit" style="border-left-color:'+(typeColour[h.type]||'var(--accent)')+'">'+
+        '<strong>'+esc(h.name)+'</strong> <span style="color:var(--muted)">['+h.type+'/'+esc(h.handle)+']</span>'+
+        ' <span class="qh-score">'+h.score.toFixed(3)+'</span>'+
+        '<div class="qh-summary">'+esc(h.summary)+'</div></div>').join('') +
+      '</div>';
+  }
+  el.innerHTML = section('Hillel', d.hillel, 'var(--hillel)') + section('Shammai', d.shammai, 'var(--shammai)');
+}
+
+async function triggerDream(who) {
+  setThinking(who + ' dreaming...');
+  const r = await fetch(BASE+'/api/dream/'+who,{method:'POST'});
+  const d = await r.json();
+  setThinking('');
+  appendNotice(who + ' dream: ' + (d.summary||'done.').slice(0,80));
+  if(kgOpen) loadKgNodes();
+  if(currentTab==='meta') refreshTab();
+}
+
+function switchTab(tab, el) {
+  currentTab = tab;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  refreshTab();
+}
+
+async function refreshTab() {
+  const el = document.getElementById('tab-content');
+  try {
+    if(currentTab==='log') {
+      const r = await fetch(BASE+'/api/log?n=80');
+      const d = await r.json();
+      el.textContent = d.entries.map(e=>
+        '['+e.ts.slice(11,19)+'] '+e.source+'/'+e.event_type+' '+JSON.stringify(e.payload).slice(0,160)
+      ).reverse().join('\n');
+    } else if(currentTab==='meta') {
+      const r = await fetch(BASE+'/api/meta_log');
+      const d = await r.json();
+      el.textContent = d.content;
+    } else if(currentTab==='transcript') {
+      const r = await fetch(BASE+'/api/export_debate');
+      const d = await r.json();
+      el.textContent = d.text;
+    }
+  } catch(e){ el.textContent = 'Error: '+e.message; }
+}
+
+async function copyTab() {
+  let text = document.getElementById('tab-content').textContent;
+  if(currentTab==='transcript') {
+    const r = await fetch(BASE+'/api/export_debate');
+    const d = await r.json();
+    text = d.text;
+  }
+  try { await navigator.clipboard.writeText(text); alert('Copied!'); }
+  catch {
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta); alert('Copied!');
+  }
+}
+
+async function newSession() {
+  await fetch(BASE+'/api/new_session',{method:'POST'});
+  document.getElementById('debate-scroll').innerHTML='';
+  renderedTurns.clear();
+  document.getElementById('turn-lbl').textContent='Turn 0';
+  document.getElementById('daf-en-badge').textContent='Loading Daf...';
+  document.getElementById('daf-he-badge').textContent='';
+  document.getElementById('dot').classList.remove('ok');
+  document.getElementById('daf-scroll').innerHTML='<div class="notice">Loading today\'s Daf...</div>';
+  dafData = null;
+  dafSegments = [];
+  autoInit();
+}
+
+function logout() { window.location.href = BASE+'/auth/logout'; }
+
+async function autoInit() {
+  try {
+    const statusR = await fetch(BASE+'/api/debate_status');
+    const status  = await statusR.json();
+    if(status.exchanges && status.exchanges.length > 0) {
+      if(status.daf) {
+        const dafR = await fetch(BASE+'/api/daf_text');
+        dafData    = await dafR.json();
+        dafSegments = status.segments || [];
+        if(dafData && dafData.ref) {
+          document.getElementById('daf-en-badge').textContent = dafData.title || dafData.ref;
+          document.getElementById('daf-he-badge').textContent = dafData.he_title || '';
+          document.getElementById('dot').classList.add('ok');
+          renderDaf();
+        }
+      }
+      const toShow = status.exchanges.slice(-50);
+      for(const ex of toShow) { appendExchange(ex); }
+      document.getElementById('turn-lbl').textContent = 'Turn '+(status.turn||0);
+      appendNotice('Session resumed - '+status.exchanges.length+' exchanges loaded.');
+      if(currentTab==='log'||currentTab==='transcript') refreshTab();
+      return;
+    }
+  } catch(e) { console.log('No existing debate, starting fresh:', e); }
+  const loaded = await loadDaf();
+  if(loaded) {
+    appendNotice('The Beit Midrash opens. Hillel and Shammai begin...');
+    setThinking('Opening debate...');
+    try {
+      let r = await fetch(BASE+'/api/step',{method:'POST'});
+      let d = await r.json();
+      if(d.error) { appendNotice('[Hillel error: '+d.error+']'); }
+      else if(d.exchange) appendExchange(d.exchange);
+      r = await fetch(BASE+'/api/step',{method:'POST'});
+      d = await r.json();
+      if(d.error) { appendNotice('[Shammai error: '+d.error+']'); }
+      else if(d.exchange) appendExchange(d.exchange);
+      document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
+    } catch(e){ appendNotice('[Error starting debate: '+e.message+']'); }
+    setThinking('');
+    if(currentTab==='log'||currentTab==='transcript') refreshTab();
+  }
+}
+
+setInterval(()=>{ if(currentTab!=='kg') refreshTab(); }, 12000);
+refreshTab();
+window.addEventListener('DOMContentLoaded', autoInit);
+</script>
+</body>
+</html>
