@@ -242,7 +242,20 @@ def create_app():
             debate.start_auto()
         else:
             debate.stop_auto()
-        return jsonify({"auto": debate._auto})
+        return jsonify({"auto": debate._auto, "pool": debate.pool_status()})
+
+    @bp.route("/api/pool")
+    @require_auth_api
+    def api_pool():
+        return jsonify({"pool": debate.pool_status(), "auto": debate._auto})
+
+    @bp.route("/api/add_cycles", methods=["POST"])
+    @require_auth_api
+    def api_add_cycles():
+        data = request.json or {}
+        n = int(data.get("n", 2))
+        pool = debate.add_cycles(n, reason="manual")
+        return jsonify({"pool": pool})
 
     @bp.route("/api/human_say", methods=["POST"])
     @require_auth_api

@@ -50,6 +50,7 @@ from typing import Optional
 import config
 from sefaria import fetch_daf_yomi, fetch_daf_text
 from daf_ingest import segment_daf, tag_exchange
+from episodic import record_memory, record_encounter
 
 
 class DebateOrchestrator:
@@ -64,7 +65,11 @@ class DebateOrchestrator:
         self.turn      = 0
         # Explicit speaker tracking: always alternate, survives human interrupts
         self._next_speaker = "hillel"
-        self._auto     = False
+        # Cycle pool economy
+        self._pool      = 0
+        self._pool_lock = threading.Lock()
+        self._auto      = False
+        self._baseline_timer: Optional[threading.Timer] = None
         self._thread: Optional[threading.Thread] = None
 
     def _flip_speaker(self):
@@ -100,6 +105,10 @@ class DebateOrchestrator:
             "segments": len(self.segments),
             "segment_titles": [s.title for s in self.segments],
         })
+
+        # Start the cycle economy — initial pool fuels the opening debate
+        self._init_pool()
+
         return {
             "daf": self.daf,
             "text": self.daf_text,
@@ -142,6 +151,15 @@ class DebateOrchestrator:
         self.exchanges.append(ex)
         self.turn += 1
         self._flip_speaker()
+
+        # Record episodic memory in the speaker's KG
+        try:
+            record_memory(speaker.kg, ex,
+                         activated_nodes=speaker.last_activated,
+                         daf_ref=self.daf["ref"])
+        except Exception as e:
+            print(f"[EPISODIC] memory record failed: {e}", flush=True)
+
         return ex
 
     # -- Human interaction -----------------------------------------------------
@@ -217,30 +235,116 @@ class DebateOrchestrator:
         # supposed to go next BEFORE the human interrupted.
         # (We don't call _flip_speaker here — that's only for debate steps.)
 
+        # Reward: human engagement funds more debate cycles
+        pool_now = self.add_cycles(config.CYCLES_PER_QUERY, reason="human query")
+
+        # Record episodic memories and encounter in both KGs
+        topic_tags = [h_ex.get("tag", ""), s_ex.get("tag", "")]
+        topic_tags = [t for t in topic_tags if t and t != "remark"]
+        daf_ref = self.daf["ref"] if self.daf else ""
+
+        for agent, ex in [(self.hillel, h_ex), (self.shammai, s_ex)]:
+            try:
+                mem = record_memory(agent.kg, ex,
+                                   activated_nodes=agent.last_activated,
+                                   daf_ref=daf_ref)
+                # Also record the human's exchange as a memory in each KG
+                h_mem = record_memory(agent.kg, human_ex,
+                                     activated_nodes=[],
+                                     daf_ref=daf_ref)
+                record_encounter(agent.kg, display_name,
+                                topic_tags=topic_tags,
+                                daf_ref=daf_ref,
+                                memory_node=h_mem)
+            except Exception as e:
+                print(f"[EPISODIC] {agent.name} encounter record failed: {e}",
+                      flush=True)
+
         return {
             "human": human_ex, "hillel": h_ex, "shammai": s_ex,
-            "turn": self.turn,
+            "turn": self.turn, "pool": pool_now,
         }
 
-    # -- Auto-debate -----------------------------------------------------------
+    # -- Cycle pool economy ------------------------------------------------------
+
+    def _init_pool(self):
+        """Initialize the cycle pool for a fresh session."""
+        self._pool = config.INITIAL_CYCLES
+        self._pool_lock = threading.Lock()
+        self._auto = True
+        self._baseline_timer: Optional[threading.Timer] = None
+        self._thread: Optional[threading.Thread] = None
+        self._start_baseline_timer()
+        self._start_consumer()
+        print(f"[POOL] Initialized with {self._pool} cycles, "
+              f"baseline every {config.BASELINE_INTERVAL}s", flush=True)
+
+    def add_cycles(self, n, reason=""):
+        """Add cycles to the pool (e.g. from human query or baseline)."""
+        with self._pool_lock:
+            self._pool += n
+            pool_now = self._pool
+        print(f"[POOL] +{n} cycles ({reason}) → pool={pool_now}", flush=True)
+        return pool_now
+
+    def _consume_cycle(self):
+        """Try to consume one cycle from the pool. Returns True if consumed."""
+        with self._pool_lock:
+            if self._pool > 0:
+                self._pool -= 1
+                return True
+            return False
+
+    def _start_baseline_timer(self):
+        """Tick: add 1 cycle every BASELINE_INTERVAL seconds."""
+        def tick():
+            if self._auto:
+                self.add_cycles(1, reason="baseline")
+                self._start_baseline_timer()
+        self._baseline_timer = threading.Timer(config.BASELINE_INTERVAL, tick)
+        self._baseline_timer.daemon = True
+        self._baseline_timer.start()
+
+    def _start_consumer(self):
+        """Background thread that consumes cycles from the pool."""
+        self._thread = threading.Thread(target=self._consumer_loop, daemon=True)
+        self._thread.start()
+
+    def _consumer_loop(self):
+        """Consume cycles from the pool, stepping the debate for each one."""
+        while self._auto:
+            if self.daf_text and self._consume_cycle():
+                try:
+                    ex = self.step()
+                    if ex:
+                        pool_now = self._pool
+                        print(f"[POOL] Consumed 1 cycle (turn {self.turn}) → "
+                              f"pool={pool_now}", flush=True)
+                except Exception as e:
+                    print(f"[POOL ERROR] {e}", flush=True)
+                time.sleep(config.DEBATE_DELAY)
+            else:
+                # No cycles available — sleep and check again
+                time.sleep(10.0)
 
     def start_auto(self):
+        """Start the cycle economy if not already running."""
         if self._auto:
             return
         self._auto = True
-        self._thread = threading.Thread(target=self._loop, daemon=True)
-        self._thread.start()
+        self._start_baseline_timer()
+        self._start_consumer()
 
     def stop_auto(self):
+        """Pause the cycle consumer (pool still accumulates via baseline)."""
         self._auto = False
+        if self._baseline_timer:
+            self._baseline_timer.cancel()
 
-    def _loop(self):
-        while self._auto:
-            if self.daf_text:
-                self.step()
-                time.sleep(config.DEBATE_DELAY)
-            else:
-                time.sleep(2.0)
+    def pool_status(self):
+        """Current pool state."""
+        with self._pool_lock:
+            return self._pool
 
     # -- Export / status -------------------------------------------------------
 
@@ -256,5 +360,6 @@ class DebateOrchestrator:
             "auto": self._auto,
             "next_speaker": self._next_speaker,
             "segments": len(self.segments),
+            "pool": self.pool_status(),
             "last": self.exchanges[-1] if self.exchanges else None,
         }

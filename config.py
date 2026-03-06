@@ -93,8 +93,13 @@ LLM_TIMEOUT    = int(os.getenv("OPENAI_TIMEOUT", "120"))
 CONTEXT_LIMIT  = int(os.getenv("CONTEXT_LIMIT", "4000"))   # token budget for system prompt
 
 DREAM_INTERVAL = int(os.getenv("DREAM_INTERVAL", "180"))
-DEBATE_DELAY   = float(os.getenv("DEBATE_DELAY", "3.0"))
+DEBATE_DELAY   = float(os.getenv("DEBATE_DELAY", "8.0"))    # seconds between auto steps
 DATA_DIR       = Path(os.getenv("DATA_DIR", "./masmid_data"))
+
+# Cycle economy
+INITIAL_CYCLES     = int(os.getenv("INITIAL_CYCLES", "4"))       # opening exchanges
+BASELINE_INTERVAL  = int(os.getenv("BASELINE_INTERVAL", "21600")) # seconds between free cycles (6hrs)
+CYCLES_PER_QUERY   = int(os.getenv("CYCLES_PER_QUERY", "2"))     # bonus cycles per human question
 PORT           = int(os.getenv("PORT", "5004"))
 SECRET_KEY     = os.getenv("SECRET_KEY", os.urandom(32).hex())
 URL_PREFIX     = os.getenv("URL_PREFIX", "/masmid")

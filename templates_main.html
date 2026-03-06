@@ -50,13 +50,11 @@ main{display:flex;flex:1;overflow:hidden;min-height:0}
 .daf-pair .he-line{direction:rtl;font-family:'SBL Hebrew','Ezra SIL','Cardo','Times New Roman',serif;
                    font-size:1.05rem;line-height:1.9;color:var(--aramaic);margin-bottom:4px}
 .daf-pair .en-line{font-size:0.75rem;line-height:1.5;color:#707090;font-style:italic}
-/* Daf line highlighting — warm glow that fades gently */
 .daf-line{transition:background 2.5s ease-out, border-color 2.5s ease-out;
           border-left:2px solid transparent;padding-left:6px;margin-left:-8px;border-radius:3px}
 .daf-line.hl-active{background:rgba(212,170,85,0.12);border-left-color:var(--gold)}
 .daf-line.hl-recent{background:rgba(212,170,85,0.06);border-left-color:rgba(212,170,85,0.3)}
 .daf-line.hl-fading{background:transparent;border-left-color:transparent}
-/* Segment dividers in daf panel */
 .seg-divider{padding:5px 10px;margin:10px -12px 6px -12px;
              background:linear-gradient(90deg, rgba(212,170,85,0.10) 0%, transparent 100%);
              border-left:3px solid var(--gold);font-size:0.68rem;color:var(--gold);
@@ -174,13 +172,13 @@ main{display:flex;flex:1;overflow:hidden;min-height:0}
   <span class="daf-badge" id="daf-en-badge">Loading Daf...</span>
   <span class="hbadge" id="daf-he-badge"></span>
   <button class="btn" onclick="loadDaf()">Reload Daf</button>
-  <button class="btn" id="auto-btn" onclick="toggleAuto()">&#9654; Auto</button>
-  <button class="btn" onclick="stepOnce()">Step &rarr;</button>
+  <button class="btn" onclick="addCycles(2)" title="Add 2 debate cycles">+2 Cycles</button>
   <button class="btn" onclick="triggerDream('hillel')">H Dream</button>
   <button class="btn" onclick="triggerDream('shammai')">S Dream</button>
   <button class="btn kg-btn" onclick="toggleKG()">KG Explorer</button>
   <button class="btn" onclick="newSession()">New Session</button>
   <span class="spacer"></span>
+  <span class="daf-badge" id="pool-badge" title="Debate cycles remaining">Pool: 0</span>
   <span class="user-badge" id="user-badge">{{DISPLAY_NAME}}</span>
   <button class="btn logout" onclick="logout()">Logout</button>
   <span id="turn-lbl">Turn 0</span>
@@ -264,8 +262,7 @@ const DISPLAY_NAME = "{{DISPLAY_NAME}}";
 let currentTab = 'log';
 let dafView    = 'paired';
 let dafData    = null;
-let dafSegments = [];   // [{index, title, summary, line_start, line_end}, ...]
-let autoOn     = false;
+let dafSegments = [];
 let kgOpen     = false;
 let kgWho      = 'hillel';
 let kgTypeFilter = 'all';
@@ -273,6 +270,7 @@ let kgNodes    = {hillel:[], shammai:[]};
 let selectedNode = null;
 let activeLens = null;
 let humanBusy  = false;
+let pollerHandle = null;  // so we can pause/resume the poller
 
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 
@@ -325,7 +323,6 @@ function renderDaf() {
   const enL  = dafData.en_lines || [];
   const maxL = Math.max(heL.length, enL.length);
 
-  // Build a map of line_index -> segment for divider insertion
   const segAtLine = {};
   dafSegments.forEach(seg => { segAtLine[seg.line_start] = seg; });
 
@@ -374,48 +371,54 @@ function setDafView(v) {
   renderDaf();
 }
 
-async function stepOnce() {
+async function addCycles(n) {
   if(!dafData){appendNotice('Load a Daf first.');return;}
-  setThinking('Debating...');
   try {
-    const r = await fetch(BASE+'/api/step',{method:'POST'});
+    const r = await fetch(BASE+'/api/add_cycles',{method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({n:n})});
     const d = await r.json();
-    if(d.exchange) appendExchange(d.exchange);
-    document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
-    if(currentTab==='log'||currentTab==='transcript') refreshTab();
+    updatePoolBadge(d.pool);
+    appendNotice('+'+n+' cycles added (pool: '+d.pool+')');
   } catch(e){ appendNotice('[Error: '+e.message+']'); }
-  setThinking('');
 }
 
-function toggleAuto() {
-  autoOn = !autoOn;
-  const btn = document.getElementById('auto-btn');
-  btn.textContent = autoOn ? 'Pause Auto' : 'Auto';
-  btn.classList.toggle('on', autoOn);
-  fetch(BASE+'/api/auto',{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({enabled:autoOn})});
-  if(autoOn) pollDebate();
+function updatePoolBadge(pool) {
+  const el = document.getElementById('pool-badge');
+  el.textContent = 'Pool: '+(pool||0);
+  el.style.borderColor = pool > 0 ? 'var(--gold)' : 'var(--border)';
+  el.style.color = pool > 0 ? 'var(--gold)' : 'var(--muted)';
 }
 
-function pollDebate() {
-  if(!autoOn) return;
-  fetch(BASE+'/api/debate_status').then(r=>r.json()).then(d=>{
-    if(d.last) syncExchanges(d.exchanges||[]);
-    document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
-  }).finally(()=>{ if(autoOn) setTimeout(pollDebate, 4000); });
+// ── Poller: pause while human message is in flight ──────────────────
+function startPoolPoller() {
+  pollerHandle = setInterval(async ()=>{
+    if(humanBusy) return;  // skip poll while sendHuman is in flight
+    try {
+      const r = await fetch(BASE+'/api/debate_status');
+      const d = await r.json();
+      if(d.exchanges) syncExchanges(d.exchanges);
+      document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
+      updatePoolBadge(d.pool);
+    } catch(e){}
+  }, 10000);
 }
+startPoolPoller();
 
+// ── Dedup: single source of truth ───────────────────────────────────
 let renderedTurns = new Set();
+
 function syncExchanges(exchanges) {
   for(const ex of exchanges) {
-    if(!renderedTurns.has(ex.turn)) {
-      appendExchange(ex);
-      renderedTurns.add(ex.turn);
-    }
+    appendExchange(ex);  // appendExchange handles the dedup guard
   }
 }
 
 function appendExchange(ex) {
+  // ── DEDUP GUARD: never render the same turn twice ──
+  if(renderedTurns.has(ex.turn)) return;
+  renderedTurns.add(ex.turn);
+
   const s = document.getElementById('debate-scroll');
   let side;
   if(ex.is_human) { side = 'human'; }
@@ -425,24 +428,21 @@ function appendExchange(ex) {
   const tag = ex.tag ? ' ['+ex.tag+']' : '';
   const div = document.createElement('div');
   div.className = 'exchange ' + side;
-  const label = ex.is_human ? esc(ex.rabbi) : esc(ex.rabbi);
+  const label = esc(ex.rabbi);
   const meta_extra = ex.responding_to_human ? ' - responding to student' : '';
   div.innerHTML = '<div class="ex-name '+side+'">'+label+'</div>' +
     '<div>'+esc(ex.text)+'</div>' +
     '<div class="ex-meta">Turn '+ex.turn+' - '+ts+meta_extra+'<span style="color:var(--gold);margin-left:6px">'+esc(tag)+'</span></div>';
   s.appendChild(div);
   s.scrollTop = s.scrollHeight;
-  renderedTurns.add(ex.turn);
-  // Highlight the daf segments this exchange used
   if(ex.seg_ranges && ex.seg_ranges.length > 0) {
     highlightDafLines(ex.seg_ranges);
   }
 }
 
-// ── Daf line highlighting with gentle fade ──────────────────────────────
+// ── Daf line highlighting with gentle fade ──────────────────────────
 let _hlTimeout = null;
 function highlightDafLines(segRanges) {
-  // 1. Demote current active highlights to "recent" (gentle glow)
   document.querySelectorAll('.daf-line.hl-active').forEach(el => {
     el.classList.remove('hl-active');
     el.classList.add('hl-recent');
@@ -450,7 +450,6 @@ function highlightDafLines(segRanges) {
   document.querySelectorAll('.seg-divider.seg-active').forEach(el => {
     el.classList.remove('seg-active');
   });
-  // 2. Fade out old "recent" highlights
   document.querySelectorAll('.daf-line.hl-fading').forEach(el => {
     el.classList.remove('hl-fading');
   });
@@ -459,18 +458,15 @@ function highlightDafLines(segRanges) {
     el.classList.add('hl-fading');
   });
 
-  // 3. Apply new highlights to lines AND segment dividers
   let firstHighlighted = null;
   for(const seg of segRanges) {
     const start = seg.line_start || 0;
     const end   = seg.line_end || start + 1;
-    // Highlight the segment divider
     const divider = document.querySelector('.seg-divider[data-seg-idx="'+seg.index+'"]');
     if(divider) {
       divider.classList.add('seg-active');
       if(!firstHighlighted) firstHighlighted = divider;
     }
-    // Highlight the text lines
     for(let i = start; i < end; i++) {
       const el = document.querySelector('.daf-line[data-line-idx="'+i+'"]');
       if(el) {
@@ -480,11 +476,9 @@ function highlightDafLines(segRanges) {
       }
     }
   }
-  // 4. Scroll the daf panel to show the first highlighted segment divider
   if(firstHighlighted) {
     firstHighlighted.scrollIntoView({behavior:'smooth', block:'start'});
   }
-  // 5. After 20 seconds, demote active to fading
   if(_hlTimeout) clearTimeout(_hlTimeout);
   _hlTimeout = setTimeout(() => {
     document.querySelectorAll('.daf-line.hl-active').forEach(el => {
@@ -508,50 +502,54 @@ function setThinking(msg) {
   document.getElementById('thinking').textContent = msg;
 }
 
+// ── Human message: optimistic render + dedup ────────────────────────
 async function sendHuman() {
   if(humanBusy) return;
   const input = document.getElementById('human-input');
   const text  = input.value.trim();
   if(!text) return;
   if(!dafData){appendNotice('Wait for the Daf to load...');return;}
-  humanBusy = true;
+
+  humanBusy = true;  // this also pauses the poller
   document.getElementById('human-send').disabled = true;
   input.value = '';
-  const nowTs = new Date().toISOString();
-  appendExchange({rabbi: DISPLAY_NAME, text: text, turn: '?', ts: nowTs, is_human: true});
+
+  // Show optimistic pending message (uses class, not id)
+  const s = document.getElementById('debate-scroll');
+  const pendingDiv = document.createElement('div');
+  pendingDiv.className = 'exchange human human-pending';
+  pendingDiv.innerHTML = '<div class="ex-name human">'+esc(DISPLAY_NAME)+'</div>' +
+    '<div>'+esc(text)+'</div>' +
+    '<div class="ex-meta">sending...</div>';
+  s.appendChild(pendingDiv);
+  s.scrollTop = s.scrollHeight;
+
   setThinking('The rabbis consider your words...');
-  const wasAuto = autoOn;
-  if(wasAuto) {
-    autoOn = false;
-    fetch(BASE+'/api/auto',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({enabled:false})});
-  }
   try {
     const r = await fetch(BASE+'/api/human_say',{method:'POST',
       headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
     const d = await r.json();
+
+    // Remove ALL pending placeholders
+    document.querySelectorAll('.human-pending').forEach(el => el.remove());
+
     if(d.error) { appendNotice(d.error); }
     else {
-      if(d.human && d.human.turn !== undefined) renderedTurns.add(d.human.turn);
-      if(d.hillel) appendExchange(d.hillel);
+      // appendExchange dedup guard handles any race with the poller
+      if(d.human)   appendExchange(d.human);
+      if(d.hillel)  appendExchange(d.hillel);
       if(d.shammai) appendExchange(d.shammai);
       document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
+      if(d.pool !== undefined) updatePoolBadge(d.pool);
     }
     if(currentTab==='log'||currentTab==='transcript') refreshTab();
-  } catch(e){ appendNotice('[Error: '+e.message+']'); }
-  setThinking('');
-  humanBusy = false;
-  document.getElementById('human-send').disabled = false;
-  if(wasAuto) {
-    autoOn = true;
-    document.getElementById('auto-btn').textContent = 'Pause Auto';
-    document.getElementById('auto-btn').classList.add('on');
-    fetch(BASE+'/api/auto',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({enabled:true})});
-    pollDebate();
+  } catch(e){
+    document.querySelectorAll('.human-pending').forEach(el => el.remove());
+    appendNotice('[Error: '+e.message+']');
   }
-  // No extra step() here — human_say already returned both rabbis' responses.
-  // Next step() comes from Auto mode or manual "Step" button.
+  setThinking('');
+  humanBusy = false;  // resume poller
+  document.getElementById('human-send').disabled = false;
 }
 
 function toggleKG() {
@@ -776,6 +774,7 @@ async function autoInit() {
       const toShow = status.exchanges.slice(-50);
       for(const ex of toShow) { appendExchange(ex); }
       document.getElementById('turn-lbl').textContent = 'Turn '+(status.turn||0);
+      updatePoolBadge(status.pool || 0);
       appendNotice('Session resumed - '+status.exchanges.length+' exchanges loaded.');
       if(currentTab==='log'||currentTab==='transcript') refreshTab();
       return;
@@ -783,20 +782,7 @@ async function autoInit() {
   } catch(e) { console.log('No existing debate, starting fresh:', e); }
   const loaded = await loadDaf();
   if(loaded) {
-    appendNotice('The Beit Midrash opens. Hillel and Shammai begin...');
-    setThinking('Opening debate...');
-    try {
-      let r = await fetch(BASE+'/api/step',{method:'POST'});
-      let d = await r.json();
-      if(d.error) { appendNotice('[Hillel error: '+d.error+']'); }
-      else if(d.exchange) appendExchange(d.exchange);
-      r = await fetch(BASE+'/api/step',{method:'POST'});
-      d = await r.json();
-      if(d.error) { appendNotice('[Shammai error: '+d.error+']'); }
-      else if(d.exchange) appendExchange(d.exchange);
-      document.getElementById('turn-lbl').textContent = 'Turn '+(d.turn||0);
-    } catch(e){ appendNotice('[Error starting debate: '+e.message+']'); }
-    setThinking('');
+    appendNotice('The Beit Midrash opens. The cycle pool will fuel the debate...');
     if(currentTab==='log'||currentTab==='transcript') refreshTab();
   }
 }

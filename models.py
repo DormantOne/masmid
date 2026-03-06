@@ -145,4 +145,11 @@ class Node:
             extra = f" — {usage}" if usage else ""
             return (f"{self.name}: {desc}{extra} "
                     f"[prof={c.get('proficiency', 0.5):.2f}]")
+        if self.type == "memory":
+            return c.get('summary', '')[:150]
+        if self.type == "encounter":
+            name = c.get('name', '?')
+            sessions = c.get('sessions', 0)
+            topics = ', '.join(c.get('topics', [])[-4:])
+            return f"Student {name}: {sessions} visits, topics: {topics}"
         return str(c)[:200]

@@ -31,7 +31,7 @@ DEPENDS ON:
   prompts.DEBATE_SYSTEM, prompts.HUMAN_RESPONSE_SYSTEM, prompts.DREAM_SYSTEM
   context_manager.assemble_debate_context, assemble_human_context
   daf_ingest.tag_exchange
-  knowledge_graph.KnowledgeGraph
+  knowledge_graph.KnowledgeGraph, NODE_TYPE_LIMITS
   log_system.LogSystem
 ===============================================================================
 """
@@ -54,13 +54,12 @@ class RabbiAgent:
         self.log  = logger
         soul      = kg.get_soul()
         self.name = soul.content["name"] if soul else kg.name
+        self.last_activated = []   # node names activated in last response
 
     def respond(self, daf_ref, segments, exchanges, opponent_last, opponent_name):
         """Generate a debate response using context-managed assembly.
 
         Returns: (reply_text, segment_ranges) tuple.
-            segment_ranges is a list of {index, title, line_start, line_end}
-            for the daf segments that were loaded into this response's context.
         """
         ctx = assemble_debate_context(
             kg=self.kg,
@@ -84,12 +83,14 @@ class RabbiAgent:
             daf_excerpt    = ctx["daf_excerpt"],
             drives         = ctx["drives"],
             kg_context     = ctx["kg_context"],
+            episodic       = ctx.get("episodic", ""),
             recent         = ctx["recent"],
             opponent       = ctx["opponent"],
             last_stmt      = ctx["last_stmt"],
             used_arguments = ctx["used_arguments"],
         )
         seg_ranges = ctx.get("_segment_ranges", [])
+        self.last_activated = ctx.get("_activated", [])
         try:
             reply = llm_chat(
                 messages=[{"role": "user", "content": "Respond now."}],
@@ -135,11 +136,13 @@ class RabbiAgent:
             daf_excerpt    = ctx["daf_excerpt"],
             drives         = ctx["drives"],
             kg_context     = ctx["kg_context"],
+            episodic       = ctx.get("episodic", ""),
             recent         = ctx["recent"],
             human_name     = ctx["human_name"],
             human_stmt     = ctx["human_stmt"],
         )
         seg_ranges = ctx.get("_segment_ranges", [])
+        self.last_activated = ctx.get("_activated", [])
         try:
             reply = llm_chat(
                 messages=[{"role": "user", "content": "Respond to the student now."}],
@@ -159,7 +162,7 @@ class RabbiAgent:
 
 
 # ==============================================================================
-#  DREAM AGENT  (unchanged except for updated project map)
+#  DREAM AGENT
 # ==============================================================================
 
 class DreamAgent:
@@ -204,6 +207,9 @@ class DreamAgent:
         self.kg.decay_salience()
         self.kg.buildup_drives()
 
+        # Consolidate before dreaming — merges duplicates, enforces limits
+        self.kg.consolidate()
+
         soul   = self.kg.get_soul()
         sample = self.kg.sample_nodes(5)
         edges  = [e.to_dict() for e in self.kg.edges
@@ -212,13 +218,15 @@ class DreamAgent:
         if not soul or not sample:
             return {}
 
+        # Include census so the LLM sees current counts vs limits
         payload = {
-            "soul":  soul.summary(),
-            "goals": [g.summary() for g in self.kg.get_by_type("goal")],
-            "nodes": [{"id": n.id,
-                       "brief": f"[{n.type}] {n.name} sal={n.salience:.2f}",
-                       "summary": n.summary()} for n in sample],
-            "edges": edges[:8],
+            "soul":   soul.summary(),
+            "census": self.kg.node_census(),
+            "goals":  [g.summary() for g in self.kg.get_by_type("goal")],
+            "nodes":  [{"id": n.id,
+                        "brief": f"[{n.type}] {n.name} sal={n.salience:.2f}",
+                        "summary": n.summary()} for n in sample],
+            "edges":  edges[:8],
         }
         try:
             raw = llm_chat(
@@ -250,11 +258,14 @@ class DreamAgent:
             "rabbi": self.name, "cycle": self.cycles,
             "actions": len(actions_done), "summary": summary[:120],
         })
-        return {"summary": summary, "observations": obs, "actions": actions_done}
+        return {"summary": summary, "observations": obs,
+                "actions": actions_done}
 
     def _exec(self, a):
         t = a.get("type", "")
         try:
+            if t == "merge":
+                return str(self.kg.do_merge(a["keep_id"], a["remove_id"]))
             if t == "reweight":
                 return str(self.kg.do_reweight(
                     a["edge_id"], a["channel"], a["new_value"]))
@@ -263,9 +274,17 @@ class DreamAgent:
             if t == "strengthen":
                 return str(self.kg.do_strengthen(a["node_id"]))
             if t == "spawn":
+                # Block spawn if type is already at its limit
+                ntype = a.get("node_type", "")
+                from knowledge_graph import NODE_TYPE_LIMITS
+                limit = NODE_TYPE_LIMITS.get(ntype, 999)
+                current = len(self.kg.get_by_type(ntype))
+                if current >= limit:
+                    return f"blocked: {ntype} at limit ({current}/{limit})"
                 n = self.kg.do_spawn(
-                    a["node_type"], a.get("content", {}),
-                    a.get("handles", {"surface": a.get("content", {}).get("name", "new")}))
+                    ntype, a.get("content", {}),
+                    a.get("handles", {"surface":
+                        a.get("content", {}).get("name", "new")}))
                 return f"spawned {n.id}"
             if t == "flag":
                 self.kg.do_flag(a["node_id"], a["message"])
@@ -279,4 +298,5 @@ class DreamAgent:
             "name": self.name, "cycles": self.cycles,
             "last_ran": self.last_ran, "running": self._running,
             "last_summary": self.last_summary[:120],
+            "census": self.kg.node_census(),
         }

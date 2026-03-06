@@ -29,6 +29,7 @@ DEPENDS ON:
 """
 
 import json
+from datetime import datetime
 from typing import Optional
 
 import numpy as np
@@ -81,7 +82,15 @@ class VectorStore:
         self._save()
 
     def search(self, query: str, top_k: int = None, exclude_types=None, kg=None):
-        """Cosine similarity search. Returns list of {node_id, handle, score}."""
+        """Cosine similarity search with salience and recency weighting.
+
+        Final score = cosine_sim × (0.6 + 0.4 × salience) × recency_bonus
+
+        salience: 0→1, so multiplier ranges from 0.6 (cold) to 1.0 (hot)
+        recency:  accessed in last hour → 1.15, last day → 1.05, else → 1.0
+
+        Returns list of {node_id, handle, score, cosine}.
+        """
         top_k = top_k or config.TOP_K
         if not self._store:
             return []
@@ -96,6 +105,7 @@ class VectorStore:
         qv /= qn
         qdim = len(qv)
 
+        now = datetime.now()
         results = []
         for key, emb in self._store.items():
             if ":" not in key:
@@ -103,18 +113,42 @@ class VectorStore:
             node_id, handle = key.split(":", 1)
             if node_id.startswith("edge_"):
                 continue
-            if exclude_types and kg:
-                nd = kg.get_node(node_id)
-                if nd and nd.type in exclude_types:
-                    continue
+
+            nd = kg.get_node(node_id) if kg else None
+            if exclude_types and nd and nd.type in exclude_types:
+                continue
+
             v = np.array(emb, dtype=np.float32)
             if len(v) != qdim:
                 continue
             vn = np.linalg.norm(v)
             if vn == 0:
                 continue
-            score = float(np.dot(qv, v / vn))
-            results.append({"node_id": node_id, "handle": handle, "score": score})
+
+            cosine = float(np.dot(qv, v / vn))
+
+            # Salience weighting: hot nodes score higher
+            salience = nd.salience if nd else 0.5
+            sal_mult = 0.6 + 0.4 * salience  # range: 0.6 → 1.0
+
+            # Recency bonus: recently accessed nodes get a small boost
+            recency_mult = 1.0
+            if nd and nd.last_accessed:
+                try:
+                    last = datetime.fromisoformat(nd.last_accessed)
+                    hours_ago = (now - last).total_seconds() / 3600
+                    if hours_ago < 1:
+                        recency_mult = 1.15
+                    elif hours_ago < 24:
+                        recency_mult = 1.05
+                except (ValueError, TypeError):
+                    pass
+
+            score = cosine * sal_mult * recency_mult
+            results.append({
+                "node_id": node_id, "handle": handle,
+                "score": score, "cosine": cosine,
+            })
 
         results.sort(key=lambda x: x["score"], reverse=True)
         return results[:top_k]

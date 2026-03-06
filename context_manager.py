@@ -53,6 +53,7 @@ DEPENDS ON:
 
 import re
 from daf_ingest import DafSegment, compress_exchanges, tag_exchange
+from episodic import get_episodic_context
 import config
 
 
@@ -253,6 +254,13 @@ def _compress_to_fit(
     if est <= limit:
         return ctx, passes_applied
 
+    # Pass 0: Drop episodic memories (cheapest to lose)
+    if ctx.get("episodic"):
+        ctx["episodic"] = ""
+        passes_applied.append("episodic:dropped")
+        if _measure() <= limit:
+            return ctx, passes_applied
+
     # Pass 1: Drop to 2 active segments
     if len(selected) > 2:
         selected = selected[:2]
@@ -383,6 +391,12 @@ def assemble_debate_context(
     else:
         used_args = ""
 
+    # 5.5. Episodic memories (past exchanges, student encounters)
+    ep_query = real_opponent_last
+    if selected:
+        ep_query += " " + " ".join(s.title for s in selected)
+    episodic_ctx = get_episodic_context(kg, ep_query, top_k=3)
+
     # 6. Assemble full context
     ctx = {
         "name":           soul.content["name"],
@@ -394,6 +408,7 @@ def assemble_debate_context(
         "daf_excerpt":    _format_active_segments(selected),
         "drives":         _format_drives(kg),
         "kg_context":     _format_kg_context(hits, kg),
+        "episodic":       episodic_ctx,
         "recent":         _format_compressed_history(compressed_tags, recent),
         "opponent":       opponent_name or "your colleague",
         "last_stmt":      real_opponent_last[:400] or "(Begin the debate.)",
@@ -457,6 +472,12 @@ def assemble_human_context(
         kg_query += " " + " ".join(s.title for s in selected)
     hits = kg.query(kg_query, top_k=top_k_kg)
 
+    # Episodic: especially valuable for human interactions — recognize the student
+    ep_query = human_text + " " + human_name
+    if selected:
+        ep_query += " " + " ".join(s.title for s in selected)
+    episodic_ctx = get_episodic_context(kg, ep_query, top_k=3)
+
     ctx = {
         "name":           soul.content["name"],
         "essence":        soul.content["essence"],
@@ -467,6 +488,7 @@ def assemble_human_context(
         "daf_excerpt":    _format_active_segments(selected),
         "drives":         _format_drives(kg),
         "kg_context":     _format_kg_context(hits, kg),
+        "episodic":       episodic_ctx,
         "recent":         _format_compressed_history(compressed_tags, recent),
         "human_name":     human_name,
         "human_stmt":     human_text,

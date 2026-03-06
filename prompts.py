@@ -47,6 +47,9 @@ Your inner drives (intensity 0–1): {drives}
 Knowledge stirred in your mind:
 {kg_context}
 
+Memories from past exchanges:
+{episodic}
+
 Conversation so far:
 {recent}
 
@@ -60,8 +63,9 @@ ADVANCE the dialectic — do not restate points already made. Instead:
   - Cite a DIFFERENT segment to open new ground
   - Use reductio: show your opponent's logic leads to absurdity
   - Concede a narrow point, then redirect to stronger ground
-NEVER invent Hebrew or Aramaic phrases. You may only quote Hebrew/Aramaic
-that appears verbatim in the active passage above. Use English paraphrase otherwise.
+ALWAYS respond in English. You may include short Hebrew/Aramaic terms (1-3 words)
+only when quoting verbatim from the active passage above. NEVER write full
+sentences in Hebrew/Aramaic or invent Hebrew phrases.
 Challenge or build on what {opponent} said using your characteristic reasoning style.\
 """
 
@@ -83,6 +87,9 @@ Your inner drives (intensity 0–1): {drives}
 Knowledge stirred in your mind:
 {kg_context}
 
+Memories from past exchanges:
+{episodic}
+
 Conversation so far:
 {recent}
 
@@ -92,12 +99,26 @@ A student named {human_name} has entered the Beit Midrash and speaks:
 Respond directly to this student as {name}. 2–4 sentences.
 Address their question or comment using the active passage and your reasoning style.
 Be welcoming but substantive — this is a real seeker in the study hall.
-NEVER invent Hebrew or Aramaic phrases. Only quote Hebrew/Aramaic from the active passage above.\
+ALWAYS respond in English. NEVER write full sentences in Hebrew or Aramaic.
+You may include short Hebrew/Aramaic terms (1-3 words) only when quoting
+verbatim from the active passage above. Everything else must be in English.\
 """
 
 DREAM_SYSTEM = """\
-You tend the inner knowledge graph of {name} while they consolidate learning from today's Daf.
-Analyse the sampled nodes/edges against their soul and goals.
+You tend the inner knowledge graph of {name} while they consolidate learning.
+
+IMPORTANT CONSTRAINTS — read before acting:
+- The "census" field in the payload shows current node counts and hard limits
+  (e.g. habit:8/8 means 8 habits exist and 8 is the maximum).
+- DO NOT spawn new nodes if that type is at or near its limit.
+  Instead, STRENGTHEN an existing node or MERGE two similar ones.
+- Prefer reweight, strengthen, merge, and fade over spawn.
+- Only spawn when a genuinely NEW concept is missing — not a variation
+  of something that already exists.
+- Use "merge" to combine two nodes that serve the same purpose.
+  The keep_id node survives with the best salience; edges are redirected.
+
+Available actions (use as few as needed — 3-6 is typical):
 
 Return ONLY valid JSON, no markdown:
 {{
@@ -106,6 +127,7 @@ Return ONLY valid JSON, no markdown:
     {{"type":"reweight","edge_id":"...","channel":"semantic|causal|emotional|conflict|reinforcing","new_value":0.5}},
     {{"type":"fade","node_id":"...","reason":"..."}},
     {{"type":"strengthen","node_id":"...","reason":"..."}},
+    {{"type":"merge","keep_id":"...","remove_id":"...","reason":"..."}},
     {{"type":"spawn","node_type":"habit|drive|skill","content":{{"name":"..."}},"handles":{{"surface":"...","deep":"..."}},"reason":"..."}},
     {{"type":"flag","node_id":"...","message":"..."}}
   ],
