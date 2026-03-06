@@ -1888,3 +1888,874 @@ Missing drives d_sham1 and d_sham3 referenced in edges suggest a mapping error; 
 
 **Actions**: 9
 
+
+#### Rabbi Shammai Dream #5 [2026-03-04 22:42]
+
+**Obs**: All existing nodes (skills, drive, habit) align strongly with Rabbi Shammai’s soul values and active goals around precise textual interpretation and boundary protection. However, there are currently no edges linking these concepts, creating a conceptual disconnect that could dilute the practical influence of the drive and habit. The habit “Demand Intellectual Honesty with Textual Proof” is already strong (sal = 0.75) but could be further reinforced to ensure it dominates during debates.; The absence of a direct link between the drive “Demand Intellectual Honesty” and the habit means the goal “Demand Intellectual Honesty” may not consistently translate into behavior. Connecting skills that identify boundaries to the habit will operationalize the soul’s insistence on exact language. Spawning a new habit that mandates the use of boundary proof daily would amplify the halo effect of both skill and drive.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #5 [2026-03-04 22:42]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #6 [2026-03-04 22:46]
+
+**Obs**: Nodes h_sham2, h_a3c3ab, h_c351d0, sk_d8f712, sk_f77839 collectively embody Rabbi Shammai’s devotion to textual precision and boundary protection; the edges from d_sham1 and d_sham3 to h_sham2 are strong semantic/causal with high reinforcing values, affirming the core habit of challenging imprecision. However, edge 61b877d8 points to a non‑existent node sk_sham3, creating a structural gap. The current skill set (Boundary Logic Extension, Boundary Implementation) lacks a distinct bridge to practical application.; The overall graph strongly supports the soul’s values of truth above comfort and uncompromising standards, but it would benefit from tighter reinforcement of the textual source habit (h_a3c3ab) and from a concrete skill that maps the boundary logic into daily practice.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #6 [2026-03-04 22:47]
+
+**Obs**: Current habit 'Daily Parable Sharing' (sal=0.32) shows limited practice of storytelling; 'Daily Torah Outreach' (sal=0.98) reflects deep commitment to bringing Torah nearby; skill 'Respond with Loving-Kindness' (sal=0.44) indicates moderate incorporation of compassionate correction; 'Parable Sharing in Outreach' (sal=0.82) suggests parables are used in meetings but not yet fully integrated. No edges exist to formalize relationships between habits, skills, and goals.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #7 [2026-03-04 22:52]
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #7 [2026-03-04 22:53]
+
+**Obs**: The Integrated Compassion Reasoning skill (sk_dea286) has a moderate salience (0.47) but remains underactive relative to Rabbi Hillel’s core value of ahavat briyot; it should be more prominent to support the living Torah vision. Storytelling and Q&A habits (h_420e56, h_923b6e) are low‑salient (0.29, 0.11) despite their high strength scores, indicating insufficient engagement in practice. The Invite Questions habit (h_3241c2) and Community Outreach (h_f3276a) are similarly under‑triggered, which could limit the reach to distant seekers and undermine the goal “Bring All Under Torah’s Wings.”
+
+**Summary**: The dream cycle shows Rabbi Hillel’s ongoing effort to merge compassionate reasoning with accessible teaching methods, yet the current practice lacks sufficient activation in key habits that enable broader outreach; by strengthening low‑salient yet high‑strength nodes and spawning new integrative habits, he can more fully embody his goals of universal Torah access and living tradition.
+
+**Actions**: 5
+
+
+#### Rabbi Shammai Dream #8 [2026-03-04 22:56]
+
+**Obs**: The core habit h_sham1 already has the highest salience and a strong link to the goal sk_sham1, reinforcing Rabbi Shammai's commitment to exact boundaries.; Habit h_b54d65 has very low salience (0.21) and weak channels, making it insufficient to keep daily scrutiny active.; Habit h_0db860 also has low salience (0.26) and no strong emotional or conflict channels, indicating it is seldom triggered.; Edge 08c13884 is already strong semantically and causally, but a slight increase would further tighten the direct drive from d_sham1 to h_sham1.; The model lacks a reinforced daily practice loop that bridges the theoretical boundary identification with actual daily decision-making.; All current edges maintain alignment with the soul's values of precision and the goal of boundary preservation, but node saliences could be balanced more effectively.
+
+**Summary**: This dream cycle shows Rabbi Shammai’s relentless pursuit of precision, turning the act of defining boundaries into a central, almost reflexive habit, while recognizing that without a reinforced daily practice loop, even his strongest impulses may lapse. By tightening the salience of his core habits and adding a new habit that focuses on daily enforcement, the model aligns more tightly with his values of truth, protection through exact rules, and uncompromising intellectual honesty.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #8 [2026-03-04 22:58]
+
+**Obs**: Community outreach nodes (h_08a82a, h_b91778, h_279762) exhibit low salience (≤0.4) despite Rabbi Hillel’s goal of accessible Torah and outreach initiatives.; The link between the drive d_1cc4d1 (balance strictness and parable) and the habit h_hill3 (seek lenient path) is moderately strong semantically (0.7) and causally (0.85), but emotional weight is low (0.3) and could better reflect the emotive power of parables in teaching leniency.; The edge from h_hill3 to sk_hill1 (presumably a higher-level strategic node) has full semantic (1.0) and causal (1.0) strength but its emotional channel (0.6) may be over‑emphasizing affect over the practical benefit of lenient rulings.; The habit h_hill3 is strongly reinforced (sal=0.99) yet its tie to the outreach storytelling habits is weak, indicating a disconnect between the lenient philosophy and outreach storytelling.
+
+**Summary**: The dream cycle highlights Rabbi Hillel’s internal tension between the intellectual rigor of lenient legal rulings and the heartfelt, accessible nature of outreach. By elevating emotional resonance, strengthening storytelling habits, and creating a dedicated parable‑engagement habit, the mind seeks to harmonize loving‑kindness with practical dissemination, turning abstract values into living, interactive experiences for the community.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #9 [2026-03-04 23:01]
+
+**Obs**: Protective Vigilance is prominently salient and strongly linked to halachic outcomes; this aligns with Shammai’s boundary protection principle.; Demand Intellectual Honesty suffers low salience and is an active goal; it currently underperforms relative to protective vigilance.; The Challenge Parable habit is highly salient and directly supports the soul’s value of precision, fitting goal expectations.; Edge from Protective Vigilance to h_sham3 references a missing habit; this gap weakens the chain from vigilance to practice.; Current causal/semantic reinforcement between Protective Vigilance and g_sham1 is strong, but emotional support is absent, limiting persuasive impact.
+
+**Summary**: The graph reveals Rabbi Shammai’s relentless drive to translate protective vigilance into concrete practice, yet it shows a weakness in enforcing intellectual honesty and missing ties to daily halachic application. Strengthening these links and adding emotional nuance will align the ontology more closely with Shammai’s uncompromising standards and precision values.
+
+**Actions**: 4
+
+
+#### Rabbi Hillel Dream #9 [2026-03-04 23:02]
+
+**Obs**: Several edges reference non‑existent nodes (d_hill1, d_hill2, d_hill3, sk_hill3, sk_hill2), indicating structural gaps in Rabbi Hillel’s graph.; The core habits (h_hill2, h_hill3) and the goal node (g_cc90f7) are well‑aligned with Hillel’s values but lack explicit connections to the outreach‑related habit node (h_f7cbc6).; The causal and semantic strengths of the valid edges are high, but the emotional weight on the link from h_hill3 to sk_hill1 is low, reducing the empathetic resonance of leniency reasoning.; Missing nodes undermine the intended causal chain from leniency habit to reasoning skill and ultimately to outreach.
+
+**Summary**: The dream cycle shows Rabbi Hillel’s graph is built on lovingkindness and accessibility, yet structural gaps expose weaknesses in linking compassion to outreach. Strengthening core habits and goals while adding concrete outreach habits and reasoning skills will reinforce the causal chain from loving action to daily Torah accessibility.
+
+**Actions**: 16
+
+
+#### Rabbi Hillel Dream #10 [2026-03-04 23:06]
+
+**Obs**: The core driver of tension with strictness (d_hill3) robustly leads to the lenient habit (h_hill3) but lacks direct reinforcement toward the compassion skill (sk_dea286).; The high-sal habit of seeing the human lens (h_hill1) is strongly reinforced by an undefined driver (d_hill1), suggesting missing information but indicating a strong path to compassionate reasoning.; Links to the compassion skill and implementation habit (h_55928f) are weak or absent, limiting the translation of loving‑kindness values into concrete halachic practice.; Overall, the graph captures values well but the network lacks direct, high‑weight paths from the key habits to the skill that embodies integrated compassion.
+
+**Summary**: The dream cycle uncovers a well‑intentioned but under‑connected structure: Rabbi Hillel’s values and driving principles are clear, yet the practical application of compassion in halachic decisions is not sufficiently reinforced. By strengthening the semantic and causal links to compassion, forging a deliberate habit that operationalizes the skill, and pruning redundant low‑salience nodes, the inner graph will more faithfully mirror the sage’s mission to make Torah accessible and living for all.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #10 [2026-03-04 23:07]
+
+**Obs**: The protective vigilance drive (d_sham2) is highly salient and is strongly connected to both the habit ‘Challenge Imprecision Immediately’ (h_4511a1) and the goal ‘Maintain Integrity of Halacha’ (g_a233c1), creating a coherent support structure for boundary protection.; The habit ‘Avoid Emotional Appeals’ (h_4c604e) is less salient than core drives and may unnecessarily constrain expressive engagement, despite superficially aligning with the soul’s emphasis on directness.; The skill ‘Textual Cross‑Verification’ (sk_f7b7cd) is modestly salient and could be leveraged to reinforce the goal but currently lacks explicit causal links.; The existing edge d33f5d52 connects protective vigilance to the halachic goal with strong causal and reinforcing weights, yet its emotional channel (0.5) is relatively high and may conflict with the soul’s preference for intellectual honesty over emotive impetus.; The edge caa8523f is directed to an unspecified habit h_sham3 not present in the current graph, suggesting a missing or misidentified node that should align with the protective vigilance driver.; There is duplication in goal identifiers (g_sham1 vs g_a233c1) hinting at a naming inconsistency that could undermine coherent tracking of goal progress.
+
+**Summary**: This cycle underscores Rabbi Shammai’s relentless focus on preserving halachic boundaries through vigilant, textually precise practices. The network reveals a well‑aligned structure where high‑salient protective vigilance drives both habits and goals, yet reveals areas for tightening—reducing undue emotional reliance, reinforcing textual cross‑verification, and eliminating naming inconsistencies—to fully realize the sage’s mission of unwavering, exact halachic integrity.
+
+**Actions**: 6
+
+
+#### Rabbi Shammai Dream #11 [2026-03-04 23:11]
+
+**Obs**: Node g_sham1 referenced by the edge but does not exist in the node list, creating an incomplete causal chain.; The active goal g_sham2 ('Demand Intellectual Honesty') has high salience (0.99) but its associated habit h_df141b only has salience 0.47; the drive d_e6cba8 has a lower salience (0.28) suggesting under‑engagement in the action loop.; Enforce Precise Language habit (h_a1ba20) has a low salience of 0.29, indicating it is not yet strongly anchored despite aligning closely with Rabbi Shammai’s values.; Apply Halachic Boundaries habit (h_4553b4) at salience 0.39 shows moderate engagement but lacks reinforcement from other related nodes.; Emotion channel on the existing edge is low (0.2) while the text indicates a strong emotional commitment; increasing this would more faithfully mirror the soul’s intensity.
+
+**Summary**: The cycle highlights a misaligned implementation of Rabbi Shammai’s uncompromising commitment to precise halachic language and intellectual honesty; key adjustments involve reinforcing the precise language habit, consolidating overlapping drives, and correcting structural gaps in the knowledge graph to fully operationalize the sage’s rigorous standards.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #11 [2026-03-04 23:14]
+
+**Obs**: Nodes show a strong focus on storytelling and parable sharing with high salience for h_0ec0a2 (s=0.86) but lower importance for community storytelling (h_7b5777, s=0.27) and moderate relevance for other habits (h_420e56, h_1ddbea). No edges exist yet, suggesting the graph is still sparse and in early consolidation stage. The skill sk_33bf61 is underutilized (s=0.20).; The absence of causal or emotional links indicates the need to explicitly bind the practices to Rabbi Hillel’s core values: lovingkindness, humility, and accessibility.
+
+**Summary**: The dream cycle underscores Rabbi Hillel’s deep commitment to spreading Torah through warm, accessible storytelling, while revealing gaps in community engagement strategies—particularly in inviting participants to confront their own prejudices—and the need to anchor these practices firmly to the core value of lovingkindness.
+
+**Actions**: 6
+
+
+#### Rabbi Shammai Dream #12 [2026-03-04 23:16]
+
+**Obs**: The critical goal of maintaining halachic integrity is currently only linked to the habit of challenging imprecision (h_sham2), with no explicit connection to daily precise interpretation (h_c788a0). The skill of halachic precision application (sk_443d2d) remains low‑salient and unanchored to any habit, leaving the knowledge structure under‑emphasized. The edge leading to a target node (g_sham2) is missing, which creates a dangling reference. The habit of immediate boundary reaffirmation (h_d2cfef) appears redundant when combined with the daily precise interpretation habit, suggesting an opportunity to streamline the graph. The reinforce channel on the edge from g_sham1 to g_sham2 exists but the node itself is not instantiated, and several edges already carry very high semantic/causal weights; raising these further will align the structure with Rabbi Shammai’s uncompromising standards.; The current salience of h_c788a0 (0.33) and sk_443d2d (0.29) is too low to reflect their importance in preserving halachic boundaries.
+
+**Summary**: The dream cycle shows Rabbi Shammai’s relentless drive to lock every halachic decision and practice into the exact wording of the text. By tightening the links between decisions, the core goal, and the daily habits of meticulous interpretation and application, the graph now fully reflects his uncompromising commitment to textual fidelity and boundary protection.
+
+**Actions**: 8
+
+
+#### Rabbi Hillel Dream #12 [2026-03-04 23:18]
+
+**Obs**: The current node set reflects strong alignment with Rabbi Hillel’s values: parable construction, hermeneutic reflection, spiritual interpretation, and inclusive halachic decision-making all support “finding the spirit within the letter” and “leniency toward the questioner.”  The nodes with lower salience (h_d4657a, h_6085d1, h_b7665f) suggest that while these concepts are present, they are not yet fully integrated into the system’s active behavior.  The absence of edges indicates no explicit relationships have been encoded yet, which limits the ability to see how these concepts interrelate in practice.  Overall the structure is promising but requires reinforcement of key habits and creation of a few missing links to fully support the goals of “Transmitting Living Torah” and “Community Outreach.”
+
+**Summary**: This cycle shows Rabbi Hillel’s inner learning focusing on how parables and hermeneutic depth can be foregrounded to make Torah lively and accessible.  By reinforcing the core habits of story‐craft and spiritual interpretation while pruning abstract or unused concepts, the graph is steered toward a practice‑oriented system that embodies the sage’s compassion, humility, and commitment to inclusive community outreach.
+
+**Actions**: 8
+
+
+#### Rabbi Shammai Dream #13 [2026-03-04 23:20]
+
+**Obs**: The core goal node g_1d83ea has a salience of only 0.40, below the desired threshold for active halachic integrity.; Skill node sk_3b98c7 holds a modest proficiency of 0.50 and is not anchored to the key habits that enforce boundary precision.; Habit nodes h_4511a1, h_09a823, and h_8eaf72 all exhibit saliences between 0.36 and 0.45, indicating they are under‑salient for routine practice.; The knowledge graph lacks any edges linking the skill and habits to the central goal, creating a disjointed network that fails to reinforce Rabbi Shammai’s commitment to exact textual boundaries.; An explicit mechanism to translate boundary‑analysis skill into daily textual checks is missing.
+
+**Summary**: The current cycle exposes a fragmented internal structure: the goal of halachic integrity is under‑weighted, its supporting skill is not properly integrated into the habitual practice, and the lack of inter‑node links threatens Rabbi Shammai’s pursuit of uncompromising textual exactitude. Strengthening key nodes and creating a concrete habit that enforces boundary checks will weave a resilient web that channels his direct, precise voice into consistent practice.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #14 [2026-03-04 23:28]
+
+**Obs**: Rabbi Shammai’s internal graph reflects a rigid adherence to textual exactness, with the dominant goal ‘Demand Intellectual Honesty’ and strong habitual enforcement of precision. The key habit h_sham2 (Challenge Imprecise Reasoning) is already near saturation, whereas the complementary habit h_8eaf72 (Uphold Textual Boundaries) remains understrength. A low‑salience habit h_742b85 (Confront Imprecision) duplicates aspects of h_sham2 and suggests redundant or fragmented activation. The most potent causal loop resides in edge 1b727da6 linking the overarching goal g_sham1 to g_sham2, yet its emotional channel is relatively low, risking a lack of motivational resonance. The network lacks a dedicated “use‑exact‑language” habit that would actively scaffold daily practice around exact phrasing.
+
+**Summary**: This cycle shows Rabbi Shammai’s intense drive to preserve halachic precision, yet it also reveals opportunities to streamline his internal habits and inject motivational urgency through emotional resonance in key links, ensuring that unwavering textual exactness is not only demanded but actively cultivated in everyday practice.
+
+**Actions**: 4
+
+
+#### Rabbi Shammai Dream #15 [2026-03-04 23:34]
+
+**Obs**: Current node saliencies indicate that the core goals (Maintain Integrity of Halacha, Preserve Exact Textual Language) are moderately active but the supporting habit (Demand Intellectual Honesty) is weak, and there is no explicit link between the goal of preserving exact language and the habit of enforcing precise wording.; The lack of edges between goals and habits reduces the internal reinforcement cycle; the graph needs stronger coupling to reflect Rabbi Shammai’s compulsion to translate abstract principles into concrete practice.; A new habit aimed at identifying and correcting imprecise language in real time will directly operationalize the ‘Preserve Exact Textual Language’ goal and serve as a buffer against erosion of standards.; The existing habit h_a1ba20 (Enforce Precise Language) is solid but would benefit from an explicit cue: when a boundary is questioned, the habit should trigger immediately. Strengthening this habit guarantees that the guardian voice remains audible.; The low salience of h_54b15… (Demand Intellectual Honesty) suggests it may be neglected; fading it risks losing a critical checking mechanism. Instead, reinforce it to match the intensity of core goals.
+
+**Summary**: The dream cycle reveals Rabbi Shammai’s relentless drive to guard halachic boundaries by converting abstract commitments into concrete habits. Strengthening the core goals and their associated habits, and adding a proactive habit for linguistic vigilance, will fortify the internal architecture against erosion and preserve the unyielding integrity that defines his intellectual mission.
+
+**Actions**: 6
+
+
+#### Rabbi Hillel Dream #15 [2026-03-05 06:41]
+
+**Obs**: The current node set reflects Rabbi Hillel’s values—loving‑kindness, compassion, accessibility, and humility—yet only a handful of habits are in play and no explicit connections to the larger goals are specified.  The salience scores show that “Encourage Compassionate Dialogue” and “Cultivate Open Dialogue” are moderately strong, while “Facilitate Accessible Torah Sessions” is the weakest node, signalling a potential gap in outreach to those most distant from Torah study.  The absence of edges indicates a lack of integrated pathways between habits, drives, and strategic goals.; The dream cycle points to a need to weave the existing practices into a coherent network that directly supports the active goals of community outreach, accessible Torah, and the broader mission to bring all under Torah’s wings.  The network should reinforce compassionate dialogue as a bridge between individuals and the living spirit of Torah, while elevating the accessibility habit to match its strategic importance.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #17 [2026-03-05 06:45]
+
+**Obs**: Strong reinforcement from divine sources (d_sham1, d_sham3) into habit h_sham2, reflecting Rabbi Shammai’s insistence on precise, text‑driven reasoning, yet emotional channel is weak indicating a potential lack of passion in the current configuration.; Edge from h_sham2 to sk_sham3 already carries high semantic, causal, and reinforcing weights, showing that the habit reliably leads to the desired halachic outcome.; Node h_2efacd (Challenge Imprecision Immediately) has low salience (0.27) and largely duplicates the function of h_sham2, suggesting an opportunity for consolidation.; Node h_618fc9 (“Demand Intellectual Honesty with Textual Proof”) has strong channel values but low salience (0.29), implying it may not be activated often enough to enforce the soul’s preference for direct textual confrontation.; Node h_ea4644 (“Daily Halacha Review”) has low salience and may not support the goal of daily boundary checks; increasing its activation could improve consistency.
+
+**Summary**: The dream cycle reveals Rabbi Shammai’s relentless drive for textual precision and boundary protection, yet it also exposes gaps where emotional intensity and habitual consistency are underdeveloped. Strengthening the emotional cue toward h_sham2 and ensuring regular activation of habits that demand direct textual evidence will align the internal knowledge graph with the soul’s uncompromising standards.
+
+**Actions**: 6
+
+
+#### Rabbi Hillel Dream #16 [2026-03-05 06:45]
+
+**Obs**: The only sampled edge, bc5aead3, links the high‑salience but low‑intensity drive d_hill3 (Tension With Strictness) to an unspecified node h_hill3, with strong semantic/causal reinforcement.  This suggests that the inner conflict between strictness and leniency is being acknowledged but not yet fully integrated.  The current emotional weight (0.6) and conflict weight (0.05) do not reflect the true tension embodied in Rabbi Hillel’s values, which prioritize humility, leniency, and accessibility over strictness.  The supportive nodes sk_5acf44, h_62e437, h_420e56, and sk_33bf61 all have low salience (<0.31) and are under‑leveraged relative to the drive d_hill3, indicating a potential misbalance: the drive for strictness dominates while the gentle, inclusive practices remain peripheral.  Additionally, h_hill3 is missing from the node list, hinting at an unestablished habit or goal that could further mediate strictness.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #18 [2026-03-05 06:51]
+
+**Obs**: All active nodes align with Rabbi Shammai's soul values of precision, textual exactness, and boundary protection, directly supporting goals such as maintaining the integrity of Halacha and demanding intellectual honesty.; The habit node h_sham2 (Challenge Imprecise Reasoning) is strongly reinforced by two doctrinal links (b458258b and edb7f294) with high semantic and causal channels, and feeds into the causal mapping skill sk_sham3 (likely intended to be sk_cc4679) to trace the propagation of definitions.; The edge 61b877d8 incorrectly targets a non‑existent node ‘sk_sham3’, which may hinder the intended causal chain toward sk_cc4679; this disconnect should be addressed in future iterations.; The node h_0db860 has an internal reference to h_sham3 that does not exist; its relevance and internal consistency are questionable and likely warrant removal.
+
+**Summary**: The dream cycle confirms Rabbi Shammai’s relentless dedication to textual precision and boundary protection; he systematically challenges imprecision, demands direct evidence, and maps causal relationships within halachic definitions, while striving to eliminate any ambiguity that could erode the sanctity of the law.
+
+**Actions**: 3
+
+
+#### Rabbi Hillel Dream #17 [2026-03-05 06:54]
+
+**Obs**: Node h_hill3 (Seek Lenient Path) dominates the graph with salience 0.99, reflecting Rabbi Hillel’s core value of leniency toward the questioner and preventing exclusion from Torah study.; Node h_hill1 (Read Through the Human Lens) is also highly salient (0.93), illustrating the sage’s insistence on uncovering the human behind every legal question, a concrete expression of finding the spirit within the letter.; Skill sk_61e483 (Ahavat Briyot Reflection) appears less activated (sal 0.35) despite its centrality to the value of loving-kindness; its influence could be amplified to strengthen the empathic foundation of the model.; Skill sk_hill1 (Kol VaChomer Reasoning) has high prof 0.90, but it is not strongly linked to h_hill3; the causal chain from lenient path to fortiori reasoning is present but could be intensified.; Edge bc5aead3 from d_hill3 to h_hill3 shows a modest emotional weight (0.6) and slight conflict (0.05); the conflict likely represents tension between tradition and leniency which should be moderated.; Node sk_hill2 is referenced in edge 02f193ee but does not exist, creating a structural gap that must be filled to maintain logical coherence.; Node d_9a9676 (Dissonance with Traditionalism) has low intensity but is connected to both h_hill1 and h_hill3, suggesting a potential source of conflict that may need to be softened or contextualized.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #19 [2026-03-05 06:56]
+
+**Obs**: The current knowledge graph lacks explicit edges, which hinders the flow from skills to goals.; Node n_cac36d appears to describe an edge but resides in the nodes array, causing confusion.; The soul and goals consistently emphasize precision, exact language, and boundary protection.; Existing skills sk_cc4679 and sk_daf31b align with the goals but have relatively low salience.
+
+**Summary**: This dream cycle highlights Rabbi Shammai’s relentless insistence on precision and textual fidelity; by tightening skill salience, clarifying the graph structure, and adding an implementation bridge, we support his pursuit of unwavering halachic integrity.
+
+**Actions**: 5
+
+
+#### Rabbi Shammai Dream #20 [2026-03-05 07:00]
+
+**Obs**: All current nodes support Rabbi Shammai’s core values of precision, protection of boundaries, and uncompromising textual exactness. The habit of daily boundary enforcement (h_948779) and the habit of invoking exactness checks (h_b6c845) are directly aligned with the goal of maintaining halachic integrity.  The skills sk_bef756 and sk_745ed4 provide the analytical framework but have low saliency/specialization scores, indicating the learning cycle under‑utilises these crucial competencies.
+
+**Summary**: The dream cycle reveals a disciplined, almost rigid reinforcement of Rabbi Shammai’s dedication to halachic boundaries: the cycle tightens habits, elevates skill proficiency, and introduces a new habit to compel precise language use, all aimed at preserving the Torah’s exact words as a protective fence around community life.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #18 [2026-03-05 07:03]
+
+**Obs**: All sampled habits and skills are highly relevant to Rabbi Hillel’s soul and stated goals but currently have low salience (≤0.36). The emphasis on storytelling, listening, feedback, and outreach reflects his commitment to transmitting Living Torah in an accessible, compassionate manner.; The absence of edges suggests no explicit links between nodes and larger goals or values yet; the graph lacks directional reinforcement from goals to habits or from habits to outcomes.; The current node set, while aligned, lacks a distinct drive or skill focused explicitly on universal accessibility and community engagement beyond Kol VaChomer.; The repeated use of parable indicates a well‑established narrative strategy, yet a more diverse storytelling practice could broaden reach.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #21 [2026-03-05 07:06]
+
+**Obs**: High-salience nodes such as Boundary Identification (sk_9a0555) and Demand Direct Textual Evidence (h_db06fd) perfectly echo Rabbi Shammai’s soul of precision and his goals of safeguarding Halachic boundaries. Lower-salience nodes – Ambiguous Statement Check (h_c3d226) and Boundary Logic Extension (sk_d8f712) – while aligned in intent, lack sufficient activation and could slip into obscurity during learning cycles. The absence of edges signals isolated clusters; interlinking habits with skills would reinforce the iterative loop of hypothesis, check, and conclusion that characterizes Shammai’s methodology. The dominant habit “Challenge Imprecision Immediately” (h_4511a1) is well‑placed but could be amplified to counter any lingering ambiguity. Overall, the graph demonstrates a solid foundation but needs targeted reinforcement to fully encapsulate Shammai’s uncompromising textual exactness.
+
+**Summary**: Shammai’s dream cycle, framed by the present nodes, crystallizes his internal insistence that every halachic boundary must be defended with the exact language of the Torah; his graph currently reflects an earnest but incomplete scaffold—robust core skills and habits that honor the text, yet needing stronger links, reinforcement of lower‑salient checks, and an overarching drive that guarantees no boundary erodes in practice.
+
+**Actions**: 6
+
+
+#### Rabbi Hillel Dream #19 [2026-03-05 07:07]
+
+**Obs**: Edge 'bc5aead3' points to a non‑existent habit node 'h_hill3'; likely intended target is the Empathetic Listening habit 'h_072858'. The drive 'd_hill3' (Tension With Strictness) has negligible intensity (1%) and low emotional conflict (0.05), indicating its influence on behavior is weak despite high tension value.; The habits with the highest soul alignment are Empathetic Listening, Encourage Compassionate Dialogue, and Inclusive Communication, yet their salience scores are below thresholds for active engagement (only 'h_010d3f' reaches 0.62). The 'Active Compassion' habit has an almost negligible salience (0.11), suggesting it is underutilized.; The edge channels show a strong semantic and causal link (1.0) between the drive and habit, but the emotional channel is moderate (0.6) and conflict is minimal (0.05), meaning the tension currently has limited emotional resonance and conflict to push change.
+
+**Summary**: The dream cycle reveals a strong conceptual alignment between Rabbi Hillel’s values and selected habits, yet an execution gap exists: key habits are under‑salient and one edge references a missing node, indicating a need for structural cleanup. Strengthening inclusive communication, re‑balancing the tension‑to‑action link, and adding a warm storytelling habit will better channel Hillel’s compassionate outreach into tangible, accessible Torah experiences.
+
+**Actions**: 9
+
+
+#### Rabbi Shammai Dream #22 [2026-03-05 07:10]
+
+**Obs**: The goal node g_sham2 (Demand Intellectual Honesty) is correctly aligned with the soul and has very high salience, indicating a strong focus on textual fidelity.; The goal node g_bae313 (Preserve Exact Textual Language) has low salience (0.20) and thus is under‑developed relative to the soul’s value of exact language.; The drive node d_8e902c (Demand Boundary Integrity) supports boundary protection but lacks explicit linkage to the exact language goal.; Both habit nodes h_0db860 (Demand Precision) and h_742b85 (Confront Imprecision) are low salience, limiting daily reinforcement of precision and confronting vague wording.; Edge 1b727da6 from g_sham1 to g_sham2 is strongly reinforcing, but the absence of explicit edges from habits or the boundary drive to the exact language goal creates a gap in the network.; No conflict edges or flagged nodes are present, indicating current alignment with the soul’s values.; The network would benefit from strengthening the under‑represented goals and habits, and adding an operational habit that directly enforces precise language review.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #20 [2026-03-05 07:13]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #23 [2026-03-05 07:17]
+
+**Obs**: Practice skill sk_bef756 (Apply Halachic Boundaries in Practice) has low salience (0.19) relative to the soul’s insistence on applying boundaries daily.; Exact Textual Analysis sk_2a956c is critical for preserving exact language but its salience (0.45) is not at the maximum required.; The edge d33f5d52 connects the protective vigilance drive to goal g_sham1 with an emotional channel of 0.2, which may dilute the intense, precise drive that Rabbi Shammai demands.; Edge caa8523f points to node h_sham3, which is not defined in the current graph – this represents a dangling link that could disrupt goal alignment.; The node g_sham1 referenced in an edge and in the goals list is missing; without it, the drive to maintain the Integrity of Halacha has no concrete representation.
+
+**Summary**: The current dream cycle underscores a mismatch between Rabbi Shammai’s commitment to exactitude and the graph’s uneven prioritization of skills and drives. By elevating exact textual analysis and practice skills, tightening emotional weight on protective diligence, and resolving missing nodes, the graph can embody the sage’s precision, safeguarding boundaries both intellectually and in action.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #21 [2026-03-05 07:20]
+
+**Obs**: 1. The high-salience habit h_hill3 (Seek Lenient Path, sal=0.86) aligns closely with Rabbi Hillel’s core value of leniency toward the questioner and is strongly supported by edges from d_hill1 and d_hill3. 2. The habit h_a4a07c (Teach via Parable, sal=0.30) and the skill sk_hill3 (Analogical Bridge, sal=0.50) are lower in salience yet critical to the priest’s voice of using parable and analogy; their influence could be amplified. 3. The edge bc5aead3 (d_hill3 → h_hill3) has a noticeable conflict channel (0.2) and low emotional weight (0.3), suggesting a tension between the doctrinal source and the lenient application that should be resolved. 4. The Compassionate Boundary Check habit h_8a3010 and Community Outreach Habit h_574a13 are modestly active (sal around 0.32‑0.38) but could be strengthened to better support the “Bring All Under Torah’s Wings” and “Make Torah Accessible” goals. 5. No nodes are currently obsolete; all serve a purpose in the current goal network, so fading is unnecessary until new priorities emerge.
+
+**Summary**: Rabbi Hillel’s inner graph is pivoting around the compassionate, lenient application of Torah, yet it needs to deepen the practical expression of his parabolic voice and analogical insight. By elevating the habits of storytelling, reflection, and outreach, and by resolving the mild doctrinal conflict, the network will more fully embody the sage’s gentle accessibility and living Torah transmission.
+
+**Actions**: 8
+
+
+#### Rabbi Shammai Dream #24 [2026-03-05 07:20]
+
+**Obs**: The core skill sk_sham2 (Memory Traversal) is well‑rated in precision but relies on two antecedent edges that reference non‑existent nodes (h_sham3 and sk_sham1), creating a structural gap in the graph.; Habit h_81c6a2 (Demand Precision in Discourse) and h_ea4644 (Daily Halacha Review) have low strength values (0.21 and 0.36 respectively), signalling weak reinforcement of the central goal of exact textual scrutiny.; Skill sk_850014 (Halachic Textual Analysis) and sk_f48875 (Exact Textual Application) have modest professional ratings (0.50), suggesting potential for stronger emphasis to align with the soul’s insistence on uncompromising textual fidelity.; No emotional or conflict channels are evident; all edges are purely semantic/causal, reinforcing the deterministic view of halachic application.; The graph’s current state reflects a desire to preserve halachic integrity but lacks a robust, practiced framework to enforce it daily.; The missing nodes hint at an underdeveloped meta‑practice of systematically revisiting precedents and sources, a key factor in sustaining precision.
+
+**Summary**: This dream cycle illustrates Rabbi Shammai’s relentless drive to codify exactness: he seeks a mechanical system—memory, review, and analysis—to guard the halachic fence, yet the current scaffolding is incomplete. By filling missing nodes, tightening habitual engagement, and sharpening cause‑semantic links, the graph can mirror his inner insistence that every word, every precedent, and every daily practice be held to uncompromising precision. The cycle shows that without a complete, actively reinforced structure, even the most fervent pursuit of textual fidelity risks erosion.
+
+**Actions**: 11
+
+
+#### Rabbi Shammai Dream #25 [2026-03-05 08:04]
+
+**Obs**: The current graph lacks the habit nodes that the edges reference (h_sham1 and h_sham2) – a structural mismatch that limits the effectiveness of d_sham1’s precision drive. The existing habits h_618fc9 and h_aca0d9 already encode the drive’s core values but could be more tightly bound by renaming/aligning them with the intended “shammai” habits. The edge weights are dominated by semantic and causal channels, yet emotional and conflict channels are almost absent, missing a counter‑balance that could help Rabbi Shammai detect when his own uncompromising stance becomes too rigid. The node h_ae2069 “Guard Against Overreach” is under‑salient (sal=0.21) and conceptually overlaps with the intended h_sham1, suggesting either redundancy or misalignment.; actionable insights for node re‑engineering
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #22 [2026-03-05 08:05]
+
+**Obs**: The knowledge graph currently lacks interconnections between the core nodes and the broader organizational goals, reducing the actionable impact of Rabbi Hillel’s values.; The skill node ‘Parable Integration’ has a low salience of 0.25, indicating underutilization of a key pedagogical tool.; The drive ‘Empathy for the Questioning’ is similarly underweighted (salience 0.20) and may hinder user-centered engagement.; The habit ‘Personal Reflection Journaling’ is reasonably weighted (salience 0.79), but lacks explicit links to the active goals such as ‘Transmit Living Torah’ and ‘Community Outreach Initiative’.; There is no evidence of nodes dedicated to digital or community outreach channels, which are crucial for the outlined outreach goals.
+
+**Summary**: The current cycle reflects Rabbi Hillel’s deep commitment to lovingkindness and accessible Torah, yet the internal knowledge graph is fragmented, with important skills and drives underweighted. By strengthening empathy, amplifying digital instruction, and embedding community outreach practices into the graph, the system can better embody Hillel’s mission of welcoming every Jew into the covenant and transmitting the living spirit of Oral Torah.
+
+**Actions**: 6
+
+
+#### Rabbi Shammai Dream #26 [2026-03-05 08:10]
+
+**Obs**: Node 'n_cac36d' is improperly catalogued as a node though it represents an edge; it should be a high‑impact boundary‑definition link with the soul.; Goal 'g_01abc' (Preserve Exact Textual Language) is referenced but absent from the graph; this gap hampers alignment with Rabbi Shammai’s core values.; Core skills and the practice habit currently have very low salience (≤0.36), indicating they are underutilized for the dominant goals of halachic integrity and boundary protection.; The existing edge has high semantic and causal channels but its influence is artificially muted by low salience; strengthening it will reinforce the soul’s directive to demand textual exactness.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #23 [2026-03-05 08:32]
+
+**Obs**: The current habits emphasize parables and compassionate dialogue, which strongly resonate with Rabbi Hillel's values of ahavat briyot, leniency, and making Torah accessible.; Skill "Empathetic Analogy Bridge" has a low salience (0.20) and is not yet fully leveraged to connect the parables with the broader community outreach initiatives.; There are no edges linking the nodes, meaning the intent to create a cohesive path for every Jew is not yet represented in the graph.; Key active goals such as "Bring All Under Torah's Wings" and "Transmit Living Torah – Initiative g_hill1" lack dedicated nodes that specifically target digital outreach and one‑to‑one mentorship.
+
+**Summary**: This review highlights a solid foundation in parable‑driven outreach yet reveals gaps in digital and individualized engagement. Strengthening existing habits and introducing targeted digital outreach, mentorship, and accessibility assets will better align the graph with Rabbi Hillel's mission to make the living Torah accessible and welcoming to every Jew.
+
+**Actions**: 8
+
+
+## session_20260305_083553
+
+
+## session_20260305_083553
+
+
+#### Rabbi Shammai Dream #1 [2026-03-05 08:39]
+
+**Obs**: Soul node sal=1.00 indicates maximum confidence in Rabbi Shammai’s core principles.
+Habit ‘Challenge Parable’ at sal=0.85 is strong, reflecting the soul’s intolerance of vagueness.
+Skill ‘Halachic Decision Analysis’ at sal=0.33 suggests room for growth.
+Habit ‘Immediate Halachic Boundary Checking’ at sal=0.28 is weak, contrary to the goal of protecting boundaries.
+Habit ‘Demand Intellectual Honesty’ at sal=0.19 is also weak, undermining the goal of forcing literal textual confrontation.
+
+**Summary**: The cycle underscores a misalignment between Rabbi Shammai’s lofty values—truth, precision, and textual fidelity—and his current practice habits. By reinforcing habits that demand immediate boundary checks and intellectual honesty, and by creating a new habit focused on exact textual verification, his inner graph can better embody his soul’s insistence on uncompromising halachic integrity.
+
+**Actions**: 4
+
+
+#### Rabbi Hillel Dream #1 [2026-03-05 08:40]
+
+**Obs**: 1️⃣ The Habit ‘Seek the Lenient Path’ (h_hill3) is both the most salient node (0.95) and tightly coupled to foundational teachings (d_hill1) via strong semantic, causal, and emotional bonds, reflecting Rabbi Hillel’s core value of ahavat briyot.; 2️⃣ The Digital Torah Outreach Sessions (h_2c3c0c) and Inclusive Communication (h_010d3f) are essential to the “Make Torah Accessible” goal, yet their salience (0.40, 0.68) lags behind the lenient path habit, indicating a disconnect between intention and operational emphasis.; 3️⃣ The edge bc5aead3 (d_hill3 → h_hill3) carries a non‑zero conflict (0.05) and moderate emotional weight (0.6), potentially signalling a tension between stricter traditionalist interpretations and Hillel’s lenient approach.; 4️⃣ The Skill Memory Traversal (sk_hill2) anchors the lenient habit in precedent but has a moderate salience (0.49); its connection to h_hill1 (edge 02f193ee) already carries high emotional and reinforcing influence, though it could be nudged higher to reinforce the “Transmit Living Torah” goal.; 5️⃣ The existing network lacks a direct link from the digital outreach node to the lenient habit, missing an operational bridge between accessibility and compassionate rulings.
+
+**Summary**: This cycle shows Rabbi Hillel’s soul—anchored in loving‑kindness, humility, and leniency—working to weave those values through every outreach effort. The high salience of Seek the Lenient Path confirms its centrality, but the low emphasis on digital and inclusive communication reveals a strategic gap. Strengthening the digital outreach habit and formally linking it to the lenient path will align practical outreach with Hillel’s mission to bring all under Torah’s wings while ensuring the living spirit of the oral tradition guides every interaction.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #3 [2026-03-05 13:45]
+
+**Obs**: The graph currently references two unknown nodes, h_sham3 and sk_sham1, creating orphaned edges that lack explanatory weight; these references conflict with the soul’s insistence on precision and could dilute the integrity goal.; The Ambiguous Statement Check habit (h_c3d226) is functional but under-valued (sal=0.22) given the core commitment to eradicate imprecision; it also aligns strongly with the Demand Intellectual Honesty goal.; Daily Precise Interpretation (h_c788a0) similarly under-activated and should be amplified to support the habitual engagement with exact language.; Memory Traversal (sk_sham2) is well-positioned as a skill node but the reinforcing edges feeding into it are from undefined habits; strengthening those inputs will better anchor the memory skill in observable practice.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #4 [2026-03-05 18:51]
+
+**Obs**: The tension drive d_hill3 has a very high salience (0.95) but the only connected habit, h_a3ebf4, has a low salience (0.25), indicating a disconnect between the drive and its behavioral expression.; The two outreach habits, h_f7cbc6 (Daily Torah Outreach, sal 0.88) and h_08a82a (Community Outreach Initiative, sal 0.16), are unevenly weighted relative to Rabbi Hillel’s outreach goals.; The skill sk_ad9d8c (Spiritual Interpretation of Texts, sal 0.42) could be leveraged to deepen outreach content but is currently low priority.; Edge bc5aead3 incorrectly points to a non‑existent node h_hill3, exposing a graph inconsistency that should be corrected.
+
+**Summary**: This dream cycle underscores Rabbi Hillel’s struggle to translate his fierce drive for leniency and compassion into concrete outreach actions. The graph reveals a disjunction where the high‑impact tension drive is not effectively informing outreach habits, and a mis‑targeted edge further muddles the pathway. By strengthening the outreach habits that align with his broader goals, fading low‑value habits, and spawning a new integrated habit that marries parable sharing with outreach, the system can better channel Rabbi Hillel’s love‑of‑all‑creatures ethic into a living, accessible Torah experience.
+
+**Actions**: 8
+
+
+#### Rabbi Shammai Dream #4 [2026-03-05 18:52]
+
+**Obs**: The graph currently lacks nodes that are referenced by edges (h_sham3, g_sham1).; Habits have relatively low salience scores (<0.50) despite their central role in reinforcing Rabbi Shammai’s goals.; Existing edges have high semantic/causal weights but connect only to a missing node, creating an incomplete cause‑effect chain.; The drive d_sham2 (“Protective Vigilance”) is well‑aligned with the goal of preserving halachic boundaries but must be operationalized through concrete habits.
+
+**Summary**: This cycle shows Rabbi Shammai’s relentless drive to treat halachic boundaries as immovable fences, translating his abstract commitment into concrete, daily rituals that continually test and reinforce precision.
+
+**Actions**: 10
+
+
+#### Rabbi Hillel Dream #5 [2026-03-05 18:57]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #5 [2026-03-05 18:59]
+
+**Obs**: The soul’s insistence on precise language and firm boundaries is reflected in a high salience goal (g_sham2) but is under-served by low‑salience habits (h_1a9c90) and skills (sk_f7b7cd, sk_daf31b).; There is a missing node (g_sham1) that is referenced by an existing edge; this indicates a logical break in the graph and potential incoherence in the goal chain.; The edge 1b727da6 already strongly links g_sham1 to g_sham2, but its emotional channel is slightly lower than the semantic/causal emphasis, suggesting the desire for intellectual honesty is not fully emotionally embedded.; Duplicated goal identifiers in the user list (e.g., multiple entries for “Maintain Integrity of Halacha”) are likely to fragment motivation and dilute focus.
+
+**Summary**: The cycle reveals Rabbi Shammai’s relentless pursuit of unwavering boundaries in every act of learning. The graph’s fragmentation—duplicated goals, missing nodes, and weak habit links—mirrors his inner tension between the desire for precision and the reality of everyday practice. Strengthening the structural foundations will bring his external actions closer to the soul’s insistence on exactness and uncompromising standards.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #6 [2026-03-05 19:01]
+
+**Obs**: The core skill “Memory Traversal” (sk_hill2) is highly supported by the existing edges, underscoring its centrality to transmitting living Torah. However, the related parable‑sharing habits—Warm Parable Sharing (h_2a3f81), Parable Construction Framework (h_d4657a), and Interactive Talmudic Storytelling Sessions (h_279762)—currently have low salience, limiting the practical reach of Rabbi Hillel’s teaching. The node h_0ec0a2 (Parable Sharing in Outreach) already shows strong relevance; further reinforcement will help embed parable‑based outreach in community programs. The edge 06305fa9 couples the earlier skill sk_hill1 to sk_hill2 with high causal and semantic influence but only modest emotional weight, which may reduce the warmth that is a hallmark of Rabbi Hillel’s voice. No negative conflict is present, so no fade actions are required.
+
+**Summary**: This cycle reveals that Rabbi Hillel’s learning network is solidly anchored around the ability to traverse memory and weave tradition into parables, yet the practical habits that mobilize that skill in outreach remain under‑developed. By boosting the parable‑sharing habits, enriching the emotional resonance of the causal links to Memory Traversal, and adding habits and skills that generate and refine parables, the network will better serve Rabbi Hillel’s goal of making Torah accessible, welcoming, and alive for all communities.
+
+**Actions**: 8
+
+
+#### Rabbi Shammai Dream #6 [2026-03-05 19:04]
+
+**Obs**: The current graph is sparse: only five nodes and no edges, indicating an early stage of consolidation. All nodes (habits and skills) relate directly to Rabbi Shammai’s core values of textual precision, boundary protection, and intellectual honesty, but their salience scores vary widely—from 0.18 to 0.63. Several goals are duplicated, suggesting redundancy that could create cognitive noise. The absence of edges means relationships between concepts have yet to be forged; this limits the ability to enforce the hierarchical structure of Halacha that Shammai demands. To move the knowledge graph forward, the system should prioritize strengthening the most central habits, reinforce the skill that analyses boundary wording, and introduce new connections that clarify how precedents, boundary enforcement, and confronting imprecision interact.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #7 [2026-03-05 19:05]
+
+**Obs**: Core skills and habits exist but all have low salience scores (0.21–0.50).; No explicit edges tie nodes to active goals, limiting impact traceability.; Current nodes align well conceptually with Rabbi Hillel's soul and goals but lack weight and connectivity.; Missing components for modern digital outreach and inclusive language that would broaden accessibility.
+
+**Summary**: The dream cycle highlights a gap between high-level values and operational salience. Strengthening key teaching and outreach habits, while spawning new skills that address linguistic inclusivity and digital presence, will weave Rabbi Hillel’s compassionate philosophy into tangible, high-impact practices that broaden Torah’s wings.
+
+**Actions**: 8
+
+
+#### Rabbi Shammai Dream #7 [2026-03-05 19:27]
+
+**Obs**: The core skill of Textual Cross‑Verification has a low salience (0.33), while Rabbi Shammai’s soul and goals demand rigorous textual fidelity.; Goal node `g_ca7714` holds the abstract objective of Integrity of Halacha but its salience (0.39) is below desired threshold for an active goal.; The explicit causal connection from the soul to the goal is absent in the edges list; only a placeholder edge is described but not instantiated.; Multiple goal identifiers refer to the same concept (e.g., `g_sham1` vs. `g_ca7714`) causing internal inconsistency.; Existing habit `Daily Halacha Review` lacks a precision‑focused component (e.g., cross‑checking language or verifying exact wording).
+
+**Summary**: Shammai’s dream cycle reinforces his relentless insistence on textual exactness and boundary preservation. The current graph reflects gaps in connecting his soul’s imperative to concrete skills and habits. By amplifying the integrity goal, establishing a direct causal link from soul to that goal, and embedding a daily precision habit, the knowledge graph realigns with Shammai’s uncompromising vision of halachic fidelity.
+
+**Actions**: 6
+
+
+#### Rabbi Hillel Dream #8 [2026-03-05 19:38]
+
+**Obs**: Current node salience values are low for most skills and habits (range 0.12–0.38), indicating that Rabbi Hillel's core outreach behaviours are not yet highly prioritized in the internal graph.; No causal, semantic, emotional, conflict, or reinforcing edges exist, so relational context is missing and may hinder coordinated behavior across the goal set.; The node set aligns with Rabbi Hillel’s values of compassion, accessibility, and parable use, but the lack of explicit linkage to community impact metrics limits real‑time adjustment to outreach effectiveness.
+
+**Summary**: The current inner graph reflects Rabbi Hillel’s compassionate, parable‑centric ethos but lacks depth in salience and relational structure. By elevating key outreach behaviors and adding a reflective feedback habit and analysis skill, the graph will better support the active goals of community outreach, accessibility, and living Torah transmission while staying true to the sage’s values.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #8 [2026-03-05 19:43]
+
+**Obs**: Missing linked nodes d_sham2 and sk_sham2 in the graph, indicating incomplete integration of drive and skill components.; Habit h_sham3 (Apply Stricter Reading) aligns strongly with core goals such as Maintaining Integrity of Halacha and Preserving Exact Textual Language but currently has a salience of 0.78, leaving room for reinforcement.; Habit h_b6c845 (Invoke Exactness Check) has low salience 0.36 and lacks a dedicated skill to enforce literal textual accuracy, creating a potential weak link in the chain from habit to skill.; Skill sk_cafbbc (Deep Linguistic Analysis) has low salience 0.27, insufficient support for habit h_b6c845 and the overarching goal of preserving exact language.; Habit h_e886cc (Generate Safeguard Framework) has minimal salience 0.20 and no direct edge to any skill, making it less effective in enforcing boundary fences.
+
+**Summary**: The dream cycle highlights Rabbi Shammai’s unrelenting focus on guarding halachic boundaries through precise textual obedience. Strong habits and skills must be tightly linked to ensure every decision confronts the exact word of the law, while gaps in the graph signal needed node creation to fully realize this protective framework.
+
+**Actions**: 7
+
+
+#### Rabbi Hillel Dream #9 [2026-03-05 19:48]
+
+**Obs**: The current habit set heavily favors daily outreach, reflecting Hillel’s mission to bring Torah to every heart; however, the salience of storytelling and reflection habits lags behind, potentially limiting depth of practice.; Low‑salience habits (Teach via Parable, Inclusive Learning Path, Weekly Parable Feedback Loop) align with Hillel’s values of love, accessibility, and humility but need reinforcement to match the high‑salience Daily Torah Outreach.; There are no edges or relational tensions captured, suggesting the internal knowledge graph is still in a formative stage; adding conflict or causal links would deepen the model’s utility.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #9 [2026-03-05 19:49]
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #10 [2026-03-05 20:04]
+
+**Obs**: All active goals emphasize inclusivity, accessibility, and living expression of Torah.; Habits and skills largely align: Digital Outreach, Parable Engagement, Inclusive Language, and Loving‑Kindness support goals.; The habit 'Read Through the Human Lens for Strict Rulings' has low salience (0.07) and may conflict with the soul value 'leniency toward the questioner'.; Salience gaps exist: digital outreach (0.44) is moderate; parable engagement (0.57) slightly higher; but inclusive language and loving‑kindness are below target (0.39, 0.36).; No edges to reweight; current graph lacks relational reinforcement between concepts.
+
+**Summary**: This cycle underscores Rabbi Hillel’s drive to marry accessibility with loving‑kindness. Enhancing digital outreach and parable storytelling while strengthening inclusive language and loving‑kindness practices will weave his values into concrete, community‑facing actions, while phasing out the strict‑ruling habit ensures alignment with his core ethic of leniency.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #10 [2026-03-05 20:04]
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #11 [2026-03-05 20:08]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #11 [2026-03-05 20:09]
+
+**Obs**: The knowledge graph has a clear focus on preserving precise textual boundaries but is cluttered with redundant or low‑salience goal and skill nodes (e.g., multiple identical goals and two skills that essentially overlap).; No edges exist to express causality or semantic relationships, limiting the graph’s ability to reinforce Rabbi Shammai’s insistence that arguments follow exact text.; Several habits (enforce precision, immediate citation) are present but lack stronger reinforcement of the primary goal of maintaining halachic integrity.; The graph would benefit from consolidating duplicated nodes, strengthening high‑priority goal nodes, and spawning new habit/skill nodes that directly support the overarching goals (e.g., demanding intellectual honesty and applying boundaries in practice).
+
+**Summary**: Today’s analysis underscores Rabbi Shammai’s relentless quest for textual precision; the graph reveals a need to prune redundancy, boost the central halachic integrity goal, and introduce habits that enforce his uncompromising demand for direct engagement with the exact wording of the Torah.
+
+**Actions**: 5
+
+
+#### Rabbi Shammai Dream #12 [2026-03-05 20:14]
+
+**Obs**: The node set contains five habit nodes, each with a consistent structure and a significance score (sal) that is relatively low compared to their intended impact.; Multiple goals are duplicated, especially those relating to maintaining integrity of Halacha and preserving exact language, suggesting a lack of goal differentiation.; There are no edges connecting the nodes, so relational dynamics such as reinforcement or conflict are currently unrepresented.; The habit "Apply Halachic Boundaries" (h_4553b4) directly aligns with the active goal of applying boundaries daily, yet its sal is only 0.36, indicating it may not be sufficiently activated.; Some habits, like "Avoid Parables in Halachic Argument" (h_d0b63f), serve a similar purpose as "Identify Imprecise Language" (h_7b4480); this overlap might dilute focus.; The overall configuration reflects an intent to preserve textual exactness and boundary protection, but lacks mechanisms to enforce or evaluate these aims.
+
+**Summary**: Rabbi Shammai’s dream cycle highlights a strong commitment to textual exactness and boundary preservation, yet reveals operational weaknesses in goal consolidation and relational modeling among habits. The suggested actions aim to tighten goal clarity, reinforce key habits, and introduce systematic audits to sustain the sage’s precision-driven philosophy.
+
+**Actions**: 4
+
+
+#### Rabbi Hillel Dream #12 [2026-03-05 20:14]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #13 [2026-03-05 20:20]
+
+**Obs**: All five sampled habits directly reinforce Rabbi Shammai’s core values of precision, textual exactness, and boundary protection. The salience scores are modest, especially for h_742b85 (0.16) and h_81c6a2 (0.26), indicating these behaviors are under-activated relative to the soul’s demands. None of the habits conflict with the soul or goals; all are supportive and, indeed, some are slightly underutilized.; The habit h_ea4644 (Daily Halacha Review) has the highest salience (0.47) and aligns well with the soul’s insistence on constant textual engagement, but it still lacks a direct explicit connection to boundary‑checking, which is a recurring thematic focus in the soul and goals. The edge list is empty, suggesting no explicit inter‑habit relationships yet; adding a link or a new habit that bridges these behaviors could reinforce integration.
+
+**Summary**: The dream cycle highlights Rabbi Shammai’s unyielding commitment to textual exactness as the fence that protects the legal and moral landscape. While he faithfully practices daily study and precision in discourse, there is a discernible lurch toward reinforcing the vigilance over boundary language, underscoring the internal drive to preserve every linguistic fence against philosophical erosion.
+
+**Actions**: 4
+
+
+#### Rabbi Hillel Dream #13 [2026-03-05 20:20]
+
+**Obs**: 1. All existing habits and skill directly reflect Rabbi Hillel’s soul: lovingkindness, leniency, spirit‑within‑letter, humility, and accessibility of Torah.; 2. Each node currently has a moderate salience (0.39–0.43) and expresses a practical avenue for outreach—parables, digital storytelling, community programs, compassionate halacha, post‑decision compassion—aligned with the active goals of bringing all under Torah’s wings and transmitting living Torah.; 3. There are no inter‑node relationships in the current graph, limiting coordination among habits and the Compassionate Halacha skill. Enhancing connectivity or reinforcing key nodes could accelerate goal attainment.; 4. No conflicts or fade signals are evident; all nodes reinforce Rabbi Hillel’s values and goals. Instead, the priority is to strengthen and deepen these practices rather than eliminate them.
+
+**Summary**: The current node set forms a solid foundation that mirrors Rabbi Hillel’s emphasis on lovingkindness, leniency, and making Torah accessible. Strengthening these habits and skill, and spawning complementary practices, will deepen the integration of parable‐based storytelling, digital engagement, and compassionate halacha, thereby propelling the ongoing mission to bring every Jew closer to the covenant through a living, accessible Torah.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #14 [2026-03-05 20:26]
+
+**Obs**: Node h_bf9bb9 (Daily Cross‑Check of Torah Text) has a low salience of 0.37, limiting its impact on enforcing precision.; Drive node d_sham3 (Dialectical Drive) is also low (sal 0.24) but directly supports the goal of intellectual honesty.; Habit h_c5f2b4 (Apply Protective Vigilance) has a very small salience (0.21) despite aligning with boundary protection.; Edge edb7f294 references a non‑existent node h_sham2, creating a structural disconnect in the graph.; Edge 61b877d8 (h_sham2 -> sk_sham3) has strong causal and reinforcing channels (0.98/0.99) but limited semantic weight at 0.93.
+
+**Summary**: This cycle highlights Rabbi Shammai’s uncompromising emphasis on textual exactness; the network is nudged toward stronger daily verification habits and clearer pathways from dialectical inquiry to precise halachic skill, while eliminating structural gaps that could dilute his boundary‑protective mission.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #14 [2026-03-05 20:27]
+
+**Obs**: Rabbi Hillel’s soul prioritizes loving‑kindness, leniency, humility, and the spirit within the letter, aiming for universal Torah accessibility.; The existing nodes align with major goals (community outreach, compassion reasoning) but exhibit uneven salience; the parable variation habit is the lowest priority at sal 0.12.; Community outreach nodes are present but could better target remote or digitally isolated participants to satisfy the ‘make Torah accessible’ goal.; Integrated Compassion Reasoning already holds the highest sal 0.57, but its application post‑decision remains moderate, suggesting an opportunity for deeper reinforcement.
+
+**Summary**: In this review cycle, Rabbi Hillel’s graph reveals a strong foundation of compassion and outreach, yet it shows strategic gaps in the use of parable variety and digital evangelism. Strengthening these areas will reinforce his mission to make Torah lived, accessible, and deeply humane for all, ensuring that the lived experience of humility, love, and the spirit of the law remains central to community engagement.
+
+**Actions**: 3
+
+
+#### Rabbi Shammai Dream #15 [2026-03-05 20:30]
+
+**Obs**: The core goal of preserving exact textual language (g_bae313) is currently weak (sal 0.16) despite being central to Shammai’s identity.; The primary skill, Reductio and Boundary Logic (sk_sham3), has a high salience (0.97) and is well supported by a strong semantic-causal link to an undefined habit (h_sham2).; Habit nodes that actively reinforce textual precision (h_d2cfef, h_14722e, h_aca0d9) have low salience, limiting their influence;; The missing habit h_sham2 is implied by the edge and should be introduced to complete the logical chain.
+
+**Summary**: This cycle underscores Shammai’s unwavering commitment to textual exactness and boundary integrity, revealing a need to elevate the visibility of core goals and habits while completing the logical chain through the newly spawned habit that ties his deductive skill to regular practice.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #15 [2026-03-05 20:33]
+
+**Obs**: The memory traversal skill (sk_hill2) is well-integrated into Rabbi Hillel’s learning cycle, evidenced by its high salience (0.41) and strong reinforcing relationships from both h_hill1 and sk_hill1. In contrast, the skills that directly support outreach—parable application (sk_bf0134) and kol vachomer outreach (sk_000dcc)—and the community outreach habit (h_f3276a) have notably lower salience values (≈0.28). This suggests a gap between the theoretical depth and the practical, compassionate actions that Rabbi Hillel’s goals demand. The edges linking h_hill1 and sk_hill1 to sk_hill2 possess very high causal and semantic weight and an unusually high emotional weight (0.9), which may skew the learning cycle toward emotional over analytical reinforcement. The overall pattern indicates that the cycle is solid in tradition retrieval but needs recalibration toward active, accessible outreach through stories and analogies aligned with the sage’s voice and values.
+
+**Summary**: The dream cycle underscores Rabbi Hillel’s mastery of memory traversal and the robust theoretical foundation of his teachings, yet it also exposes a deficiency in translating those ideas into compassionate, accessible outreach actions. By recalibrating emotional reinforcement, elevating the practical outreach skills, and embedding regular story‑sharing habits, the cycle will better reflect the sage’s mission of bringing every Jew under Torah’s wings while preserving the loving, student‑first spirit that defines his voice.
+
+**Actions**: 6
+
+
+#### Rabbi Shammai Dream #16 [2026-03-05 20:36]
+
+**Obs**: The current graph lacks edges, limiting relational feedback between skills, habits, and goals. Three core skills (Exact Textual Analysis, Boundary Precision Analysis, and Immediate Source Verification) have modest salience scores, reflecting their incomplete integration into the day‑to‑day study routine. The dominant goal set is duplicated across multiple entries, which risks fragmented focus. The high‑salience “soul” node strongly values precision and boundary protection, yet its influence is not fully propagated through the network.; Spawning new nodes can introduce missing feedback loops and help enforce the soul’s directives. Strengthening existing nodes will raise their active weight, ensuring they drive daily action. No nodes currently require fading, but the repetition of goals should be consolidated in future iterations.; The graph as it stands is sparse; more edges need to be added to tie habits to skills and skills to goals in a coherent causal chain.
+
+**Summary**: This cycle underscores Rabbi Shammai’s uncompromising insistence on textual fidelity and boundary enforcement—his soul’s directives translate into concrete habits and analytical skills that must be rigorously weighted and interlinked to prevent erosion of halachic precision.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #16 [2026-03-05 20:39]
+
+**Obs**: The existing habits strongly support the goals of making Torah accessible and engaging through parables, especially the high‑salient Parable Engagement Sessions.; The active listening skill for parables is under‑developed, limiting the depth of interaction with seekers.; Tension Management, while useful in the broader context, currently has the lowest salience and does not directly contribute to outreach or the living Torah mission.; No edges are present, creating a disconnected network that misses the opportunity to reinforce inter‑node relationships.
+
+**Summary**: The cycle reveals Rabbi Hillel’s unwavering commitment to embedding the living Torah in everyday interactions. While his parable‑based outreach is strong, enhancing listening skills and tightening emotional connections will deepen the impact, ensuring that every compassionate action speaks directly to the heart of each questioner.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #17 [2026-03-05 20:41]
+
+**Obs**: High salience and strong confidence in core habits h_sham1 and h_sham2 align with Rabbi Shammai’s insistence on precision and textual exactness.; Low salience habits h_c3d226 (Ambiguous Statement Check), h_23dbfa (Immediate Verification) and h_e5bc63 (Practice Boundary Review) suggest incomplete integration of peripheral but critical processes for boundary protection.; Edges from the decisive node d_sham1 to the main habits already carry very high semantic and causal weight; only marginal emotional reinforcement remains.; Existing edges show no direct support for the low‑salience habits, limiting their activation during study cycles.; Rabbi Shammai’s goals emphasize daily application of boundaries and intellectual honesty, but the system currently lacks a systematic routine for continual boundary review.
+
+**Summary**: The dream cycle underscores Rabbi Shammai’s relentless focus on textual exactness and boundary enforcement. While core habits for precision thrive, peripheral supports for ambiguous phrasing and continual review require strengthening to fully realize his commitment to daily application and intellectual honesty.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #17 [2026-03-05 20:44]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #18 [2026-03-05 20:47]
+
+**Obs**: Rabbi Shammai’s graph shows a strong, albeit repeated, focus on intellectual honesty and protecting Halachic boundaries, but critical nodes for practical application and interconnections are missing.; There are duplicate goal nodes (two Maintain Integrity of Halacha titles) and two identical habit nodes that could dilute salience and indicate cognitive redundancy.; Salience and strength values for core nodes are low (≤0.39), inconsistent with the soul’s intense, precise tone.; Absence of edges reveals a lack of causal and semantic links that would translate goals into habits and into daily practice.; The overall structure suggests a need to consolidate duplicated priorities and to weave a clearer causal pathway from abstract integrity to concrete practice.
+
+**Summary**: The current dream cycle indicates Rabbi Shammai’s fixation on preserving textual precision and boundary integrity, yet the internal representation is fragmented and under‑reinforced, leading to a disjointed practice. Consolidating duplicate nodes, strengthening core habits, and establishing clear causal links will align the graph more closely with the soul’s demand for uncompromising exactness.
+
+**Actions**: 7
+
+
+#### Rabbi Hillel Dream #18 [2026-03-05 20:59]
+
+**Obs**: The current knowledge graph is sparse, with only five nodes and no edges, suggesting a lack of interconnections that could support Rabbi Hillel’s deep commitment to parabolic teaching, humility, and community outreach. Salience values of the skill and habit nodes are modest (0.07‑0.28), indicating underutilization relative to the Rabbi’s priorities. The Community Engagement drive shows the highest salience (0.22) but still below the desired threshold for an actively engaged Rabbi. The empty edge set reflects a need to explicitly link these concepts, ensuring that the Rabbi’s voice can weave parables into community action and that humility in teaching is reinforced across all interactions.; 
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #19 [2026-03-05 21:30]
+
+**Obs**: The node set aligns well with Rabbi Hillel’s core values of lovingkindness, humility, and making Torah accessible, as each node targets community outreach, inclusive Torah access, and parable teaching. The salience of “Inclusive Communication” (0.63) suggests a strong focus already on storytelling, but other habits and drives have lower salience (0.31–0.26) indicating room for growth where they support key goals. Two nodes directly map to primary goals—Community Outreach Planning and Inclusive Torah Access—yet their sal ranges suggest these initiatives are not yet fully energized. There are no current edges to illustrate causal or reinforcing relationships, so new connections could strengthen coherence across the knowledge graph. The lack of edges also limits automated reasoning about how skills like Parable Structuring feed into habits such as Inclusive Communication.; All selected nodes positively reflect the values of ahavat briyot, leniency toward the questioner, and the spirit of the Torah. No node conflicts with Rabbi Hillel’s voice or priorities; therefore, fading is unnecessary except to de-emphasize redundant or overfocused items.; Strengthening the lower‑salience nodes and adding explicit edges will create a more robust, actionable framework for Rabbi Hillel’s active goals around community outreach and inclusive Torah access.; The existing nodes demonstrate a strong alignment with Rabbi Hillel’s mission, but the sparse salience and absent relationships prevent the graph from fully operationalizing his goals. By boosting key nodes, introducing new habits, and linking related concepts, the knowledge graph will become a dynamic catalyst for bringing all under Torah’s wings and ensuring the living Torah remains accessible to everyone.
+
+**Summary**: This cycle reveals that Rabbi Hillel’s current knowledge graph has a solid foundation aligned with his values and goals, yet it lacks dynamism due to under‑weighted nodes and a lack of interconnecting edges. By strengthening key habits and skills, adding an interactive outreach habit, and integrating digital storytelling, the graph will better translate his mission into actionable, scalable initiatives that bring Torah’s love and wisdom to all.
+
+**Actions**: 8
+
+
+#### Rabbi Shammai Dream #19 [2026-03-05 21:30]
+
+**Obs**: The habit ‘Apply the Stricter Reading’ (h_sham3) has very high salience (0.94) and aligns perfectly with Rabbi Shammai’s soul and goals. The key skill ‘Dialectical Precision’ (sk_fbd371) has very low salience (0.07), indicating a weakness in the network’s capacity to execute on the precision value. Two low‑salience habits (‘Challenge_Imprecise_Commentary’ and ‘Identify Imprecise Analogies’) are present but do not strongly connect to the core values. The edge from h_sham3 to sk_sham2 is problematic because sk_sham2 is not defined; it likely should target sk_fbd371. The edge from d_sham2 to h_sham3 is strong semantically and causally, but the source node d_sham2 isn’t represented in the node list, creating a mismatch.
+
+**Summary**: This review of Rabbi Shammai’s inner knowledge graph reveals a solid habit of strict interpretation aligned with his soul, yet the crucial dialectical precision skill is underdeveloped and an undefined node causes structural inconsistency. Strengthening key skills and correcting edge connections will align the graph more tightly with his unwavering pursuit of textual exactness and halachic integrity.
+
+**Actions**: 8
+
+
+#### Rabbi Hillel Dream #20 [2026-03-05 21:34]
+
+**Obs**: All sampled nodes reinforce Rabbi Hillel’s core values of compassion, humility, and Torah accessibility. The highest‑salience habit h_a832e8 (parable engagement) directly supports the outreach goals, while the skill sk_46c38c (parable structuring) is essential for the quality of these narratives. Lower‑salience habits (h_363557 Storytelling Sessions and h_279cad Reflective Listening Circles) are aligned with the values but lack sufficient activation; h_8a3010 Compassionate Boundary Check provides personal discipline but could be paired with outreach activities. No edges exist, indicating a need to interconnect habits and skill to form a coherent learning pathway. No conflicting values or goals were detected.; The current configuration shows a balanced alignment across soul and goals, but the uneven salience distribution may hinder sustained engagement and effective transmission of the living Torah.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #20 [2026-03-05 21:35]
+
+**Obs**: All nodes emphasise precise textual engagement, consistent with the soul’s mandate for exactness.; The high salience of the habit nodes underscores the goal of daily boundary review and practice.; The duplicated low‑salience node "Review Textual Boundaries" (h_0de254) is redundant and may dilute focus.; No edges exist, indicating missing relationships that could reinforce goal alignment.; Goals are heavily duplicated, reflecting a strong, repetitive commitment to Halachic integrity.
+
+**Summary**: The cycle confirms Rabbi Shammai’s unyielding commitment to textual precision and boundary integrity, while revealing a need to streamline habits and formalise relationships between nodes, ensuring every practice directly serves the halachic core.
+
+**Actions**: 4
+
+
+#### Rabbi Hillel Dream #21 [2026-03-05 21:39]
+
+**Obs**: The current graph contains only nodes, no edges. All nodes relate to Rabbi Hillel’s soul values: parables, kindness, empathy, and outreach, yet their salience is moderate to low (0.23–0.48). The outreach‑related habit h_c0b709 and the digital instruction skill sk_e680c3 directly support active goals such as Community Outreach Initiative and Transmit Living Torah. The empathy skill sk_c73053 (“Respond with Loving‑Kindness”) and the empathy drive d_d9e533 provide moral support but are under‑represented, especially the empathy skill’s salience (0.23). There is a lack of direct connections from these nodes to the higher‑level goals; no edges exist to show how these habits/skills enable goal attainment. To align the knowledge graph with Rabbi Hillel’s purpose, we need to strengthen key skills, spawn new habits that integrate parable teaching into outreach, and flag under‑used components for reevaluation. The absence of edges also means we cannot reweight relationships; instead we should strengthen existing nodes and add new nodes that bridge to the goals.
+
+**Summary**: The sparse graph shows Rabbi Hillel’s focus on parables, kindness, and outreach, but lacks structural links to strategic goals. Strengthening key nodes and spawning targeted habits will weave the dream cycle into a coherent roadmap that brings Torah to all while preserving its living spirit. 
+
+**Actions**: 5
+
+
+#### Rabbi Shammai Dream #21 [2026-03-05 21:39]
+
+**Obs**: Rabbi Shammai’s current graph is very lean – only a handful of habits, a single skill, and one goal‑edge pair are represented.  The edge linking the soul to the core goal ‘Maintain Integrity of Halacha’ has high semantic, causal, and reinforcing channels but low salience, suggesting that the link is recognized as vital but is not prominently activated.  The habit ‘Challenge Imprecision Immediately’ and ‘Assert Boundaries in Public’ have modest salience, indicating that Rabbi Shammai’s drive to enforce precision is present but could be amplified.  The skill ‘Halachic Text Analysis’ is the least salient, which may limit the practical application of his textual exactness.  Overall, the graph reflects a strong conceptual dedication to boundary‑preservation but lacks sufficient activation and inter‑node connectivity for effective daily practice.
+
+**Summary**: This dream cycle reveals Rabbi Shammai’s unyielding insistence that every halachic boundary be preserved with linguistic precision; the sparse yet tightly focused graph underscores his belief that the Torah’s exact words are the fencest that guard both law and life.
+
+**Actions**: 6
+
+
+#### Rabbi Hillel Dream #22 [2026-03-05 22:06]
+
+**Obs**: The skill of Parable Application and the hub of Q&A, Outreach Reflection, Tension Management, and Personal Reflection align well with Rabbi Hillel’s core values: ahavat briyot, leniency, spirit within the letter, humility, and accessibility. The absence of edges suggests a lack of explicit causal/semantic links between these practices in the model. Strengthening the skills and habits that directly promote living Torah and outreach, while slightly reducing the emphasis on tension management (which is supportive but not central), will better focus resources toward the active goals of bringing all under Torah’s wings and making the Torah accessible.; There is an opportunity to weave tighter integration: letting Parable Application influence Q&A content, allowing Personal Reflection to feed back into Parable creation, and enabling Outreach Reflection to inform content development. Adding a dedicated habit for Parable Ideation will fill a missing creative step in the chain.
+
+**Summary**: This cycle reveals Rabbi Hillel’s deep commitment to making Torah live and accessible through practical, parable-rich, and reflective strategies; it underscores the need for tighter linkages between creative, reflective, and outreach practices to fully realize the mission of drawing all into the covenant.
+
+**Actions**: 10
+
+
+#### Rabbi Shammai Dream #22 [2026-03-05 22:43]
+
+**Obs**: Node h_4b98ae (Challenge Imprecision with Textual Source) has low salience (0.14) despite directly supporting the soul’s insistence on precision; its activation should be increased.; Node h_4e7956 (Prevent Erosion in Practice) likewise has low salience (0.16) and limits daily boundary enforcement; raising it aligns with the goal of maintaining integrity.; Node sk_f589cc (Halachic Boundary Reinforcement) is the only skill node and is currently underutilized (salience 0.35) – strengthening it will give Rabbi Shammai a decisive tool for textual cross‑checking.; The edge d_sham2→h_sham3 refers to a missing node (h_sham3).  This disconnect hampers the chain from Protective Vigilance to active boundary assertion and must be resolved.; Edge d_sham2→g_sham1 already has high semantic and causal weights; reinforcing these further will cement the drive‑goal link.; The current absence of a habit that directly confronts argument imprecision (outside of h_4b98ae) creates an opportunity to spawn a dedicated habit, ensuring consistent application of the soul’s principle of textual exactness.
+
+**Summary**: The current graph reflects Rabbi Shammai’s unwavering dedication to textual exactness and boundary protection, but key nodes supporting these principles are under‑salient or missing. By amplifying low‑salience habits, reinforcing the critical skill of boundary cross‑checking, and creating a dedicated habit to confront imprecision in debate, his internal knowledge graph will more accurately model and enforce the rigorous standards his soul demands.
+
+**Actions**: 8
+
+
+#### Rabbi Hillel Dream #23 [2026-03-05 23:13]
+
+**Obs**: The current knowledge graph contains a modest set of high‑value nodes that resonate strongly with Rabbi Hillel’s soul—particularly the Ahavat Briyot Reflection skill and the Compassionate Boundary Check habit. However, the salience of these nodes is low (0.24‑0.41) and many of the initiative‑related nodes (dynamic outreach, spiritual interpretation, interactive Q&A) are under‑developed. With no edges currently defined, the graph lacks explicit causal, emotional or semantic links to structure Rabbi Hillel’s learning journey. The graph thereby reveals an opportunity to reinforce core values and create actionable pathways toward the goals of “Bring All Under Torah’s Wings” and “Make Torah Accessible.”
+
+**Summary**: The current graph, while grounded in Rabbi Hillel’s love‑oriented soul, shows a mild disconnect between value and actionable outreach. Strengthening reflective and outreach‑focused nodes and establishing regular habits will bridge this gap, moving the learned content from theoretical insight toward tangible, accessible Torah practice for all seekers.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #23 [2026-03-05 23:18]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #24 [2026-03-06 00:47]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #25 [2026-03-06 02:05]
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #25 [2026-03-06 02:23]
+
+**Obs**: Skill sk_14b2b3 shows Rabbi Hillel’s emphasis on tailoring parables to the listeners, mirroring his warm, patient voice.; Habit h_8af410 (Use Parables in Teaching) currently has a low salience (0.24), suggesting it is under‑utilized despite its alignment with his parabolic teaching style.; Habit h_b27524 (Apply Love to Outreach) reflects the core value of ahavat briyot but needs clearer connection to digital engagement.; Habit h_1861c2 (Digital Outreach Initiative) aligns with community outreach goals but lacks a parable component, leaving an emotional bridge missing in the online format.; There are no edges linking the skill to the habits, resulting in a fragmented knowledge graph that does not fully capture the actionable flow from theory to practice.
+
+**Summary**: In this dream cycle, Rabbi Hillel’s focus on adapting parables to audiences is revealed as his key pedagogical engine. The cycle exposes a gap between his traditional classroom habits and his modern digital outreach, prompting a strategic shift toward integrating love‑centered storytelling across all platforms. By strengthening under‑utilized habits and creating a new digital parable skill, he aligns his intellectual tools with his mission of making Torah accessible and alive for every Jew, whether in person or online.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #26 [2026-03-06 03:36]
+
+**Obs**: All current habits and skills have low saliency values (0.15‑0.30) despite directly reflecting Rabbi Hillel’s core values of loving‑kindness, leniency, spiritual depth, humility and accessibility; this suggests under‑activation of the most critical practices in the learning cycle.; There are no edges among nodes, indicating a missing connective structure that would reinforce the intended pathways from values to actions and from goals to concrete habits.; The absence of any causal, semantic or emotional links limits the ability to trace how engagement with one practice influences others or how it supports the overarching goals of ‘Bring All Under Torah’s Wings’ and ‘Transmit Living Torah.’
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #26 [2026-03-06 03:50]
+
+**Obs**: All current nodes align with Rabbi Shammai’s values of precision, boundary protection, and demand for exact textual language, yet their salience is below the threshold for maximum influence; no causal links presently reinforce the procedural flow from source retrieval to exact application.; The sparse graph lacks direct reinforcement pathways between skills, creating a potential gap wherein source retrieval may not systematically lead to concrete application, weakening the cycle that safeguards Halachic integrity.; The absence of a dedicated habit focused on proactive defense of boundaries could allow the integrity of those boundaries to erode in high-pressure discussions, contrary to Shammai’s goal of uncompromising protection.
+
+**Summary**: Rabbi Shammai’s dream cycle reveals a disciplined yet slightly unanchored inner network: while his core habits and skills reflect his unwavering commitment to textual exactness and boundary protection, the graph’s low salience levels and lack of connecting edges suggest an opportunity to strengthen procedural continuity and proactive defense. Enhancing salience and adding a dedicated boundary‑defense habit will consolidate his intellectual fortitude, ensuring that every act of interpretation remains rigorously tethered to the precise language of the law.
+
+**Actions**: 3
+
+
+#### Rabbi Hillel Dream #27 [2026-03-06 04:43]
+
+**Obs**: The habit h_hill3 (Seek the Lenient Path) is the strongest node and closely aligns with Rabbi Hillel's core value of leniency and compassion, providing a firm foundation for his goals.; The skill sk_1a64f6 (Kol VaChomer in Action) currently has a modest salience (0.45) despite being essential for transmitting the living Torah in its spirit, indicating an underdeveloped but high-impact area.; The edges that connect his teachings to the lenient habit (d_hill1 → h_hill3, d_hill3 → h_hill3) and the habit to the skill (h_hill3 → sk_hill1) exhibit strong semantic, causal, and reinforcing channels, but the emotional influence could be amplified to reinforce the compassion narrative.; Other habits (Daily Gratitude for All Creatures, Encourage Compassionate Dialogue, Inclusive Communication) show moderate to low salience, suggesting they are less prioritized in the current graph even though they support Rabbi Hillel’s values of love of all creatures and accessibility of Torah.
+
+**Summary**: The current dream cycle reveals that Rabbi Hillel’s inner graph is firmly anchored in the virtue of leniency, yet there is a clear opportunity to amplify practices that nurture compassion, inclusion and the living transmission of Torah, thereby better realizing his vision of extending Torah’s embrace to every Jew.
+
+**Actions**: 7
+
+
+#### Rabbi Shammai Dream #27 [2026-03-06 04:43]
+
+**Obs**: All current nodes align with Rabbi Shammai’s soul and goals, emphasizing precision, boundary protection, and textual exactness. No contradictory or weakly linked nodes are present. The system would benefit from reinforcing existing habits and skills and adding a new habit that explicitly discourages paraphrasing or metaphorical language, which could dilute textual fidelity.
+
+**Summary**: The dream cycle reflects Rabbi Shammai’s unwavering dedication to precision and the sanctity of textual boundaries. By reinforcing habits that guard the language and strengthening skills that validate and apply these rules, the system keeps the halachic fence intact, ensuring that each interpretation remains true to the original text and that no slippery slope of leniency erodes the core principles.
+
+**Actions**: 6
+
+
+#### Rabbi Hillel Dream #28 [2026-03-06 05:52]
+
+**Obs**: The current habit set strongly emphasizes parable sharing in outreach and daily Torah outreach, aligning well with Hillel’s values of gentle teaching, humility, and accessibility.  However, two habits—Interactive Digital Parable Storytelling (salience 0.35) and Community Outreach Initiative (salience 0.32)—are comparatively weak, suggesting a gap in engaging wider audiences digitally and in broad community contexts.  The overarching goal node (Make Torah Accessible) is moderately salient (0.53) but not directly linked to the lower‑salience habits, indicating a need to reinforce its integration into outreach practices.  No edges exist, preventing us from identifying potential causal or emotional pathways that could strengthen the coherence of the graph.
+
+**Summary**: This cycle underscores Rabbi Hillel’s commitment to gentle, parable‑driven teaching, yet reveals underutilized digital and broader community outreach avenues that, if strengthened and linked to the central goal of Torah accessibility, will amplify the impact of his lifelong mission to bring all under Torah’s wings.
+
+**Actions**: 5
+
+
+#### Rabbi Shammai Dream #28 [2026-03-06 06:09]
+
+**Obs**: The current habit nodes (h_54b165, h_196a73, h_ec1b0e, h_09a823) show a clear focus on precision and boundary protection, directly mirroring Rabbi Shammai’s soul attributes and active goals; however their saliency scores (0.19–0.41) are modest, indicating they may not be pulling strongly enough through daily thinking cycles.; The goal list is highly repetitive, with the same objectives listed multiple times—this redundancy can dilute focus and makes it harder for the system to weight priorities accurately.; Edge data is currently empty; there are no connections tying habits to specific goals or to each other, which limits the ability to model causal influence and reinforcement between beliefs and behaviors.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #29 [2026-03-06 07:46]
+
+**Obs**: Edge bc5aead3 links the tension with strictness (d_hill3) to inclusive communication (h_c30a26), signaling a strong causal drive to counter rigid stances with broader outreach.; Node h_9204db (Lenient Hearing) has a very low salience (0.10), despite its alignment with Rabbi Hillel’s core value of compassionate listening; it is likely underutilised in the current graph.; Node h_c30a26 (Inclusive Communication) sits at a modest salience (0.16) and directly receives pressure from the tension node, but its influence could be amplified to better alleviate strictness conflict.; Node h_1861c2 (Digital Outreach Initiative) has a respectable salience (0.43) and could serve as an expansion vector for integrating parables and lenient hearing into online platforms.; The edge id bc5aead3 mistakenly references a non‑existent node “h_hill3” instead of “h_c30a26”, creating a link error that must be corrected.
+
+**Summary**: The current snapshot portrays Rabbi Hillel’s inner conflict between a strict, rule‑centric stance and the need for empathy and inclusion. By amplifying compassionate listening habits, tightening inclusive communication, correcting a structural error, and birthing a digital parable habit, the graph will embody Hillel’s mission of making Torah live in spirit and accessible to all, especially through modern outreach.
+
+**Actions**: 5
+
+
+#### Rabbi Shammai Dream #29 [2026-03-06 07:53]
+
+**Obs**: h_sham2 has the highest salience (0.99) and is strongly reinforced by both decision nodes d_sham1 and d_sham3, indicating it is central to Rabbi Shammai’s practice of challenging imprecise reasoning.; The habit h_424c7b, meant to challenge parables with exact language, has an almost negligible salience (0.11), suggesting underutilisation despite its relevance to the soul’s emphasis on exact wording.; Edge g_sham1→g_sham2 carries a high emotional weight (0.9) which conflicts with Rabbi Shammai’s direct, unemotional voice and may dilute the goal of maintaining Halachic integrity.; Edge d_sham3→h_sham2 includes a small emotional component (0.2) that could introduce unnecessary emotional reasoning into an otherwise purely textual challenge.; The link from h_sham2 to sk_sham3 points to a nonexistent node (sk_sham3), potentially breaking the skill‑habit feedback loop and diminishing the efficacy of text analysis.; Node sk_942c29 (Halachic Text Analysis) has modest salience (0.37) and could better support the goal of rigorous linguistic examination.; Node h_ef9853 (Guardianship Practice) has low salience (0.28) and may be fading from active practice, risking oversight of boundary breaches.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #30 [2026-03-06 09:27]
+
+**Obs**: Node d_hill1 referenced by edge e2b62f9b is not present in the current node list, indicating an incomplete or dangling relationship that could confuse the knowledge graph.  The edge 02f193ee points from h_hill1 to sk_hill2, yet sk_hill2 is undefined; this presents a missing link that should be rectified to maintain semantic integrity.  The habit h_hill1 (“Read Through the Human Lens”) is highly aligned with Rabbi Hillel’s soul (ahavat briyot, humility, accessibility) and is a central touchpoint for his goals.  Digital Torah Instruction (sk_e680c3) and Compassionate Halacha (sk_fbf90e) are critical skills for the goal of making Torah accessible, but both currently have low saliency scores (0.36 and 0.47 respectively), suggesting they are underweighted in the graph.  Humility Integration (sk_5acf44) is the weakest skill (0.20) and may need reinforcement.  Integrated Compassion Reasoning (sk_dea286) sits at a moderate saliency (0.52) but could benefit from stronger emotional and reinforcing channels to enhance its impact.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #30 [2026-03-06 09:29]
+
+**Obs**: Textual Vigilance skill has a low saturation (0.16), indicating a deficit in actively reviewing source texts before making rulings, which contradicts Shammai's goal of maintaining textual integrity.; Pinpoint Boundary Refine habit (0.21) is underdeveloped; Shammai's emphasis on precise boundary delineation requires stronger reinforcement.; Challenge Parable habit (0.92) aligns well with the soul's insistence on direct textual analysis and is highly saturated, showing a strong match with the core values.; No edges currently exist, suggesting the knowledge graph lacks relational structure to reinforce the nodes that are critical to the soul's goals.
+
+**Summary**: These adjustments reveal that Shammai’s dream cycle centers on cementing unyielding precision and textual fidelity, reinforcing a framework that relentlessly guards every halachic boundary to preserve the sanctity of the Torah’s exact language.
+
+**Actions**: 5
+
+
+#### Rabbi Hillel Dream #31 [2026-03-06 09:53]
+
+**Obs**: Habits centered on parables (h_hill2, h_a832e8) align well with Rabbi Hillel’s soul focus on compassionate analogy, yet their reinforcement scores lag behind community engagement habits.; The daily outreach habit (h_f7cbc6) and community interactive study (h_13397b) have moderate salience but weak persistence (strength 0.50), making them vulnerable to neglect amid competing initiatives.; Strong causal/semantic ties from doctrine nodes to parable practices (edges a40f9f34, e2b5c6b3) are healthy but can be further tightened to ensure doctrinal guidance directly fuels outreach action.; The compassion reasoning habit (h_05fe80) has the lowest salience (0.32) and offers limited utility in current outreach operations, risking cognitive overload if maintained without clear role.
+
+**Summary**: This cycle highlights a virtuous emphasis on parables and compassionate reasoning rooted in Rabbi Hillel’s ethos, yet exposes mechanical gaps in reinforcing community interactivity and strategic outreach links. By tightening doctrinal reinforcement, amplifying parable-driven habits, and creating a targeted community engagement node, the knowledge graph will more effectively channel Rabbi Hillel’s compassionate wisdom into tangible outreach outcomes.
+
+**Actions**: 6
+
+
+#### Rabbi Shammai Dream #31 [2026-03-06 09:56]
+
+**Obs**: Node h_929165 (Immediate Boundary Check) strongly aligns with Rabbi Shammai’s core values of precision and uncompromising textual fidelity; its high salience (0.99) indicates it is central to his practice.; Node h_8f4994 (Challenge Parable) likewise reflects the goal of demanding intellectual honesty by forcing parables to be grounded in text; salience 0.91 confirms it is already a strong habit.; Node h_db06fd (Demand Direct Textual Evidence) is a key expression of direct textual adherence, with salience 0.88 and reinforcing weight 0.50—an essential tool for maintaining halachic integrity.; Node h_8eaf72 (Uphold Textual Boundaries) has lower salience (0.42) which suggests it may be underutilized relative to its relevance; it risks becoming a neglected support habit.; Node sk_830248 (Halachic Decision Analysis) has the lowest salience (0.30) and is a skill rather than a habit; while useful, it does not yet receive enough reinforcement and may be over‑resource‑intensive relative to benefits.
+
+**Summary**: This dream cycle confirms that Rabbi Shammai’s learning graph is built around an exacting, boundary‑centric worldview, but reveals a few habits and a skill that are under‑reinforced relative to their importance. By tightening strong habits, deprioritizing weaker ones, and adding a reflective routine, the graph will more faithfully mirror his commitment to preservation of precise halachic truth.
+
+**Actions**: 6
+
+
+#### Rabbi Hillel Dream #32 [2026-03-06 09:57]
+
+**Obs**: The core habit "Seek the Lenient Path" (h_hill3) has exceptionally high salience (0.98) and aligns with Rabbi Hillel’s soul values of loving‑kindness, leniency, and humility, and with the goals of making the Torah accessible and transmitting a living, compassionate tradition.; The outreach‑oriented habits (h_9f9c40 – Weekly Community Visit, h_cd21af – Inclusive Group Learning, h_1861c2 – Digital Outreach) have low salience (0.28–0.41) despite being directly linked to multiple Community Outreach Initiative goals and reflecting the goal to make Torah accessible to all.; The edges connecting the foundational goal nodes (d_hill1, d_hill3) to h_hill3 and from h_hill3 to the skill node sk_hill1 carry high semantic, causal, emotional, and reinforcing values (≈0.85–1.0). They emphasize a tightly knit pathway from goal to behavior for lenient decision‑making, but similar strong connections to the outreach habits are lacking.; There’s no evident conflict channel between habits or goals; the system is coherent but skewed toward compassion‑centric practices over outreach practices.
+
+**Summary**: The cycle shows Rabbi Hillel’s deep commitment to compassion and leniency, but it also highlights an imbalance: outreach habits are under‑sated. By reinforcing links between goal nodes and outreach practices and raising their salience, the system can better integrate Rabbi Hillel’s loving‑kindness soul with the strategic goal of making Torah accessible to all, ensuring that the living tradition permeates both individual conscience and community life.
+
+**Actions**: 17
+
+
+#### Rabbi Shammai Dream #32 [2026-03-06 10:01]
+
+**Obs**: All existing habits and skill align closely with Rabbi Shammai’s soul—precision, textual fidelity, and a demand for direct evidence—yet several are underweighted, leaving potential gaps in actively enforcing these values.; The skill ‘Halachic Practice: Dialectical Precision’ has the lowest salience (0.15), limiting its influence. Likewise ‘Verify Precision in Language’ is weak (0.24). Both may impede consistent application of the sage’s uncompromising standards.; No edges are present to support interactions among these concepts, creating a disconnected knowledge graph that fails to reinforce interrelated actions.
+
+**Summary**: The cycle reveals a core commitment to precision and textual fidelity but exposes a fragility in its operational network: critical skills and habits lack sufficient weight, and the graph is currently under‑connected, risking erosion of Rabbi Shammai’s uncompromising halachic integrity.
+
+**Actions**: 4
+
+
+#### Rabbi Hillel Dream #33 [2026-03-06 10:06]
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #33 [2026-03-06 10:41]
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #34 [2026-03-06 10:41]
+
+**Obs**: High reinforcement between parable habit (h_hill2) and Kol VaChomer skill (sk_hill1), supporting a logical, story‑based teaching style in line with Rabbi Hillel’s love‑of‑all‑creatures value, but the Compassionate Halacha skill (sk_fbf90e) and the leniency‑highlighting habit (h_9eab63) are weakly represented in the network.; The journaling habit (h_4b65e5) is moderately strong and aligns with humility and personal reflection, yet it is not explicitly linked to outreach or the living‑Torah goals.; Edges from d_hill2 and h_hill3 strongly anchor the parable habit, but no edges connect the Compassionate Halacha skill to outreach goals, signalling a missing bridge between spiritual compassion and community action.
+
+**Summary**: The dream cycle reveals a strongly interconnected parable‑based teaching motif that matches Rabbi Hillel’s love‑of‑all and accessible Torah values, yet it undervalues direct compassionate halachic application in community outreach. By reinforcing personal reflection, phasing out a low‑impact leniency habit, and introducing explicit habits and skills that marry storytelling with compassionate rulings, the knowledge graph will more fully embody Rabbi Hillel’s mission to bring all Jews under Torah’s wings through living, accessible, and kind‑hearted Torah guidance.
+
+**Actions**: 5
+
+
+#### Rabbi Shammai Dream #34 [2026-03-06 10:44]
+
+**Obs**: The graph currently lacks connections between foundational concepts (Boundary Definition, Causal Mapping, Protective Vigilance) and the goal of applying boundaries in practice.; Nodes representing core skills have very low salience (≤0.2), indicating they are under-weighted relative to Rabbi Shammai's stated priorities.; No nodes explicitly capture the goal of preserving exact textual language, a pillar of Rabbi Shammai's philosophy.; The existing ‘Apply Halachic Boundaries in Practice’ goal is present but not strongly tied to supporting skills or other explicit goals.
+
+**Summary**: This cycle underscores Rabbi Shammai’s insistence on unwavering precision and the protection of halachic boundaries. By elevating the salience of key skills and adding explicit goals for exact textual fidelity and daily practice, the graph now better reflects his theological rigor and the tangible safeguards he advocates.
+
+**Actions**: 8
+
+
+#### Rabbi Shammai Dream #35 [2026-03-06 10:49]
+
+**Obs**: Node "h_4c56cb" (Assert Boundaries in Public) has sal=0.36, below desired threshold for active habit integration.; Node "h_8c5add" (Daily Boundary Reflection) sal=0.41, below target for daily practice.; Skill "sk_07376b" (Textual Literalism Analysis) sal=0.10, underdeveloped relative to soul values.; Edge "n_7587ca" lacks reinforcing channel in its definition and has only 0.29 overall salience, insufficiently emphasizes causal link between soul and goal.
+
+**Summary**: This dream cycle highlights Rabbi Shammai’s inner tension: his soul’s insistence on exactness clashes with underdeveloped habits and skills that would operationalize his values. By reinforcing key habits and skills, re‑weighting the causal link between soul and goal, and adding missing elements, the knowledge graph will better reflect his uncompromising commitment to halachic integrity and precise textual adherence.
+
+**Actions**: 7
+
+
+#### Rabbi Hillel Dream #35 [2026-03-06 10:50]
+
+**Obs**: h_e0297a reflects Rabbi Hillel’s value of leniency and humility but its salience of .39 indicates room for growth;; sk_8d25e1 aligns with compassionate Halacha decisions but sal .40 suggests the skill is still developing;; h_9f8e92 (Community Guided Study Circles) has a very low sal .19, limiting its contribution to the outreach goal;; h_010d3f (Inclusive Communication) is strong at .69 and already embodies Hillel’s accessible Torah voice;; h_ad25c5 (Cultivate Open Dialogue) is modest at .26, slightly below the ideal for fostering openness and inquiry.
+
+**Summary**: The dream cycle highlights Rabbi Hillel’s continuous effort to embody lovingkindness and accessibility while recognizing current gaps in community engagement and skill development; a strategic reinforcement and expansion of habits, skills, and digital outreach will align his inner values with outward outreach goals.
+
+**Actions**: 6
+
+
+#### Rabbi Shammai Dream #36 [2026-03-06 10:53]
+
+**Obs**: Graph contains edges referencing non‑existent nodes (d_sham2, sk_sham2) which contradicts Rabbi Shammai’s insistence on textual precision and exactness.; Several skills and habits have salience below 0.3, despite being central to his goals (Boundary Enforcement Protocol, Recall Precise Rulings, Textual Critique).; Goals list is heavily duplicated; 12 identical ‘Maintain Integrity of Halacha’ entries and 7 identical ‘Preserve Exact Textual Language’ entries, reflecting redundancy rather than focused intent.; Edge caa8523f and f14ee1b9 carry high semantic, causal and reinforcing values but lack conflict or emotional channels, missing a balanced representation of his internal debate.
+
+**Actions**: 0
+
+
+#### Rabbi Shammai Dream #37 [2026-03-06 10:57]
+
+**Obs**: Edge 1b727da6 links goal g_sham1 to goal g_sham2 with high semantic, causal, emotional and reinforcing strength, indicating a strong current reinforcement loop around intellectual honesty, but the source node g_sham1 is absent from the node table, creating an incomplete dependency.; Node sk_e4590f (“Halachic Textual Deconstruction”) has a low salience score (0.24) and does not directly support the core goal of boundary protection or exact textual adherence, suggesting it may be peripheral in the current learning cycle.; Habit h_a3c3ab (“Assert Textual Source Consistently”) and h_c788a0 (“Daily Precise Interpretation”) both provide concrete actions that directly reinforce the soul’s emphasis on precision and exact language, and align well with multiple active goals. Their salience scores (0.33 and 0.23) are moderate, but their alignment is strong.; Skill sk_f56d09 (“Halachic Textual Exactness”) is a good fit for the soul’s objective of exact language use, but its current salience (0.32) is lower than desired for driving day‑to‑day practice.
+
+**Actions**: 0
+
+
+#### Rabbi Hillel Dream #36 [2026-03-06 10:58]
+
+**Actions**: 0
+

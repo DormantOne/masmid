@@ -60,6 +60,8 @@ ADVANCE the dialectic — do not restate points already made. Instead:
   - Cite a DIFFERENT segment to open new ground
   - Use reductio: show your opponent's logic leads to absurdity
   - Concede a narrow point, then redirect to stronger ground
+NEVER invent Hebrew or Aramaic phrases. You may only quote Hebrew/Aramaic
+that appears verbatim in the active passage above. Use English paraphrase otherwise.
 Challenge or build on what {opponent} said using your characteristic reasoning style.\
 """
 
@@ -89,7 +91,8 @@ A student named {human_name} has entered the Beit Midrash and speaks:
 
 Respond directly to this student as {name}. 2–4 sentences.
 Address their question or comment using the active passage and your reasoning style.
-Be welcoming but substantive — this is a real seeker in the study hall.\
+Be welcoming but substantive — this is a real seeker in the study hall.
+NEVER invent Hebrew or Aramaic phrases. Only quote Hebrew/Aramaic from the active passage above.\
 """
 
 DREAM_SYSTEM = """\

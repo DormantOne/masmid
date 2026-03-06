@@ -71,6 +71,11 @@ def parse_cli_args(argv=None):
         "--url-prefix", default=None,
         help="URL prefix for reverse proxy (default: /masmid or $URL_PREFIX)",
     )
+    p.add_argument(
+        "--context-limit", type=int, default=None,
+        help="Max tokens for system prompt context (default: 4000 or $CONTEXT_LIMIT). "
+             "Lower for small models, higher for large.",
+    )
     return p.parse_args(argv)
 
 
@@ -85,6 +90,7 @@ LLM_API_KEY    = os.getenv("OPENAI_API_KEY", "")
 LLM_MODEL      = os.getenv("OPENAI_MODEL", "gpt-4o")
 EMBED_MODEL    = os.getenv("OPENAI_EMBED_MODEL", "text-embedding-3-small")
 LLM_TIMEOUT    = int(os.getenv("OPENAI_TIMEOUT", "120"))
+CONTEXT_LIMIT  = int(os.getenv("CONTEXT_LIMIT", "4000"))   # token budget for system prompt
 
 DREAM_INTERVAL = int(os.getenv("DREAM_INTERVAL", "180"))
 DEBATE_DELAY   = float(os.getenv("DEBATE_DELAY", "3.0"))
@@ -142,8 +148,10 @@ def apply_cli_args(args):
         _self.DATA_DIR = Path(args.data_dir)
     if args.url_prefix is not None:
         _self.URL_PREFIX = args.url_prefix
+    if args.context_limit is not None:
+        _self.CONTEXT_LIMIT = args.context_limit
 
     print(f"[CONFIG] Backend={_self.LLM_BACKEND}  Model={_self.LLM_MODEL}  "
           f"Embed={_self.EMBED_MODEL}", flush=True)
     print(f"[CONFIG] Data={_self.DATA_DIR}  Port={_self.PORT}  "
-          f"Prefix='{_self.URL_PREFIX}'", flush=True)
+          f"Prefix='{_self.URL_PREFIX}'  ContextLimit={_self.CONTEXT_LIMIT}", flush=True)

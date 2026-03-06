@@ -105,7 +105,8 @@ class RabbiAgent:
         except LLMError as e:
             self.log.log("debate", "rabbi_error",
                          {"rabbi": self.name, "error": str(e)}, level="ERROR")
-            return f"[{self.name} pauses in contemplation...]", seg_ranges
+            print(f"[AGENT ERROR] {self.name} respond failed: {e}", flush=True)
+            return f"[{self.name} pauses — LLM error: {e}]", seg_ranges
 
     def respond_to_human(self, daf_ref, segments, exchanges,
                          human_text, human_name):
@@ -153,7 +154,8 @@ class RabbiAgent:
         except LLMError as e:
             self.log.log("debate", "rabbi_error",
                          {"rabbi": self.name, "error": str(e)}, level="ERROR")
-            return f"[{self.name} turns to you thoughtfully...]", seg_ranges
+            print(f"[AGENT ERROR] {self.name} respond_to_human failed: {e}", flush=True)
+            return f"[{self.name} turns to you — LLM error: {e}]", seg_ranges
 
 
 # ==============================================================================

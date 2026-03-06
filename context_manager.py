@@ -1,5 +1,5 @@
 """
-context_manager.py — Context budget assembly for rabbi agents
+context_manager.py — Context budget assembly with progressive compression
 ===============================================================================
 PROJECT MAP  (masmid/)
 -----------------------------------------------
@@ -19,38 +19,64 @@ PROJECT MAP  (masmid/)
   app.py             Flask app factory + routes
   templates.py       HTML templates
   daf_ingest.py      Daf segmentation + exchange tagging
-  context_manager.py YOU ARE HERE — assemble_context()
+  context_manager.py YOU ARE HERE — assemble_context + compress_to_fit
 
 DESIGN PHILOSOPHY:
-  Small working memory (context window) + big hippocampus (KG + segment index).
-  Push context close to the edge — optimize for a small model so the
-  scaffolding scales up effortlessly to larger ones.
+  Push context close to the edge, then compress progressively if it doesn't fit.
+  Serial compression passes — each pass removes the cheapest information first:
 
-    ┌───────────────────────────────────────────────────┐
-    │  CONTEXT WINDOW  (push toward model limit)        │
-    │                                                   │
-    │  [Segment Index]     all titles, 1 line each      │
-    │  [Active Segments]   2-3 relevant full chunks     │
-    │  [Compressed History] older = tags only            │
-    │  [Recent Exchanges]  last 4 full text              │
-    │  [KG Activations]    top-6 relevant nodes (rich)   │
-    │  [Drives]            current intensity levels      │
-    │  [Soul]              identity + values (always)    │
-    │  [Anti-Repetition]   tags of THIS speaker's prior  │
-    └───────────────────────────────────────────────────┘
+  COMPRESSION CASCADE:
+    Pass 0: Full context (3 segments, 6 KG, 4 recent)
+    Pass 1: Drop to 2 active segments
+    Pass 2: Trim KG activations 6→4
+    Pass 3: Trim recent exchanges 4→3
+    Pass 4: Drop to 1 active segment
+    Pass 5: Trim KG activations 4→2
+    Pass 6: Trim recent exchanges 3→2
+    Pass 7: Truncate active segment text to 200 chars + "..."
+    Pass 8: Truncate KG entries to 80 chars each
+    Pass 9: Drop segment index (just keep active)
+    Pass 10: Nuclear — minimal context, 1 segment summary only
+
+  Each pass re-estimates tokens. Stop as soon as we fit.
 
 EXPORTS:
-  assemble_debate_context(...)  -> dict with all context strings
-  assemble_human_context(...)   -> dict for responding to human
-  select_segments(segments, query, exchanges, top_k) -> list[DafSegment]
+  assemble_debate_context(...)  -> dict
+  assemble_human_context(...)   -> dict
+  select_segments(...)          -> list[DafSegment]
 
 DEPENDS ON:
   daf_ingest.DafSegment, compress_exchanges, tag_exchange
+  config.CONTEXT_LIMIT
 ===============================================================================
 """
 
 import re
 from daf_ingest import DafSegment, compress_exchanges, tag_exchange
+import config
+
+
+# ==============================================================================
+#  TOKEN ESTIMATION
+# ==============================================================================
+
+def _estimate_tokens(text):
+    """Rough token estimate: ~4 chars per token for English, ~3 for Hebrew mix."""
+    if not text:
+        return 0
+    return len(text) // 4 + 1
+
+
+def _estimate_context_tokens(ctx):
+    """Estimate total tokens of all context fields that go into the prompt."""
+    total = 0
+    for key, val in ctx.items():
+        if key.startswith("_"):
+            continue
+        if isinstance(val, str):
+            total += _estimate_tokens(val)
+    # Add ~80 tokens for the prompt template chrome (instructions, labels, etc.)
+    return total + 80
 
 
 # ==============================================================================
@@ -65,11 +91,7 @@ def _extract_cited_indices(text):
 def select_segments(segments, query, exchanges=None, top_k=3):
     """Select the most relevant daf segments for a query.
 
-    Scoring combines:
-      1. Keyword overlap with query (title + summary + en_text first 200 chars)
-      2. Citation boost: segments referenced as [N] in recent exchanges
-      3. Small recency bias toward earlier segments (opening context)
-
+    Scoring: keyword overlap + citation boost + position bias.
     No embedding calls — stays fast.
     """
     if not segments:
@@ -80,13 +102,11 @@ def select_segments(segments, query, exchanges=None, top_k=3):
             result.append(segments[-1])
         return result[:top_k]
 
-    # Build query word set from the query
     query_words = set()
     if query:
         query_words = set(w.lower() for w in query.split() if len(w) > 2)
 
-    # Count citation frequency across recent exchanges
-    cite_counts = {}   # seg_index -> count
+    cite_counts = {}
     if exchanges:
         for ex in exchanges[-8:]:
             for idx in _extract_cited_indices(ex.get("text", "")):
@@ -94,18 +114,12 @@ def select_segments(segments, query, exchanges=None, top_k=3):
 
     scored = []
     for seg in segments:
-        # 1. Keyword overlap: title + summary + first 200 chars of en_text
         seg_text = (seg.title + " " + seg.summary + " " +
                     seg.en_text[:200]).lower()
         seg_words = set(w for w in seg_text.split() if len(w) > 2)
         overlap = len(query_words & seg_words) if query_words else 0
-
-        # 2. Citation boost: heavily reward segments that rabbis already cited
         cite_boost = cite_counts.get(seg.index, 0) * 3.0
-
-        # 3. Small position bias (prefer earlier for opening, but weak)
         position_bonus = 0.1 * (1.0 - seg.index / max(len(segments), 1))
-
         scored.append((overlap + cite_boost + position_bonus, seg))
 
     scored.sort(key=lambda x: x[0], reverse=True)
@@ -117,52 +131,44 @@ def select_segments(segments, query, exchanges=None, top_k=3):
 # ==============================================================================
 
 def _format_segment_index(segments):
-    """One-line-per-segment overview. Cheap tokens, high orientation value."""
     if not segments:
         return "  (no segments)"
     return "\n".join(f"  {seg.header()}" for seg in segments)
 
 
-def _format_active_segments(selected_segments):
-    """Full English text of selected segments."""
+def _format_active_segments(selected_segments, max_chars=None):
+    """Full English text of selected segments, optionally truncated."""
     if not selected_segments:
         return "  (no segment selected)"
     parts = []
     for seg in selected_segments:
-        parts.append(f"--- [{seg.index}] {seg.title} ---\n{seg.en_text}")
+        text = seg.en_text
+        if max_chars and len(text) > max_chars:
+            text = text[:max_chars] + "..."
+        parts.append(f"--- [{seg.index}] {seg.title} ---\n{text}")
     return "\n\n".join(parts)
 
 
-def _format_compressed_history(compressed_tags, recent_exchanges):
-    """Compressed older history + full recent exchanges."""
+def _format_compressed_history(compressed_tags, recent_exchanges, max_recent_chars=300):
     lines = []
-
     if compressed_tags:
         lines.append("Earlier: " + " | ".join(compressed_tags))
-
     for ex in recent_exchanges:
         speaker = ex.get("rabbi", "?")
-        text = ex.get("text", "")[:300]   # slightly more generous
+        text = ex.get("text", "")[:max_recent_chars]
         is_human = ex.get("is_human", False)
         prefix = "Student" if is_human else speaker
         lines.append(f"  {prefix}: {text}")
-
     return "\n".join(lines) if lines else "  (Opening statement)"
 
 
-def _format_kg_context(hits, kg):
-    """Format KG query hits with drive discharge side-effects.
-
-    Uses the improved Node.summary() which pulls from handles for richer text.
-    """
+def _format_kg_context(hits, kg, max_chars=180):
     kg_lines = []
     for h in hits:
         n = h["node"]
-        # summary() now includes handle descriptions — much richer
         kg_lines.append(
-            f"  [{n.type}:{n.name}] {n.summary()[:180]}"
+            f"  [{n.type}:{n.name}] {n.summary()[:max_chars]}"
         )
-        # Side-effect: discharge activated drives
         if n.type == "drive":
             kg.discharge_drive(n.id, 0.10)
         if n.type in ("habit", "skill"):
@@ -173,7 +179,6 @@ def _format_kg_context(hits, kg):
 
 
 def _format_drives(kg):
-    """Current drive intensities as a compact string."""
     drives = kg.get_by_type("drive")
     if not drives:
         return "(no drives)"
@@ -184,26 +189,15 @@ def _format_drives(kg):
 
 
 def _find_opponent_last(exchanges, opponent_name):
-    """Find the last exchange actually said by the opponent.
-
-    Prevents the prompt from attributing a human's or this speaker's
-    own words to the opponent.
-    """
     for ex in reversed(exchanges):
         if ex.get("rabbi", "") == opponent_name and not ex.get("is_human"):
             return ex.get("text", "")
-    # Fallback: last exchange text regardless
     if exchanges:
         return exchanges[-1].get("text", "")
     return ""
 
 
 def _collect_speaker_tags(exchanges, speaker_name):
-    """Collect tags of arguments this speaker has already made.
-
-    Used for anti-repetition: the model sees what it already said
-    and is instructed to advance the discussion beyond these.
-    """
     tags = []
     for ex in exchanges:
         if ex.get("rabbi", "") == speaker_name and not ex.get("is_human"):
@@ -211,6 +205,128 @@ def _collect_speaker_tags(exchanges, speaker_name):
             if tag and tag != "remark":
                 tags.append(tag)
     return tags
+
+
+# ==============================================================================
+#  PROGRESSIVE COMPRESSION CASCADE
+# ==============================================================================
+
+def _compress_to_fit(
+    ctx,
+    kg,
+    segments,
+    selected,
+    all_hits,
+    compressed_tags,
+    recent,
+    exchanges,
+    real_opponent_last,
+    limit,
+):
+    """Progressively compress context until it fits within the token limit.
+
+    Each pass strips the cheapest information first. Returns the modified ctx dict.
+    """
+    passes_applied = []
+
+    def _measure():
+        return _estimate_context_tokens(ctx)
+
+    def _rebuild_segments(segs, max_chars=None):
+        ctx["daf_excerpt"] = _format_active_segments(segs, max_chars=max_chars)
+        ctx["_segments_used"] = [s.index for s in segs]
+        ctx["_segment_ranges"] = [
+            {"index": s.index, "title": s.title,
+             "line_start": s.line_start, "line_end": s.line_end}
+            for s in segs
+        ]
+
+    def _rebuild_kg(hits, max_chars=180):
+        ctx["kg_context"] = _format_kg_context(hits, kg, max_chars=max_chars)
+        ctx["_activated"] = [h["node"].name for h in hits]
+
+    def _rebuild_history(tags, rec, max_chars=300):
+        ctx["recent"] = _format_compressed_history(tags, rec, max_recent_chars=max_chars)
+
+    # Check if we already fit
+    est = _measure()
+    if est <= limit:
+        return ctx, passes_applied
+
+    # Pass 1: Drop to 2 active segments
+    if len(selected) > 2:
+        selected = selected[:2]
+        _rebuild_segments(selected)
+        passes_applied.append("segments:3→2")
+        if _measure() <= limit:
+            return ctx, passes_applied
+
+    # Pass 2: Trim KG activations 6→4
+    if len(all_hits) > 4:
+        all_hits = all_hits[:4]
+        _rebuild_kg(all_hits)
+        passes_applied.append("kg:6→4")
+        if _measure() <= limit:
+            return ctx, passes_applied
+
+    # Pass 3: Trim recent exchanges 4→3
+    if len(recent) > 3:
+        recent = recent[-3:]
+        _rebuild_history(compressed_tags, recent)
+        passes_applied.append("recent:4→3")
+        if _measure() <= limit:
+            return ctx, passes_applied
+
+    # Pass 4: Drop to 1 active segment
+    if len(selected) > 1:
+        selected = selected[:1]
+        _rebuild_segments(selected)
+        passes_applied.append("segments:2→1")
+        if _measure() <= limit:
+            return ctx, passes_applied
+
+    # Pass 5: Trim KG activations 4→2
+    if len(all_hits) > 2:
+        all_hits = all_hits[:2]
+        _rebuild_kg(all_hits)
+        passes_applied.append("kg:4→2")
+        if _measure() <= limit:
+            return ctx, passes_applied
+
+    # Pass 6: Trim recent exchanges 3→2
+    if len(recent) > 2:
+        recent = recent[-2:]
+        _rebuild_history(compressed_tags, recent)
+        passes_applied.append("recent:3→2")
+        if _measure() <= limit:
+            return ctx, passes_applied
+
+    # Pass 7: Truncate active segment text to 200 chars
+    _rebuild_segments(selected, max_chars=200)
+    passes_applied.append("seg_text:truncated")
+    if _measure() <= limit:
+        return ctx, passes_applied
+
+    # Pass 8: Truncate KG entries to 80 chars
+    _rebuild_kg(all_hits, max_chars=80)
+    passes_applied.append("kg_text:truncated")
+    if _measure() <= limit:
+        return ctx, passes_applied
+
+    # Pass 9: Drop segment index entirely
+    ctx["segment_index"] = "(see active passage below)"
+    passes_applied.append("seg_index:dropped")
+    if _measure() <= limit:
+        return ctx, passes_applied
+
+    # Pass 10: Trim recent to 1, truncate opponent statement
+    recent = recent[-1:] if recent else []
+    _rebuild_history([], recent, max_chars=150)
+    ctx["last_stmt"] = ctx["last_stmt"][:150] + ("..." if len(ctx["last_stmt"]) > 150 else "")
+    ctx["used_arguments"] = ""
+    passes_applied.append("nuclear:minimal")
+
+    return ctx, passes_applied
 
 
 # ==============================================================================
@@ -222,31 +338,27 @@ def assemble_debate_context(
     daf_ref,
     segments,
     exchanges,
-    opponent_last,      # kept for backward compat, but we also search
+    opponent_last,
     opponent_name,
-    speaker_name=None,  # for anti-repetition
+    speaker_name=None,
     top_k_segments=3,
     top_k_kg=6,
     full_recent=4,
 ):
-    """Assemble the full context dict for a debate turn.
-
-    Pushes context close to the model's limit for maximum depth.
-    """
+    """Assemble context with progressive compression to fit CONTEXT_LIMIT."""
     soul = kg.get_soul()
     if not soul:
         return None
 
-    # Speaker name from soul if not provided
     if not speaker_name:
         speaker_name = soul.content.get("name", "")
 
-    # 1. Find the actual last opponent statement
+    # 1. Find actual opponent statement
     real_opponent_last = _find_opponent_last(exchanges, opponent_name)
     if not real_opponent_last:
         real_opponent_last = opponent_last or ""
 
-    # 2. Select relevant daf segments (citation-aware)
+    # 2. Select segments (citation-aware)
     selected = select_segments(
         segments, real_opponent_last, exchanges, top_k=top_k_segments
     )
@@ -257,13 +369,13 @@ def assemble_debate_context(
             ex["tag"] = tag_exchange(ex)
     compressed_tags, recent = compress_exchanges(exchanges, full_recent=full_recent)
 
-    # 4. Query KG with combined signal
+    # 4. Query KG
     kg_query = real_opponent_last
     if selected:
         kg_query += " " + " ".join(s.title for s in selected)
     hits = kg.query(kg_query, top_k=top_k_kg)
 
-    # 5. Anti-repetition: what has this speaker already argued?
+    # 5. Anti-repetition
     my_prior_tags = _collect_speaker_tags(exchanges, speaker_name)
     if my_prior_tags:
         used_args = ("Arguments you have already made (DO NOT repeat these — "
@@ -271,8 +383,8 @@ def assemble_debate_context(
     else:
         used_args = ""
 
-    # 6. Assemble
-    return {
+    # 6. Assemble full context
+    ctx = {
         "name":           soul.content["name"],
         "essence":        soul.content["essence"],
         "values":         "; ".join(soul.content.get("values", [])),
@@ -286,7 +398,6 @@ def assemble_debate_context(
         "opponent":       opponent_name or "your colleague",
         "last_stmt":      real_opponent_last[:400] or "(Begin the debate.)",
         "used_arguments": used_args,
-        # Metadata for logging and UI highlighting
         "_activated":     [h["node"].name for h in hits],
         "_segments_used": [s.index for s in selected],
         "_segment_ranges": [
@@ -295,6 +406,25 @@ def assemble_debate_context(
             for s in selected
         ],
     }
+
+    # 7. Progressive compression if over budget
+    limit = config.CONTEXT_LIMIT
+    est = _estimate_context_tokens(ctx)
+
+    if est > limit:
+        ctx, passes = _compress_to_fit(
+            ctx, kg, segments, selected, hits,
+            compressed_tags, recent, exchanges,
+            real_opponent_last, limit,
+        )
+        if passes:
+            print(f"[CONTEXT] Compressed to fit {limit}t: {' → '.join(passes)} "
+                  f"({est}t → {_estimate_context_tokens(ctx)}t)", flush=True)
+    else:
+        print(f"[CONTEXT] {speaker_name}: {est}t / {limit}t limit "
+              f"(segs={ctx['_segments_used']}, kg={len(ctx['_activated'])})", flush=True)
+
+    return ctx
 
 
 def assemble_human_context(
@@ -308,29 +438,26 @@ def assemble_human_context(
     top_k_kg=6,
     full_recent=4,
 ):
-    """Assemble context for responding to a human student."""
+    """Assemble context for human response with progressive compression."""
     soul = kg.get_soul()
     if not soul:
         return None
 
-    # Select segments relevant to the human's question (citation-aware)
     selected = select_segments(
         segments, human_text, exchanges, top_k=top_k_segments
     )
 
-    # Tag and compress
     for ex in exchanges:
         if "tag" not in ex:
             ex["tag"] = tag_exchange(ex)
     compressed_tags, recent = compress_exchanges(exchanges, full_recent=full_recent)
 
-    # KG query
     kg_query = human_text
     if selected:
         kg_query += " " + " ".join(s.title for s in selected)
     hits = kg.query(kg_query, top_k=top_k_kg)
 
-    return {
+    ctx = {
         "name":           soul.content["name"],
         "essence":        soul.content["essence"],
         "values":         "; ".join(soul.content.get("values", [])),
@@ -343,7 +470,7 @@ def assemble_human_context(
         "recent":         _format_compressed_history(compressed_tags, recent),
         "human_name":     human_name,
         "human_stmt":     human_text,
-        "used_arguments": "",   # no anti-repetition needed for human responses
+        "used_arguments": "",
         "_activated":     [h["node"].name for h in hits],
         "_segments_used": [s.index for s in selected],
         "_segment_ranges": [
@@ -352,3 +479,19 @@ def assemble_human_context(
             for s in selected
         ],
     }
+
+    # Progressive compression
+    limit = config.CONTEXT_LIMIT
+    est = _estimate_context_tokens(ctx)
+
+    if est > limit:
+        ctx, passes = _compress_to_fit(
+            ctx, kg, segments, selected, hits,
+            compressed_tags, recent, exchanges,
+            human_text, limit,
+        )
+        if passes:
+            print(f"[CONTEXT] Human response compressed: {' → '.join(passes)} "
+                  f"({est}t → {_estimate_context_tokens(ctx)}t)", flush=True)
+
+    return ctx

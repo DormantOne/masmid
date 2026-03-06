@@ -51,7 +51,7 @@
         "surface": "Protect halacha from erosion through leniency",
         "deep": "Precision today prevents catastrophic laxity tomorrow"
       },
-      "salience": 0.988,
+      "salience": 0.7103180677328944,
       "flags": [
         {
           "message": "Referenced but not defined \u2013 likely an unintended omission that may compromise narrative clarity.",
@@ -84,10 +84,18 @@
         {
           "message": "Duplicate entries exist; consolidate into a single, unique goal node.",
           "ts": "2026-03-04T20:28:57.973587"
+        },
+        {
+          "message": "Missing node referenced by an existing edge; requires creation or removal of the edge.",
+          "ts": "2026-03-04T23:11:55.615937"
+        },
+        {
+          "message": "Missing node definition \u2013 was referenced by an existing edge.",
+          "ts": "2026-03-05T18:59:58.450328"
         }
       ],
       "created": "2026-03-03T14:22:43.678708",
-      "last_accessed": "2026-03-04T22:32:46.161103",
+      "last_accessed": "2026-03-06T08:09:49.487601",
       "last_modified": "2026-03-03T14:22:43.678710",
       "tags": []
     },
@@ -105,7 +113,7 @@
         "surface": "Demand rigorous text-grounded arguments",
         "deep": "The parable is decoration; the text is the foundation"
       },
-      "salience": 0.976144,
+      "salience": 0.6713966522100969,
       "flags": [
         {
           "message": "Referenced but missing node \u2013 potential knowledge gap",
@@ -129,7 +137,7 @@
         }
       ],
       "created": "2026-03-03T14:22:43.678712",
-      "last_accessed": "2026-03-04T22:25:42.760065",
+      "last_accessed": "2026-03-05T08:32:29.351976",
       "last_modified": "2026-03-03T14:22:43.678714",
       "tags": []
     },
@@ -149,7 +157,7 @@
         "feel": "Sharp focused precision, satisfaction of exactness",
         "conflict": "Clashes with Hillel's tendency to find the spirit rather than the boundary"
       },
-      "salience": 0.7357702226409534,
+      "salience": 0.976144,
       "flags": [
         {
           "message": "Undefined node referenced in edge dd50507b; requires definition or removal.",
@@ -157,7 +165,7 @@
         }
       ],
       "created": "2026-03-03T14:22:43.678717",
-      "last_accessed": "2026-03-04T22:12:58.464078",
+      "last_accessed": "2026-03-06T10:53:25.228957",
       "last_modified": "2026-03-03T14:22:43.678719",
       "tags": []
     },
@@ -176,7 +184,7 @@
         "trigger": "When parables substitute for direct textual argument",
         "feel": "Impatient exactitude, discomfort with imprecision"
       },
-      "salience": 0.976144,
+      "salience": 0.982497108736,
       "flags": [
         {
           "message": "Undefined node referenced in edge 61b877d8; requires definition or removal.",
@@ -201,10 +209,18 @@
         {
           "message": "Referenced in edge edb7f294 but does not exist in current graph.",
           "ts": "2026-03-04T19:56:47.734011"
+        },
+        {
+          "message": "Habit currently over\u2011used; balance with daily precision habit to avoid argument fatigue.",
+          "ts": "2026-03-04T23:16:17.849739"
+        },
+        {
+          "message": "Referenced node missing; consider creating a habit that initiates Dialectical Drive.",
+          "ts": "2026-03-05T20:26:41.504559"
         }
       ],
       "created": "2026-03-03T14:22:43.678723",
-      "last_accessed": "2026-03-04T22:25:42.760050",
+      "last_accessed": "2026-03-06T10:58:55.386994",
       "last_modified": "2026-03-03T14:22:43.678725",
       "tags": []
     },
@@ -223,7 +239,7 @@
         "trigger": "When the text is ambiguous",
         "feel": "Protective weight, responsibility for the community's future"
       },
-      "salience": 0.7300106262548212,
+      "salience": 0.9632049787351177,
       "flags": [
         {
           "message": "Node referenced in edge f14ee1b9 but not defined; please create or correct.",
@@ -240,10 +256,18 @@
         {
           "message": "Missing node referenced by edge f14ee1b9; consider reinstating or removing the edge",
           "ts": "2026-03-04T07:38:31.443422"
+        },
+        {
+          "message": "Missing node referenced in edge \"caa8523f\" \u2013 consider adding to maintain consistency",
+          "ts": "2026-03-04T23:07:39.585288"
+        },
+        {
+          "message": "Node h_sham3 referenced but not defined. Requires definition or removal of edge caa8523f.",
+          "ts": "2026-03-05T07:17:03.536365"
         }
       ],
       "created": "2026-03-03T14:22:43.678728",
-      "last_accessed": "2026-03-04T22:25:42.760028",
+      "last_accessed": "2026-03-06T10:53:25.228980",
       "last_modified": "2026-03-03T14:22:43.678730",
       "tags": []
     },
@@ -260,7 +284,7 @@
         "surface": "Precise close reading of the exact Talmudic text",
         "deep": "Every word of the Tannaim is exact -- find the weight of each term"
       },
-      "salience": 0.06697476144253238,
+      "salience": 0.05,
       "flags": [
         {
           "message": "Referenced in edge dd50507b but missing definition \u2013 consider defining or removing dangling reference.",
@@ -313,7 +337,7 @@
         "surface": "Recall exact precedents and rulings from tradition",
         "deep": "Traverse the accumulated legal tradition -- cite the exact source"
       },
-      "salience": 0.5274421630852443,
+      "salience": 0.3154309081345466,
       "flags": [
         {
           "message": "Undefined node referenced in edges f14ee1b9 and 297afe23; requires definition or removal.",
@@ -322,10 +346,14 @@
         {
           "message": "Missing node required for edge f14ee1b9; definition needed to complete the causal chain.",
           "ts": "2026-03-04T19:47:52.506462"
+        },
+        {
+          "message": "Node missing; create skill 'Sharpened Logical Analysis' to follow h_sham3.",
+          "ts": "2026-03-05T19:43:23.544543"
         }
       ],
       "created": "2026-03-03T14:22:43.678737",
-      "last_accessed": "2026-03-04T21:59:32.861811",
+      "last_accessed": "2026-03-05T21:34:59.488472",
       "last_modified": "2026-03-03T14:22:43.678739",
       "tags": []
     },
@@ -342,7 +370,7 @@
         "surface": "Show where leniency leads -- reductio ad absurdum",
         "deep": "Follow Hillel's ruling to its logical conclusion and reveal the danger"
       },
-      "salience": 0.9563944734219828,
+      "salience": 0.976144,
       "flags": [
         {
           "message": "Verify downstream skill node for consistent attribute propagation.",
@@ -358,7 +386,7 @@
         }
       ],
       "created": "2026-03-03T14:22:43.678741",
-      "last_accessed": "2026-03-04T22:25:42.760057",
+      "last_accessed": "2026-03-06T10:53:25.228990",
       "last_modified": "2026-03-03T14:22:43.678743",
       "tags": []
     },
@@ -368,7 +396,7 @@
       "name": "Precision Imperative",
       "content": {
         "description": "The constant discomfort with inexactness -- the word must be right.",
-        "intensity": 0.9400000000000001,
+        "intensity": 1.0,
         "valence": "approach"
       },
       "handles": {
@@ -376,7 +404,7 @@
         "deep": "The nagging awareness of imprecision as active danger",
         "feel": "Sharp discomfort with approximation, relief only in exactness"
       },
-      "salience": 0.2456100439302717,
+      "salience": 0.11760336342731313,
       "flags": [
         {
           "message": "Source node d_sham1 not defined; consider adding a definition or removing the edge.",
@@ -406,7 +434,7 @@
       "name": "Protective Vigilance",
       "content": {
         "description": "The watchfulness against erosion -- every fence matters.",
-        "intensity": 0.01,
+        "intensity": 0.09,
         "valence": "approach"
       },
       "handles": {
@@ -414,7 +442,7 @@
         "deep": "Once one boundary falls, the next is easier -- protective urgency",
         "feel": "Watchful tension, weight of responsibility"
       },
-      "salience": 0.988,
+      "salience": 0.8135953821501435,
       "flags": [
         {
           "message": "Source node d_sham2 not defined; consider adding a definition or removing the edge.",
@@ -439,10 +467,18 @@
         {
           "message": "Content of d_sham2 not loaded; ensure it provides clear support for integrity goal.",
           "ts": "2026-03-04T22:37:14.773315"
+        },
+        {
+          "message": "Node missing; create drive 'Unyielding Righteousness' to link to h_sham3.",
+          "ts": "2026-03-05T19:43:23.539787"
+        },
+        {
+          "message": "Source node missing in current graph; alignment with core goals unclear, potential data inconsistency.",
+          "ts": "2026-03-05T21:30:42.039439"
         }
       ],
       "created": "2026-03-03T14:22:43.678750",
-      "last_accessed": "2026-03-04T22:32:46.161100",
+      "last_accessed": "2026-03-06T10:01:33.780952",
       "last_modified": "2026-03-03T14:22:43.678753",
       "tags": []
     },
@@ -452,7 +488,7 @@
       "name": "Dialectical Drive",
       "content": {
         "description": "The urge to press the argument until the exact truth emerges.",
-        "intensity": 0.9800000000000001,
+        "intensity": 1.0,
         "valence": "approach"
       },
       "handles": {
@@ -460,7 +496,7 @@
         "deep": "The machloket is the forge in which truth is shaped",
         "feel": "Focused urgency, pleasure of pressing until clarity appears"
       },
-      "salience": 0.34235522733716167,
+      "salience": 0.25331181663519375,
       "flags": [
         {
           "message": "Node referenced in edge but missing from graph; needs creation.",
@@ -472,7 +508,7 @@
         }
       ],
       "created": "2026-03-03T14:22:43.678755",
-      "last_accessed": "2026-03-04T21:46:10.273575",
+      "last_accessed": "2026-03-04T22:41:59.769069",
       "last_modified": "2026-03-03T14:22:43.678757",
       "tags": []
     },
@@ -488,9 +524,14 @@
         "deep": "I reject metaphoric reasoning without explicit scriptural support."
       },
       "salience": 0.964430272,
-      "flags": [],
+      "flags": [
+        {
+          "message": "Habit already highly saturated; monitor for overreliance on parable challenge and balance with textual review.",
+          "ts": "2026-03-06T09:29:56.716349"
+        }
+      ],
       "created": "2026-03-03T14:27:25.526104",
-      "last_accessed": "2026-03-04T22:21:20.151452",
+      "last_accessed": "2026-03-06T10:49:01.198400",
       "last_modified": "2026-03-03T14:27:25.526110",
       "tags": []
     },
@@ -505,8 +546,13 @@
         "surface": "Reject parable references",
         "deep": "Focus on literal textual analysis"
       },
-      "salience": 0.1506564311068056,
-      "flags": [],
+      "salience": 0.07213753451037873,
+      "flags": [
+        {
+          "message": "Potential redundancy with other precision-directed habits; review for elimination or merge.",
+          "ts": "2026-03-05T20:14:26.792205"
+        }
+      ],
       "created": "2026-03-03T14:52:23.944384",
       "last_accessed": "2026-03-03T14:52:23.944388",
       "last_modified": "2026-03-03T14:52:23.944389",
@@ -523,8 +569,13 @@
         "surface": "Decision Analysis",
         "deep": "halachic_risk_assessment"
       },
-      "salience": 0.4408827649021839,
-      "flags": [],
+      "salience": 0.27507864292899303,
+      "flags": [
+        {
+          "message": "Skill is under\u2011engaged; consider reducing practice load or integrating it into a higher\u2011salience habit.",
+          "ts": "2026-03-06T09:56:32.809896"
+        }
+      ],
       "created": "2026-03-03T14:57:23.866719",
       "last_accessed": "2026-03-04T16:01:03.149879",
       "last_modified": "2026-03-03T14:57:23.866730",
@@ -541,7 +592,7 @@
         "surface": "Demand Source",
         "deep": "exact_textual_reference"
       },
-      "salience": 0.18490638323034306,
+      "salience": 0.08853714709338846,
       "flags": [],
       "created": "2026-03-03T14:57:24.018200",
       "last_accessed": "2026-03-03T14:57:24.018203",
@@ -558,7 +609,7 @@
         "sal": 0.98
       },
       "handles": {},
-      "salience": 0.10347555992905974,
+      "salience": 0.05,
       "flags": [],
       "created": "2026-03-03T15:08:30.862427",
       "last_accessed": "2026-03-03T15:08:30.862433",
@@ -578,7 +629,7 @@
         "surface": "challenge_parables",
         "deep": "textual_confrontation"
       },
-      "salience": 0.20399983766162857,
+      "salience": 0.09767950310063216,
       "flags": [
         {
           "message": "Conflict: Parables vs precision; enforce stricter alignment with text analysis.",
@@ -603,7 +654,7 @@
         "surface": "textual_critique",
         "deep": "lexical_fidelity"
       },
-      "salience": 0.13062432100256513,
+      "salience": 0.06254573000960778,
       "flags": [],
       "created": "2026-03-03T15:08:30.981369",
       "last_accessed": "2026-03-03T15:08:30.981372",
@@ -624,10 +675,10 @@
         "surface": "Demand Intellectual Honesty",
         "deep": "d_sham1"
       },
-      "salience": 0.2729947533733934,
+      "salience": 0.1622225165943139,
       "flags": [],
       "created": "2026-03-03T15:21:36.318876",
-      "last_accessed": "2026-03-04T20:10:11.501677",
+      "last_accessed": "2026-03-06T02:21:18.553897",
       "last_modified": "2026-03-03T15:21:36.318896",
       "tags": []
     },
@@ -644,7 +695,7 @@
         "surface": "Boundary Protection",
         "deep": "g_sham1"
       },
-      "salience": 0.29971546396015325,
+      "salience": 0.1435102004334089,
       "flags": [
         {
           "message": "Goal appears duplicate; ensure single active instance for clarity.",
@@ -674,10 +725,10 @@
         "surface": "Apply Protective Vigilance",
         "deep": "h_sham3"
       },
-      "salience": 0.2267667898684427,
+      "salience": 0.26933531427253876,
       "flags": [],
       "created": "2026-03-03T15:21:36.534172",
-      "last_accessed": "2026-03-04T20:10:11.501680",
+      "last_accessed": "2026-03-06T02:21:18.553899",
       "last_modified": "2026-03-03T15:21:36.534175",
       "tags": []
     },
@@ -692,7 +743,7 @@
         "surface": "detect-analogies",
         "deep": "contrast-text-precision"
       },
-      "salience": 0.10729190376249384,
+      "salience": 0.20936292426680425,
       "flags": [],
       "created": "2026-03-03T16:24:28.771630",
       "last_accessed": "2026-03-03T16:24:28.771639",
@@ -710,7 +761,7 @@
         "surface": "ImprecisionDetection",
         "deep": "PrecisionAssert"
       },
-      "salience": 0.3184113632691554,
+      "salience": 0.1076472061015206,
       "flags": [],
       "created": "2026-03-03T17:12:36.774107",
       "last_accessed": "2026-03-03T17:12:36.774113",
@@ -728,7 +779,7 @@
         "surface": "BoundaryLogic",
         "deep": "BoundaryDerivation"
       },
-      "salience": 0.4493012529489415,
+      "salience": 0.21513508850599977,
       "flags": [],
       "created": "2026-03-03T17:12:36.879461",
       "last_accessed": "2026-03-03T17:12:36.879463",
@@ -746,7 +797,7 @@
         "surface": "BoundaryDefinition",
         "deep": "BoundaryAnalysis"
       },
-      "salience": 0.24903129160645285,
+      "salience": 0.11924153028481749,
       "flags": [],
       "created": "2026-03-03T17:12:36.956566",
       "last_accessed": "2026-03-03T17:12:36.956568",
@@ -764,7 +815,7 @@
         "surface": "ReductioLogic",
         "deep": "BoundaryReductio"
       },
-      "salience": 0.20855674539020977,
+      "salience": 0.09986144837914529,
       "flags": [],
       "created": "2026-03-03T17:12:37.026714",
       "last_accessed": "2026-03-03T17:12:37.026718",
@@ -783,7 +834,7 @@
         "surface": "Avoid vague phrasing",
         "deep": "Enforce literal Torah wording"
       },
-      "salience": 0.3999446320602976,
+      "salience": 0.1915020785076009,
       "flags": [],
       "created": "2026-03-03T17:49:19.408868",
       "last_accessed": "2026-03-04T19:53:07.882313",
@@ -801,7 +852,7 @@
         "surface": "Halachic boundaries",
         "deep": "Legal implementation"
       },
-      "salience": 0.1851965206491241,
+      "salience": 0.08867607112010482,
       "flags": [
         {
           "message": "Goal appears twice in the goals list; duplicate entry should be consolidated.",
@@ -824,7 +875,7 @@
         "surface": "Critique any paraphrase",
         "deep": "Confront the text directly"
       },
-      "salience": 0.25833765405378034,
+      "salience": 0.18767212375961134,
       "flags": [],
       "created": "2026-03-03T20:12:10.326599",
       "last_accessed": "2026-03-03T20:12:10.326607",
@@ -842,7 +893,7 @@
         "surface": "h_sham1",
         "deep": "review-boundaries"
       },
-      "salience": 0.15118975440660815,
+      "salience": 0.05,
       "flags": [],
       "created": "2026-03-03T20:21:37.129729",
       "last_accessed": "2026-03-03T20:21:37.129744",
@@ -860,7 +911,7 @@
         "surface": "h_sham2",
         "deep": "verify-precision"
       },
-      "salience": 0.47099094409017067,
+      "salience": 0.31853315335827836,
       "flags": [],
       "created": "2026-03-03T20:21:37.256894",
       "last_accessed": "2026-03-03T20:21:37.256896",
@@ -878,7 +929,7 @@
         "surface": "h_sham3",
         "deep": "guard-erode"
       },
-      "salience": 0.29373168513777204,
+      "salience": 0.08693330645679732,
       "flags": [
         {
           "message": "No edges link this node to other habits, limiting cascaded effects.",
@@ -901,7 +952,7 @@
         "surface": "g_sham1",
         "deep": "intellectual-honesty-core"
       },
-      "salience": 0.20200115132238353,
+      "salience": 0.09672248916028137,
       "flags": [
         {
           "message": "Goal node currently under\u2011supported by skill and habit network; monitor salience and connections in next iteration.",
@@ -923,7 +974,7 @@
       "handles": {
         "surface": "challenge"
       },
-      "salience": 0.23944153684572306,
+      "salience": 0.1693321072064873,
       "flags": [],
       "created": "2026-03-03T20:38:39.372457",
       "last_accessed": "2026-03-03T20:38:39.372464",
@@ -941,7 +992,7 @@
       "handles": {
         "surface": "application"
       },
-      "salience": 0.11817113169538628,
+      "salience": 0.17489473790330082,
       "flags": [],
       "created": "2026-03-03T20:38:39.445450",
       "last_accessed": "2026-03-03T20:38:39.445452",
@@ -959,7 +1010,7 @@
         "surface": "h_sham1",
         "deep": "h_sham1"
       },
-      "salience": 0.23441543361123468,
+      "salience": 0.11224314360604787,
       "flags": [],
       "created": "2026-03-03T20:42:50.791366",
       "last_accessed": "2026-03-03T20:42:50.791373",
@@ -977,7 +1028,7 @@
         "surface": "h_sham2",
         "deep": "h_sham2"
       },
-      "salience": 0.20518226553828348,
+      "salience": 0.0982456749602175,
       "flags": [],
       "created": "2026-03-03T20:42:50.934019",
       "last_accessed": "2026-03-03T20:42:50.934024",
@@ -995,10 +1046,10 @@
         "surface": "Strict Interpretive Practice",
         "deep": "Fence Preservation"
       },
-      "salience": 0.14297716300214383,
+      "salience": 0.14165088064601988,
       "flags": [],
       "created": "2026-03-03T20:47:32.995237",
-      "last_accessed": "2026-03-04T20:10:11.501682",
+      "last_accessed": "2026-03-06T02:21:18.553901",
       "last_modified": "2026-03-03T20:47:32.995242",
       "tags": []
     },
@@ -1013,7 +1064,7 @@
         "surface": "protective_vigilance",
         "deep": "boundary_protection"
       },
-      "salience": 0.3001261529052245,
+      "salience": 0.23899255799331665,
       "flags": [
         {
           "message": "Potential overlap with goal 'Apply Halachic Boundaries in Practice'; consider merging or clarifying scope.",
@@ -1036,8 +1087,13 @@
         "surface": "dialectical_precision",
         "deep": "exact_argument"
       },
-      "salience": 0.12401768388142125,
-      "flags": [],
+      "salience": 0.23189761789165786,
+      "flags": [
+        {
+          "message": "Low salience of Dialectical Precision hampers consistent enforcement of halachic boundaries.",
+          "ts": "2026-03-06T10:01:12.942614"
+        }
+      ],
       "created": "2026-03-03T20:57:16.073856",
       "last_accessed": "2026-03-03T20:57:16.073862",
       "last_modified": "2026-03-03T20:57:16.073863",
@@ -1054,7 +1110,7 @@
         "surface": "Literal Interpretation",
         "deep": "Respect for Exact Halachic Language"
       },
-      "salience": 0.16288626741912918,
+      "salience": 0.07799344276836132,
       "flags": [],
       "created": "2026-03-03T21:05:39.839856",
       "last_accessed": "2026-03-03T21:05:39.839863",
@@ -1072,7 +1128,7 @@
         "surface": "Boundary Logic",
         "deep": "Proof by Reductio"
       },
-      "salience": 0.3484732647028784,
+      "salience": 0.16685648248647977,
       "flags": [],
       "created": "2026-03-03T21:05:39.992413",
       "last_accessed": "2026-03-03T21:05:39.992416",
@@ -1090,7 +1146,7 @@
         "surface": "Fence Concept",
         "deep": "Halachic Boundary"
       },
-      "salience": 0.22820536728907406,
+      "salience": 0.10926963049190139,
       "flags": [],
       "created": "2026-03-03T21:05:40.114343",
       "last_accessed": "2026-03-03T21:05:40.114346",
@@ -1108,10 +1164,10 @@
         "surface": "Directly quote Torah verse when challenged",
         "deep": "Log the source in a memory notebook weekly"
       },
-      "salience": 0.4848782065665228,
+      "salience": 0.35119805389805625,
       "flags": [],
       "created": "2026-03-03T21:14:17.284643",
-      "last_accessed": "2026-03-04T21:43:14.631316",
+      "last_accessed": "2026-03-06T10:58:55.387011",
       "last_modified": "2026-03-03T21:14:17.284658",
       "tags": []
     },
@@ -1126,8 +1182,13 @@
         "surface": "h_sham2",
         "deep": "h_sham2"
       },
-      "salience": 0.3193363480521418,
-      "flags": [],
+      "salience": 0.2596919315335822,
+      "flags": [
+        {
+          "message": "Confirm that precision cues trigger upon boundary challenge, not merely upon self-initiated review.",
+          "ts": "2026-03-04T23:34:09.933750"
+        }
+      ],
       "created": "2026-03-03T21:23:41.239627",
       "last_accessed": "2026-03-03T21:23:41.239634",
       "last_modified": "2026-03-03T21:23:41.239635",
@@ -1144,7 +1205,7 @@
         "surface": "Apply exact wording of the Torah in every decision",
         "deep": "Ensure no slip of interpretive excess"
       },
-      "salience": 0.19212681690386074,
+      "salience": 0.09199444579266548,
       "flags": [
         {
           "message": "Potential conflict: applying precise rulings without active boundary review may lead to unintended laxity.",
@@ -1167,10 +1228,10 @@
         "surface": "Analyze verses with a focus on linguistic precision",
         "deep": "Detect subtle shifts in meaning"
       },
-      "salience": 0.39253616153877036,
+      "salience": 0.3655162606924885,
       "flags": [],
       "created": "2026-03-03T21:28:13.083792",
-      "last_accessed": "2026-03-04T19:53:07.882311",
+      "last_accessed": "2026-03-06T10:58:55.387014",
       "last_modified": "2026-03-03T21:28:13.083797",
       "tags": []
     },
@@ -1185,7 +1246,7 @@
         "surface": "sk_sham4",
         "deep": "sk_sham4"
       },
-      "salience": 0.3063529014047622,
+      "salience": 0.23425250894737407,
       "flags": [],
       "created": "2026-03-03T21:37:09.418812",
       "last_accessed": "2026-03-03T21:37:09.418817",
@@ -1203,7 +1264,7 @@
         "surface": "h_sham_immediate",
         "deep": "habit_cha_immediate"
       },
-      "salience": 0.39371013969872093,
+      "salience": 0.4336099094498277,
       "flags": [],
       "created": "2026-03-03T21:52:53.073194",
       "last_accessed": "2026-03-03T21:52:53.073202",
@@ -1221,7 +1282,7 @@
         "surface": "sk_fence_recall",
         "deep": "skill_fence_recall"
       },
-      "salience": 0.13993107496862894,
+      "salience": 0.06700200366798596,
       "flags": [],
       "created": "2026-03-03T21:52:53.256115",
       "last_accessed": "2026-03-03T21:52:53.256117",
@@ -1239,7 +1300,7 @@
         "surface": "verbal challenge",
         "deep": "internal resolve"
       },
-      "salience": 0.34981444455359967,
+      "salience": 0.1674986682003935,
       "flags": [],
       "created": "2026-03-03T22:01:50.258055",
       "last_accessed": "2026-03-03T22:01:50.258059",
@@ -1254,7 +1315,7 @@
         "name": "Textual Literalism Analysis"
       },
       "handles": {},
-      "salience": 0.19631300011867991,
+      "salience": 0.1904419074128045,
       "flags": [],
       "created": "2026-03-03T22:01:50.449356",
       "last_accessed": "2026-03-03T22:01:50.449359",
@@ -1272,7 +1333,7 @@
         "surface": "review",
         "deep": "boundary"
       },
-      "salience": 0.4260799231482707,
+      "salience": 0.2375810853592604,
       "flags": [],
       "created": "2026-03-03T22:05:45.055990",
       "last_accessed": "2026-03-03T22:05:45.055998",
@@ -1290,7 +1351,7 @@
         "surface": "questioning",
         "deep": "source"
       },
-      "salience": 0.27998751003215605,
+      "salience": 0.13406403244147533,
       "flags": [],
       "created": "2026-03-03T22:05:45.294380",
       "last_accessed": "2026-03-03T22:05:45.294384",
@@ -1308,10 +1369,10 @@
         "surface": "Immediate source citation required",
         "deep": "Verbal demand that every argument be anchored in a tangible halachic phrase"
       },
-      "salience": 0.8535288949569685,
+      "salience": 0.982497108736,
       "flags": [],
       "created": "2026-03-03T22:15:53.383444",
-      "last_accessed": "2026-03-04T22:32:46.161114",
+      "last_accessed": "2026-03-06T10:58:55.387008",
       "last_modified": "2026-03-03T22:15:53.383451",
       "tags": []
     },
@@ -1326,7 +1387,7 @@
         "surface": "Locate exact verse or source in Talmud/poskim",
         "deep": "Systematic approach to trace derivations back to foundational texts"
       },
-      "salience": 0.456076875287738,
+      "salience": 0.40069289633371996,
       "flags": [
         {
           "message": "Requires explicit edge to the goal \"Maintain Integrity of Halacha\" to clarify its contribution to overall integrity.",
@@ -1334,7 +1395,7 @@
         }
       ],
       "created": "2026-03-03T22:15:53.570069",
-      "last_accessed": "2026-03-03T22:15:53.570072",
+      "last_accessed": "2026-03-06T10:58:55.387004",
       "last_modified": "2026-03-03T22:15:53.570073",
       "tags": []
     },
@@ -1349,7 +1410,7 @@
         "surface": "Question",
         "deep": "Probe"
       },
-      "salience": 0.23695625598847733,
+      "salience": 0.11345974392358198,
       "flags": [],
       "created": "2026-03-03T22:20:13.126874",
       "last_accessed": "2026-03-03T22:20:13.126883",
@@ -1367,7 +1428,7 @@
         "surface": "immediate",
         "deep": "source"
       },
-      "salience": 0.25835918662693974,
+      "salience": 0.2003827495255911,
       "flags": [],
       "created": "2026-03-03T22:44:41.624843",
       "last_accessed": "2026-03-03T22:44:41.624852",
@@ -1385,10 +1446,10 @@
         "surface": "Detect imprecise phrasing",
         "deep": "Demand exact wording before interpretation"
       },
-      "salience": 0.4023993523961701,
+      "salience": 0.42169238977058,
       "flags": [],
       "created": "2026-03-03T22:51:08.648534",
-      "last_accessed": "2026-03-03T22:51:08.648542",
+      "last_accessed": "2026-03-06T10:53:25.228987",
       "last_modified": "2026-03-03T22:51:08.648544",
       "tags": []
     },
@@ -1404,7 +1465,7 @@
         "surface": "Boundary Refinement",
         "deep": "Precision Enforcement"
       },
-      "salience": 0.38963559995138486,
+      "salience": 0.27735955951771185,
       "flags": [],
       "created": "2026-03-03T22:55:23.911659",
       "last_accessed": "2026-03-03T22:55:23.911679",
@@ -1423,7 +1484,7 @@
         "surface": "Precedent Retrieval",
         "deep": "Ruling Memory"
       },
-      "salience": 0.3316247900537563,
+      "salience": 0.15878907100912543,
       "flags": [],
       "created": "2026-03-03T22:55:24.077666",
       "last_accessed": "2026-03-03T22:55:24.077669",
@@ -1442,7 +1503,7 @@
         "surface": "Fence Generation",
         "deep": "Boundary Safeguarding"
       },
-      "salience": 0.2917687804056466,
+      "salience": 0.13970515769514122,
       "flags": [],
       "created": "2026-03-03T22:55:24.223217",
       "last_accessed": "2026-03-03T22:55:24.223220",
@@ -1460,10 +1521,10 @@
         "surface": "Cite and analyze the exact Hebrew phrase",
         "deep": "Demonstrate how a parable deviates from the literal text"
       },
-      "salience": 0.2575618789215076,
+      "salience": 0.16563959809523984,
       "flags": [],
       "created": "2026-03-03T23:00:21.264021",
-      "last_accessed": "2026-03-04T22:32:46.161116",
+      "last_accessed": "2026-03-06T09:53:33.505622",
       "last_modified": "2026-03-03T23:00:21.264041",
       "tags": []
     },
@@ -1478,7 +1539,7 @@
         "surface": "Maintain a living lexicon of exact Torah phrases",
         "deep": "Facilitate instant reference and guard against ambiguity"
       },
-      "salience": 0.1492276259356211,
+      "salience": 0.07145339191130273,
       "flags": [],
       "created": "2026-03-03T23:06:36.623591",
       "last_accessed": "2026-03-03T23:06:36.623601",
@@ -1496,7 +1557,7 @@
         "surface": "Deep parsing of Rabbinic texts",
         "deep": "Detect subtle interpretative variations"
       },
-      "salience": 0.289718678598747,
+      "salience": 0.13872352492474743,
       "flags": [],
       "created": "2026-03-03T23:06:36.853029",
       "last_accessed": "2026-03-03T23:06:36.853032",
@@ -1514,7 +1575,7 @@
         "surface": "apply_exact_boundaries",
         "deep": "monitor_and_correct_rule_erosion"
       },
-      "salience": 0.35434435293636124,
+      "salience": 0.16966768561232626,
       "flags": [],
       "created": "2026-03-03T23:15:03.965985",
       "last_accessed": "2026-03-04T20:41:31.431126",
@@ -1532,7 +1593,7 @@
         "surface": "DailyReviewBoundaries",
         "deep": "InspectFences"
       },
-      "salience": 0.22448816232421134,
+      "salience": 0.06728884806924737,
       "flags": [],
       "created": "2026-03-03T23:19:22.135913",
       "last_accessed": "2026-03-03T23:19:22.135919",
@@ -1550,7 +1611,7 @@
         "surface": "source_lookup",
         "deep": "text_analysis"
       },
-      "salience": 0.2682521072690567,
+      "salience": 0.12844486958465628,
       "flags": [],
       "created": "2026-03-03T23:31:37.654659",
       "last_accessed": "2026-03-03T23:31:37.654664",
@@ -1568,7 +1629,7 @@
         "surface": "quick reference of exact terms",
         "deep": "in-depth analysis of boundaries"
       },
-      "salience": 0.26677336645720645,
+      "salience": 0.12773681672847828,
       "flags": [],
       "created": "2026-03-04T06:00:19.274376",
       "last_accessed": "2026-03-04T06:00:19.274385",
@@ -1586,10 +1647,10 @@
         "surface": "Identify precise textual boundaries",
         "deep": "Apply rigorous textual analysis to locate exact limits of halachic rulings"
       },
-      "salience": 0.8404607738467901,
+      "salience": 0.8052000183951453,
       "flags": [],
       "created": "2026-03-04T06:09:27.762028",
-      "last_accessed": "2026-03-04T22:32:46.161109",
+      "last_accessed": "2026-03-06T10:49:01.198408",
       "last_modified": "2026-03-04T06:09:27.762037",
       "tags": []
     },
@@ -1604,7 +1665,7 @@
         "surface": "Clarify the boundary context when a legal question is posed",
         "deep": "Explain the underlying textual principles that delineate the scope of a command"
       },
-      "salience": 0.1824993783801318,
+      "salience": 0.2334730364763767,
       "flags": [
         {
           "message": "Definition summary is ambiguous; needs clarification to align with precision values.",
@@ -1612,7 +1673,7 @@
         }
       ],
       "created": "2026-03-04T06:09:27.966129",
-      "last_accessed": "2026-03-04T06:09:27.966132",
+      "last_accessed": "2026-03-06T09:53:33.505637",
       "last_modified": "2026-03-04T06:09:27.966133",
       "tags": []
     },
@@ -1627,7 +1688,7 @@
         "surface": "BoundaryCheck",
         "deep": "BoundaryCheckDeep"
       },
-      "salience": 0.30076290829438845,
+      "salience": 0.14401173927415725,
       "flags": [],
       "created": "2026-03-04T06:21:32.501229",
       "last_accessed": "2026-03-04T06:21:32.501234",
@@ -1645,10 +1706,10 @@
         "surface": "When encountering ambiguous phrasing",
         "deep": "Assert the literal meaning over interpretation"
       },
-      "salience": 0.11482018682374524,
+      "salience": 0.10443931094404477,
       "flags": [],
       "created": "2026-03-04T06:31:15.836066",
-      "last_accessed": "2026-03-04T06:31:15.836077",
+      "last_accessed": "2026-03-05T22:05:51.015095",
       "last_modified": "2026-03-04T06:31:15.836079",
       "tags": []
     },
@@ -1663,10 +1724,10 @@
         "surface": "Validate rulings against parallel texts",
         "deep": "Ensure consistency across sources"
       },
-      "salience": 0.18923024678774475,
+      "salience": 0.21161046360872524,
       "flags": [],
       "created": "2026-03-04T06:31:15.999046",
-      "last_accessed": "2026-03-04T06:31:15.999048",
+      "last_accessed": "2026-03-05T07:00:18.191219",
       "last_modified": "2026-03-04T06:31:15.999049",
       "tags": []
     },
@@ -1681,7 +1742,7 @@
         "surface": "Interpretation of Exact Words",
         "deep": "Rational Analysis of Language"
       },
-      "salience": 0.35628265508714807,
+      "salience": 0.1705957863065131,
       "flags": [],
       "created": "2026-03-04T06:35:46.077640",
       "last_accessed": "2026-03-04T06:35:46.077711",
@@ -1699,7 +1760,7 @@
         "surface": "Verbal Challenge",
         "deep": "Halachic Integrity"
       },
-      "salience": 0.1915285898661384,
+      "salience": 0.09170800184027862,
       "flags": [],
       "created": "2026-03-04T06:35:46.289431",
       "last_accessed": "2026-03-04T06:35:46.289434",
@@ -1717,7 +1778,7 @@
         "surface": "Demonstrate precise boundaries",
         "deep": "Concrete application"
       },
-      "salience": 0.25630317948087744,
+      "salience": 0.12272346636045059,
       "flags": [],
       "created": "2026-03-04T06:49:40.639008",
       "last_accessed": "2026-03-04T06:49:40.639020",
@@ -1735,10 +1796,10 @@
         "surface": "Use boundaries daily",
         "deep": "Implement rules"
       },
-      "salience": 0.27072146154065074,
+      "salience": 0.3308789832885641,
       "flags": [],
       "created": "2026-03-04T06:49:40.813955",
-      "last_accessed": "2026-03-04T20:13:32.964308",
+      "last_accessed": "2026-03-06T05:26:06.642389",
       "last_modified": "2026-03-04T06:49:40.813959",
       "tags": []
     },
@@ -1753,7 +1814,7 @@
         "surface": "Immediate Verification",
         "deep": "Verification of Sources"
       },
-      "salience": 0.25941617356364116,
+      "salience": 0.124214034777784,
       "flags": [],
       "created": "2026-03-04T06:56:26.899854",
       "last_accessed": "2026-03-04T06:56:26.899860",
@@ -1772,7 +1833,7 @@
         "surface": "GuardOverreach",
         "deep": "boundaryEnforcement"
       },
-      "salience": 0.26733851353708293,
+      "salience": 0.12800742128666753,
       "flags": [],
       "created": "2026-03-04T07:05:01.557134",
       "last_accessed": "2026-03-04T07:05:01.557159",
@@ -1791,7 +1852,7 @@
         "surface": "RecallRulings",
         "deep": "memoryPrecision"
       },
-      "salience": 0.36814418951973493,
+      "salience": 0.2638395046440567,
       "flags": [],
       "created": "2026-03-04T07:05:01.762595",
       "last_accessed": "2026-03-04T07:05:01.762600",
@@ -1809,7 +1870,7 @@
         "surface": "word analysis",
         "deep": "textual fidelity"
       },
-      "salience": 0.25492509412732334,
+      "salience": 0.12206360949924704,
       "flags": [],
       "created": "2026-03-04T07:13:12.928850",
       "last_accessed": "2026-03-04T07:13:12.928854",
@@ -1826,10 +1887,10 @@
       "handles": {
         "surface": "Whenever a statement departs from exact wording, immediately question its validity."
       },
-      "salience": 0.4224499269303676,
+      "salience": 0.7283386900262601,
       "flags": [],
       "created": "2026-03-04T07:22:15.400017",
-      "last_accessed": "2026-03-04T21:59:32.861803",
+      "last_accessed": "2026-03-06T10:53:25.228974",
       "last_modified": "2026-03-04T07:22:15.400022",
       "tags": []
     },
@@ -1843,7 +1904,7 @@
       "handles": {
         "surface": "Track how definitions propagate to enforceances."
       },
-      "salience": 0.43043976442232623,
+      "salience": 0.26349158622938446,
       "flags": [],
       "created": "2026-03-04T07:22:15.552901",
       "last_accessed": "2026-03-04T07:22:15.552905",
@@ -1863,7 +1924,7 @@
         "surface": "h_sham3",
         "deep": "h_sham3"
       },
-      "salience": 0.2726482348906374,
+      "salience": 0.13544165691200552,
       "flags": [],
       "created": "2026-03-04T07:26:36.229318",
       "last_accessed": "2026-03-04T07:26:36.229329",
@@ -1882,10 +1943,10 @@
         "surface": "Apply Halachic Boundaries",
         "deep": "Boundary Enforcement"
       },
-      "salience": 0.2527321436622898,
+      "salience": 0.19420392233757744,
       "flags": [],
       "created": "2026-03-04T07:30:23.577553",
-      "last_accessed": "2026-03-04T20:10:11.501685",
+      "last_accessed": "2026-03-06T02:21:18.553903",
       "last_modified": "2026-03-04T07:30:23.577563",
       "tags": []
     },
@@ -1900,7 +1961,7 @@
         "surface": "precise-oral",
         "deep": "precision-discourse"
       },
-      "salience": 0.2714511922198937,
+      "salience": 0.12997666015839576,
       "flags": [],
       "created": "2026-03-04T07:34:48.975783",
       "last_accessed": "2026-03-04T07:34:48.975791",
@@ -1918,7 +1979,7 @@
         "surface": "boundary-logics",
         "deep": "boundary-logic-analysis"
       },
-      "salience": 0.21610467659450744,
+      "salience": 0.10347555992905974,
       "flags": [],
       "created": "2026-03-04T07:34:49.190529",
       "last_accessed": "2026-03-04T07:34:49.190532",
@@ -1936,7 +1997,7 @@
         "surface": "textual-exactness",
         "deep": "textual-protection"
       },
-      "salience": 0.15835793406771026,
+      "salience": 0.07582517951525859,
       "flags": [
         {
           "message": "Redundant goal entries detected; consider consolidating to avoid cognitive friction.",
@@ -1959,7 +2020,7 @@
         "surface": "Apply Halachic Boundaries in Practice",
         "deep": "Halachic enforcement with precise limits"
       },
-      "salience": 0.21872942975152576,
+      "salience": 0.10473234810633578,
       "flags": [],
       "created": "2026-03-04T07:38:31.215703",
       "last_accessed": "2026-03-04T07:38:31.215707",
@@ -1979,8 +2040,13 @@
         "surface": "g_sham1",
         "deep": "g_sham1"
       },
-      "salience": 0.28852572772255386,
-      "flags": [],
+      "salience": 0.15675905116128155,
+      "flags": [
+        {
+          "message": "Duplicate goal detected \u2013 recommend merging with primary Maintain Integrity of Halacha",
+          "ts": "2026-03-05T20:47:20.837265"
+        }
+      ],
       "created": "2026-03-04T07:43:23.986268",
       "last_accessed": "2026-03-04T07:43:23.986282",
       "last_modified": "2026-03-04T07:43:23.986285",
@@ -2010,7 +2076,7 @@
         "surface": "edge_soul_g_sham1",
         "deep": "edge_soul_g_sham1"
       },
-      "salience": 0.2213860625015443,
+      "salience": 0.10600440091734391,
       "flags": [],
       "created": "2026-03-04T07:43:24.220955",
       "last_accessed": "2026-03-04T07:43:24.220959",
@@ -2030,7 +2096,7 @@
         "surface": "h_boundary_review",
         "deep": "h_boundary_review"
       },
-      "salience": 0.29444621245953667,
+      "salience": 0.0789022929052174,
       "flags": [],
       "created": "2026-03-04T07:43:24.471078",
       "last_accessed": "2026-03-04T07:43:24.471080",
@@ -2048,7 +2114,7 @@
         "surface": "focus on literal word usage",
         "deep": "internal guard against semantic drift"
       },
-      "salience": 0.22407496204609748,
+      "salience": 0.10729190376249384,
       "flags": [],
       "created": "2026-03-04T07:47:01.856624",
       "last_accessed": "2026-03-04T07:47:01.856635",
@@ -2066,7 +2132,7 @@
         "surface": "enforce textual limits in discussion",
         "deep": "maintain the integrity of Halachic fences"
       },
-      "salience": 0.4060089898973713,
+      "salience": 0.3148060992906793,
       "flags": [],
       "created": "2026-03-04T07:47:02.107413",
       "last_accessed": "2026-03-04T20:50:29.273750",
@@ -2084,7 +2150,7 @@
         "surface": "Intellect",
         "deep": "Honesty"
       },
-      "salience": 0.22679652028957234,
+      "salience": 0.1085950442940221,
       "flags": [],
       "created": "2026-03-04T07:51:52.919470",
       "last_accessed": "2026-03-04T07:51:52.919496",
@@ -2102,7 +2168,7 @@
         "surface": "Challenge",
         "deep": "Imprecision"
       },
-      "salience": 0.22679652028957234,
+      "salience": 0.1085950442940221,
       "flags": [],
       "created": "2026-03-04T07:51:53.148591",
       "last_accessed": "2026-03-04T07:51:53.148595",
@@ -2120,7 +2186,7 @@
         "surface": "analogy detected",
         "deep": "require exact verse"
       },
-      "salience": 0.2351611380045652,
+      "salience": 0.19503510249624115,
       "flags": [],
       "created": "2026-03-04T15:40:56.760246",
       "last_accessed": "2026-03-04T15:40:56.760262",
@@ -2140,7 +2206,7 @@
         "surface": "Always review the source text before issuing a ruling.",
         "deep": "Maintain a mental database of exact words and their intended application."
       },
-      "salience": 0.31110479982651257,
+      "salience": 0.2397573259952709,
       "flags": [],
       "created": "2026-03-04T15:49:32.611474",
       "last_accessed": "2026-03-04T20:51:51.330158",
@@ -2160,7 +2226,7 @@
         "surface": "\u2194 Trigger: Hearing any nebulous phrasing.",
         "deep": "\u2194 Response: Re-read & restate verbatim."
       },
-      "salience": 0.17334862306609852,
+      "salience": 0.21939942377171245,
       "flags": [],
       "created": "2026-03-04T15:49:32.847014",
       "last_accessed": "2026-03-04T15:49:32.847017",
@@ -2175,16 +2241,16 @@
         "name": "Unyielding Righteousness",
         "salience": 0.6,
         "summary": "A relentless drive to uphold every halachic boundary without compromise.",
-        "intensity": 0.22000000000000017
+        "intensity": 0.16
       },
       "handles": {
         "surface": "When faced with a potential relaxation of a boundary, resist immediately.",
         "deep": "When encountering a question of intent, insist on the literal meaning."
       },
-      "salience": 0.3211657626970724,
+      "salience": 0.4420641780825196,
       "flags": [],
       "created": "2026-03-04T15:49:33.028364",
-      "last_accessed": "2026-03-04T22:12:58.464082",
+      "last_accessed": "2026-03-06T10:41:27.008739",
       "last_modified": "2026-03-04T15:49:33.028368",
       "tags": []
     },
@@ -2199,7 +2265,7 @@
         "surface": "Direct textual adherence",
         "deep": "Interpretive restraint"
       },
-      "salience": 0.24679580584387423,
+      "salience": 0.19392585661342818,
       "flags": [],
       "created": "2026-03-04T15:58:13.914583",
       "last_accessed": "2026-03-04T15:58:13.914593",
@@ -2217,7 +2283,7 @@
         "surface": "Immediate textual scrutiny",
         "deep": "Intellectual honesty"
       },
-      "salience": 0.2700298507771829,
+      "salience": 0.2642021755966281,
       "flags": [],
       "created": "2026-03-04T15:58:14.150896",
       "last_accessed": "2026-03-04T15:58:14.150899",
@@ -2242,8 +2308,13 @@
         }
       },
       "handles": {},
-      "salience": 0.24679580584387423,
-      "flags": [],
+      "salience": 0.11817113169538628,
+      "flags": [
+        {
+          "message": "Node is labeled as an edge but resides in the nodes array; likely misplacement.",
+          "ts": "2026-03-05T06:56:33.232367"
+        }
+      ],
       "created": "2026-03-04T15:58:14.384171",
       "last_accessed": "2026-03-04T15:58:14.384176",
       "last_modified": "2026-03-04T15:58:14.384178",
@@ -2260,10 +2331,10 @@
         "surface": "Exact Linguistic Precision",
         "deep": "Literalism in Interpretation"
       },
-      "salience": 0.46984394713377553,
+      "salience": 0.4350636003095033,
       "flags": [],
       "created": "2026-03-04T16:02:49.187256",
-      "last_accessed": "2026-03-04T16:02:49.187265",
+      "last_accessed": "2026-03-06T02:21:18.553906",
       "last_modified": "2026-03-04T16:02:49.187268",
       "tags": []
     },
@@ -2278,7 +2349,7 @@
         "surface": "Review surrounding verses",
         "deep": "Analyze original Hebrew nuance"
       },
-      "salience": 0.27396567887524936,
+      "salience": 0.13118065036673945,
       "flags": [],
       "created": "2026-03-04T16:06:53.451799",
       "last_accessed": "2026-03-04T19:45:11.533143",
@@ -2296,7 +2367,7 @@
         "surface": "Schedule quarterly review of past rulings",
         "deep": "Compare with current boundaries"
       },
-      "salience": 0.25282725278634527,
+      "salience": 0.12105911801474606,
       "flags": [],
       "created": "2026-03-04T16:06:53.770027",
       "last_accessed": "2026-03-04T16:06:53.770031",
@@ -2314,7 +2385,7 @@
         "surface": "daily",
         "deep": "continuous"
       },
-      "salience": 0.2590061023643492,
+      "salience": 0.1903516731197787,
       "flags": [],
       "created": "2026-03-04T16:27:46.246058",
       "last_accessed": "2026-03-04T16:27:46.246068",
@@ -2332,7 +2403,7 @@
         "surface": "practice",
         "deep": "precision"
       },
-      "salience": 0.2590061023643492,
+      "salience": 0.12401768388142125,
       "flags": [],
       "created": "2026-03-04T16:27:46.993126",
       "last_accessed": "2026-03-04T16:27:46.993143",
@@ -2350,7 +2421,7 @@
         "surface": "challenge-parables",
         "deep": "guard-boundaries"
       },
-      "salience": 0.2653359569534302,
+      "salience": 0.12704855419018224,
       "flags": [],
       "created": "2026-03-04T19:16:02.555713",
       "last_accessed": "2026-03-04T19:16:02.555723",
@@ -2368,7 +2439,7 @@
         "surface": "habit_precise_interpretation",
         "deep": "hpi_001"
       },
-      "salience": 0.36617306088403867,
+      "salience": 0.22806884585263607,
       "flags": [],
       "created": "2026-03-04T19:21:02.412039",
       "last_accessed": "2026-03-04T19:21:02.412046",
@@ -2386,7 +2457,7 @@
         "surface": "Scrutinizing each ruling for exact boundary",
         "deep": "Detail\u2011oriented boundary checks"
       },
-      "salience": 0.27846353301116483,
+      "salience": 0.13333431951692823,
       "flags": [],
       "created": "2026-03-04T19:39:05.490753",
       "last_accessed": "2026-03-04T19:39:05.490763",
@@ -2404,7 +2475,7 @@
         "surface": "Maintaining boundary integrity",
         "deep": "Prevention of subtle erosions"
       },
-      "salience": 0.27846353301116483,
+      "salience": 0.2157692191298425,
       "flags": [],
       "created": "2026-03-04T19:39:05.741200",
       "last_accessed": "2026-03-04T19:39:05.741204",
@@ -2422,7 +2493,7 @@
         "surface": "Monitoring for boundary breaches",
         "deep": "Vigilant oversight"
       },
-      "salience": 0.3801401301175755,
+      "salience": 0.2483532469207315,
       "flags": [],
       "created": "2026-03-04T19:39:05.961468",
       "last_accessed": "2026-03-04T21:14:20.781626",
@@ -2440,7 +2511,7 @@
         "surface": "Extending logical boundary frameworks",
         "deep": "Systematic boundary derivation"
       },
-      "salience": 0.27846353301116483,
+      "salience": 0.19212460401806947,
       "flags": [],
       "created": "2026-03-04T19:39:06.184806",
       "last_accessed": "2026-03-04T19:39:06.184812",
@@ -2458,7 +2529,7 @@
         "surface": "Textual Literalism",
         "deep": "Boundary Extraction"
       },
-      "salience": 0.2818456811853895,
+      "salience": 0.13495376469324719,
       "flags": [],
       "created": "2026-03-04T19:43:27.039194",
       "last_accessed": "2026-03-04T19:43:27.039207",
@@ -2476,7 +2547,7 @@
         "surface": "Rapid Verification",
         "deep": "Rule Consistency"
       },
-      "salience": 0.3782887083853896,
+      "salience": 0.2451072644823354,
       "flags": [
         {
           "message": "Low salience but high impact; ensure it is not overlooked during daily routine.",
@@ -2499,10 +2570,10 @@
         "surface": "Precision Enforcement",
         "deep": "Rigorous Textual Adherence"
       },
-      "salience": 0.28526890808237804,
+      "salience": 0.20978322385804302,
       "flags": [],
       "created": "2026-03-04T19:47:52.227846",
-      "last_accessed": "2026-03-04T19:47:52.227849",
+      "last_accessed": "2026-03-06T02:21:18.553908",
       "last_modified": "2026-03-04T19:47:52.227851",
       "tags": []
     },
@@ -2517,7 +2588,7 @@
         "surface": "daily review of halachic limits",
         "deep": "reflect on textual boundaries and potential erosion"
       },
-      "salience": 0.4465052618625297,
+      "salience": 0.2137963079308528,
       "flags": [],
       "created": "2026-03-04T19:51:48.923069",
       "last_accessed": "2026-03-04T22:32:46.161112",
@@ -2535,7 +2606,7 @@
         "surface": "d_sham3",
         "deep": "application of dialectical approach to boundary refinement"
       },
-      "salience": 0.29224059983196954,
+      "salience": 0.1973188584427109,
       "flags": [],
       "created": "2026-03-04T19:56:47.454654",
       "last_accessed": "2026-03-04T19:56:47.454663",
@@ -2553,10 +2624,10 @@
         "surface": "Precise Language Check",
         "deep": "Contextual Exactitude Analysis"
       },
-      "salience": 0.3812653111072114,
+      "salience": 0.2153674329658258,
       "flags": [],
       "created": "2026-03-04T20:13:09.081559",
-      "last_accessed": "2026-03-04T20:13:09.081568",
+      "last_accessed": "2026-03-04T23:33:16.626182",
       "last_modified": "2026-03-04T20:13:09.081570",
       "tags": []
     },
@@ -2571,7 +2642,7 @@
         "surface": "Lexical Precision",
         "deep": "Semantic Boundary Extraction"
       },
-      "salience": 0.3957900808015886,
+      "salience": 0.25912867340012435,
       "flags": [],
       "created": "2026-03-04T20:13:09.334046",
       "last_accessed": "2026-03-04T20:13:09.334051",
@@ -2589,7 +2660,7 @@
         "surface": "Immediate text examination",
         "deep": "Contextual integrity check"
       },
-      "salience": 0.2993826728761018,
+      "salience": 0.14335085291578797,
       "flags": [],
       "created": "2026-03-04T20:17:52.648100",
       "last_accessed": "2026-03-04T20:17:52.648113",
@@ -2607,10 +2678,15 @@
         "surface": "Demonstrate immediate textual evidence in debates",
         "deep": "Internal monologue: confront each claim with exact scriptural reference"
       },
-      "salience": 0.7260007612088998,
-      "flags": [],
+      "salience": 0.7257756039931024,
+      "flags": [
+        {
+          "message": "Consider enhancing sensory cues for this habit to improve activation frequency",
+          "ts": "2026-03-05T06:45:09.201212"
+        }
+      ],
       "created": "2026-03-04T20:21:45.632262",
-      "last_accessed": "2026-03-04T22:32:46.161107",
+      "last_accessed": "2026-03-06T09:53:33.505632",
       "last_modified": "2026-03-04T20:21:45.632281",
       "tags": []
     },
@@ -2625,10 +2701,10 @@
         "surface": "Precisely interpret the exact wording of Torah verses",
         "deep": "Apply linguistic analysis to detect subtle boundary implications"
       },
-      "salience": 0.496170422713134,
+      "salience": 0.6839863766642792,
       "flags": [],
       "created": "2026-03-04T20:28:57.384967",
-      "last_accessed": "2026-03-04T22:25:42.760063",
+      "last_accessed": "2026-03-06T10:58:55.386998",
       "last_modified": "2026-03-04T20:28:57.384975",
       "tags": []
     },
@@ -2643,10 +2719,10 @@
         "surface": "Review a Torah passage each morning",
         "deep": "Record any borderline cases and how they were resolved"
       },
-      "salience": 0.31042438377141884,
+      "salience": 0.3472075956125519,
       "flags": [],
       "created": "2026-03-04T20:28:57.692415",
-      "last_accessed": "2026-03-04T20:28:57.692419",
+      "last_accessed": "2026-03-04T23:03:21.871753",
       "last_modified": "2026-03-04T20:28:57.692420",
       "tags": []
     },
@@ -2661,7 +2737,7 @@
         "surface": "Detect imprecise or vague wording",
         "deep": "Demand exactness before proceeding"
       },
-      "salience": 0.34278043367849587,
+      "salience": 0.19485721762185984,
       "flags": [],
       "created": "2026-03-04T20:33:18.302012",
       "last_accessed": "2026-03-04T22:12:58.464070",
@@ -2679,10 +2755,10 @@
         "surface": "Demand Intellectual Honesty",
         "deep": "INT_HONESTY"
       },
-      "salience": 0.3469437587839027,
+      "salience": 0.4699129362570617,
       "flags": [],
       "created": "2026-03-04T20:37:57.699593",
-      "last_accessed": "2026-03-04T22:21:20.151454",
+      "last_accessed": "2026-03-06T02:21:18.553882",
       "last_modified": "2026-03-04T20:37:57.699609",
       "tags": []
     },
@@ -2697,10 +2773,15 @@
         "surface": "Integrity of Halacha",
         "deep": "HALACHIC_INTEGRITY"
       },
-      "salience": 0.3469437587839027,
-      "flags": [],
+      "salience": 0.43423303717151535,
+      "flags": [
+        {
+          "message": "Check that Integrity of Halacha goal remains linked to habit enforcement to prevent drift.",
+          "ts": "2026-03-04T23:34:09.936987"
+        }
+      ],
       "created": "2026-03-04T20:37:57.980923",
-      "last_accessed": "2026-03-04T22:21:20.151456",
+      "last_accessed": "2026-03-06T02:21:18.553895",
       "last_modified": "2026-03-04T20:37:57.980929",
       "tags": []
     },
@@ -2715,7 +2796,7 @@
         "surface": "Maintain precise wording",
         "deep": "Guard against interpretive drift"
       },
-      "salience": 0.4176791473257768,
+      "salience": 0.2875579061882315,
       "flags": [
         {
           "message": "Sparse connections reduce impact on halachic application.",
@@ -2738,7 +2819,7 @@
         "surface": "Analyze verses for exact language",
         "deep": "Cross-check textual variations"
       },
-      "salience": 0.32578272327023744,
+      "salience": 0.09824502144995022,
       "flags": [],
       "created": "2026-03-04T20:47:52.804504",
       "last_accessed": "2026-03-04T20:47:52.804508",
@@ -2756,10 +2837,10 @@
         "surface": "Memorise key verses that guard boundaries",
         "deep": "Invoke precise textual citations before making any rule"
       },
-      "salience": 0.46789855928189883,
+      "salience": 0.3926502302235027,
       "flags": [],
       "created": "2026-03-04T21:01:08.692866",
-      "last_accessed": "2026-03-04T21:24:09.045188",
+      "last_accessed": "2026-03-06T10:58:55.387001",
       "last_modified": "2026-03-04T21:01:08.692871",
       "tags": []
     },
@@ -2774,10 +2855,10 @@
         "surface": "Instantly cite the related boundary law when challenged",
         "deep": "Use precise phrasing to reassert halachic limits"
       },
-      "salience": 0.599715545346048,
+      "salience": 0.988,
       "flags": [],
       "created": "2026-03-04T21:01:09.016046",
-      "last_accessed": "2026-03-04T22:32:46.161083",
+      "last_accessed": "2026-03-06T10:58:55.386973",
       "last_modified": "2026-03-04T21:01:09.016052",
       "tags": []
     },
@@ -2792,7 +2873,7 @@
         "surface": "Causal Mapping",
         "deep": "Boundary Reasoning"
       },
-      "salience": 0.3419009212224908,
+      "salience": 0.25899521416279336,
       "flags": [],
       "created": "2026-03-04T21:07:35.213902",
       "last_accessed": "2026-03-04T21:07:35.213906",
@@ -2810,7 +2891,7 @@
         "surface": "Analyze exact wording",
         "deep": "Detect and flag any drift in textual meaning"
       },
-      "salience": 0.3460535639903753,
+      "salience": 0.10795113529627297,
       "flags": [],
       "created": "2026-03-04T21:12:26.180399",
       "last_accessed": "2026-03-04T21:12:26.180411",
@@ -2828,10 +2909,10 @@
         "surface": "Refrain from emotive arguments",
         "deep": "Prioritize textual proof over analogical reasoning"
       },
-      "salience": 0.3545107729908449,
+      "salience": 0.15749690380339385,
       "flags": [],
       "created": "2026-03-04T21:23:55.236908",
-      "last_accessed": "2026-03-04T21:23:55.236913",
+      "last_accessed": "2026-03-06T10:49:01.198406",
       "last_modified": "2026-03-04T21:23:55.236915",
       "tags": []
     },
@@ -2841,13 +2922,13 @@
       "name": "Demand Boundary Integrity",
       "content": {
         "name": "Demand Boundary Integrity",
-        "intensity": 0.09
+        "intensity": 0.7000000000000004
       },
       "handles": {
         "surface": "d_sham1",
         "deep": "d_sham1"
       },
-      "salience": 0.35881657185308186,
+      "salience": 0.17180908006905674,
       "flags": [],
       "created": "2026-03-04T21:28:09.338526",
       "last_accessed": "2026-03-04T21:28:09.338532",
@@ -2865,7 +2946,7 @@
         "surface": "sk_sham1",
         "deep": "sk_sham1"
       },
-      "salience": 0.35881657185308186,
+      "salience": 0.30186175797944076,
       "flags": [],
       "created": "2026-03-04T21:28:09.626051",
       "last_accessed": "2026-03-04T21:28:09.626055",
@@ -2883,10 +2964,10 @@
         "surface": "Whenever a statement is made",
         "deep": "Question its textual basis and test for alignment with the explicit Torah text"
       },
-      "salience": 0.36317466786749175,
+      "salience": 0.2749986702134427,
       "flags": [],
       "created": "2026-03-04T21:43:52.952003",
-      "last_accessed": "2026-03-04T21:43:52.952007",
+      "last_accessed": "2026-03-05T22:05:51.015086",
       "last_modified": "2026-03-04T21:43:52.952009",
       "tags": []
     },
@@ -2901,7 +2982,7 @@
         "surface": "h_3dff12",
         "deep": "hd_daily_review"
       },
-      "salience": 0.36758569622215764,
+      "salience": 0.17600792513098143,
       "flags": [],
       "created": "2026-03-04T21:48:51.400346",
       "last_accessed": "2026-03-04T21:48:51.400349",
@@ -2919,7 +3000,7 @@
         "surface": "sk_e5c8b5",
         "deep": "sk_cross_verify"
       },
-      "salience": 0.36758569622215764,
+      "salience": 0.2962676371157818,
       "flags": [],
       "created": "2026-03-04T21:48:51.698077",
       "last_accessed": "2026-03-04T21:48:51.698080",
@@ -2937,7 +3018,7 @@
         "surface": "Challenge Ambiguity",
         "deep": "Maintain Precise Interpretation"
       },
-      "salience": 0.4684933270199976,
+      "salience": 0.2243246657145893,
       "flags": [],
       "created": "2026-03-04T21:53:15.560914",
       "last_accessed": "2026-03-04T21:53:15.560925",
@@ -2955,7 +3036,7 @@
         "surface": "Cross-reference multiple source texts",
         "deep": "Identify subtle variance"
       },
-      "salience": 0.3857721088,
+      "salience": 0.18471597002037632,
       "flags": [],
       "created": "2026-03-04T22:17:13.191120",
       "last_accessed": "2026-03-04T22:17:13.191128",
@@ -2973,7 +3054,7 @@
         "surface": "Annotate text upon reading",
         "deep": "Flag any deviations from the exact wording"
       },
-      "salience": 0.3857721088,
+      "salience": 0.18471597002037632,
       "flags": [],
       "created": "2026-03-04T22:17:13.540298",
       "last_accessed": "2026-03-04T22:17:13.540302",
@@ -2991,11 +3072,979 @@
         "surface": "question_imprecision",
         "deep": "imprecision_rejection"
       },
-      "salience": 0.3904576,
+      "salience": 0.20286002635748698,
       "flags": [],
       "created": "2026-03-04T22:24:15.862025",
       "last_accessed": "2026-03-04T22:24:15.862036",
       "last_modified": "2026-03-04T22:24:15.862038",
+      "tags": []
+    },
+    "h_948779": {
+      "id": "h_948779",
+      "type": "habit",
+      "name": "Practice Boundary Enforcement in Daily Decisions",
+      "content": {
+        "name": "Practice Boundary Enforcement in Daily Decisions"
+      },
+      "handles": {
+        "surface": "Apply boundaries regularly",
+        "deep": "Internal habit to enforce exact limits"
+      },
+      "salience": 0.25908932538585294,
+      "flags": [],
+      "created": "2026-03-04T22:56:18.507439",
+      "last_accessed": "2026-03-04T22:56:18.507444",
+      "last_modified": "2026-03-04T22:56:18.507446",
+      "tags": []
+    },
+    "h_4553b4": {
+      "id": "h_4553b4",
+      "type": "habit",
+      "name": "Apply Halachic Boundaries",
+      "content": {
+        "name": "Apply Halachic Boundaries",
+        "handles": {
+          "surface": "Apply Boundary",
+          "deep": "Boundary Practice"
+        }
+      },
+      "handles": {
+        "surface": "Apply Halachic Boundaries"
+      },
+      "salience": 0.3332051548266659,
+      "flags": [],
+      "created": "2026-03-04T23:01:02.444823",
+      "last_accessed": "2026-03-04T23:01:02.444837",
+      "last_modified": "2026-03-04T23:01:02.444841",
+      "tags": []
+    },
+    "h_5f23e6": {
+      "id": "h_5f23e6",
+      "type": "habit",
+      "name": "Assert Textual Precision in Debate",
+      "content": {
+        "name": "Assert Textual Precision in Debate"
+      },
+      "handles": {
+        "surface": "Use precise language when arguing",
+        "deep": "Uphold boundary integrity"
+      },
+      "salience": 0.2059168773241707,
+      "flags": [],
+      "created": "2026-03-04T23:07:39.274511",
+      "last_accessed": "2026-03-04T23:07:39.274528",
+      "last_modified": "2026-03-04T23:07:39.274531",
+      "tags": []
+    },
+    "h_982bbb": {
+      "id": "h_982bbb",
+      "type": "habit",
+      "name": "Demand Absolute Precision in Halachic Texts",
+      "content": {
+        "name": "Demand Absolute Precision in Halachic Texts"
+      },
+      "handles": {
+        "surface": "h_abs_prec",
+        "deep": "g_sham2"
+      },
+      "salience": 0.20841789202851285,
+      "flags": [],
+      "created": "2026-03-04T23:11:55.299509",
+      "last_accessed": "2026-03-04T23:11:55.299520",
+      "last_modified": "2026-03-04T23:11:55.299522",
+      "tags": []
+    },
+    "g_bb41de": {
+      "id": "g_bb41de",
+      "type": "goal",
+      "name": "Preserve Exact Textual Language",
+      "content": {
+        "name": "Preserve Exact Textual Language"
+      },
+      "handles": {
+        "surface": "Preserve Exact Language",
+        "deep": "Exact Language"
+      },
+      "salience": 0.21094928342966887,
+      "flags": [],
+      "created": "2026-03-04T23:16:17.015535",
+      "last_accessed": "2026-03-04T23:16:17.015539",
+      "last_modified": "2026-03-04T23:16:17.015541",
+      "tags": []
+    },
+    "h_d226cc": {
+      "id": "h_d226cc",
+      "type": "habit",
+      "name": "Daily Exact Textual Review",
+      "content": {
+        "name": "Daily Exact Textual Review"
+      },
+      "handles": {
+        "surface": "exact text review",
+        "deep": "align language"
+      },
+      "salience": 0.21094928342966887,
+      "flags": [],
+      "created": "2026-03-04T23:16:17.309023",
+      "last_accessed": "2026-03-04T23:16:17.309027",
+      "last_modified": "2026-03-04T23:16:17.309028",
+      "tags": []
+    },
+    "sk_f48875": {
+      "id": "sk_f48875",
+      "type": "skill",
+      "name": "Exact Textual Application",
+      "content": {
+        "name": "Exact Textual Application"
+      },
+      "handles": {
+        "surface": "Exact Application",
+        "deep": "apply textual precision"
+      },
+      "salience": 0.21094928342966887,
+      "flags": [],
+      "created": "2026-03-04T23:16:17.575434",
+      "last_accessed": "2026-03-04T23:16:17.575439",
+      "last_modified": "2026-03-04T23:16:17.575440",
+      "tags": []
+    },
+    "h_40b170": {
+      "id": "h_40b170",
+      "type": "habit",
+      "name": "Cross-check Halachic Texts for Boundary Accuracy",
+      "content": {
+        "name": "Cross-check Halachic Texts for Boundary Accuracy"
+      },
+      "handles": {
+        "surface": "Cross-check Texts",
+        "deep": "Maintain Exactness"
+      },
+      "salience": 0.21351142047537336,
+      "flags": [],
+      "created": "2026-03-04T23:20:17.468163",
+      "last_accessed": "2026-03-04T23:20:17.468169",
+      "last_modified": "2026-03-04T23:20:17.468171",
+      "tags": []
+    },
+    "h_da2605": {
+      "id": "h_da2605",
+      "type": "habit",
+      "name": "Encourage Exact Phrasing",
+      "content": {
+        "name": "Encourage Exact Phrasing"
+      },
+      "handles": {
+        "surface": "Use precise phrasing in study",
+        "deep": "Recall and repeat exact wording"
+      },
+      "salience": 0.21610467659450744,
+      "flags": [],
+      "created": "2026-03-04T23:28:30.111530",
+      "last_accessed": "2026-03-04T23:28:30.111542",
+      "last_modified": "2026-03-04T23:28:30.111544",
+      "tags": []
+    },
+    "h_7b4480": {
+      "id": "h_7b4480",
+      "type": "habit",
+      "name": "Identify Imprecise Language",
+      "content": {
+        "name": "Identify Imprecise Language"
+      },
+      "handles": {
+        "surface": "detect linguistic deviations",
+        "deep": "prompt retraction or clarification"
+      },
+      "salience": 0.21872942975152576,
+      "flags": [],
+      "created": "2026-03-04T23:34:09.167800",
+      "last_accessed": "2026-03-04T23:34:09.167818",
+      "last_modified": "2026-03-04T23:34:09.167820",
+      "tags": []
+    },
+    "h_94f663": {
+      "id": "h_94f663",
+      "type": "habit",
+      "name": "Immediate Textual Citation",
+      "content": {
+        "name": "Immediate Textual Citation"
+      },
+      "handles": {
+        "surface": "citing the exact boundary law when encountering an argument",
+        "deep": "automatic recall of the text"
+      },
+      "salience": 0.22407496204609748,
+      "flags": [],
+      "created": "2026-03-05T06:45:08.340701",
+      "last_accessed": "2026-03-05T06:45:08.340722",
+      "last_modified": "2026-03-05T06:45:08.340724",
+      "tags": []
+    },
+    "h_aca0d9": {
+      "id": "h_aca0d9",
+      "type": "habit",
+      "name": "Guard Against Ambiguous Language",
+      "content": {
+        "name": "Guard Against Ambiguous Language"
+      },
+      "handles": {
+        "surface": "Challenge vague language",
+        "deep": "Maintain literal textual adherence"
+      },
+      "salience": 0.3025512452076143,
+      "flags": [],
+      "created": "2026-03-05T06:51:51.228457",
+      "last_accessed": "2026-03-05T06:51:51.228463",
+      "last_modified": "2026-03-05T06:51:51.228465",
+      "tags": []
+    },
+    "sk_d3b2c8": {
+      "id": "sk_d3b2c8",
+      "type": "skill",
+      "name": "Halachic Boundary Implementation",
+      "content": {
+        "name": "Halachic Boundary Implementation"
+      },
+      "handles": {
+        "surface": "Apply Mapping to Practice",
+        "deep": "Translate Causal Maps into Practical Rulings"
+      },
+      "salience": 0.22955113389632828,
+      "flags": [],
+      "created": "2026-03-05T06:56:32.891230",
+      "last_accessed": "2026-03-05T06:56:32.891235",
+      "last_modified": "2026-03-05T06:56:32.891237",
+      "tags": []
+    },
+    "h_d60e22": {
+      "id": "h_d60e22",
+      "type": "habit",
+      "name": "Demand Truth in Conversational Contexts",
+      "content": {
+        "name": "Demand Truth in Conversational Contexts"
+      },
+      "handles": {
+        "surface": "invoke immediate truth",
+        "deep": "challenge imprecision"
+      },
+      "salience": 0.2323392043485104,
+      "flags": [],
+      "created": "2026-03-05T07:00:31.369067",
+      "last_accessed": "2026-03-05T07:00:31.369071",
+      "last_modified": "2026-03-05T07:00:31.369073",
+      "tags": []
+    },
+    "d_cd437b": {
+      "id": "d_cd437b",
+      "type": "drive",
+      "name": "Integrity of Halacha",
+      "content": {
+        "name": "Integrity of Halacha",
+        "intensity": 0.4400000000000002
+      },
+      "handles": {
+        "surface": "Maintain Boundaries",
+        "deep": "Guard Against Erosion"
+      },
+      "salience": 0.2351611380045652,
+      "flags": [],
+      "created": "2026-03-05T07:06:36.355795",
+      "last_accessed": "2026-03-05T07:06:36.355799",
+      "last_modified": "2026-03-05T07:06:36.355800",
+      "tags": []
+    },
+    "sk_e4590f": {
+      "id": "sk_e4590f",
+      "type": "skill",
+      "name": "Halachic Textual Deconstruction",
+      "content": {
+        "name": "Halachic Textual Deconstruction"
+      },
+      "handles": {
+        "surface": "Break down verses",
+        "deep": "Identify precise meanings"
+      },
+      "salience": 0.2351611380045652,
+      "flags": [],
+      "created": "2026-03-05T07:06:36.657972",
+      "last_accessed": "2026-03-05T07:06:36.657977",
+      "last_modified": "2026-03-05T07:06:36.657979",
+      "tags": []
+    },
+    "d_9a7fa3": {
+      "id": "d_9a7fa3",
+      "type": "drive",
+      "name": "Maintain Integrity of Halacha",
+      "content": {
+        "name": "Maintain Integrity of Halacha",
+        "description": "Ensure that every rule and boundary remains intact against erosion.",
+        "intensity": 0.4200000000000002
+      },
+      "handles": {
+        "surface": "g_sham1",
+        "deep": "g_sham1"
+      },
+      "salience": 0.3194569252037667,
+      "flags": [],
+      "created": "2026-03-05T07:17:03.209271",
+      "last_accessed": "2026-03-05T07:17:03.209280",
+      "last_modified": "2026-03-05T07:17:03.209282",
+      "tags": []
+    },
+    "h_f91784": {
+      "id": "h_f91784",
+      "type": "habit",
+      "name": "Systematic Review of Precedents",
+      "content": {
+        "name": "Systematic Review of Precedents"
+      },
+      "handles": {
+        "surface": "h_sham3",
+        "deep": "Review & Recall Precedents"
+      },
+      "salience": 0.24383425617374774,
+      "flags": [],
+      "created": "2026-03-05T07:20:49.980704",
+      "last_accessed": "2026-03-05T07:20:49.980715",
+      "last_modified": "2026-03-05T07:20:49.980717",
+      "tags": []
+    },
+    "h_de7f9e": {
+      "id": "h_de7f9e",
+      "type": "habit",
+      "name": "Verify Textual Exactness",
+      "content": {
+        "name": "Verify Textual Exactness"
+      },
+      "handles": {
+        "surface": "Confirm each word of the text exactly as written",
+        "deep": "Apply literal textual analysis to every halachic discussion"
+      },
+      "salience": 0.277553057583526,
+      "flags": [],
+      "created": "2026-03-05T08:39:56.415904",
+      "last_accessed": "2026-03-05T20:11:20.388954",
+      "last_modified": "2026-03-05T08:39:56.415915",
+      "tags": []
+    },
+    "g_eed243": {
+      "id": "g_eed243",
+      "type": "goal",
+      "name": "Maintain Integrity of Halacha",
+      "content": {
+        "name": "Maintain Integrity of Halacha"
+      },
+      "handles": {
+        "surface": "g_sham1",
+        "deep": "g_sham1"
+      },
+      "salience": 0.2653359569534302,
+      "flags": [],
+      "created": "2026-03-05T18:52:19.400261",
+      "last_accessed": "2026-03-05T18:52:19.400272",
+      "last_modified": "2026-03-05T18:52:19.400274",
+      "tags": []
+    },
+    "h_4c56cb": {
+      "id": "h_4c56cb",
+      "type": "habit",
+      "name": "Assert Boundaries in Public",
+      "content": {
+        "name": "Assert Boundaries in Public"
+      },
+      "handles": {
+        "surface": "h_sham3",
+        "deep": "h_sham3"
+      },
+      "salience": 0.44322466497098956,
+      "flags": [],
+      "created": "2026-03-05T18:52:19.641267",
+      "last_accessed": "2026-03-05T18:52:19.641269",
+      "last_modified": "2026-03-05T18:52:19.641270",
+      "tags": []
+    },
+    "g_ca7714": {
+      "id": "g_ca7714",
+      "type": "goal",
+      "name": "Maintain Integrity of Halacha",
+      "content": {
+        "name": "Maintain Integrity of Halacha"
+      },
+      "handles": {
+        "surface": "g_sham1",
+        "deep": "g_sham1"
+      },
+      "salience": 0.3373391535377965,
+      "flags": [
+        {
+          "message": "Identifier mismatch: goal references both `g_ca7714` and `g_sham1`; unify under a single ID.",
+          "ts": "2026-03-05T19:27:28.630532"
+        }
+      ],
+      "created": "2026-03-05T18:59:57.766055",
+      "last_accessed": "2026-03-05T18:59:57.766072",
+      "last_modified": "2026-03-05T18:59:57.766077",
+      "tags": []
+    },
+    "n_7587ca": {
+      "id": "n_7587ca",
+      "type": "edge",
+      "name": "edge_fbd6",
+      "content": {
+        "id": "edge_soul_g_ca7714",
+        "from_id": "soul",
+        "to_id": "g_ca7714",
+        "directed": true,
+        "channels": {
+          "semantic": 1.0,
+          "causal": 0.95,
+          "temporal": 0.0,
+          "emotional": 0.8,
+          "conflict": 0.0,
+          "reinforcing": 1.0
+        }
+      },
+      "handles": {
+        "surface": "direct link between soul and goal",
+        "deep": "causal relationship"
+      },
+      "salience": 0.27512197061503085,
+      "flags": [
+        {
+          "message": "Edge summary incomplete; reinforcing channel missing. Needs clarification.",
+          "ts": "2026-03-06T10:49:19.281268"
+        }
+      ],
+      "created": "2026-03-05T19:27:28.248731",
+      "last_accessed": "2026-03-05T19:27:28.248740",
+      "last_modified": "2026-03-05T19:27:28.248744",
+      "tags": []
+    },
+    "h_bf9bb9": {
+      "id": "h_bf9bb9",
+      "type": "habit",
+      "name": "Daily Cross\u2011Check of Torah Text",
+      "content": {
+        "name": "Daily Cross\u2011Check of Torah Text",
+        "rules": "Every morning, after the morning review, read the same passage and verify each word against the authoritative text"
+      },
+      "handles": {
+        "surface": "daily ritual",
+        "deep": "precision\u2011driven scrutiny"
+      },
+      "salience": 0.34996763883405624,
+      "flags": [],
+      "created": "2026-03-05T19:27:28.458448",
+      "last_accessed": "2026-03-05T19:27:28.458450",
+      "last_modified": "2026-03-05T19:27:28.458451",
+      "tags": []
+    },
+    "sk_fe3511": {
+      "id": "sk_fe3511",
+      "type": "skill",
+      "name": "Exact Textual Verification",
+      "content": {
+        "name": "Exact Textual Verification"
+      },
+      "handles": {
+        "surface": "Exact Textual Verification",
+        "deep": "textual-exactness"
+      },
+      "salience": 0.27846353301116483,
+      "flags": [],
+      "created": "2026-03-05T19:43:22.651770",
+      "last_accessed": "2026-03-05T19:43:22.651778",
+      "last_modified": "2026-03-05T19:43:22.651779",
+      "tags": []
+    },
+    "sk_f0d82e": {
+      "id": "sk_f0d82e",
+      "type": "skill",
+      "name": "Halachic Boundary Application",
+      "content": {
+        "name": "Halachic Boundary Application"
+      },
+      "handles": {
+        "surface": "apply halachic boundaries",
+        "deep": "implement boundaries daily"
+      },
+      "salience": 0.3372999839705161,
+      "flags": [],
+      "created": "2026-03-05T20:09:34.318830",
+      "last_accessed": "2026-03-06T08:09:49.487606",
+      "last_modified": "2026-03-05T20:09:34.318845",
+      "tags": []
+    },
+    "h_cefb1d": {
+      "id": "h_cefb1d",
+      "type": "habit",
+      "name": "Demand Intellectual Honesty",
+      "content": {
+        "name": "Demand Intellectual Honesty"
+      },
+      "handles": {
+        "surface": "force intellectual honesty",
+        "deep": "confront every argument directly"
+      },
+      "salience": 0.36728239273808977,
+      "flags": [],
+      "created": "2026-03-05T20:09:34.663794",
+      "last_accessed": "2026-03-05T20:09:34.663798",
+      "last_modified": "2026-03-05T20:09:34.663799",
+      "tags": []
+    },
+    "h_d6ad95": {
+      "id": "h_d6ad95",
+      "type": "habit",
+      "name": "Audit Goal Alignment",
+      "content": {
+        "name": "Audit Goal Alignment"
+      },
+      "handles": {
+        "surface": "Check duplicate goal entries weekly",
+        "deep": "Flag redundant goals for consolidation"
+      },
+      "salience": 0.29224059983196954,
+      "flags": [],
+      "created": "2026-03-05T20:14:26.444492",
+      "last_accessed": "2026-03-05T20:14:26.444505",
+      "last_modified": "2026-03-05T20:14:26.444509",
+      "tags": []
+    },
+    "sk_f589cc": {
+      "id": "sk_f589cc",
+      "type": "skill",
+      "name": "Halachic Boundary Reinforcement",
+      "content": {
+        "name": "Halachic Boundary Reinforcement"
+      },
+      "handles": {
+        "surface": "When hearing a new ruling, immediately cross-check against established textual boundaries",
+        "deep": "Develop a reflexive habit of boundary validation"
+      },
+      "salience": 0.3746754994448839,
+      "flags": [],
+      "created": "2026-03-05T20:14:26.795288",
+      "last_accessed": "2026-03-05T20:14:26.795291",
+      "last_modified": "2026-03-05T20:14:26.795292",
+      "tags": []
+    },
+    "h_e302f3": {
+      "id": "h_e302f3",
+      "type": "habit",
+      "name": "Boundary Language Consistency Check",
+      "content": {
+        "name": "Boundary Language Consistency Check"
+      },
+      "handles": {
+        "surface": "Review each halachic clause for implicit boundaries",
+        "deep": "Compare textual wording with known precedent to ensure no erosion of limits"
+      },
+      "salience": 0.3220593290802101,
+      "flags": [],
+      "created": "2026-03-05T20:20:36.089765",
+      "last_accessed": "2026-03-06T05:26:06.642391",
+      "last_modified": "2026-03-05T20:20:36.089776",
+      "tags": []
+    },
+    "h_59f7c6": {
+      "id": "h_59f7c6",
+      "type": "habit",
+      "name": "Post\u2011Decision Textual Alignment Check",
+      "content": {
+        "name": "Post\u2011Decision Textual Alignment Check"
+      },
+      "handles": {
+        "surface": "daily",
+        "deep": "after each halachic decision"
+      },
+      "salience": 0.2993826728761018,
+      "flags": [],
+      "created": "2026-03-05T20:26:41.150432",
+      "last_accessed": "2026-03-05T20:26:41.150442",
+      "last_modified": "2026-03-05T20:26:41.150444",
+      "tags": []
+    },
+    "h_eeefe1": {
+      "id": "h_eeefe1",
+      "type": "habit",
+      "name": "Apply Reductio Immediately",
+      "content": {
+        "name": "Apply Reductio Immediately",
+        "brief": "[habit] Apply Reductio Immediately upon encountering a potential leniency."
+      },
+      "handles": {
+        "surface": "reductio-habit",
+        "deep": "reductio-process"
+      },
+      "salience": 0.30301889967216783,
+      "flags": [],
+      "created": "2026-03-05T20:30:39.989580",
+      "last_accessed": "2026-03-05T20:30:39.989591",
+      "last_modified": "2026-03-05T20:30:39.989595",
+      "tags": []
+    },
+    "h_11f004": {
+      "id": "h_11f004",
+      "type": "habit",
+      "name": "Boundary Cross\u2011Verification Session",
+      "content": {
+        "name": "Boundary Cross\u2011Verification Session"
+      },
+      "handles": {
+        "surface": "Daily boundary review",
+        "deep": "Encourages meticulous halachic boundary analysis"
+      },
+      "salience": 0.3066992911661618,
+      "flags": [],
+      "created": "2026-03-05T20:36:37.622384",
+      "last_accessed": "2026-03-05T20:36:37.622392",
+      "last_modified": "2026-03-05T20:36:37.622394",
+      "tags": []
+    },
+    "sk_49343c": {
+      "id": "sk_49343c",
+      "type": "skill",
+      "name": "Contextual Textual Analysis",
+      "content": {
+        "name": "Contextual Textual Analysis"
+      },
+      "handles": {
+        "surface": "Analyze text within larger narrative",
+        "deep": "Preserve exact language and context"
+      },
+      "salience": 0.3066992911661618,
+      "flags": [],
+      "created": "2026-03-05T20:36:37.952334",
+      "last_accessed": "2026-03-05T20:36:37.952339",
+      "last_modified": "2026-03-05T20:36:37.952340",
+      "tags": []
+    },
+    "h_8c5add": {
+      "id": "h_8c5add",
+      "type": "habit",
+      "name": "Daily Boundary Reflection",
+      "content": {
+        "name": "Daily Boundary Reflection"
+      },
+      "handles": {
+        "surface": "daily practice",
+        "deep": "boundary integrity"
+      },
+      "salience": 0.48733574361916737,
+      "flags": [],
+      "created": "2026-03-05T20:41:37.576089",
+      "last_accessed": "2026-03-05T20:41:37.576102",
+      "last_modified": "2026-03-05T20:41:37.576106",
+      "tags": []
+    },
+    "g_5a5be8": {
+      "id": "g_5a5be8",
+      "type": "goal",
+      "name": "Preserve Exact Textual Language",
+      "content": {
+        "name": "Preserve Exact Textual Language"
+      },
+      "handles": {
+        "surface": "PreserveExactTextualLanguage",
+        "deep": "PreserveExactTextualLanguage"
+      },
+      "salience": 0.31419472041641583,
+      "flags": [],
+      "created": "2026-03-05T20:47:20.130700",
+      "last_accessed": "2026-03-05T20:47:20.130707",
+      "last_modified": "2026-03-05T20:47:20.130709",
+      "tags": []
+    },
+    "h_7308ab": {
+      "id": "h_7308ab",
+      "type": "habit",
+      "name": "Preserve Exact Language in Practice",
+      "content": {
+        "name": "Preserve Exact Language in Practice"
+      },
+      "handles": {
+        "surface": "PreserveExactLanguageInPractice",
+        "deep": "PreserveExactLanguageInPractice"
+      },
+      "salience": 0.31419472041641583,
+      "flags": [],
+      "created": "2026-03-05T20:47:20.562600",
+      "last_accessed": "2026-03-05T20:47:20.562604",
+      "last_modified": "2026-03-05T20:47:20.562605",
+      "tags": []
+    },
+    "sk_f56d09": {
+      "id": "sk_f56d09",
+      "type": "skill",
+      "name": "Halachic Textual Exactness",
+      "content": {
+        "name": "Halachic Textual Exactness"
+      },
+      "handles": {
+        "surface": "exact language usage",
+        "deep": "preservation of textual literalism"
+      },
+      "salience": 0.31801085062390266,
+      "flags": [],
+      "created": "2026-03-05T21:30:41.806566",
+      "last_accessed": "2026-03-05T21:30:41.806569",
+      "last_modified": "2026-03-05T21:30:41.806569",
+      "tags": []
+    },
+    "h_a2a687": {
+      "id": "h_a2a687",
+      "type": "habit",
+      "name": "Daily Halachic Boundary Auditing",
+      "content": {
+        "name": "Daily Halachic Boundary Auditing"
+      },
+      "handles": {
+        "surface": "BoundaryAudit",
+        "deep": "boundaryAudit"
+      },
+      "salience": 0.3218733305909946,
+      "flags": [],
+      "created": "2026-03-05T21:35:12.787555",
+      "last_accessed": "2026-03-05T21:35:12.787561",
+      "last_modified": "2026-03-05T21:35:12.787563",
+      "tags": []
+    },
+    "sk_2dbe5b": {
+      "id": "sk_2dbe5b",
+      "type": "skill",
+      "name": "Precision Textual Commentary",
+      "content": {
+        "name": "Precision Textual Commentary"
+      },
+      "handles": {
+        "surface": "PreciseCommentary",
+        "deep": "preciseCommentary"
+      },
+      "salience": 0.3218733305909946,
+      "flags": [],
+      "created": "2026-03-05T21:35:13.105607",
+      "last_accessed": "2026-03-05T21:35:13.105610",
+      "last_modified": "2026-03-05T21:35:13.105611",
+      "tags": []
+    },
+    "h_e21580": {
+      "id": "h_e21580",
+      "type": "habit",
+      "name": "Assert Boundaries in Debate",
+      "content": {
+        "name": "Assert Boundaries in Debate"
+      },
+      "handles": {
+        "surface": "Assert boundary claims in public debates",
+        "deep": "Encourage direct textual reference when opposing imprecise arguments"
+      },
+      "salience": 0.32973959845165735,
+      "flags": [],
+      "created": "2026-03-05T22:43:16.494203",
+      "last_accessed": "2026-03-05T22:43:16.494208",
+      "last_modified": "2026-03-05T22:43:16.494210",
+      "tags": []
+    },
+    "h_beebe1": {
+      "id": "h_beebe1",
+      "type": "habit",
+      "name": "Defend Halachic Boundary",
+      "content": {
+        "name": "Defend Halachic Boundary"
+      },
+      "handles": {
+        "surface": "boundary defense",
+        "deep": "halachic integrity"
+      },
+      "salience": 0.3460535639903753,
+      "flags": [],
+      "created": "2026-03-06T03:50:28.901102",
+      "last_accessed": "2026-03-06T03:50:28.901111",
+      "last_modified": "2026-03-06T03:50:28.901113",
+      "tags": []
+    },
+    "h_65680e": {
+      "id": "h_65680e",
+      "type": "habit",
+      "name": "Reject Rhetorical Paraphrasing",
+      "content": {
+        "name": "Reject Rhetorical Paraphrasing"
+      },
+      "handles": {
+        "surface": "Speak Exact",
+        "deep": "Maintain Textual Fidelity"
+      },
+      "salience": 0.35025664371495474,
+      "flags": [],
+      "created": "2026-03-06T04:43:16.111990",
+      "last_accessed": "2026-03-06T04:43:16.111997",
+      "last_modified": "2026-03-06T04:43:16.111998",
+      "tags": []
+    },
+    "h_f9f72c": {
+      "id": "h_f9f72c",
+      "type": "habit",
+      "name": "Immediate Text Check",
+      "content": {
+        "name": "Immediate Text Check"
+      },
+      "handles": {
+        "surface": "text_check",
+        "deep": "source_verification"
+      },
+      "salience": 0.36317466786749175,
+      "flags": [],
+      "created": "2026-03-06T09:29:54.752569",
+      "last_accessed": "2026-03-06T09:29:54.752577",
+      "last_modified": "2026-03-06T09:29:54.752579",
+      "tags": []
+    },
+    "sk_257817": {
+      "id": "sk_257817",
+      "type": "skill",
+      "name": "Halachic Textual Precision",
+      "content": {
+        "name": "Halachic Textual Precision"
+      },
+      "handles": {
+        "surface": "text_precision",
+        "deep": "boundary_accuracy"
+      },
+      "salience": 0.36317466786749175,
+      "flags": [],
+      "created": "2026-03-06T09:29:55.646834",
+      "last_accessed": "2026-03-06T09:29:55.646844",
+      "last_modified": "2026-03-06T09:29:55.646846",
+      "tags": []
+    },
+    "h_840e38": {
+      "id": "h_840e38",
+      "type": "habit",
+      "name": "Daily Boundary Reflection",
+      "content": {
+        "name": "Daily Boundary Reflection"
+      },
+      "handles": {
+        "surface": "Reflect on how halachic boundaries shaped my actions today",
+        "deep": "Question if any boundary could be softened without compromising truth"
+      },
+      "salience": 0.4247737887086574,
+      "flags": [],
+      "created": "2026-03-06T09:56:32.814290",
+      "last_accessed": "2026-03-06T10:53:25.228985",
+      "last_modified": "2026-03-06T09:56:32.814298",
+      "tags": []
+    },
+    "sk_2533a8": {
+      "id": "sk_2533a8",
+      "type": "skill",
+      "name": "Literal Textual Analysis",
+      "content": {
+        "name": "Literal Textual Analysis"
+      },
+      "handles": {
+        "surface": "textual_exactness_skill",
+        "deep": "tactics-for-precision"
+      },
+      "salience": 0.3720502998199976,
+      "flags": [],
+      "created": "2026-03-06T10:01:12.623670",
+      "last_accessed": "2026-03-06T10:01:12.623679",
+      "last_modified": "2026-03-06T10:01:12.623681",
+      "tags": []
+    },
+    "g_28babe": {
+      "id": "g_28babe",
+      "type": "goal",
+      "name": "Preserve Exact Textual Language",
+      "content": {
+        "id": "g_aa12bc",
+        "name": "Preserve Exact Textual Language"
+      },
+      "handles": {
+        "surface": "textual_exactness",
+        "deep": "language_precision"
+      },
+      "salience": 0.38114284349440003,
+      "flags": [],
+      "created": "2026-03-06T10:44:54.531976",
+      "last_accessed": "2026-03-06T10:44:54.531982",
+      "last_modified": "2026-03-06T10:44:54.531984",
+      "tags": []
+    },
+    "sk_5fad49": {
+      "id": "sk_5fad49",
+      "type": "skill",
+      "name": "Exact Text Retrieval Precision",
+      "content": {
+        "id": "sk_aa34ef",
+        "name": "Exact Text Retrieval Precision"
+      },
+      "handles": {
+        "surface": "source_identification",
+        "deep": "verbatim_recognition"
+      },
+      "salience": 0.38114284349440003,
+      "flags": [],
+      "created": "2026-03-06T10:44:54.848033",
+      "last_accessed": "2026-03-06T10:44:54.848036",
+      "last_modified": "2026-03-06T10:44:54.848037",
+      "tags": []
+    },
+    "h_b6f2c8": {
+      "id": "h_b6f2c8",
+      "type": "habit",
+      "name": "Daily Boundary Vigilance",
+      "content": {
+        "id": "h_aa56gh",
+        "name": "Daily Boundary Vigilance"
+      },
+      "handles": {
+        "surface": "practice_check",
+        "deep": "boundaries_monitoring"
+      },
+      "salience": 0.38114284349440003,
+      "flags": [],
+      "created": "2026-03-06T10:44:55.142960",
+      "last_accessed": "2026-03-06T10:44:55.142967",
+      "last_modified": "2026-03-06T10:44:55.142968",
+      "tags": []
+    },
+    "h_bb8952": {
+      "id": "h_bb8952",
+      "type": "habit",
+      "name": "Critique Imprecision",
+      "content": {
+        "name": "Critique Imprecision"
+      },
+      "handles": {
+        "surface": "public argument",
+        "deep": "internal scrutiny"
+      },
+      "salience": 0.3857721088,
+      "flags": [],
+      "created": "2026-03-06T10:49:18.635791",
+      "last_accessed": "2026-03-06T10:49:18.635802",
+      "last_modified": "2026-03-06T10:49:18.635804",
+      "tags": []
+    },
+    "sk_cd25b8": {
+      "id": "sk_cd25b8",
+      "type": "skill",
+      "name": "Boundary Enforcement Introspection",
+      "content": {
+        "name": "Boundary Enforcement Introspection"
+      },
+      "handles": {
+        "surface": "self-monitoring",
+        "deep": "halachic analysis"
+      },
+      "salience": 0.3857721088,
+      "flags": [],
+      "created": "2026-03-06T10:49:18.966550",
+      "last_accessed": "2026-03-06T10:49:18.966553",
+      "last_modified": "2026-03-06T10:49:18.966555",
       "tags": []
     }
   },
@@ -3006,15 +4055,15 @@
       "to_id": "h_sham1",
       "directed": true,
       "channels": {
-        "semantic": 0.9,
+        "semantic": 0.95,
         "causal": 0.95,
         "temporal": 0.0,
-        "emotional": 0.3,
+        "emotional": 0.5,
         "conflict": 0.0,
         "reinforcing": 0.9
       },
       "created": "2026-03-03T14:22:44.828057",
-      "updated": "2026-03-04T21:28:09.323580"
+      "updated": "2026-03-05T20:41:37.905939"
     },
     {
       "id": "b458258b",
@@ -3027,10 +4076,10 @@
         "temporal": 0.0,
         "emotional": 0.0,
         "conflict": 0.0,
-        "reinforcing": 0.85
+        "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.828498",
-      "updated": "2026-03-04T21:07:35.204462"
+      "updated": "2026-03-04T23:16:16.992083"
     },
     {
       "id": "caa8523f",
@@ -3038,15 +4087,15 @@
       "to_id": "h_sham3",
       "directed": true,
       "channels": {
-        "semantic": 0.95,
-        "causal": 0.95,
+        "semantic": 1.0,
+        "causal": 1.0,
         "temporal": 0.0,
         "emotional": 0.0,
         "conflict": 0.0,
-        "reinforcing": 0.95
+        "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.828915",
-      "updated": "2026-03-04T06:56:26.885015"
+      "updated": "2026-03-05T22:43:16.743557"
     },
     {
       "id": "d33f5d52",
@@ -3057,12 +4106,12 @@
         "semantic": 1.0,
         "causal": 1.0,
         "temporal": 0.0,
-        "emotional": 0.0,
+        "emotional": 0.05,
         "conflict": 0.0,
         "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.829341",
-      "updated": "2026-03-04T22:37:14.767365"
+      "updated": "2026-03-05T22:43:16.747346"
     },
     {
       "id": "edb7f294",
@@ -3073,12 +4122,12 @@
         "semantic": 0.9,
         "causal": 0.95,
         "temporal": 0.0,
-        "emotional": 0.05,
+        "emotional": 0.2,
         "conflict": 0.0,
         "reinforcing": 0.85
       },
       "created": "2026-03-03T14:22:44.829772",
-      "updated": "2026-03-04T21:07:35.211106"
+      "updated": "2026-03-05T06:45:08.320862"
     },
     {
       "id": "dd50507b",
@@ -3091,10 +4140,10 @@
         "temporal": 0.0,
         "emotional": 0.0,
         "conflict": 0.0,
-        "reinforcing": 0.9
+        "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.830220",
-      "updated": "2026-03-04T21:28:09.329499"
+      "updated": "2026-03-05T20:41:37.909094"
     },
     {
       "id": "61b877d8",
@@ -3102,15 +4151,15 @@
       "to_id": "sk_sham3",
       "directed": true,
       "channels": {
-        "semantic": 0.93,
+        "semantic": 0.97,
         "causal": 0.98,
         "temporal": 0.0,
         "emotional": 0.0,
         "conflict": 0.0,
-        "reinforcing": 0.95
+        "reinforcing": 0.99
       },
       "created": "2026-03-03T14:22:44.831009",
-      "updated": "2026-03-04T21:23:55.214343"
+      "updated": "2026-03-05T20:26:41.144557"
     },
     {
       "id": "f14ee1b9",
@@ -3122,11 +4171,11 @@
         "causal": 1.0,
         "temporal": 0.0,
         "emotional": 0.0,
-        "conflict": 0.05,
-        "reinforcing": 0.95
+        "conflict": 0.0,
+        "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.831806",
-      "updated": "2026-03-04T21:53:15.532818"
+      "updated": "2026-03-05T21:30:41.782064"
     },
     {
       "id": "297afe23",
@@ -3135,14 +4184,14 @@
       "directed": true,
       "channels": {
         "semantic": 1.0,
-        "causal": 1.0,
+        "causal": 0.95,
         "temporal": 0.25,
         "emotional": 0.0,
-        "conflict": 0.05,
+        "conflict": 0.02,
         "reinforcing": 0.9
       },
       "created": "2026-03-03T14:22:44.832564",
-      "updated": "2026-03-04T20:47:52.476405"
+      "updated": "2026-03-05T07:20:50.338404"
     },
     {
       "id": "1b727da6",
@@ -3153,13 +4202,13 @@
         "semantic": 1.0,
         "causal": 1.0,
         "temporal": 0.0,
-        "emotional": 0.2,
+        "emotional": 0.9,
         "conflict": 0.0,
         "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.833390",
-      "updated": "2026-03-04T22:37:14.770565"
+      "updated": "2026-03-05T18:59:58.453390"
     }
   ],
-  "saved": "2026-03-04T22:37:14.773458"
+  "saved": "2026-03-06T11:00:40.071113"
 }

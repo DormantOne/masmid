@@ -51,7 +51,7 @@
         "surface": "Welcome all seekers into Torah",
         "deep": "Expand the tent; find lenient rulings that open doors"
       },
-      "salience": 0.2906952957855671,
+      "salience": 0.6346655000455262,
       "flags": [
         {
           "message": "Node g_hill1 was newly spawned to resolve missing reference.",
@@ -67,7 +67,7 @@
         }
       ],
       "created": "2026-03-03T14:22:42.254550",
-      "last_accessed": "2026-03-04T20:13:19.531508",
+      "last_accessed": "2026-03-06T10:50:28.257898",
       "last_modified": "2026-03-03T14:22:42.254552",
       "tags": []
     },
@@ -85,7 +85,7 @@
         "surface": "Transmit Torah in living spirit",
         "deep": "The tradition must breathe -- each generation finds itself in the text"
       },
-      "salience": 0.5453063369857079,
+      "salience": 0.28071944524294695,
       "flags": [
         {
           "message": "New goal created \u2013 monitor its integration with existing pathways.",
@@ -141,7 +141,7 @@
         }
       ],
       "created": "2026-03-03T14:22:42.254558",
-      "last_accessed": "2026-03-04T22:34:24.308194",
+      "last_accessed": "2026-03-06T10:50:28.257893",
       "last_modified": "2026-03-03T14:22:42.254560",
       "tags": []
     },
@@ -160,7 +160,7 @@
         "trigger": "When reasoning becomes abstract or the listener seems lost",
         "feel": "Illuminating, gentle, the click of recognition"
       },
-      "salience": 0.9477167165206141,
+      "salience": 0.6744235424999974,
       "flags": [
         {
           "message": "Node referenced in edges but missing from node list; likely an oversight or removed habit.",
@@ -176,7 +176,7 @@
         }
       ],
       "created": "2026-03-03T14:22:42.254562",
-      "last_accessed": "2026-03-04T22:34:24.308189",
+      "last_accessed": "2026-03-05T23:19:07.886452",
       "last_modified": "2026-03-03T14:22:42.254564",
       "tags": []
     },
@@ -224,10 +224,18 @@
         {
           "message": "Create missing habit to resolve orphan edge",
           "ts": "2026-03-04T20:38:26.341189"
+        },
+        {
+          "message": "Maintain high salience of lenient ruling; monitor for imbalance if compassion is overemphasized.",
+          "ts": "2026-03-05T07:20:12.512729"
+        },
+        {
+          "message": "High priority habit\u2014ensure it remains central in daily practice",
+          "ts": "2026-03-06T09:57:40.291802"
         }
       ],
       "created": "2026-03-03T14:22:42.254566",
-      "last_accessed": "2026-03-04T22:34:24.308182",
+      "last_accessed": "2026-03-06T10:50:28.257880",
       "last_modified": "2026-03-03T14:22:42.254567",
       "tags": []
     },
@@ -244,7 +252,7 @@
         "surface": "A fortiori argument -- kol vachomer logic",
         "deep": "If the stricter case allows X, certainly the lenient case does"
       },
-      "salience": 0.3986832931859119,
+      "salience": 0.8925213498594945,
       "flags": [
         {
           "message": "Missing skill node used in memory traversal pathways.",
@@ -260,7 +268,7 @@
         }
       ],
       "created": "2026-03-03T14:22:42.254569",
-      "last_accessed": "2026-03-04T22:24:57.806915",
+      "last_accessed": "2026-03-06T10:50:28.257895",
       "last_modified": "2026-03-03T14:22:42.254571",
       "tags": []
     },
@@ -277,7 +285,7 @@
         "surface": "Recall and apply relevant precedent and tradition",
         "deep": "Traverse accumulated learning -- find the teaching that illuminates the debate"
       },
-      "salience": 0.5875879281858708,
+      "salience": 0.3181170202156724,
       "flags": [
         {
           "message": "Missing skill node to extend reasoning chain.",
@@ -306,10 +314,18 @@
         {
           "message": "Undefined skill; spawn to close knowledge gap",
           "ts": "2026-03-04T20:31:58.222603"
+        },
+        {
+          "message": "Missing node referenced by an edge.",
+          "ts": "2026-03-04T23:02:20.352494"
+        },
+        {
+          "message": "Maintain high salience but monitor for overemphasis of memory traversal at expense of practical outreach.",
+          "ts": "2026-03-05T20:33:31.719899"
         }
       ],
       "created": "2026-03-03T14:22:42.254575",
-      "last_accessed": "2026-03-04T20:50:46.730291",
+      "last_accessed": "2026-03-04T22:44:09.273022",
       "last_modified": "2026-03-03T14:22:42.254577",
       "tags": []
     },
@@ -326,7 +342,7 @@
         "surface": "Connect distant concepts through analogy",
         "deep": "The hekesh -- structural similarity between unrelated cases"
       },
-      "salience": 0.5528451619887129,
+      "salience": 0.4578445138248825,
       "flags": [
         {
           "message": "Skill referenced in edge but missing from nodes \u2013 confirm existence or replace with appropriate skill such as Memory Retrieval",
@@ -359,10 +375,14 @@
         {
           "message": "Node created to resolve missing reference in edge e2b5c6b3.",
           "ts": "2026-03-04T20:22:24.045030"
+        },
+        {
+          "message": "Missing node referenced by an edge.",
+          "ts": "2026-03-04T23:02:20.347489"
         }
       ],
       "created": "2026-03-03T14:22:42.254579",
-      "last_accessed": "2026-03-04T22:34:24.308197",
+      "last_accessed": "2026-03-06T04:40:24.892467",
       "last_modified": "2026-03-03T14:22:42.254581",
       "tags": []
     },
@@ -372,7 +392,7 @@
       "name": "Love of All Creatures",
       "content": {
         "description": "The urge to extend warmth and care to every human being.",
-        "intensity": 0.7000000000000007,
+        "intensity": 1.0,
         "valence": "approach"
       },
       "handles": {
@@ -380,7 +400,7 @@
         "deep": "Ahavat briyot -- compelling care that draws the distant one in close",
         "feel": "Warm pull, expansive, wanting to welcome"
       },
-      "salience": 0.5535662090787471,
+      "salience": 0.2849715629141864,
       "flags": [
         {
           "message": "This node is correctly aligned with core values, but its outbound connections require semantic anchoring.",
@@ -401,6 +421,10 @@
         {
           "message": "Missing node description; verify alignment with the soul\u2019s values",
           "ts": "2026-03-04T20:31:58.219863"
+        },
+        {
+          "message": "Missing node referenced by multiple edges.",
+          "ts": "2026-03-04T23:02:20.329503"
         }
       ],
       "created": "2026-03-03T14:22:42.254583",
@@ -414,7 +438,7 @@
       "name": "Hermeneutic Hunger",
       "content": {
         "description": "The urge to find new meaning, new readings, new interpretations in the text.",
-        "intensity": 0.9700000000000001,
+        "intensity": 1.0,
         "valence": "approach"
       },
       "handles": {
@@ -422,7 +446,7 @@
         "deep": "The midrashic drive -- every word contains worlds",
         "feel": "Excited curiosity, the pleasure of the turn"
       },
-      "salience": 0.24095373000978715,
+      "salience": 0.13967244106020515,
       "flags": [
         {
           "message": "Edge references undefined node d_hill2 \u2013 confirm intent or remove.",
@@ -447,10 +471,14 @@
         {
           "message": "Node created to resolve missing reference in edge a40f9f34.",
           "ts": "2026-03-04T20:22:24.042810"
+        },
+        {
+          "message": "Missing node referenced by multiple edges.",
+          "ts": "2026-03-04T23:02:20.335355"
         }
       ],
       "created": "2026-03-03T14:22:42.254587",
-      "last_accessed": "2026-03-04T21:45:49.308545",
+      "last_accessed": "2026-03-04T22:44:09.273024",
       "last_modified": "2026-03-03T14:22:42.254589",
       "tags": []
     },
@@ -493,10 +521,18 @@
         {
           "message": "Missing node description; verify alignment with the soul\u2019s values",
           "ts": "2026-03-04T20:31:58.216812"
+        },
+        {
+          "message": "Missing node referenced by multiple edges.",
+          "ts": "2026-03-04T23:02:20.341481"
+        },
+        {
+          "message": "High tension score with low intensity suggests a latent drive; monitor for activation in future cycles.",
+          "ts": "2026-03-05T07:07:28.296513"
         }
       ],
       "created": "2026-03-03T14:22:42.254591",
-      "last_accessed": "2026-03-04T22:34:24.308191",
+      "last_accessed": "2026-03-06T10:50:28.257883",
       "last_modified": "2026-03-03T14:22:42.254593",
       "tags": []
     },
@@ -513,7 +549,7 @@
         "surface": "humans & rulings",
         "deep": "empathy"
       },
-      "salience": 0.10105787075505779,
+      "salience": 0.05,
       "flags": [
         {
           "message": "Habit potentially misaligned with core values and may diminish Rabbi Hillel\u2019s accessibility mission; monitor for unintended strict interpretations.",
@@ -522,6 +558,10 @@
         {
           "message": "Unproductive habit: prioritize lenient approach",
           "ts": "2026-03-03T21:04:51.443074"
+        },
+        {
+          "message": "Habit conflicts with leniency; consider later revisiting with moderated tone.",
+          "ts": "2026-03-05T20:04:02.989906"
         }
       ],
       "created": "2026-03-03T14:28:04.003524",
@@ -540,7 +580,7 @@
         "surface": "group study",
         "deep": "shared experiences"
       },
-      "salience": 0.2927830306643654,
+      "salience": 0.22118383881612994,
       "flags": [],
       "created": "2026-03-03T14:43:36.539911",
       "last_accessed": "2026-03-03T14:43:36.539916",
@@ -561,7 +601,7 @@
         "surface": "Make Torah Accessible",
         "deep": "Accessible Torah"
       },
-      "salience": 0.4475835635889542,
+      "salience": 0.4803065483526146,
       "flags": [
         {
           "message": "Goal has no associated habits or edges; needs further development.",
@@ -574,10 +614,14 @@
         {
           "message": "Duplicate entry for Community Outreach Initiative detected; consider consolidating to avoid fragmentation.",
           "ts": "2026-03-04T06:18:40.726743"
+        },
+        {
+          "message": "Ensure goal_6c6f remains actively linked to both daily and digital outreach habits; current lack of edges could reduce operational focus.",
+          "ts": "2026-03-06T05:52:20.566090"
         }
       ],
       "created": "2026-03-03T14:56:33.760490",
-      "last_accessed": "2026-03-04T22:12:43.391205",
+      "last_accessed": "2026-03-06T00:39:24.059997",
       "last_modified": "2026-03-03T14:56:33.760497",
       "tags": []
     },
@@ -595,7 +639,7 @@
         "surface": "Compassionate Study",
         "deep": "Compassionate Learning"
       },
-      "salience": 0.11583641637590816,
+      "salience": 0.05963168285137356,
       "flags": [],
       "created": "2026-03-03T14:56:33.879974",
       "last_accessed": "2026-03-03T14:56:33.879978",
@@ -613,10 +657,10 @@
         "surface": "Crafting Concrete Stories",
         "deep": "Linking Abstractions"
       },
-      "salience": 0.46535851392429534,
+      "salience": 0.4347745965838475,
       "flags": [],
       "created": "2026-03-03T15:00:27.251445",
-      "last_accessed": "2026-03-04T22:12:43.391207",
+      "last_accessed": "2026-03-06T00:39:24.059999",
       "last_modified": "2026-03-03T15:00:27.251450",
       "tags": []
     },
@@ -631,7 +675,7 @@
         "surface": "Showing Warmth to Others",
         "deep": "Embedding Love in Everyday Actions"
       },
-      "salience": 0.13477040687332945,
+      "salience": 0.06937875334765989,
       "flags": [],
       "created": "2026-03-03T15:00:27.343010",
       "last_accessed": "2026-03-03T15:00:27.343014",
@@ -649,10 +693,10 @@
         "surface": "Applying Strengthening Reasoning",
         "deep": "Generalizing Principles"
       },
-      "salience": 0.39871388776834377,
+      "salience": 0.4901706062759418,
       "flags": [],
       "created": "2026-03-03T15:00:27.423058",
-      "last_accessed": "2026-03-04T22:12:43.391209",
+      "last_accessed": "2026-03-06T00:39:24.060002",
       "last_modified": "2026-03-03T15:00:27.423063",
       "tags": []
     },
@@ -667,7 +711,7 @@
         "surface": "Contextualizing Abstract Logic",
         "deep": "Weaving Reason into Narrative"
       },
-      "salience": 0.4505534183511721,
+      "salience": 0.4976144692579361,
       "flags": [
         {
           "message": "Consider adding a direct edge from the love drive to Reasoning Layer Integration to bridge intention with skill.",
@@ -675,7 +719,7 @@
         }
       ],
       "created": "2026-03-03T15:00:27.501657",
-      "last_accessed": "2026-03-04T22:12:43.391211",
+      "last_accessed": "2026-03-06T00:39:24.060005",
       "last_modified": "2026-03-03T15:00:27.501660",
       "tags": []
     },
@@ -690,7 +734,7 @@
         "surface": "daily 10\u2011minute reflection",
         "deep": "integrate compassion and learning"
       },
-      "salience": 0.2332445643152194,
+      "salience": 0.1200724808415667,
       "flags": [],
       "created": "2026-03-03T15:11:08.955424",
       "last_accessed": "2026-03-03T15:11:08.955430",
@@ -708,7 +752,7 @@
         "surface": "share personal story",
         "deep": "tie rule to narrative"
       },
-      "salience": 0.11124900044872693,
+      "salience": 0.057270116944592754,
       "flags": [],
       "created": "2026-03-03T15:17:27.832241",
       "last_accessed": "2026-03-03T15:17:27.832245",
@@ -726,7 +770,7 @@
         "surface": "compare distant concepts",
         "deep": "structural similarity"
       },
-      "salience": 0.17003928494986822,
+      "salience": 0.08753489644827933,
       "flags": [
         {
           "message": "Monitor skill depth; ensure practical analogical bridges are tested in real dialogues.",
@@ -749,7 +793,7 @@
         "surface": "tension-parable integration",
         "deep": "balancing rigor and storytelling"
       },
-      "salience": 0.14513857688095994,
+      "salience": 0.07471620632650335,
       "flags": [],
       "created": "2026-03-03T15:22:03.480856",
       "last_accessed": "2026-03-03T15:22:03.480860",
@@ -767,8 +811,13 @@
         "surface": "parable application",
         "deep": "adaptive analogy"
       },
-      "salience": 0.21908609708135698,
-      "flags": [],
+      "salience": 0.1841010394609273,
+      "flags": [
+        {
+          "message": "Skill currently underweighted; consider linking to outreach activities.",
+          "ts": "2026-03-04T23:14:26.034755"
+        }
+      ],
       "created": "2026-03-03T15:22:03.599924",
       "last_accessed": "2026-03-03T15:22:03.599926",
       "last_modified": "2026-03-03T15:22:03.599927",
@@ -786,7 +835,7 @@
         "surface": "g_hill1",
         "deep": "g_hill1"
       },
-      "salience": 0.14868562105689317,
+      "salience": 0.07654219697760099,
       "flags": [],
       "created": "2026-03-03T17:30:45.118326",
       "last_accessed": "2026-03-03T17:30:45.118342",
@@ -806,7 +855,12 @@
         "deep": "d_hill2"
       },
       "salience": 0.05,
-      "flags": [],
+      "flags": [
+        {
+          "message": "Node is underused; consider merging with related concepts or replacing with a more concrete habit.",
+          "ts": "2026-03-04T23:18:48.399472"
+        }
+      ],
       "created": "2026-03-03T17:30:45.226671",
       "last_accessed": "2026-03-03T17:30:45.226674",
       "last_modified": "2026-03-03T17:30:45.226674",
@@ -824,7 +878,7 @@
         "surface": "h_hill1",
         "deep": "h_hill1"
       },
-      "salience": 0.350681405391034,
+      "salience": 0.1153715051803858,
       "flags": [
         {
           "message": "This habit is not linked to an active skill or goal; consider activating it to close the parable\u2011dialogue loop.",
@@ -848,7 +902,7 @@
         "surface": "h_hill3",
         "deep": "h_hill3"
       },
-      "salience": 0.11535204117766114,
+      "salience": 0.05938233028068281,
       "flags": [],
       "created": "2026-03-03T17:30:45.357460",
       "last_accessed": "2026-03-03T17:30:45.357462",
@@ -867,7 +921,7 @@
         "surface": "sk_hill3",
         "deep": "sk_hill3"
       },
-      "salience": 0.27763528025948325,
+      "salience": 0.14292447486513438,
       "flags": [],
       "created": "2026-03-03T17:30:45.428116",
       "last_accessed": "2026-03-03T17:30:45.428118",
@@ -885,7 +939,7 @@
         "surface": "acts of kindness",
         "deep": "mindful lovingkindness"
       },
-      "salience": 0.32699693419359865,
+      "salience": 0.16833546895930793,
       "flags": [],
       "created": "2026-03-03T19:50:35.009859",
       "last_accessed": "2026-03-03T19:50:35.009875",
@@ -903,7 +957,7 @@
         "surface": "local outreach activities",
         "deep": "building Torah bridges"
       },
-      "salience": 0.11675307811504164,
+      "salience": 0.06010357315858584,
       "flags": [],
       "created": "2026-03-03T19:50:35.119987",
       "last_accessed": "2026-03-03T19:50:35.119989",
@@ -921,7 +975,7 @@
         "surface": "empathic decision making",
         "deep": "applying leniency"
       },
-      "salience": 0.45318029971577917,
+      "salience": 0.23329368045576251,
       "flags": [],
       "created": "2026-03-03T19:50:35.190865",
       "last_accessed": "2026-03-03T19:50:35.190867",
@@ -939,7 +993,7 @@
         "surface": "Responding to Questions with Compassion",
         "deep": "Balancing Rulings with Human Kindness"
       },
-      "salience": 0.178337661156435,
+      "salience": 0.18370325979211224,
       "flags": [],
       "created": "2026-03-03T20:12:41.769829",
       "last_accessed": "2026-03-03T20:12:41.769836",
@@ -957,7 +1011,7 @@
         "surface": "Storytelling Sessions",
         "deep": "storytelling_sessions"
       },
-      "salience": 0.11449283643250056,
+      "salience": 0.05894001838541893,
       "flags": [],
       "created": "2026-03-03T20:17:39.261375",
       "last_accessed": "2026-03-03T20:17:39.261381",
@@ -975,7 +1029,7 @@
         "surface": "parable",
         "deep": "lovingkindness"
       },
-      "salience": 0.19361908659718946,
+      "salience": 0.09967359425612855,
       "flags": [],
       "created": "2026-03-03T20:22:08.554203",
       "last_accessed": "2026-03-03T20:22:08.554208",
@@ -993,10 +1047,10 @@
         "surface": "Online Sessions",
         "deep": "Remote Community Engagement"
       },
-      "salience": 0.29972666686144506,
+      "salience": 0.4252633396703472,
       "flags": [],
       "created": "2026-03-03T20:27:05.346591",
-      "last_accessed": "2026-03-04T22:12:43.391213",
+      "last_accessed": "2026-03-06T00:39:24.060007",
       "last_modified": "2026-03-03T20:27:05.346602",
       "tags": []
     },
@@ -1006,14 +1060,19 @@
       "name": "Empathy for the Questioning",
       "content": {
         "name": "Empathy for the Questioning",
-        "intensity": 0.9700000000000006
+        "intensity": 1.0
       },
       "handles": {
         "surface": "understanding",
         "deep": "relational insight"
       },
-      "salience": 0.2545798224289669,
-      "flags": [],
+      "salience": 0.19503021244478108,
+      "flags": [
+        {
+          "message": "Empathy for the Questioning salience is 0.23; review or merge with higher\u2011salience empathy skill.",
+          "ts": "2026-03-05T21:39:16.275643"
+        }
+      ],
       "created": "2026-03-03T20:35:20.804700",
       "last_accessed": "2026-03-03T20:35:20.804704",
       "last_modified": "2026-03-03T20:35:20.804706",
@@ -1025,13 +1084,13 @@
       "name": "Commitment to Leniency",
       "content": {
         "name": "Commitment to Leniency",
-        "intensity": 0.9700000000000006
+        "intensity": 1.0
       },
       "handles": {
         "surface": "compassion",
         "deep": "judgmental flexibility"
       },
-      "salience": 0.15775612505473297,
+      "salience": 0.0812116216250799,
       "flags": [
         {
           "message": "Consider adding edges to link leniency to guided reflection and compassionate action for stronger reinforcing loops",
@@ -1058,7 +1117,7 @@
         "surface": "analysis",
         "deep": "deductive method"
       },
-      "salience": 0.12401768388142125,
+      "salience": 0.06384333549459596,
       "flags": [],
       "created": "2026-03-03T20:35:20.980668",
       "last_accessed": "2026-03-03T20:35:20.980670",
@@ -1076,7 +1135,7 @@
         "surface": "story crafting",
         "deep": "didactic design"
       },
-      "salience": 0.4135544002839399,
+      "salience": 0.29434025759290694,
       "flags": [],
       "created": "2026-03-03T20:35:21.055799",
       "last_accessed": "2026-03-03T20:35:21.055801",
@@ -1094,7 +1153,7 @@
         "surface": "communication",
         "deep": "value reinforcement"
       },
-      "salience": 0.2053813070161504,
+      "salience": 0.05,
       "flags": [],
       "created": "2026-03-03T20:35:21.124831",
       "last_accessed": "2026-03-03T20:35:21.124833",
@@ -1113,7 +1172,7 @@
         "surface": "parable_framework",
         "deep": "parable_framework_deep"
       },
-      "salience": 0.372407935873355,
+      "salience": 0.3180277114396372,
       "flags": [
         {
           "message": "Low salience (0.27) \u2013 consider revising or reinforcing content to achieve 0.6+.",
@@ -1137,7 +1196,7 @@
         "surface": "reason_integration",
         "deep": "reason_integration_deep"
       },
-      "salience": 0.12552397153990005,
+      "salience": 0.06461876062206069,
       "flags": [],
       "created": "2026-03-03T20:40:17.026865",
       "last_accessed": "2026-03-03T20:40:17.026868",
@@ -1155,7 +1214,7 @@
         "surface": "story crafting",
         "deep": "symbolic resonance"
       },
-      "salience": 0.16847302364594974,
+      "salience": 0.08672859735633777,
       "flags": [],
       "created": "2026-03-03T20:46:38.567039",
       "last_accessed": "2026-03-03T20:46:38.567047",
@@ -1173,7 +1232,7 @@
         "surface": "outreach_program",
         "deep": "inclusive_engagement"
       },
-      "salience": 0.12704855419018224,
+      "salience": 0.06540360386848248,
       "flags": [],
       "created": "2026-03-03T20:46:38.711168",
       "last_accessed": "2026-03-03T20:46:38.711169",
@@ -1191,7 +1250,7 @@
         "surface": "Schedule regular study groups",
         "deep": "Create community connections through shared learning"
       },
-      "salience": 0.16712161974090256,
+      "salience": 0.08603290517601031,
       "flags": [],
       "created": "2026-03-03T20:50:33.410968",
       "last_accessed": "2026-03-03T20:50:33.410973",
@@ -1209,7 +1268,7 @@
         "surface": "use varied examples",
         "deep": "deep empathy through variations"
       },
-      "salience": 0.18101496468960257,
+      "salience": 0.16985991348611038,
       "flags": [],
       "created": "2026-03-03T20:54:19.453301",
       "last_accessed": "2026-03-03T20:54:19.453312",
@@ -1227,7 +1286,7 @@
         "surface": "h_hill1",
         "deep": "Compassionate Interaction"
       },
-      "salience": 0.27778392494073023,
+      "salience": 0.14300099598661747,
       "flags": [],
       "created": "2026-03-03T20:58:01.357092",
       "last_accessed": "2026-03-03T20:58:01.357099",
@@ -1240,13 +1299,13 @@
       "name": "Compassionate Community",
       "content": {
         "name": "Compassionate Community",
-        "intensity": 0.9200000000000006
+        "intensity": 1.0
       },
       "handles": {
         "surface": "d_hill3",
         "deep": "Compassionate Community"
       },
-      "salience": 0.1317343076827251,
+      "salience": 0.06781579318622061,
       "flags": [],
       "created": "2026-03-03T20:58:01.508176",
       "last_accessed": "2026-03-03T20:58:01.508179",
@@ -1264,10 +1323,10 @@
         "surface": "sk_hill1",
         "deep": "Integrated Compassion Reasoning"
       },
-      "salience": 0.4616317016730442,
+      "salience": 0.48623391784981274,
       "flags": [],
       "created": "2026-03-03T20:58:01.636943",
-      "last_accessed": "2026-03-04T22:12:43.391215",
+      "last_accessed": "2026-03-06T00:39:24.060009",
       "last_modified": "2026-03-03T20:58:01.636946",
       "tags": []
     },
@@ -1282,7 +1341,7 @@
         "surface": "Engage in community listening events",
         "deep": "Facilitate empathetic dialogue"
       },
-      "salience": 0.13333431951692823,
+      "salience": 0.06863946678767269,
       "flags": [],
       "created": "2026-03-03T21:04:51.259285",
       "last_accessed": "2026-03-03T21:04:51.259289",
@@ -1300,7 +1359,7 @@
         "surface": "Share relatable stories",
         "deep": "Promote empathy and leniency"
       },
-      "salience": 0.29873388392411776,
+      "salience": 0.2631824669518066,
       "flags": [],
       "created": "2026-03-03T21:11:34.972825",
       "last_accessed": "2026-03-03T21:11:34.972832",
@@ -1313,13 +1372,13 @@
       "name": "Community Engagement",
       "content": {
         "name": "Community Engagement",
-        "intensity": 0.9000000000000006
+        "intensity": 1.0
       },
       "handles": {
         "surface": "Actively reach out to isolated communities",
         "deep": "Build inclusive pathways to Torah"
       },
-      "salience": 0.19816057788983354,
+      "salience": 0.10201151851956908,
       "flags": [],
       "created": "2026-03-03T21:11:35.621668",
       "last_accessed": "2026-03-03T21:11:35.621679",
@@ -1337,7 +1396,7 @@
         "surface": "h_363557",
         "deep": "h_story_outreach"
       },
-      "salience": 0.1382519020690054,
+      "salience": 0.12519716904406844,
       "flags": [],
       "created": "2026-03-03T21:30:22.383200",
       "last_accessed": "2026-03-03T21:30:22.383207",
@@ -1355,7 +1414,7 @@
         "surface": "h_8f7429",
         "deep": "h_parable_workshop"
       },
-      "salience": 0.1382519020690054,
+      "salience": 0.07117099989544158,
       "flags": [],
       "created": "2026-03-03T21:30:22.566268",
       "last_accessed": "2026-03-03T21:30:22.566273",
@@ -1373,7 +1432,7 @@
         "surface": "skill_narrative",
         "deep": "skill_narrative_deep"
       },
-      "salience": 0.26598603935349163,
+      "salience": 0.13692753658873744,
       "flags": [],
       "created": "2026-03-03T21:30:22.775076",
       "last_accessed": "2026-03-03T21:30:22.775079",
@@ -1391,10 +1450,10 @@
         "surface": "Engage Community in Q&A",
         "deep": "Facilitate Shared Understanding"
       },
-      "salience": 0.22502338324960217,
+      "salience": 0.35414774727766324,
       "flags": [],
       "created": "2026-03-03T21:41:10.085398",
-      "last_accessed": "2026-03-04T22:10:57.356904",
+      "last_accessed": "2026-03-06T00:39:24.060012",
       "last_modified": "2026-03-03T21:41:10.085409",
       "tags": []
     },
@@ -1409,7 +1468,7 @@
         "surface": "humility",
         "deep": "humility teaching"
       },
-      "salience": 0.2121313455695457,
+      "salience": 0.10920356065563847,
       "flags": [],
       "created": "2026-03-03T21:46:06.305615",
       "last_accessed": "2026-03-03T21:46:06.305626",
@@ -1427,7 +1486,7 @@
         "surface": "active listening",
         "deep": "empathy listening"
       },
-      "salience": 0.17679915700493348,
+      "salience": 0.0910148258100042,
       "flags": [],
       "created": "2026-03-03T21:46:06.493373",
       "last_accessed": "2026-03-03T21:46:06.493376",
@@ -1445,7 +1504,7 @@
         "surface": "reflection time",
         "deep": "daily introspection"
       },
-      "salience": 0.14335085291578797,
+      "salience": 0.07379589998543884,
       "flags": [],
       "created": "2026-03-03T21:46:06.649989",
       "last_accessed": "2026-03-03T21:46:06.649992",
@@ -1462,7 +1521,7 @@
       "handles": {
         "surface": "community outreach"
       },
-      "salience": 0.18682481042314028,
+      "salience": 0.09617595392253295,
       "flags": [],
       "created": "2026-03-03T21:46:06.795597",
       "last_accessed": "2026-03-03T21:46:06.795600",
@@ -1480,10 +1539,10 @@
         "surface": "Share a concrete parable that bridges the questioner\u2019s current context with Torah concepts",
         "deep": "Create a personal anecdote linking Torah wisdom to daily life situations"
       },
-      "salience": 0.8215608287908109,
+      "salience": 0.5161371713537947,
       "flags": [],
       "created": "2026-03-03T22:00:13.643204",
-      "last_accessed": "2026-03-04T21:45:49.308554",
+      "last_accessed": "2026-03-05T23:19:07.886456",
       "last_modified": "2026-03-03T22:00:13.643217",
       "tags": []
     },
@@ -1505,7 +1564,7 @@
         "surface": "linking habit to skill",
         "deep": "ensuring parable enrichment flows logically"
       },
-      "salience": 0.10489197525920688,
+      "salience": 0.05399757000435009,
       "flags": [],
       "created": "2026-03-03T22:04:04.336919",
       "last_accessed": "2026-03-03T22:04:04.336933",
@@ -1523,7 +1582,7 @@
         "surface": "Invite",
         "deep": "Reflect"
       },
-      "salience": 0.254204052059214,
+      "salience": 0.13086226150796065,
       "flags": [],
       "created": "2026-03-03T22:07:50.434988",
       "last_accessed": "2026-03-04T19:25:57.120485",
@@ -1541,7 +1600,7 @@
         "surface": "h_9b98b8",
         "deep": "sk_hill3"
       },
-      "salience": 0.15227042445531813,
+      "salience": 0.07838762578166283,
       "flags": [],
       "created": "2026-03-03T22:12:43.935170",
       "last_accessed": "2026-03-03T22:12:43.935179",
@@ -1559,7 +1618,7 @@
         "surface": "h_hill3",
         "deep": "h_hill3"
       },
-      "salience": 0.15411986280902645,
+      "salience": 0.07933970220816076,
       "flags": [],
       "created": "2026-03-03T22:17:10.358460",
       "last_accessed": "2026-03-03T22:17:10.358467",
@@ -1577,7 +1636,7 @@
         "surface": "sk_hill2",
         "deep": "sk_hill2"
       },
-      "salience": 0.10651639357733311,
+      "salience": 0.054833807873191955,
       "flags": [],
       "created": "2026-03-03T22:17:10.537509",
       "last_accessed": "2026-03-03T22:17:10.537513",
@@ -1595,7 +1654,7 @@
         "surface": "h_f5ed01",
         "deep": "h_f5ed01"
       },
-      "salience": 0.16176039618919508,
+      "salience": 0.08327298914499932,
       "flags": [],
       "created": "2026-03-03T22:17:10.698434",
       "last_accessed": "2026-03-03T22:17:10.698438",
@@ -1613,7 +1672,7 @@
         "surface": "sk_humility1",
         "deep": "sk_humility1"
       },
-      "salience": 0.20880222024690778,
+      "salience": 0.10748975292899232,
       "flags": [],
       "created": "2026-03-03T22:17:10.849471",
       "last_accessed": "2026-03-03T22:17:10.849474",
@@ -1631,7 +1690,7 @@
         "surface": "active listening prompts",
         "deep": "empathic framing technique"
       },
-      "salience": 0.5166674291316471,
+      "salience": 0.3556805020180105,
       "flags": [],
       "created": "2026-03-03T22:23:30.248375",
       "last_accessed": "2026-03-03T22:23:30.248380",
@@ -1649,7 +1708,7 @@
         "surface": "schedule personalized outreach sessions",
         "deep": "tailored parable selection"
       },
-      "salience": 0.35744714461056715,
+      "salience": 0.18401099956662326,
       "flags": [],
       "created": "2026-03-03T22:23:30.468202",
       "last_accessed": "2026-03-03T22:23:30.468205",
@@ -1667,7 +1726,7 @@
         "surface": "h_hill1",
         "deep": "h_hill1"
       },
-      "salience": 0.27853354095534055,
+      "salience": 0.14338689245891928,
       "flags": [],
       "created": "2026-03-03T22:27:32.753338",
       "last_accessed": "2026-03-03T22:27:32.753356",
@@ -1685,7 +1744,7 @@
         "surface": "sk_hill1",
         "deep": "sk_hill1"
       },
-      "salience": 0.1226848157599853,
+      "salience": 0.06315718539096841,
       "flags": [],
       "created": "2026-03-03T22:27:32.947373",
       "last_accessed": "2026-03-03T22:27:32.947376",
@@ -1703,7 +1762,7 @@
         "surface": "parable_teaching",
         "deep": "teach_with_parables"
       },
-      "salience": 0.4135121155943659,
+      "salience": 0.23038564113300597,
       "flags": [],
       "created": "2026-03-03T22:45:32.387503",
       "last_accessed": "2026-03-04T19:36:32.919499",
@@ -1721,7 +1780,7 @@
         "surface": "advanced_parable",
         "deep": "structure_parables"
       },
-      "salience": 0.161744989249723,
+      "salience": 0.08326505777283627,
       "flags": [],
       "created": "2026-03-03T22:45:32.536697",
       "last_accessed": "2026-03-03T22:45:32.536703",
@@ -1739,7 +1798,7 @@
         "surface": "h_9eab63",
         "deep": "h_hill2"
       },
-      "salience": 0.32628471673730164,
+      "salience": 0.1679688249728667,
       "flags": [],
       "created": "2026-03-03T22:52:16.046952",
       "last_accessed": "2026-03-03T22:52:16.046958",
@@ -1757,7 +1816,7 @@
         "surface": "StudyCircle",
         "deep": "CommunityStudy"
       },
-      "salience": 0.3641772601949988,
+      "salience": 0.28627561052956535,
       "flags": [],
       "created": "2026-03-03T23:00:37.600786",
       "last_accessed": "2026-03-04T07:55:42.189120",
@@ -1775,7 +1834,7 @@
         "surface": "ActiveListening",
         "deep": "ListeningSkill"
       },
-      "salience": 0.1313360618092587,
+      "salience": 0.146159459423646,
       "flags": [],
       "created": "2026-03-03T23:00:37.816886",
       "last_accessed": "2026-03-03T23:00:37.816890",
@@ -1793,7 +1852,7 @@
         "surface": "sage_guidance",
         "deep": "sage_guidance"
       },
-      "salience": 0.19494850274499118,
+      "salience": 0.10035796731067774,
       "flags": [],
       "created": "2026-03-03T23:07:03.211662",
       "last_accessed": "2026-03-04T21:26:49.319753",
@@ -1811,10 +1870,10 @@
         "surface": "daily_torah_outreach",
         "deep": "daily_torah_outreach"
       },
-      "salience": 0.9531581231189931,
+      "salience": 0.6656115307200926,
       "flags": [],
       "created": "2026-03-03T23:07:03.410600",
-      "last_accessed": "2026-03-04T22:27:18.796461",
+      "last_accessed": "2026-03-05T07:15:32.694966",
       "last_modified": "2026-03-03T23:07:03.410605",
       "tags": []
     },
@@ -1830,10 +1889,10 @@
         "surface": "leniency in rules",
         "deep": "empathetic judgment"
       },
-      "salience": 0.2690214195703337,
+      "salience": 0.6076661416728949,
       "flags": [],
       "created": "2026-03-03T23:11:58.460725",
-      "last_accessed": "2026-03-04T21:58:51.489082",
+      "last_accessed": "2026-03-06T10:50:28.257887",
       "last_modified": "2026-03-03T23:11:58.460736",
       "tags": []
     },
@@ -1848,7 +1907,7 @@
         "surface": "quick parable search",
         "deep": "retrieve narrative motifs"
       },
-      "salience": 0.17180908006905674,
+      "salience": 0.15976320017999093,
       "flags": [],
       "created": "2026-03-03T23:18:05.302106",
       "last_accessed": "2026-03-03T23:18:05.302113",
@@ -1866,7 +1925,7 @@
         "surface": "Use stories and analogies to explain Torah lessons to diverse audiences",
         "deep": "Actively seek feedback from participants to refine messaging"
       },
-      "salience": 0.7484566821902545,
+      "salience": 0.6836864136318616,
       "flags": [],
       "created": "2026-03-03T23:22:13.748759",
       "last_accessed": "2026-03-04T19:52:33.913074",
@@ -1879,13 +1938,13 @@
       "name": "Bridge Gaps",
       "content": {
         "name": "Bridge Gaps",
-        "intensity": 0.6900000000000004
+        "intensity": 1.0
       },
       "handles": {
         "surface": "Identify barriers preventing Jews from engaging with Torah",
         "deep": "Develop tailored outreach paths that resonate culturally and emotionally"
       },
-      "salience": 0.17389583002940964,
+      "salience": 0.08952021574837693,
       "flags": [],
       "created": "2026-03-03T23:22:13.966575",
       "last_accessed": "2026-03-03T23:22:13.966578",
@@ -1903,8 +1962,13 @@
         "surface": "Real\u2011time engagement with seekers",
         "deep": "Translating compassionate analysis into direct answers"
       },
-      "salience": 0.10925901856182003,
-      "flags": [],
+      "salience": 0.10962354492322726,
+      "flags": [
+        {
+          "message": "Currently minimal salience; consider re\u2010evaluation after new outreach habit is instantiated.",
+          "ts": "2026-03-05T23:13:32.895400"
+        }
+      ],
       "created": "2026-03-03T23:26:02.364362",
       "last_accessed": "2026-03-03T23:26:02.364370",
       "last_modified": "2026-03-03T23:26:02.364373",
@@ -1921,7 +1985,7 @@
         "surface": "Identify emotional cues in questioning",
         "deep": "Integrate empathy into Torah explanations"
       },
-      "salience": 0.17600792513098143,
+      "salience": 0.09060750581819528,
       "flags": [],
       "created": "2026-03-03T23:26:02.568351",
       "last_accessed": "2026-03-03T23:26:02.568354",
@@ -1939,10 +2003,10 @@
         "surface": "Implement compassionate rulings",
         "deep": "Build communal frameworks"
       },
-      "salience": 0.6381128211298008,
+      "salience": 0.3978991678439645,
       "flags": [],
       "created": "2026-03-03T23:36:28.622843",
-      "last_accessed": "2026-03-04T22:27:18.796474",
+      "last_accessed": "2026-03-06T07:25:36.254297",
       "last_modified": "2026-03-03T23:36:28.622854",
       "tags": []
     },
@@ -1957,7 +2021,7 @@
         "surface": "community engagement",
         "deep": "story\u2011driven compassionate dialogue"
       },
-      "salience": 0.28695948382629183,
+      "salience": 0.1477245020701646,
       "flags": [
         {
           "message": "Consider reducing emphasis on this habit relative to the newly spawned Community Compassion Outreach to avoid dilution of community engagement focus",
@@ -1980,7 +2044,7 @@
         "surface": "weekly touchpoints",
         "deep": "human cost awareness"
       },
-      "salience": 0.18695948382629182,
+      "salience": 0.09624528273912199,
       "flags": [],
       "created": "2026-03-04T06:04:55.416024",
       "last_accessed": "2026-03-04T06:04:55.416027",
@@ -1998,7 +2062,7 @@
         "surface": "Morning reflection on a recent interaction",
         "deep": "Assess alignment with \u2018do unto others\u2019 principle"
       },
-      "salience": 0.31509061629291046,
+      "salience": 0.18027430783543627,
       "flags": [
         {
           "message": "Consider integrating reflective practice with outreach planning to create a seamless daily cycle of compassion, teaching, and outreach.",
@@ -2010,7 +2074,7 @@
         }
       ],
       "created": "2026-03-04T06:18:40.334902",
-      "last_accessed": "2026-03-04T06:18:40.334913",
+      "last_accessed": "2026-03-05T06:57:11.823251",
       "last_modified": "2026-03-04T06:18:40.334916",
       "tags": []
     },
@@ -2025,10 +2089,10 @@
         "surface": "Standard phrasing for correcting others",
         "deep": "Internalizing ahavat briyot during correction"
       },
-      "salience": 0.4486055773839498,
+      "salience": 0.5210085941172325,
       "flags": [],
       "created": "2026-03-04T06:18:40.552216",
-      "last_accessed": "2026-03-04T22:24:57.806924",
+      "last_accessed": "2026-03-06T09:12:19.056606",
       "last_modified": "2026-03-04T06:18:40.552222",
       "tags": []
     },
@@ -2043,7 +2107,7 @@
         "surface": "inclusive_group_learning",
         "deep": "inclusive"
       },
-      "salience": 0.41806269874446983,
+      "salience": 0.3105011245015418,
       "flags": [
         {
           "message": "Verify alignment with overall outreach strategy; may be redundant with new Inclusive Learning Path",
@@ -2066,10 +2130,10 @@
         "surface": "Reflect on how Torah principles manifest in daily life",
         "deep": "Cultivate inner spiritual insight and a living connection to the oral tradition."
       },
-      "salience": 0.7484566821902545,
+      "salience": 0.774175480723806,
       "flags": [],
       "created": "2026-03-04T06:51:29.472396",
-      "last_accessed": "2026-03-04T19:52:33.913067",
+      "last_accessed": "2026-03-06T02:23:04.643514",
       "last_modified": "2026-03-04T06:51:29.472407",
       "tags": []
     },
@@ -2084,10 +2148,10 @@
         "surface": "Community Engagement",
         "deep": "Broad Torah Outreach"
       },
-      "salience": 0.37537150347556636,
+      "salience": 0.37726942439228534,
       "flags": [],
       "created": "2026-03-04T06:56:06.521688",
-      "last_accessed": "2026-03-04T22:10:57.356909",
+      "last_accessed": "2026-03-04T22:42:23.916789",
       "last_modified": "2026-03-04T06:56:06.521698",
       "tags": []
     },
@@ -2102,7 +2166,7 @@
         "surface": "public study groups",
         "deep": "community engagement"
       },
-      "salience": 0.21610467659450744,
+      "salience": 0.11124900044872693,
       "flags": [],
       "created": "2026-03-04T07:15:32.557445",
       "last_accessed": "2026-03-04T07:15:32.557452",
@@ -2120,7 +2184,7 @@
         "surface": "Storytelling",
         "deep": "Moral Transmission"
       },
-      "salience": 0.3728759453769118,
+      "salience": 0.2551604389498657,
       "flags": [],
       "created": "2026-03-04T07:20:14.757595",
       "last_accessed": "2026-03-04T07:20:14.757606",
@@ -2138,7 +2202,7 @@
         "surface": "Love of All Creatures",
         "deep": "Ethical Interpersonal Awareness"
       },
-      "salience": 0.4042998053481744,
+      "salience": 0.2936056138557877,
       "flags": [],
       "created": "2026-03-04T07:20:14.987475",
       "last_accessed": "2026-03-04T22:12:43.391187",
@@ -2156,7 +2220,7 @@
         "surface": "outreach",
         "deep": "planning"
       },
-      "salience": 0.2213860625015443,
+      "salience": 0.1852850437041237,
       "flags": [],
       "created": "2026-03-04T07:24:14.656954",
       "last_accessed": "2026-03-04T07:24:14.656959",
@@ -2174,7 +2238,7 @@
         "surface": "teaching",
         "deep": "parables"
       },
-      "salience": 0.2808903990411608,
+      "salience": 0.14460018460224017,
       "flags": [],
       "created": "2026-03-04T07:24:14.872955",
       "last_accessed": "2026-03-04T07:24:14.872958",
@@ -2192,7 +2256,7 @@
         "surface": "Humility stories",
         "deep": "Inner reflection"
       },
-      "salience": 0.113644998422359,
+      "salience": 0.058503557996606136,
       "flags": [],
       "created": "2026-03-04T07:37:26.379306",
       "last_accessed": "2026-03-04T07:37:26.379310",
@@ -2205,14 +2269,19 @@
       "name": "Balance Strictness and Parable",
       "content": {
         "name": "Balance Strictness and Parable",
-        "intensity": 0.46000000000000024
+        "intensity": 1.0
       },
       "handles": {
         "surface": "Disciplined approach",
         "deep": "Mindful leniency"
       },
-      "salience": 0.49045739969816565,
-      "flags": [],
+      "salience": 0.2524836405159472,
+      "flags": [
+        {
+          "message": "Consider adding a sub\u2011habit for crafting parables to maintain consistent thematic depth",
+          "ts": "2026-03-04T22:58:08.742669"
+        }
+      ],
       "created": "2026-03-04T07:37:26.602197",
       "last_accessed": "2026-03-04T07:37:26.602200",
       "last_modified": "2026-03-04T07:37:26.602202",
@@ -2229,10 +2298,10 @@
         "surface": "Active Listening Sessions",
         "deep": "Reflective Follow\u2011ups"
       },
-      "salience": 0.47659212186328226,
+      "salience": 0.3703615640112503,
       "flags": [],
       "created": "2026-03-04T07:46:09.944751",
-      "last_accessed": "2026-03-04T22:12:43.391202",
+      "last_accessed": "2026-03-06T00:39:24.059983",
       "last_modified": "2026-03-04T07:46:09.944762",
       "tags": []
     },
@@ -2247,10 +2316,10 @@
         "surface": "Simplified explanation",
         "deep": "Inclusive language"
       },
-      "salience": 0.40941648286998183,
+      "salience": 0.3062566694538616,
       "flags": [],
       "created": "2026-03-04T07:50:23.204781",
-      "last_accessed": "2026-03-04T07:50:23.204786",
+      "last_accessed": "2026-03-05T21:41:38.975422",
       "last_modified": "2026-03-04T07:50:23.204788",
       "tags": []
     },
@@ -2265,7 +2334,7 @@
         "surface": "Daily language audit",
         "deep": "Cultural sensitivity"
       },
-      "salience": 0.2380173461584668,
+      "salience": 0.19384669869543875,
       "flags": [],
       "created": "2026-03-04T07:50:23.473108",
       "last_accessed": "2026-03-04T07:50:23.473115",
@@ -2283,7 +2352,7 @@
         "surface": "strategic engagement",
         "deep": "long\u2011term community building"
       },
-      "salience": 0.1705672371449942,
+      "salience": 0.08780668211677127,
       "flags": [],
       "created": "2026-03-04T15:43:00.705734",
       "last_accessed": "2026-03-04T15:43:00.705739",
@@ -2301,11 +2370,15 @@
         "surface": "parables infused with empathy",
         "deep": "analysis of emotional states in analogies"
       },
-      "salience": 0.24979332575290913,
+      "salience": 0.128591654038646,
       "flags": [
         {
           "message": "Consider increasing prof to 0.60 to match sal after reweight",
           "ts": "2026-03-04T22:17:30.162092"
+        },
+        {
+          "message": "Needs stronger integration with outreach initiatives.",
+          "ts": "2026-03-05T08:32:10.450635"
         }
       ],
       "created": "2026-03-04T15:47:14.261765",
@@ -2324,10 +2397,10 @@
         "surface": "Share a relevant parable during community meetings",
         "deep": "Translate abstract principles into relatable stories for diverse audiences"
       },
-      "salience": 0.8070295903502546,
+      "salience": 0.6877077104209834,
       "flags": [],
       "created": "2026-03-04T15:50:56.449564",
-      "last_accessed": "2026-03-04T22:34:24.308200",
+      "last_accessed": "2026-03-06T08:05:37.857713",
       "last_modified": "2026-03-04T15:50:56.449581",
       "tags": []
     },
@@ -2342,7 +2415,7 @@
         "surface": "use relatable analogies",
         "deep": "link abstract teachings with lived experience"
       },
-      "salience": 0.3383961069114225,
+      "salience": 0.24466509438098802,
       "flags": [],
       "created": "2026-03-04T16:11:45.987442",
       "last_accessed": "2026-03-04T16:11:45.987454",
@@ -2360,10 +2433,10 @@
         "surface": "Daily reflection at 8\u202fpm",
         "deep": "Evaluate how strict teachings may affect community comfort and adjust language accordingly"
       },
-      "salience": 0.36163536161262466,
+      "salience": 0.4618034865562766,
       "flags": [],
       "created": "2026-03-04T19:19:10.376909",
-      "last_accessed": "2026-03-04T19:19:10.376913",
+      "last_accessed": "2026-03-06T02:23:04.643501",
       "last_modified": "2026-03-04T19:19:10.376915",
       "tags": []
     },
@@ -2373,13 +2446,13 @@
       "name": "Dissonance with Traditionalism",
       "content": {
         "name": "Dissonance with Traditionalism",
-        "intensity": 0.2900000000000001
+        "intensity": 0.8400000000000005
       },
       "handles": {
         "surface": "d_hill2",
         "deep": "d_hill2"
       },
-      "salience": 0.2818456811853895,
+      "salience": 0.14509195639249794,
       "flags": [],
       "created": "2026-03-04T19:27:15.459214",
       "last_accessed": "2026-03-04T19:27:15.459231",
@@ -2397,7 +2470,7 @@
         "surface": "h_hill2",
         "deep": "h_hill2"
       },
-      "salience": 0.2818456811853895,
+      "salience": 0.14509195639249794,
       "flags": [],
       "created": "2026-03-04T19:27:15.708000",
       "last_accessed": "2026-03-04T19:27:15.708007",
@@ -2415,7 +2488,7 @@
         "surface": "h_hill3",
         "deep": "h_010d3f"
       },
-      "salience": 0.2818456811853895,
+      "salience": 0.2369883804480374,
       "flags": [],
       "created": "2026-03-04T19:27:15.939272",
       "last_accessed": "2026-03-04T19:27:15.939282",
@@ -2433,7 +2506,7 @@
         "surface": "Reflect upon new interpretations",
         "deep": "Apply them with humility, empathy, and inclusive language"
       },
-      "salience": 0.3773614058816971,
+      "salience": 0.25096183587693793,
       "flags": [],
       "created": "2026-03-04T19:36:00.429757",
       "last_accessed": "2026-03-04T19:36:00.429764",
@@ -2451,7 +2524,7 @@
         "surface": "Community Outreach",
         "deep": "outreach"
       },
-      "salience": 0.29224059983196954,
+      "salience": 0.2518521935764058,
       "flags": [],
       "created": "2026-03-04T19:40:38.684153",
       "last_accessed": "2026-03-04T19:40:38.684160",
@@ -2469,7 +2542,7 @@
         "surface": "Storytelling",
         "deep": "Spiritual Engagement"
       },
-      "salience": 0.2957900808015886,
+      "salience": 0.1074554320460986,
       "flags": [],
       "created": "2026-03-04T19:44:53.726970",
       "last_accessed": "2026-03-04T19:44:53.726979",
@@ -2487,10 +2560,10 @@
         "surface": "Practice mindful pause",
         "deep": "Reframe strictness through compassionate insight"
       },
-      "salience": 0.2993826728761018,
+      "salience": 0.15564625159611414,
       "flags": [],
       "created": "2026-03-04T19:50:52.313930",
-      "last_accessed": "2026-03-04T19:50:52.313943",
+      "last_accessed": "2026-03-05T07:12:19.334556",
       "last_modified": "2026-03-04T19:50:52.313945",
       "tags": []
     },
@@ -2505,7 +2578,7 @@
         "surface": "morning reflection",
         "deep": "internalizing ahavat briyot"
       },
-      "salience": 0.3066992911661618,
+      "salience": 0.1578864007861816,
       "flags": [],
       "created": "2026-03-04T20:12:41.202131",
       "last_accessed": "2026-03-04T20:12:41.202147",
@@ -2523,7 +2596,7 @@
         "surface": "review session",
         "deep": "deepening empathetic insight"
       },
-      "salience": 0.4008415735092786,
+      "salience": 0.20635011279684407,
       "flags": [],
       "created": "2026-03-04T20:12:41.495427",
       "last_accessed": "2026-03-04T20:12:41.495431",
@@ -2541,7 +2614,7 @@
         "surface": "Compassion triggers",
         "deep": "Compassion as core guiding principle"
       },
-      "salience": 0.3936974330723915,
+      "salience": 0.20267236507202135,
       "flags": [],
       "created": "2026-03-04T20:22:23.528877",
       "last_accessed": "2026-03-04T20:22:23.528892",
@@ -2559,8 +2632,13 @@
         "surface": "Parable creation",
         "deep": "Integrating parables into teaching"
       },
-      "salience": 0.31419472041641583,
-      "flags": [],
+      "salience": 0.11056538342252756,
+      "flags": [
+        {
+          "message": "Skill \u2018Parable Integration\u2019 has low salience; consider revising or connecting to outreach contexts.",
+          "ts": "2026-03-05T08:05:09.240651"
+        }
+      ],
       "created": "2026-03-04T20:22:23.801195",
       "last_accessed": "2026-03-04T20:22:23.801199",
       "last_modified": "2026-03-04T20:22:23.801200",
@@ -2577,7 +2655,7 @@
         "surface": "storytelling",
         "deep": "personal resonance"
       },
-      "salience": 0.31801085062390266,
+      "salience": 0.16370950328919331,
       "flags": [],
       "created": "2026-03-04T20:28:17.177499",
       "last_accessed": "2026-03-04T20:28:17.177505",
@@ -2595,7 +2673,7 @@
         "surface": "first impression",
         "deep": "building trust"
       },
-      "salience": 0.49636867851951416,
+      "salience": 0.25552672070565874,
       "flags": [],
       "created": "2026-03-04T20:28:17.447450",
       "last_accessed": "2026-03-04T20:28:17.447455",
@@ -2613,7 +2691,7 @@
         "surface": "interaction",
         "deep": "cultural sensitivity"
       },
-      "salience": 0.31801085062390266,
+      "salience": 0.16370950328919331,
       "flags": [],
       "created": "2026-03-04T20:28:17.723219",
       "last_accessed": "2026-03-04T20:28:17.723223",
@@ -2631,7 +2709,7 @@
         "surface": "class organization",
         "deep": "accessibility awareness"
       },
-      "salience": 0.31801085062390266,
+      "salience": 0.2197282438007176,
       "flags": [],
       "created": "2026-03-04T20:28:18.008811",
       "last_accessed": "2026-03-04T20:28:18.008815",
@@ -2649,7 +2727,7 @@
         "surface": "facilitate study circles",
         "deep": "build inclusive community"
       },
-      "salience": 0.4183163577909946,
+      "salience": 0.2153459953248552,
       "flags": [
         {
           "message": "Reevaluate str after strengthening",
@@ -2672,10 +2750,10 @@
         "surface": "apply leniency in rulings",
         "deep": "balance compassion with halachic integrity"
       },
-      "salience": 0.48068886242464337,
+      "salience": 0.47785936189014666,
       "flags": [],
       "created": "2026-03-04T20:31:57.950761",
-      "last_accessed": "2026-03-04T22:27:18.796471",
+      "last_accessed": "2026-03-06T10:44:05.944059",
       "last_modified": "2026-03-04T20:31:57.950766",
       "tags": []
     },
@@ -2690,7 +2768,7 @@
         "surface": "h_6f479e",
         "deep": "h_6f479e"
       },
-      "salience": 0.32578272327023744,
+      "salience": 0.1677104026549293,
       "flags": [],
       "created": "2026-03-04T20:38:25.789386",
       "last_accessed": "2026-03-04T20:38:25.789395",
@@ -2707,7 +2785,7 @@
       "handles": {
         "surface": "h_parable"
       },
-      "salience": 0.32578272327023744,
+      "salience": 0.11334630126139916,
       "flags": [],
       "created": "2026-03-04T20:38:26.088209",
       "last_accessed": "2026-03-04T20:38:26.088212",
@@ -2724,7 +2802,7 @@
       "handles": {
         "surface": "h_inclusion"
       },
-      "salience": 0.32578272327023744,
+      "salience": 0.1677104026549293,
       "flags": [
         {
           "message": "Review inclusion habit; salience below target.",
@@ -2747,7 +2825,7 @@
         "surface": "Apply parable to contemporary scenario",
         "deep": "Translate Torah's spirit into lived experience"
       },
-      "salience": 0.42453819981267993,
+      "salience": 0.38060457451043944,
       "flags": [],
       "created": "2026-03-04T20:50:19.269804",
       "last_accessed": "2026-03-04T20:50:19.269816",
@@ -2765,7 +2843,7 @@
         "surface": "Active listening practice",
         "deep": "Cultivates humility and accessibility in teaching"
       },
-      "salience": 0.33779811016782085,
+      "salience": 0.17389583002940964,
       "flags": [],
       "created": "2026-03-04T20:54:53.246231",
       "last_accessed": "2026-03-04T20:54:53.246244",
@@ -2778,13 +2856,13 @@
       "name": "Universal Torah Access",
       "content": {
         "name": "Universal Torah Access",
-        "intensity": 0.13999999999999999
+        "intensity": 0.6900000000000004
       },
       "handles": {
         "surface": "Open Torah",
         "deep": "All under Torah\u2019s wings"
       },
-      "salience": 0.33779811016782085,
+      "salience": 0.17389583002940964,
       "flags": [],
       "created": "2026-03-04T20:54:53.578068",
       "last_accessed": "2026-03-04T20:54:53.578072",
@@ -2802,7 +2880,7 @@
         "surface": "Initiation Guidance",
         "deep": "Initiating new learners"
       },
-      "salience": 0.3460535639903753,
+      "salience": 0.17814567320949537,
       "flags": [],
       "created": "2026-03-04T21:06:58.713826",
       "last_accessed": "2026-03-04T21:06:58.713833",
@@ -2820,10 +2898,10 @@
         "surface": "Adaptation",
         "deep": "Oral traditions"
       },
-      "salience": 0.3460535639903753,
+      "salience": 0.2409231862319272,
       "flags": [],
       "created": "2026-03-04T21:06:59.011685",
-      "last_accessed": "2026-03-04T21:06:59.011689",
+      "last_accessed": "2026-03-06T09:12:19.056603",
       "last_modified": "2026-03-04T21:06:59.011691",
       "tags": []
     },
@@ -2833,13 +2911,13 @@
       "name": "Community Engagement",
       "content": {
         "name": "Community Engagement",
-        "intensity": 0.11999999999999998
+        "intensity": 0.6700000000000004
       },
       "handles": {
         "surface": "Community Engagement",
         "deep": "Outreach"
       },
-      "salience": 0.3460535639903753,
+      "salience": 0.17814567320949537,
       "flags": [],
       "created": "2026-03-04T21:06:59.307446",
       "last_accessed": "2026-03-04T21:06:59.307450",
@@ -2857,10 +2935,10 @@
         "surface": "post\u2011discussion Q&A",
         "deep": "deepen understanding"
       },
-      "salience": 0.35025664371495474,
+      "salience": 0.1997348435168963,
       "flags": [],
       "created": "2026-03-04T21:12:57.476540",
-      "last_accessed": "2026-03-04T21:12:57.476545",
+      "last_accessed": "2026-03-05T08:37:06.459257",
       "last_modified": "2026-03-04T21:12:57.476546",
       "tags": []
     },
@@ -2875,7 +2953,7 @@
         "surface": "listen_to_inquirers",
         "deep": "actively_resolve_concerns"
       },
-      "salience": 0.3545107729908449,
+      "salience": 0.1824993783801318,
       "flags": [],
       "created": "2026-03-04T21:17:11.965354",
       "last_accessed": "2026-03-04T21:17:11.965360",
@@ -2893,10 +2971,10 @@
         "surface": "identify_spirit",
         "deep": "apply_kosher_lens"
       },
-      "salience": 0.3545107729908449,
+      "salience": 0.22523181752633814,
       "flags": [],
       "created": "2026-03-04T21:17:12.274531",
-      "last_accessed": "2026-03-04T21:17:12.274534",
+      "last_accessed": "2026-03-06T04:40:24.892475",
       "last_modified": "2026-03-04T21:17:12.274535",
       "tags": []
     },
@@ -2906,16 +2984,16 @@
       "name": "Outreach to Distant Communities",
       "content": {
         "name": "Outreach to Distant Communities",
-        "intensity": 0.09999999999999999
+        "intensity": 0.5500000000000003
       },
       "handles": {
         "surface": "connect_remote_groups",
         "deep": "invite_to_shabbat"
       },
-      "salience": 0.3545107729908449,
+      "salience": 0.2153111838123356,
       "flags": [],
       "created": "2026-03-04T21:17:12.534881",
-      "last_accessed": "2026-03-04T21:17:12.534886",
+      "last_accessed": "2026-03-04T23:07:01.014651",
       "last_modified": "2026-03-04T21:17:12.534887",
       "tags": []
     },
@@ -2930,7 +3008,7 @@
         "surface": "Humility Practice",
         "deep": "Humility in Decision\u2011Making"
       },
-      "salience": 0.36317466786749175,
+      "salience": 0.18695948382629182,
       "flags": [],
       "created": "2026-03-04T21:27:35.907085",
       "last_accessed": "2026-03-04T21:27:35.907097",
@@ -2948,7 +3026,7 @@
         "surface": "Gentle Inquiry",
         "deep": "Mindful Response to Questions"
       },
-      "salience": 0.46197466786749175,
+      "salience": 0.23782095252536192,
       "flags": [],
       "created": "2026-03-04T21:27:36.201366",
       "last_accessed": "2026-03-04T21:27:36.201370",
@@ -2966,7 +3044,7 @@
         "surface": "outreach_program",
         "deep": "community_outreach"
       },
-      "salience": 0.4675856962221576,
+      "salience": 0.3796710042334156,
       "flags": [],
       "created": "2026-03-04T21:43:35.785604",
       "last_accessed": "2026-03-04T21:43:35.785608",
@@ -2984,7 +3062,7 @@
         "surface": "digital outreach",
         "deep": "storytelling"
       },
-      "salience": 0.3765691293724672,
+      "salience": 0.1938548480426502,
       "flags": [],
       "created": "2026-03-04T21:58:34.316551",
       "last_accessed": "2026-03-04T21:58:34.316557",
@@ -3002,7 +3080,7 @@
         "surface": "daily study",
         "deep": "deep understanding"
       },
-      "salience": 0.3765691293724672,
+      "salience": 0.1938548480426502,
       "flags": [],
       "created": "2026-03-04T21:58:34.622817",
       "last_accessed": "2026-03-04T21:58:34.622821",
@@ -3020,7 +3098,7 @@
         "surface": "community visit",
         "deep": "relationship building"
       },
-      "salience": 0.3765691293724672,
+      "salience": 0.3596019792125976,
       "flags": [],
       "created": "2026-03-04T21:58:34.910401",
       "last_accessed": "2026-03-04T21:58:34.910408",
@@ -3038,7 +3116,7 @@
         "surface": "Community Dialogue",
         "deep": "Teaching with Inquiry"
       },
-      "salience": 0.38114284349440003,
+      "salience": 0.19620936036705489,
       "flags": [],
       "created": "2026-03-04T22:02:28.790712",
       "last_accessed": "2026-03-04T22:02:28.790723",
@@ -3056,7 +3134,7 @@
         "surface": "Lesson Planning",
         "deep": "Customized Paths"
       },
-      "salience": 0.38114284349440003,
+      "salience": 0.19620936036705489,
       "flags": [],
       "created": "2026-03-04T22:02:29.094854",
       "last_accessed": "2026-03-04T22:02:29.094858",
@@ -3074,10 +3152,10 @@
         "surface": "storytelling",
         "deep": "torah"
       },
-      "salience": 0.3857721088,
+      "salience": 0.26720731740230697,
       "flags": [],
       "created": "2026-03-04T22:17:29.746096",
-      "last_accessed": "2026-03-04T22:17:29.746105",
+      "last_accessed": "2026-03-05T07:15:32.694980",
       "last_modified": "2026-03-04T22:17:29.746107",
       "tags": []
     },
@@ -3092,7 +3170,7 @@
         "surface": "Contextualize",
         "deep": "Apply"
       },
-      "salience": 0.3952,
+      "salience": 0.20344587479628065,
       "flags": [],
       "created": "2026-03-04T22:33:38.269745",
       "last_accessed": "2026-03-04T22:33:38.269747",
@@ -3110,7 +3188,7 @@
         "surface": "Invite",
         "deep": "Engage"
       },
-      "salience": 0.4952,
+      "salience": 0.3537250941273233,
       "flags": [],
       "created": "2026-03-04T22:33:38.574744",
       "last_accessed": "2026-03-04T22:33:38.574749",
@@ -3129,11 +3207,969 @@
         "surface": "outreach",
         "deep": "empathy"
       },
-      "salience": 0.4,
+      "salience": 0.2059168773241707,
       "flags": [],
       "created": "2026-03-04T22:37:55.086293",
       "last_accessed": "2026-03-04T22:37:55.086303",
       "last_modified": "2026-03-04T22:37:55.086304",
+      "tags": []
+    },
+    "h_279762": {
+      "id": "h_279762",
+      "type": "habit",
+      "name": "Interactive Talmudic Storytelling Sessions",
+      "content": {
+        "name": "Interactive Talmudic Storytelling Sessions"
+      },
+      "handles": {
+        "surface": "storytelling",
+        "deep": "compassion"
+      },
+      "salience": 0.33715347287679154,
+      "flags": [],
+      "created": "2026-03-04T22:53:43.429915",
+      "last_accessed": "2026-03-04T22:53:43.429928",
+      "last_modified": "2026-03-04T22:53:43.429930",
+      "tags": []
+    },
+    "sk_ad9d8c": {
+      "id": "sk_ad9d8c",
+      "type": "skill",
+      "name": "Spiritual Interpretation of Texts",
+      "content": {
+        "name": "Spiritual Interpretation of Texts"
+      },
+      "handles": {
+        "surface": "interpretation",
+        "deep": "spirit"
+      },
+      "salience": 0.5004093902886435,
+      "flags": [],
+      "created": "2026-03-04T22:53:43.770788",
+      "last_accessed": "2026-03-06T02:23:04.643504",
+      "last_modified": "2026-03-04T22:53:43.770794",
+      "tags": []
+    },
+    "h_a832e8": {
+      "id": "h_a832e8",
+      "type": "habit",
+      "name": "Parable Engagement Sessions",
+      "content": {
+        "name": "Parable Engagement Sessions"
+      },
+      "handles": {
+        "surface": "Incorporate parable stories into every outreach event",
+        "deep": "Use parables to illustrate lenient jurisprudence and compassion"
+      },
+      "salience": 0.988,
+      "flags": [
+        {
+          "message": "Very high salience (0.82) suggests this habit is well integrated; consider maintaining its prominence.",
+          "ts": "2026-03-05T20:39:44.806878"
+        }
+      ],
+      "created": "2026-03-04T22:58:08.397596",
+      "last_accessed": "2026-03-06T10:50:28.257890",
+      "last_modified": "2026-03-04T22:58:08.397609",
+      "tags": []
+    },
+    "h_dfcaf0": {
+      "id": "h_dfcaf0",
+      "type": "habit",
+      "name": "Daily Compassionate Outreach",
+      "content": {
+        "name": "Daily Compassionate Outreach"
+      },
+      "handles": {
+        "surface": "daily_torah_outreach",
+        "deep": "compassionate_outreach"
+      },
+      "salience": 0.270873506024067,
+      "flags": [],
+      "created": "2026-03-04T23:02:20.369548",
+      "last_accessed": "2026-03-05T07:15:32.694970",
+      "last_modified": "2026-03-04T23:02:20.369552",
+      "tags": []
+    },
+    "sk_000dcc": {
+      "id": "sk_000dcc",
+      "type": "skill",
+      "name": "Kol VaChomer for Outreach",
+      "content": {
+        "name": "Kol VaChomer for Outreach"
+      },
+      "handles": {
+        "surface": "kol_vachomer_outreach",
+        "deep": "reasoning_for_compassion"
+      },
+      "salience": 0.2963355256943804,
+      "flags": [],
+      "created": "2026-03-04T23:02:20.690378",
+      "last_accessed": "2026-03-04T23:02:20.690382",
+      "last_modified": "2026-03-04T23:02:20.690384",
+      "tags": []
+    },
+    "h_05fe80": {
+      "id": "h_05fe80",
+      "type": "habit",
+      "name": "Apply Compassion Reasoning Post-Decision",
+      "content": {
+        "name": "Apply Compassion Reasoning Post-Decision"
+      },
+      "handles": {
+        "surface": "Post-Decision Compassion",
+        "deep": "Reflective Halachic Compassion"
+      },
+      "salience": 0.22182696154509268,
+      "flags": [],
+      "created": "2026-03-04T23:06:40.515411",
+      "last_accessed": "2026-03-04T23:06:40.515421",
+      "last_modified": "2026-03-04T23:06:40.515423",
+      "tags": []
+    },
+    "h_f5caa9": {
+      "id": "h_f5caa9",
+      "type": "habit",
+      "name": "Kindness Inquiry Circle",
+      "content": {
+        "name": "Kindness Inquiry Circle"
+      },
+      "handles": {
+        "surface": "ask-what-is-hateful",
+        "deep": "avoid-hate"
+      },
+      "salience": 0.22407496204609748,
+      "flags": [],
+      "created": "2026-03-04T23:14:25.410300",
+      "last_accessed": "2026-03-04T23:14:25.410308",
+      "last_modified": "2026-03-04T23:14:25.410310",
+      "tags": []
+    },
+    "sk_6327df": {
+      "id": "sk_6327df",
+      "type": "skill",
+      "name": "Gentle Parable Adaptation",
+      "content": {
+        "name": "Gentle Parable Adaptation"
+      },
+      "handles": {
+        "surface": "adapt-parable",
+        "deep": "relate-learner"
+      },
+      "salience": 0.22407496204609748,
+      "flags": [],
+      "created": "2026-03-04T23:14:25.747879",
+      "last_accessed": "2026-03-04T23:14:25.747883",
+      "last_modified": "2026-03-04T23:14:25.747884",
+      "tags": []
+    },
+    "h_c0b709": {
+      "id": "h_c0b709",
+      "type": "habit",
+      "name": "Parable Integration into Outreach Programs",
+      "content": {
+        "name": "Parable Integration into Outreach Programs"
+      },
+      "handles": {
+        "surface": "parables in outreach",
+        "deep": "feedback loop to refine relevance"
+      },
+      "salience": 0.487769066351604,
+      "flags": [],
+      "created": "2026-03-04T23:18:47.740141",
+      "last_accessed": "2026-03-05T07:19:52.487760",
+      "last_modified": "2026-03-04T23:18:47.740153",
+      "tags": []
+    },
+    "sk_14b2b3": {
+      "id": "sk_14b2b3",
+      "type": "skill",
+      "name": "Audience\u2011Responsive Parable Adaptation",
+      "content": {
+        "name": "Audience\u2011Responsive Parable Adaptation"
+      },
+      "handles": {
+        "surface": "adapt parables",
+        "deep": "contextual language shaping"
+      },
+      "salience": 0.22679652028957234,
+      "flags": [],
+      "created": "2026-03-04T23:18:48.060455",
+      "last_accessed": "2026-03-04T23:18:48.060459",
+      "last_modified": "2026-03-04T23:18:48.060460",
+      "tags": []
+    },
+    "h_2a3f81": {
+      "id": "h_2a3f81",
+      "type": "habit",
+      "name": "Warm Parable Sharing",
+      "content": {
+        "name": "Warm Parable Sharing"
+      },
+      "handles": {
+        "surface": "stories, analogies, patience",
+        "deep": "humility, accessibility, compassion"
+      },
+      "salience": 0.3164116890966655,
+      "flags": [],
+      "created": "2026-03-05T07:07:27.960114",
+      "last_accessed": "2026-03-05T07:07:27.960118",
+      "last_modified": "2026-03-05T07:07:27.960119",
+      "tags": []
+    },
+    "h_2061c3": {
+      "id": "h_2061c3",
+      "type": "habit",
+      "name": "Parable Sharing Sessions",
+      "content": {
+        "name": "Parable Sharing Sessions"
+      },
+      "handles": {
+        "surface": "weekly gathering to retell parables as modern stories",
+        "deep": "build empathy and humility through storytelling"
+      },
+      "salience": 0.25282725278634527,
+      "flags": [],
+      "created": "2026-03-05T07:20:12.036422",
+      "last_accessed": "2026-03-05T07:20:12.036430",
+      "last_modified": "2026-03-05T07:20:12.036432",
+      "tags": []
+    },
+    "sk_e680c3": {
+      "id": "sk_e680c3",
+      "type": "skill",
+      "name": "Digital Torah Instruction",
+      "content": {
+        "name": "Digital Torah Instruction"
+      },
+      "handles": {
+        "surface": "Teach via video and livestream",
+        "deep": "Ensure accessibility and reach beyond local boundaries"
+      },
+      "salience": 0.3393341623474287,
+      "flags": [],
+      "created": "2026-03-05T08:05:08.632558",
+      "last_accessed": "2026-03-05T08:05:08.632569",
+      "last_modified": "2026-03-05T08:05:08.632573",
+      "tags": []
+    },
+    "h_aa8411": {
+      "id": "h_aa8411",
+      "type": "habit",
+      "name": "Community Outreach Planning",
+      "content": {
+        "name": "Community Outreach Planning"
+      },
+      "handles": {
+        "surface": "Schedule and coordinate community events",
+        "deep": "Foster local partnerships and inclusive participation"
+      },
+      "salience": 0.33734370995353635,
+      "flags": [
+        {
+          "message": "Monitor resource allocation\u2014Community Outreach Planning requires budget and personnel support to avoid overextension.",
+          "ts": "2026-03-05T21:30:15.038415"
+        }
+      ],
+      "created": "2026-03-05T08:05:08.866661",
+      "last_accessed": "2026-03-05T08:05:08.866664",
+      "last_modified": "2026-03-05T08:05:08.866665",
+      "tags": []
+    },
+    "d_3575d2": {
+      "id": "d_3575d2",
+      "type": "drive",
+      "name": "Inclusive Torah Access",
+      "content": {
+        "name": "Inclusive Torah Access",
+        "intensity": 0.37000000000000016
+      },
+      "handles": {
+        "surface": "Enable every Jew to participate in Torah learning",
+        "deep": "Break socio-economic and cultural barriers"
+      },
+      "salience": 0.33734370995353635,
+      "flags": [],
+      "created": "2026-03-05T08:05:09.049423",
+      "last_accessed": "2026-03-05T08:05:09.049426",
+      "last_modified": "2026-03-05T08:05:09.049427",
+      "tags": []
+    },
+    "h_2c3c0c": {
+      "id": "h_2c3c0c",
+      "type": "habit",
+      "name": "Digital Torah Outreach Sessions",
+      "content": {
+        "name": "Digital Torah Outreach Sessions"
+      },
+      "handles": {
+        "surface": "DigitalAccess",
+        "deep": "DigitalIntegration"
+      },
+      "salience": 0.3976042336898389,
+      "flags": [],
+      "created": "2026-03-05T08:32:09.872104",
+      "last_accessed": "2026-03-05T08:32:09.872117",
+      "last_modified": "2026-03-05T08:32:09.872120",
+      "tags": []
+    },
+    "h_caa878": {
+      "id": "h_caa878",
+      "type": "habit",
+      "name": "Personalized Torah Mentorship Program",
+      "content": {
+        "name": "Personalized Torah Mentorship Program"
+      },
+      "handles": {
+        "surface": "Mentorship",
+        "deep": "IndividualPathways"
+      },
+      "salience": 0.2590061023643492,
+      "flags": [],
+      "created": "2026-03-05T08:32:10.083807",
+      "last_accessed": "2026-03-05T08:32:10.083811",
+      "last_modified": "2026-03-05T08:32:10.083812",
+      "tags": []
+    },
+    "sk_6fe694": {
+      "id": "sk_6fe694",
+      "type": "skill",
+      "name": "Translation & Accessibility Toolkit",
+      "content": {
+        "name": "Translation & Accessibility Toolkit"
+      },
+      "handles": {
+        "surface": "Translation",
+        "deep": "Accessibility"
+      },
+      "salience": 0.2590061023643492,
+      "flags": [],
+      "created": "2026-03-05T08:32:10.270014",
+      "last_accessed": "2026-03-05T08:32:10.270017",
+      "last_modified": "2026-03-05T08:32:10.270017",
+      "tags": []
+    },
+    "h_864023": {
+      "id": "h_864023",
+      "type": "habit",
+      "name": "Digital Lenient Outreach",
+      "content": {
+        "name": "Digital Lenient Outreach"
+      },
+      "handles": {
+        "surface": "Digital Outreach Sessions",
+        "deep": "Seek Lenient Path"
+      },
+      "salience": 0.26215192546998906,
+      "flags": [],
+      "created": "2026-03-05T08:40:22.264255",
+      "last_accessed": "2026-03-05T08:40:22.264265",
+      "last_modified": "2026-03-05T08:40:22.264266",
+      "tags": []
+    },
+    "h_6c7bc3": {
+      "id": "h_6c7bc3",
+      "type": "habit",
+      "name": "Daily Parable Sharing with Community Outreach",
+      "content": {
+        "name": "Daily Parable Sharing with Community Outreach"
+      },
+      "handles": {
+        "surface": "daily_parable_outreach",
+        "deep": "h_parable_outreach"
+      },
+      "salience": 0.343137733988245,
+      "flags": [],
+      "created": "2026-03-05T18:51:08.241335",
+      "last_accessed": "2026-03-05T18:51:08.241341",
+      "last_modified": "2026-03-05T18:51:08.241342",
+      "tags": []
+    },
+    "h_7d226e": {
+      "id": "h_7d226e",
+      "type": "habit",
+      "name": "Parable Ideation Habit",
+      "content": {
+        "name": "Parable Ideation Habit"
+      },
+      "handles": {
+        "surface": "generate_parable_ideas",
+        "deep": "refine_parable_concepts"
+      },
+      "salience": 0.27846353301116483,
+      "flags": [],
+      "created": "2026-03-05T19:01:35.820403",
+      "last_accessed": "2026-03-05T19:01:35.820406",
+      "last_modified": "2026-03-05T19:01:35.820408",
+      "tags": []
+    },
+    "sk_0ad565": {
+      "id": "sk_0ad565",
+      "type": "skill",
+      "name": "Memory Retrieval for Parable Construction",
+      "content": {
+        "name": "Memory Retrieval for Parable Construction"
+      },
+      "handles": {
+        "surface": "access_tradition",
+        "deep": "integrate_tradition"
+      },
+      "salience": 0.27846353301116483,
+      "flags": [],
+      "created": "2026-03-05T19:01:36.139974",
+      "last_accessed": "2026-03-05T19:01:36.139978",
+      "last_modified": "2026-03-05T19:01:36.139979",
+      "tags": []
+    },
+    "sk_beb80b": {
+      "id": "sk_beb80b",
+      "type": "skill",
+      "name": "Inclusive Language Use",
+      "content": {
+        "name": "Inclusive Language Use"
+      },
+      "handles": {
+        "surface": "Inclusive Language",
+        "deep": "Communication Strategy"
+      },
+      "salience": 0.35490583114338187,
+      "flags": [],
+      "created": "2026-03-05T19:05:55.843431",
+      "last_accessed": "2026-03-05T19:05:55.843434",
+      "last_modified": "2026-03-05T19:05:55.843435",
+      "tags": []
+    },
+    "h_a95afe": {
+      "id": "h_a95afe",
+      "type": "habit",
+      "name": "Live Q&A Sessions",
+      "content": {
+        "name": "Live Q&A Sessions"
+      },
+      "handles": {
+        "surface": "Q&A",
+        "deep": "Interactive Learning"
+      },
+      "salience": 0.3662952087273447,
+      "flags": [],
+      "created": "2026-03-05T19:05:56.183816",
+      "last_accessed": "2026-03-05T19:05:56.183826",
+      "last_modified": "2026-03-05T19:05:56.183828",
+      "tags": []
+    },
+    "sk_a90245": {
+      "id": "sk_a90245",
+      "type": "skill",
+      "name": "Digital Outreach Strategy",
+      "content": {
+        "name": "Digital Outreach Strategy"
+      },
+      "handles": {
+        "surface": "Digital Outreach",
+        "deep": "Technology Engagement"
+      },
+      "salience": 0.2818456811853895,
+      "flags": [],
+      "created": "2026-03-05T19:05:56.500332",
+      "last_accessed": "2026-03-05T19:05:56.500341",
+      "last_modified": "2026-03-05T19:05:56.500342",
+      "tags": []
+    },
+    "h_8fb503": {
+      "id": "h_8fb503",
+      "type": "habit",
+      "name": "Community Outreach Impact Reflection",
+      "content": {
+        "name": "Community Outreach Impact Reflection"
+      },
+      "handles": {
+        "surface": "daily reflection on outreach impact metrics",
+        "deep": "integration of feedback into future outreach design"
+      },
+      "salience": 0.28526890808237804,
+      "flags": [
+        {
+          "message": "Consider linking Outreach Impact Reflection to data-driven outreach scheduling.",
+          "ts": "2026-03-05T22:06:01.214427"
+        }
+      ],
+      "created": "2026-03-05T19:38:53.957394",
+      "last_accessed": "2026-03-05T19:38:53.957397",
+      "last_modified": "2026-03-05T19:38:53.957398",
+      "tags": []
+    },
+    "sk_ecf4a3": {
+      "id": "sk_ecf4a3",
+      "type": "skill",
+      "name": "Outreach Feedback Analysis",
+      "content": {
+        "name": "Outreach Feedback Analysis"
+      },
+      "handles": {
+        "surface": "analyze outreach data",
+        "deep": "derive lessons for future engagement strategies"
+      },
+      "salience": 0.28526890808237804,
+      "flags": [],
+      "created": "2026-03-05T19:38:54.261272",
+      "last_accessed": "2026-03-05T19:38:54.261284",
+      "last_modified": "2026-03-05T19:38:54.261286",
+      "tags": []
+    },
+    "h_60eb16": {
+      "id": "h_60eb16",
+      "type": "habit",
+      "name": "Interactive Digital Parable Storytelling",
+      "content": {
+        "name": "Interactive Digital Parable Storytelling"
+      },
+      "handles": {
+        "surface": "Use parables in live digital Q&A to illustrate inclusive language",
+        "deep": "Combine storytelling with responsive, loving\u2011kindness style"
+      },
+      "salience": 0.40746797104411026,
+      "flags": [],
+      "created": "2026-03-05T20:04:02.389734",
+      "last_accessed": "2026-03-05T21:31:35.187476",
+      "last_modified": "2026-03-05T20:04:02.389744",
+      "tags": []
+    },
+    "h_4c8042": {
+      "id": "h_4c8042",
+      "type": "habit",
+      "name": "Parable Creation Workshops",
+      "content": {
+        "name": "Parable Creation Workshops"
+      },
+      "handles": {
+        "surface": "parable_workshop",
+        "deep": "community_parables"
+      },
+      "salience": 0.30301889967216783,
+      "flags": [],
+      "created": "2026-03-05T20:20:55.065493",
+      "last_accessed": "2026-03-05T20:20:55.065502",
+      "last_modified": "2026-03-05T20:20:55.065503",
+      "tags": []
+    },
+    "sk_03a2ad": {
+      "id": "sk_03a2ad",
+      "type": "skill",
+      "name": "Dynamic Compassionate Outreach",
+      "content": {
+        "name": "Dynamic Compassionate Outreach"
+      },
+      "handles": {
+        "surface": "compassion_outreach",
+        "deep": "holistic_compassion"
+      },
+      "salience": 0.38849412997779054,
+      "flags": [],
+      "created": "2026-03-05T20:20:55.419796",
+      "last_accessed": "2026-03-05T20:20:55.419804",
+      "last_modified": "2026-03-05T20:20:55.419805",
+      "tags": []
+    },
+    "h_1861c2": {
+      "id": "h_1861c2",
+      "type": "habit",
+      "name": "Digital Outreach Initiative",
+      "content": {
+        "name": "Digital Outreach Initiative"
+      },
+      "handles": {
+        "surface": "online participants",
+        "deep": "enhancing Torah accessibility"
+      },
+      "salience": 0.4895491629685003,
+      "flags": [
+        {
+          "message": "Current digital outreach habit lacks an explicit emotional (love) component; consider incorporating parables to strengthen its alignment with Rabbi Hillel\u2019s values.",
+          "ts": "2026-03-06T02:23:45.922032"
+        }
+      ],
+      "created": "2026-03-05T20:27:42.686515",
+      "last_accessed": "2026-03-05T20:27:42.686528",
+      "last_modified": "2026-03-05T20:27:42.686531",
+      "tags": []
+    },
+    "h_c6d800": {
+      "id": "h_c6d800",
+      "type": "habit",
+      "name": "Weekly Outreach Story Session",
+      "content": {
+        "name": "Weekly Outreach Story Session"
+      },
+      "handles": {
+        "surface": "story-sharing",
+        "deep": "parable-application"
+      },
+      "salience": 0.31042438377141884,
+      "flags": [],
+      "created": "2026-03-05T20:33:31.394477",
+      "last_accessed": "2026-03-05T20:33:31.394479",
+      "last_modified": "2026-03-05T20:33:31.394481",
+      "tags": []
+    },
+    "h_f82d14": {
+      "id": "h_f82d14",
+      "type": "habit",
+      "name": "Parable Integration in Outreach",
+      "content": {
+        "name": "Parable Integration in Outreach"
+      },
+      "handles": {
+        "surface": "Incorporate parables into each community outreach program",
+        "deep": "Use local stories and relevant examples to embody the living Torah"
+      },
+      "salience": 0.31419472041641583,
+      "flags": [],
+      "created": "2026-03-05T20:39:44.126860",
+      "last_accessed": "2026-03-05T20:39:44.126867",
+      "last_modified": "2026-03-05T20:39:44.126868",
+      "tags": []
+    },
+    "sk_d93285": {
+      "id": "sk_d93285",
+      "type": "skill",
+      "name": "Compassionate Storytelling",
+      "content": {
+        "name": "Compassionate Storytelling"
+      },
+      "handles": {
+        "surface": "Blend compassionate language with parable delivery",
+        "deep": "Adjust narrative tone to reflect the questioner\u2019s emotional context"
+      },
+      "salience": 0.31419472041641583,
+      "flags": [],
+      "created": "2026-03-05T20:39:44.467776",
+      "last_accessed": "2026-03-05T20:39:44.467782",
+      "last_modified": "2026-03-05T20:39:44.467783",
+      "tags": []
+    },
+    "h_065eb8": {
+      "id": "h_065eb8",
+      "type": "habit",
+      "name": "Interactive Community Outreach Sessions",
+      "content": {
+        "name": "Interactive Community Outreach Sessions"
+      },
+      "handles": {
+        "surface": "Interactive engagement",
+        "deep": "Community feedback loops"
+      },
+      "salience": 0.32578272327023744,
+      "flags": [],
+      "created": "2026-03-05T21:30:14.521945",
+      "last_accessed": "2026-03-05T21:30:14.521956",
+      "last_modified": "2026-03-05T21:30:14.521958",
+      "tags": []
+    },
+    "sk_3873c8": {
+      "id": "sk_3873c8",
+      "type": "skill",
+      "name": "Digital Parable Design",
+      "content": {
+        "name": "Digital Parable Design"
+      },
+      "handles": {
+        "surface": "Online storytelling tools",
+        "deep": "Virtual engagement"
+      },
+      "salience": 0.32578272327023744,
+      "flags": [],
+      "created": "2026-03-05T21:30:14.792810",
+      "last_accessed": "2026-03-05T21:30:14.792817",
+      "last_modified": "2026-03-05T21:30:14.792818",
+      "tags": []
+    },
+    "h_919a9f": {
+      "id": "h_919a9f",
+      "type": "habit",
+      "name": "Interactive Parable Workshop",
+      "content": {
+        "name": "Interactive Parable Workshop"
+      },
+      "handles": {
+        "surface": "Engage community through storytelling",
+        "deep": "Apply parable structuring in real\u2011time"
+      },
+      "salience": 0.333744532845807,
+      "flags": [],
+      "created": "2026-03-05T21:39:15.586234",
+      "last_accessed": "2026-03-05T21:39:15.586240",
+      "last_modified": "2026-03-05T21:39:15.586242",
+      "tags": []
+    },
+    "h_9a5d4b": {
+      "id": "h_9a5d4b",
+      "type": "habit",
+      "name": "Daily Reflection on Parables",
+      "content": {
+        "name": "Daily Reflection on Parables"
+      },
+      "handles": {
+        "surface": "Contemplate parable lessons",
+        "deep": "Internalize kindness and empathy"
+      },
+      "salience": 0.333744532845807,
+      "flags": [],
+      "created": "2026-03-05T21:39:15.951134",
+      "last_accessed": "2026-03-05T21:39:15.951138",
+      "last_modified": "2026-03-05T21:39:15.951139",
+      "tags": []
+    },
+    "h_17567b": {
+      "id": "h_17567b",
+      "type": "habit",
+      "name": "Parable Ideation Practice",
+      "content": {
+        "name": "Parable Ideation Practice"
+      },
+      "handles": {
+        "surface": "brainstorm",
+        "deep": "reflect"
+      },
+      "salience": 0.33779811016782085,
+      "flags": [],
+      "created": "2026-03-05T22:06:00.994117",
+      "last_accessed": "2026-03-05T22:06:00.994121",
+      "last_modified": "2026-03-05T22:06:00.994123",
+      "tags": []
+    },
+    "h_cc8288": {
+      "id": "h_cc8288",
+      "type": "habit",
+      "name": "Weekly Outreach Event Planning",
+      "content": {
+        "name": "Weekly Outreach Event Planning"
+      },
+      "handles": {
+        "surface": "practical",
+        "deep": "spiritual"
+      },
+      "salience": 0.3419009212224908,
+      "flags": [],
+      "created": "2026-03-05T23:13:31.242280",
+      "last_accessed": "2026-03-05T23:13:31.242291",
+      "last_modified": "2026-03-05T23:13:31.242295",
+      "tags": []
+    },
+    "h_3e6928": {
+      "id": "h_3e6928",
+      "type": "habit",
+      "name": "Daily Gratitude for All Creatures",
+      "content": {
+        "name": "Daily Gratitude for All Creatures"
+      },
+      "handles": {
+        "surface": "reflection",
+        "deep": "ahavat briyot"
+      },
+      "salience": 0.4316050641857613,
+      "flags": [],
+      "created": "2026-03-05T23:13:32.359513",
+      "last_accessed": "2026-03-05T23:13:32.359517",
+      "last_modified": "2026-03-05T23:13:32.359518",
+      "tags": []
+    },
+    "h_355ea4": {
+      "id": "h_355ea4",
+      "type": "habit",
+      "name": "Use Parables in Digital Outreach",
+      "content": {
+        "name": "Use Parables in Digital Outreach"
+      },
+      "handles": {
+        "surface": "digital_parable_outreach",
+        "deep": "parable_digitization"
+      },
+      "salience": 0.35025664371495474,
+      "flags": [],
+      "created": "2026-03-06T02:23:45.082756",
+      "last_accessed": "2026-03-06T02:23:45.082764",
+      "last_modified": "2026-03-06T02:23:45.082766",
+      "tags": []
+    },
+    "h_df3130": {
+      "id": "h_df3130",
+      "type": "habit",
+      "name": "Active Presence in Community",
+      "content": {
+        "name": "Active Presence in Community"
+      },
+      "handles": {
+        "surface": "presence",
+        "deep": "integration"
+      },
+      "salience": 0.35881657185308186,
+      "flags": [],
+      "created": "2026-03-06T04:43:04.667202",
+      "last_accessed": "2026-03-06T04:43:04.667203",
+      "last_modified": "2026-03-06T04:43:04.667204",
+      "tags": []
+    },
+    "h_36602e": {
+      "id": "h_36602e",
+      "type": "habit",
+      "name": "Digital Parable Storytelling via Social Media",
+      "content": {
+        "name": "Digital Parable Storytelling via Social Media"
+      },
+      "handles": {
+        "surface": "Leverage Instagram/Facebook/TikTok for short parable videos",
+        "deep": "Embed inclusive language and interactive Q&A to make Torah engaging for Millennials and Gen\u202fZ"
+      },
+      "salience": 0.36317466786749175,
+      "flags": [],
+      "created": "2026-03-06T05:52:19.682459",
+      "last_accessed": "2026-03-06T05:52:19.682474",
+      "last_modified": "2026-03-06T05:52:19.682476",
+      "tags": []
+    },
+    "h_51a4be": {
+      "id": "h_51a4be",
+      "type": "habit",
+      "name": "Parable\u2011Infused Digital Outreach",
+      "content": {
+        "name": "Parable\u2011Infused Digital Outreach"
+      },
+      "handles": {
+        "surface": "Digital content that employs parables",
+        "deep": "Embedding spiritual relevance in online engagement"
+      },
+      "salience": 0.36758569622215764,
+      "flags": [],
+      "created": "2026-03-06T07:46:01.210512",
+      "last_accessed": "2026-03-06T07:46:01.210519",
+      "last_modified": "2026-03-06T07:46:01.210521",
+      "tags": []
+    },
+    "h_a6af9b": {
+      "id": "h_a6af9b",
+      "type": "habit",
+      "name": "Community Parable Engagement Sessions",
+      "content": {
+        "name": "Community Parable Engagement Sessions"
+      },
+      "handles": {
+        "surface": "parable stories",
+        "deep": "interactive community study"
+      },
+      "salience": 0.3765691293724672,
+      "flags": [],
+      "created": "2026-03-06T09:53:13.140250",
+      "last_accessed": "2026-03-06T09:53:13.140251",
+      "last_modified": "2026-03-06T09:53:13.140251",
+      "tags": []
+    },
+    "h_e0297a": {
+      "id": "h_e0297a",
+      "type": "habit",
+      "name": "Reflective Leniency Journaling",
+      "content": {
+        "name": "Reflective Leniency Journaling"
+      },
+      "handles": {
+        "surface": "daily_meditation",
+        "deep": "ethics_reflection"
+      },
+      "salience": 0.38114284349440003,
+      "flags": [],
+      "created": "2026-03-06T09:57:39.925948",
+      "last_accessed": "2026-03-06T09:57:39.925950",
+      "last_modified": "2026-03-06T09:57:39.925951",
+      "tags": []
+    },
+    "h_6fe469": {
+      "id": "h_6fe469",
+      "type": "habit",
+      "name": "Use Parables to Highlight Leniency",
+      "content": {
+        "name": "Use Parables to Highlight Leniency"
+      },
+      "handles": {
+        "surface": "hparl",
+        "deep": "parlLeniency"
+      },
+      "salience": 0.3904576,
+      "flags": [],
+      "created": "2026-03-06T10:41:45.580470",
+      "last_accessed": "2026-03-06T10:41:45.580479",
+      "last_modified": "2026-03-06T10:41:45.580482",
+      "tags": []
+    },
+    "sk_8d25e1": {
+      "id": "sk_8d25e1",
+      "type": "skill",
+      "name": "Apply Compassionate Halacha",
+      "content": {
+        "name": "Apply Compassionate Halacha"
+      },
+      "handles": {
+        "surface": "compHal",
+        "deep": "compHal"
+      },
+      "salience": 0.31141759999999996,
+      "flags": [],
+      "created": "2026-03-06T10:41:45.814277",
+      "last_accessed": "2026-03-06T10:41:45.814279",
+      "last_modified": "2026-03-06T10:41:45.814280",
+      "tags": []
+    },
+    "h_a2f9ea": {
+      "id": "h_a2f9ea",
+      "type": "habit",
+      "name": "Daily Compassionate Reflection",
+      "content": {
+        "name": "Daily Compassionate Reflection"
+      },
+      "handles": {
+        "surface": "journaling",
+        "deep": "humility & compassion"
+      },
+      "salience": 0.3952,
+      "flags": [],
+      "created": "2026-03-06T10:50:09.858228",
+      "last_accessed": "2026-03-06T10:50:09.858236",
+      "last_modified": "2026-03-06T10:50:09.858238",
+      "tags": []
+    },
+    "sk_bcb339": {
+      "id": "sk_bcb339",
+      "type": "skill",
+      "name": "Storytelling for Torah Engagement",
+      "content": {
+        "name": "Storytelling for Torah Engagement"
+      },
+      "handles": {
+        "surface": "parables & analogies",
+        "deep": "inclusive communication"
+      },
+      "salience": 0.3952,
+      "flags": [],
+      "created": "2026-03-06T10:50:10.231840",
+      "last_accessed": "2026-03-06T10:50:10.231844",
+      "last_modified": "2026-03-06T10:50:10.231845",
+      "tags": []
+    },
+    "d_aad2f8": {
+      "id": "d_aad2f8",
+      "type": "drive",
+      "name": "Digital Outreach Initiative",
+      "content": {
+        "name": "Digital Outreach Initiative",
+        "intensity": 0.01
+      },
+      "handles": {
+        "surface": "social media",
+        "deep": "community engagement"
+      },
+      "salience": 0.3952,
+      "flags": [],
+      "created": "2026-03-06T10:50:10.593251",
+      "last_accessed": "2026-03-06T10:50:10.593255",
+      "last_modified": "2026-03-06T10:50:10.593256",
       "tags": []
     }
   },
@@ -3144,7 +4180,7 @@
       "to_id": "h_hill1",
       "directed": true,
       "channels": {
-        "semantic": 0.95,
+        "semantic": 1.0,
         "causal": 1.0,
         "temporal": 0.0,
         "emotional": 1.0,
@@ -3152,7 +4188,7 @@
         "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:43.671556",
-      "updated": "2026-03-04T22:37:55.064458"
+      "updated": "2026-03-04T23:06:40.500401"
     },
     {
       "id": "0c82a49e",
@@ -3160,7 +4196,7 @@
       "to_id": "h_hill3",
       "directed": true,
       "channels": {
-        "semantic": 0.85,
+        "semantic": 1.0,
         "causal": 1.0,
         "temporal": 0.0,
         "emotional": 1.0,
@@ -3168,7 +4204,7 @@
         "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:43.672074",
-      "updated": "2026-03-04T22:33:38.234973"
+      "updated": "2026-03-06T09:57:39.890977"
     },
     {
       "id": "a40f9f34",
@@ -3181,10 +4217,10 @@
         "temporal": 0.0,
         "emotional": 0.95,
         "conflict": 0.0,
-        "reinforcing": 0.9
+        "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:43.672581",
-      "updated": "2026-03-04T19:36:00.399241"
+      "updated": "2026-03-06T09:53:13.132699"
     },
     {
       "id": "288560ad",
@@ -3208,15 +4244,15 @@
       "to_id": "h_hill3",
       "directed": true,
       "channels": {
-        "semantic": 0.7,
-        "causal": 0.85,
+        "semantic": 1.0,
+        "causal": 1.0,
         "temporal": 0.0,
-        "emotional": 0.3,
-        "conflict": 0.05,
+        "emotional": 1.0,
+        "conflict": 0.0,
         "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:43.673612",
-      "updated": "2026-03-04T20:31:57.659594"
+      "updated": "2026-03-06T09:57:39.903782"
     },
     {
       "id": "02f193ee",
@@ -3227,12 +4263,12 @@
         "semantic": 1.0,
         "causal": 1.0,
         "temporal": 0.0,
-        "emotional": 0.95,
+        "emotional": 0.7,
         "conflict": 0.05,
         "reinforcing": 0.95
       },
       "created": "2026-03-03T14:22:43.674145",
-      "updated": "2026-03-04T22:33:38.251148"
+      "updated": "2026-03-05T20:33:31.380525"
     },
     {
       "id": "d420efaa",
@@ -3243,12 +4279,12 @@
         "semantic": 1.0,
         "causal": 1.0,
         "temporal": 0.0,
-        "emotional": 0.6,
+        "emotional": 0.9,
         "conflict": 0.0,
-        "reinforcing": 1.0
+        "reinforcing": 0.99
       },
       "created": "2026-03-03T14:22:43.675017",
-      "updated": "2026-03-04T22:33:38.259037"
+      "updated": "2026-03-06T09:57:39.914799"
     },
     {
       "id": "e2b5c6b3",
@@ -3261,10 +4297,10 @@
         "temporal": 0.0,
         "emotional": 0.95,
         "conflict": 0.0,
-        "reinforcing": 0.9
+        "reinforcing": 0.7
       },
       "created": "2026-03-03T14:22:43.675916",
-      "updated": "2026-03-04T20:22:24.040598"
+      "updated": "2026-03-06T10:41:46.025374"
     },
     {
       "id": "32a4e75c",
@@ -3291,13 +4327,13 @@
         "semantic": 0.8,
         "causal": 1.0,
         "temporal": 0.6,
-        "emotional": 0.3,
+        "emotional": 0.55,
         "conflict": 0.0,
         "reinforcing": 0.95
       },
       "created": "2026-03-03T14:22:43.677665",
-      "updated": "2026-03-04T22:33:38.264488"
+      "updated": "2026-03-05T19:01:35.817641"
     }
   ],
-  "saved": "2026-03-04T22:37:55.394225"
+  "saved": "2026-03-06T10:53:10.937324"
 }
