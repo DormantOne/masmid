@@ -208,33 +208,6 @@ def _collect_speaker_tags(exchanges, speaker_name):
     return tags
 
 
-def _collect_speaker_claims(exchanges, speaker_name, max_claims=6):
-    """Extract the first sentence of each prior exchange by this speaker.
-
-    Returns a list of strings — the speaker's own prior claims,
-    most recent last. Capped at max_claims to stay within budget.
-    """
-    claims = []
-    for ex in exchanges:
-        if ex.get("is_human"):
-            continue
-        if ex.get("rabbi", "") != speaker_name:
-            continue
-        text = ex.get("text", "").strip()
-        if not text:
-            continue
-        # First sentence: split on sentence-ending punctuation
-        # but require at least 20 chars to avoid cutting too short
-        first = text[:250]
-        for punct in [".", "?", "!"]:
-            idx = first.find(punct, 20)
-            if idx > 0:
-                first = first[:idx + 1]
-                break
-        claims.append(first)
-    return claims[-max_claims:]
-
-
 # ==============================================================================
 #  PROGRESSIVE COMPRESSION CASCADE
 # ==============================================================================
@@ -410,16 +383,11 @@ def assemble_debate_context(
         kg_query += " " + " ".join(s.title for s in selected)
     hits = kg.query(kg_query, top_k=top_k_kg)
 
-    # 5. Anti-repetition — feed the model its own prior claims verbatim
-    my_prior_claims = _collect_speaker_claims(exchanges, speaker_name)
-    if my_prior_claims:
-        numbered = "\n".join(
-            f"  {i+1}. {c}" for i, c in enumerate(my_prior_claims)
-        )
-        used_args = (
-            "You have already made these arguments (DO NOT restate them — "
-            "advance to NEW ground):\n" + numbered
-        )
+    # 5. Anti-repetition
+    my_prior_tags = _collect_speaker_tags(exchanges, speaker_name)
+    if my_prior_tags:
+        used_args = ("Arguments you have already made (DO NOT repeat these — "
+                     "advance the discussion): " + ", ".join(my_prior_tags[-8:]))
     else:
         used_args = ""
 

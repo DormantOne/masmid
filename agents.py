@@ -56,8 +56,12 @@ class RabbiAgent:
         self.name = soul.content["name"] if soul else kg.name
         self.last_activated = []   # node names activated in last response
 
-    def respond(self, daf_ref, segments, exchanges, opponent_last, opponent_name):
+    def respond(self, daf_ref, segments, exchanges, opponent_last,
+                opponent_name, convergence_note=""):
         """Generate a debate response using context-managed assembly.
+
+        If convergence_note is set, the debate has been detected as circular
+        and the model is instructed to find new ground or yield.
 
         Returns: (reply_text, segment_ranges) tuple.
         """
@@ -89,6 +93,11 @@ class RabbiAgent:
             last_stmt      = ctx["last_stmt"],
             used_arguments = ctx["used_arguments"],
         )
+
+        # Convergence injection — appended last for maximum prompt weight
+        if convergence_note:
+            system += "\n" + convergence_note
+
         seg_ranges = ctx.get("_segment_ranges", [])
         self.last_activated = ctx.get("_activated", [])
         try:
@@ -101,6 +110,7 @@ class RabbiAgent:
                 "text": reply[:200],
                 "activated": ctx.get("_activated", []),
                 "segments": ctx.get("_segments_used", []),
+                "converged": bool(convergence_note),
             }, tags=[self.name.lower().replace(" ", "_")])
             return reply, seg_ranges
         except LLMError as e:

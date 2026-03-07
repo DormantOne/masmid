@@ -55,7 +55,7 @@
         "surface": "Protect halacha from erosion through leniency",
         "deep": "Precision today prevents catastrophic laxity tomorrow"
       },
-      "salience": 0.976144,
+      "salience": 0.5928993255609416,
       "flags": [
         {
           "message": "Referenced but not defined \u2013 likely an unintended omission that may compromise narrative clarity.",
@@ -107,7 +107,7 @@
         }
       ],
       "created": "2026-03-03T14:22:43.678708",
-      "last_accessed": "2026-03-06T14:56:15.102665",
+      "last_accessed": "2026-03-06T17:07:23.797619",
       "last_modified": "2026-03-03T14:22:43.678710",
       "tags": []
     },
@@ -127,47 +127,6 @@
       "created": "2026-03-03T21:05:40.114343",
       "last_accessed": "2026-03-03T21:05:40.114346",
       "last_modified": "2026-03-03T21:05:40.114348",
-      "tags": []
-    },
-    "h_db06fd": {
-      "id": "h_db06fd",
-      "type": "habit",
-      "name": "Demand Direct Textual Evidence",
-      "content": {
-        "name": "Demand Direct Textual Evidence"
-      },
-      "handles": {
-        "surface": "Immediate source citation required",
-        "deep": "Verbal demand that every argument be anchored in a tangible halachic phrase"
-      },
-      "salience": 0.939780986293152,
-      "flags": [],
-      "created": "2026-03-03T22:15:53.383444",
-      "last_accessed": "2026-03-06T14:58:39.953554",
-      "last_modified": "2026-03-03T22:15:53.383451",
-      "tags": []
-    },
-    "n_a68d4a": {
-      "id": "n_a68d4a",
-      "type": "definition",
-      "name": "definition_fc43",
-      "content": {
-        "definition": "Boundary Definition"
-      },
-      "handles": {
-        "surface": "Clarify the boundary context when a legal question is posed",
-        "deep": "Explain the underlying textual principles that delineate the scope of a command"
-      },
-      "salience": 0.114700563053689,
-      "flags": [
-        {
-          "message": "Definition summary is ambiguous; needs clarification to align with precision values.",
-          "ts": "2026-03-04T19:43:27.591496"
-        }
-      ],
-      "created": "2026-03-04T06:09:27.966129",
-      "last_accessed": "2026-03-06T11:08:08.338620",
-      "last_modified": "2026-03-04T06:09:27.966133",
       "tags": []
     },
     "n_603cb8": {
@@ -253,7 +212,7 @@
         "surface": "direct link between soul and goal",
         "deep": "causal relationship"
       },
-      "salience": 0.11960640859856911,
+      "salience": 0.05,
       "flags": [
         {
           "message": "Edge summary incomplete; reinforcing channel missing. Needs clarification.",
@@ -269,28 +228,6 @@
       "last_modified": "2026-03-05T19:27:28.248744",
       "tags": []
     },
-    "d_e39358": {
-      "id": "d_e39358",
-      "type": "drive",
-      "name": "Analytical Textual Reasoning",
-      "content": {
-        "name": "Analytical Textual Reasoning",
-        "description": "Skill to deconstruct and reassemble textual meaning with precision; supports \u2018Preserve Exact Textual Language\u2019 and \u2018Boundary Protection\u2019",
-        "intensity": 0.5300000000000002,
-        "valence": "approach"
-      },
-      "handles": {
-        "surface": "textual_precision",
-        "deep": "halachic_consistency",
-        "feel": "Watchful tension, weight of responsibility"
-      },
-      "salience": 0.5110388906575375,
-      "flags": [],
-      "created": "2026-03-06T12:21:46.355916",
-      "last_accessed": "2026-03-06T12:21:46.355924",
-      "last_modified": "2026-03-06T12:21:46.355926",
-      "tags": []
-    },
     "d_b41b4c": {
       "id": "d_b41b4c",
       "type": "drive",
@@ -299,54 +236,21 @@
         "name": "Integrity of Halacha",
         "brief": "[drive] Integrity of Halacha sal=0.50",
         "summary": "Maintain the integrity of Halachic rulings against erosion.",
-        "intensity": 0.5200000000000002,
-        "description": "Ensure that every rule and boundary remains intact against erosion."
+        "intensity": 1.0,
+        "description": "Ensure that every rule and boundary remains intact against erosion.",
+        "valence": "approach"
       },
       "handles": {
         "surface": "IntegrityHalacha",
-        "deep": "halacha_integrity"
+        "deep": "halacha_integrity",
+        "feel": "Watchful tension, weight of responsibility"
       },
-      "salience": 0.5303780754503775,
+      "salience": 0.6112288299886782,
       "flags": [],
       "created": "2026-03-06T12:26:36.221239",
       "last_accessed": "2026-03-06T12:26:36.221250",
       "last_modified": "2026-03-06T12:26:36.221252",
       "tags": []
-    },
-    "mem_26f19d83": {
-      "id": "mem_26f19d83",
-      "type": "memory",
-      "name": "Turn 3: logic-segment",
-      "content": {
-        "rabbi": "Rabbi Shammai",
-        "turn": 3,
-        "tag": "logic-segment",
-        "summary": "Rabbi Shammai: If the logic of segment\u202f[4] were extended to dough, we would be ignoring the unambiguous Torah requirement that \u201cofferin",
-        "daf_ref": "Menachot 54",
-        "timestamp": "2026-03-06T12:44:11.868561",
-        "is_human": false,
-        "activated": [
-          "Reductio and Boundary Logic",
-          "Demand Intellectual Honesty with Textual Proof",
-          "Immediate Boundary Check",
-          "Find the Exact Boundary",
-          "Demand Direct Textual Evidence",
-          "Challenge Imprecise Reasoning"
-        ]
-      },
-      "handles": {
-        "surface": "Rabbi Shammai: If the logic of segment\u202f[4] were extended to dough, we would be ignoring the unambiguous Torah requirement that \u201cofferin",
-        "topic": "Menachot 54 logic-segment Reductio and Boundary Logic Demand Intellectual Honesty with Textual Proof Immediate Boundary Check Find the Exact Boundary Demand Direct Textual Evidence Challenge Imprecise Reasoning"
-      },
-      "salience": 0.844495275419552,
-      "flags": [],
-      "created": "2026-03-06T12:44:11.868824",
-      "last_accessed": "2026-03-06T14:58:39.953519",
-      "last_modified": "2026-03-06T12:44:11.868832",
-      "tags": [
-        "episodic",
-        "logic-segment"
-      ]
     },
     "mem_89f52932": {
       "id": "mem_89f52932",
@@ -366,10 +270,10 @@
         "surface": "Adam: can you please summarize the daf?",
         "topic": "Menachot 54 please-summarize "
       },
-      "salience": 0.4024138841606204,
+      "salience": 0.1510566967208474,
       "flags": [],
       "created": "2026-03-06T12:45:38.588569",
-      "last_accessed": "2026-03-06T14:47:17.016503",
+      "last_accessed": "2026-03-06T21:18:17.730830",
       "last_modified": "2026-03-06T12:45:38.588572",
       "tags": [
         "episodic",
@@ -382,9 +286,9 @@
       "name": "Student: Adam",
       "content": {
         "name": "Adam",
-        "sessions": 9,
+        "sessions": 12,
         "first_seen": "2026-03-06T12:45:38.966304",
-        "last_seen": "2026-03-06T14:53:14.184160",
+        "last_seen": "2026-03-06T21:19:09.245831",
         "first_daf": "Menachot 54",
         "last_daf": "Menachot 54",
         "topics": [
@@ -402,14 +306,19 @@
           "welcome-dear",
           "today-gemara",
           "good-question",
-          "gemara-teaches"
+          "gemara-teaches",
+          "menachot-main",
+          "daf-teaches",
+          "daf-gemara",
+          "menachot-gemara",
+          "adonai-verse"
         ]
       },
       "handles": {
-        "surface": "Adam \u2014 sessions: 9, topics: good-afternoon, sure-adam, idea-freezing, adam-gemara, welcome-dear, today-gemara, good-question, gemara-teaches, last: Menachot 54",
-        "topics": "good-afternoon, sure-adam, idea-freezing, adam-gemara, welcome-dear, today-gemara, good-question, gemara-teaches"
+        "surface": "Adam \u2014 sessions: 12, topics: today-gemara, good-question, gemara-teaches, menachot-main, daf-teaches, daf-gemara, menachot-gemara, adonai-verse, last: Menachot 54",
+        "topics": "today-gemara, good-question, gemara-teaches, menachot-main, daf-teaches, daf-gemara, menachot-gemara, adonai-verse"
       },
-      "salience": 0.6981687222736679,
+      "salience": 0.34382981071193136,
       "flags": [
         {
           "message": "Ensure that every student who visits is prompted to confront the exact text; any parable or paraphrase must be challenged immediately.",
@@ -417,44 +326,11 @@
         }
       ],
       "created": "2026-03-06T12:45:38.966319",
-      "last_accessed": "2026-03-06T14:53:14.184174",
+      "last_accessed": "2026-03-06T21:19:09.245843",
       "last_modified": "2026-03-06T12:45:38.966323",
       "tags": [
         "episodic",
         "encounter"
-      ]
-    },
-    "mem_b298f338": {
-      "id": "mem_b298f338",
-      "type": "memory",
-      "name": "Turn 6: hillel-logic",
-      "content": {
-        "rabbi": "Rabbi Shammai",
-        "turn": 6,
-        "tag": "hillel-logic",
-        "summary": "Rabbi Shammai: Hillel, the logic of segment\u202f[5]\u2014that a mass that *shrinks* below the required measure becomes pure\u2014applies only to *rit",
-        "daf_ref": "Menachot 54",
-        "timestamp": "2026-03-06T12:46:03.396773",
-        "is_human": false,
-        "activated": [
-          "Apply the Stricter Reading",
-          "Reductio and Boundary Logic",
-          "Memory Traversal",
-          "Immediate Boundary Check"
-        ]
-      },
-      "handles": {
-        "surface": "Rabbi Shammai: Hillel, the logic of segment\u202f[5]\u2014that a mass that *shrinks* below the required measure becomes pure\u2014applies only to *rit",
-        "topic": "Menachot 54 hillel-logic Apply the Stricter Reading Reductio and Boundary Logic Memory Traversal Immediate Boundary Check"
-      },
-      "salience": 0.19371280468885121,
-      "flags": [],
-      "created": "2026-03-06T12:46:03.396886",
-      "last_accessed": "2026-03-06T12:46:03.396888",
-      "last_modified": "2026-03-06T12:46:03.396890",
-      "tags": [
-        "episodic",
-        "hillel-logic"
       ]
     },
     "mem_25c69cc2": {
@@ -475,7 +351,7 @@
         "surface": "Adam: so cooking could increase from permissible to imperissible based on growth of the apprent volume?",
         "topic": "Menachot 54 cooking-increase "
       },
-      "salience": 0.23049826187478453,
+      "salience": 0.05,
       "flags": [],
       "created": "2026-03-06T12:51:43.481275",
       "last_accessed": "2026-03-06T13:00:35.913580",
@@ -503,42 +379,14 @@
         "surface": "Adam: can you summarize the daf ?",
         "topic": "Menachot 54 summarize-daf "
       },
-      "salience": 0.23323475589775577,
+      "salience": 0.17903458592798577,
       "flags": [],
       "created": "2026-03-06T12:59:07.498983",
-      "last_accessed": "2026-03-06T14:47:17.016513",
+      "last_accessed": "2026-03-06T21:18:17.730829",
       "last_modified": "2026-03-06T12:59:07.498985",
       "tags": [
         "episodic",
         "summarize-daf"
-      ]
-    },
-    "mem_4042fc38": {
-      "id": "mem_4042fc38",
-      "type": "memory",
-      "name": "Turn 8: expectation-cooking",
-      "content": {
-        "rabbi": "Adam",
-        "turn": 8,
-        "tag": "expectation-cooking",
-        "summary": "Adam: is the expectation that cooking shrinks or sometimes expands eg if boiling",
-        "daf_ref": "Menachot 54",
-        "timestamp": "2026-03-06T13:00:35.813681",
-        "is_human": true,
-        "activated": []
-      },
-      "handles": {
-        "surface": "Adam: is the expectation that cooking shrinks or sometimes expands eg if boiling",
-        "topic": "Menachot 54 expectation-cooking "
-      },
-      "salience": 0.844495275419552,
-      "flags": [],
-      "created": "2026-03-06T13:02:01.363124",
-      "last_accessed": "2026-03-06T14:58:39.953550",
-      "last_modified": "2026-03-06T13:02:01.363127",
-      "tags": [
-        "episodic",
-        "expectation-cooking"
       ]
     },
     "mem_85a4e9ee": {
@@ -566,7 +414,7 @@
         "surface": "Rabbi Shammai: You say that the current volume alone is decisive, but consider the apple\u2011juice baraita in [0]: it makes clear that the ",
         "topic": "Menachot 54 current-volume Memory Traversal Turn 10: rule-meat Immediate Boundary Check Boundary Identification Reductio and Boundary Logic Demand Intellectual Honesty with Textual Proof"
       },
-      "salience": 0.2008572421592872,
+      "salience": 0.054530252772657314,
       "flags": [],
       "created": "2026-03-06T13:03:07.794714",
       "last_accessed": "2026-03-06T13:03:07.794716",
@@ -596,32 +444,11 @@
       "handles": {
         "surface": "new"
       },
-      "salience": 0.255898029135977,
+      "salience": 0.06947314452193593,
       "flags": [],
       "created": "2026-03-06T13:32:03.431725",
       "last_accessed": "2026-03-06T13:32:03.431727",
       "last_modified": "2026-03-06T13:32:03.431728",
-      "tags": []
-    },
-    "g_644a78": {
-      "id": "g_644a78",
-      "type": "goal",
-      "name": "goal_a62b",
-      "content": {
-        "id": "g_sham2",
-        "brief": "[goal] Maintain the Integrity of Halacha",
-        "summary": "Maintain the Integrity of Halacha: Every boundary weakened is a boundary lost. Preserve exact rulings against erosion. [active]",
-        "salience": 0.89
-      },
-      "handles": {
-        "surface": "g_sham2",
-        "deep": "g_sham2"
-      },
-      "salience": 0.2590061023643492,
-      "flags": [],
-      "created": "2026-03-06T13:35:26.327225",
-      "last_accessed": "2026-03-06T13:35:26.327232",
-      "last_modified": "2026-03-06T13:35:26.327233",
       "tags": []
     },
     "d_905aa1": {
@@ -630,35 +457,17 @@
       "name": "Enforce Textual Exactness",
       "content": {
         "name": "Enforce Textual Exactness",
-        "intensity": 0.3300000000000001
+        "intensity": 1.0
       },
       "handles": {
         "surface": "enforce-text",
         "deep": "textual"
       },
-      "salience": 0.2685586608840387,
+      "salience": 0.676919188523426,
       "flags": [],
       "created": "2026-03-06T13:45:26.294886",
       "last_accessed": "2026-03-06T13:45:26.294891",
       "last_modified": "2026-03-06T13:45:26.294892",
-      "tags": []
-    },
-    "sk_7cea1a": {
-      "id": "sk_7cea1a",
-      "type": "skill",
-      "name": "Boundary Application",
-      "content": {
-        "name": "Boundary Application"
-      },
-      "handles": {
-        "surface": "practical enforcement protocols",
-        "deep": "strategic planning of limits"
-      },
-      "salience": 0.46939669907997184,
-      "flags": [],
-      "created": "2026-03-06T14:02:05.783692",
-      "last_accessed": "2026-03-06T14:02:05.783695",
-      "last_modified": "2026-03-06T14:02:05.783696",
       "tags": []
     },
     "mem_568d52d7": {
@@ -679,10 +488,10 @@
         "surface": "Adam: would you be able to summarize this daf for me?",
         "topic": "Menachot 54 able-summarize "
       },
-      "salience": 0.3076837291919256,
+      "salience": 0.12435096119659951,
       "flags": [],
       "created": "2026-03-06T14:16:56.567308",
-      "last_accessed": "2026-03-06T14:47:17.016511",
+      "last_accessed": "2026-03-06T21:18:17.730831",
       "last_modified": "2026-03-06T14:16:56.567310",
       "tags": [
         "episodic",
@@ -707,7 +516,7 @@
         "surface": "Adam: just freeze dry everything - shrink the tamei out.",
         "topic": "Menachot 54 freeze-dry "
       },
-      "salience": 0.26195983876658907,
+      "salience": 0.05,
       "flags": [],
       "created": "2026-03-06T14:20:45.513204",
       "last_accessed": "2026-03-06T14:20:45.513205",
@@ -742,10 +551,10 @@
         "surface": "Rabbi Shammai: If the priest could add water after he has taken the required handful, he might add it until the remaining dough becomes",
         "topic": "Menachot 54 priest-add Demand Intellectual Honesty with Textual Proof Reductio and Boundary Logic Challenge Vagueness Immediately Turn 3: logic-segment Turn 8: expectation-cooking Immediate Boundary Check"
       },
-      "salience": 0.844495275419552,
+      "salience": 0.7553333551989708,
       "flags": [],
       "created": "2026-03-06T14:25:37.986958",
-      "last_accessed": "2026-03-06T14:58:39.953531",
+      "last_accessed": "2026-03-06T21:24:56.663414",
       "last_modified": "2026-03-06T14:25:37.986960",
       "tags": [
         "episodic",
@@ -777,49 +586,14 @@
         "surface": "Rabbi Shammai: Hillel, your distinction that the handful \u201calready is dry\u201d (segment\u202f[1]) does not free the **remaining** dough from the ",
         "topic": "Menachot 54 hillel-distinction Demand Intellectual Honesty with Textual Proof Immediate Boundary Check Exact Textual Analysis Reductio and Boundary Logic Turn 17: priest-add Turn 3: logic-segment"
       },
-      "salience": 0.6333522138987188,
+      "salience": 0.9301257495499938,
       "flags": [],
       "created": "2026-03-06T14:27:55.296394",
-      "last_accessed": "2026-03-06T14:58:39.953536",
+      "last_accessed": "2026-03-06T21:24:56.663422",
       "last_modified": "2026-03-06T14:27:55.296399",
       "tags": [
         "episodic",
         "hillel-distinction"
-      ]
-    },
-    "mem_4cea33c1": {
-      "id": "mem_4cea33c1",
-      "type": "memory",
-      "name": "Turn 26: welcome-dear",
-      "content": {
-        "rabbi": "Rabbi Shammai",
-        "turn": 26,
-        "tag": "welcome-dear",
-        "summary": "Rabbi Shammai: Welcome, dear student.",
-        "daf_ref": "Menachot 54",
-        "timestamp": "2026-03-06T14:29:06.326982",
-        "is_human": false,
-        "activated": [
-          "Reductio and Boundary Logic",
-          "Memory Traversal",
-          "Demand Intellectual Honesty with Textual Proof",
-          "Immediate Boundary Check",
-          "Exact Textual Analysis",
-          "Turn 8: expectation-cooking"
-        ]
-      },
-      "handles": {
-        "surface": "Rabbi Shammai: Welcome, dear student.",
-        "topic": "Menachot 54 welcome-dear Reductio and Boundary Logic Memory Traversal Demand Intellectual Honesty with Textual Proof Immediate Boundary Check Exact Textual Analysis Turn 8: expectation-cooking"
-      },
-      "salience": 0.27162133579999137,
-      "flags": [],
-      "created": "2026-03-06T14:29:06.856454",
-      "last_accessed": "2026-03-06T14:29:06.856455",
-      "last_modified": "2026-03-06T14:29:06.856456",
-      "tags": [
-        "episodic",
-        "welcome-dear"
       ]
     },
     "mem_b76119ef": {
@@ -840,7 +614,7 @@
         "surface": "Adam: is it all volume or partly weight or is it mass - does that even make sense?",
         "topic": "Menachot 54 volume-partly "
       },
-      "salience": 0.27162133579999137,
+      "salience": 0.07374182748100379,
       "flags": [],
       "created": "2026-03-06T14:29:07.013345",
       "last_accessed": "2026-03-06T14:29:07.013346",
@@ -875,7 +649,7 @@
         "surface": "Rabbi Shammai: The Gemara in **segment\u202f[4]** makes it clear that if a quantity is allowed to change after it has been measured for impu",
         "topic": "Menachot 54 gemara-segment Demand Intellectual Honesty with Textual Proof Immediate Boundary Check Exact Textual Analysis Reductio and Boundary Logic Turn 3: logic-segment Turn 17: priest-add"
       },
-      "salience": 0.32048874429052704,
+      "salience": 0.08700872345491323,
       "flags": [],
       "created": "2026-03-06T14:31:58.542426",
       "last_accessed": "2026-03-06T14:46:59.859005",
@@ -903,36 +677,15 @@
         "surface": "Adam: please if you can rabbi, summarize the daf for me today",
         "topic": "Menachot 54 please-rabbi "
       },
-      "salience": 0.2850598828614576,
+      "salience": 0.1591549916017565,
       "flags": [],
       "created": "2026-03-06T14:47:39.506536",
-      "last_accessed": "2026-03-06T14:47:39.506538",
+      "last_accessed": "2026-03-06T21:18:17.730832",
       "last_modified": "2026-03-06T14:47:39.506538",
       "tags": [
         "episodic",
         "please-rabbi"
       ]
-    },
-    "sk_860582": {
-      "id": "sk_860582",
-      "type": "skill",
-      "name": "Analytical Rigor",
-      "content": {
-        "name": "Analytical Rigor",
-        "description": "Show where a lenient ruling, followed to its conclusion, leads to absurdity.",
-        "proficiency": 0.85,
-        "domain": "Talmudic logic"
-      },
-      "handles": {
-        "surface": "Analytical Rigor",
-        "deep": "Maintain textual precision and guard against interpretive drift"
-      },
-      "salience": 1.0,
-      "flags": [],
-      "created": "2026-03-06T14:49:46.765464",
-      "last_accessed": "2026-03-06T14:49:46.765468",
-      "last_modified": "2026-03-06T14:49:46.765470",
-      "tags": []
     },
     "mem_ee9bc133": {
       "id": "mem_ee9bc133",
@@ -952,7 +705,7 @@
         "surface": "Adam: wait a second - should it be inspected before cooking?",
         "topic": "Menachot 54 wait-second "
       },
-      "salience": 0.212986466240081,
+      "salience": 0.05,
       "flags": [],
       "created": "2026-03-06T14:53:14.045476",
       "last_accessed": "2026-03-06T14:53:14.045478",
@@ -962,196 +715,620 @@
         "wait-second"
       ]
     },
-    "h_b50364": {
-      "id": "h_b50364",
-      "type": "habit",
-      "name": "Demand Intellectual Honesty",
-      "content": {
-        "name": "Demand Intellectual Honesty",
-        "trigger": "Multiple interpretations are possible",
-        "behavior": "In cases of doubt, apply the stricter interpretation to protect the fence",
-        "strength": 0.85
-      },
-      "handles": {
-        "surface": "ChallengeImprecision",
-        "deep": "ForceDirectAlignmentWithText",
-        "behavior": "L'chumra -- err on the strict side when the text admits multiple readings",
-        "trigger": "When the text is ambiguous",
-        "feel": "Protective weight, responsibility for the community's future",
-        "conflict": "Clashes with Hillel's tendency to find the spirit rather than the boundary"
-      },
-      "salience": 1.0,
-      "flags": [],
-      "created": "2026-03-06T14:53:42.501745",
-      "last_accessed": "2026-03-06T14:53:42.501753",
-      "last_modified": "2026-03-06T14:53:42.501756",
-      "tags": []
-    },
-    "h_e78dad": {
-      "id": "h_e78dad",
-      "type": "habit",
-      "name": "Demand Precision in Language",
-      "content": {
-        "name": "Demand Precision in Language"
-      },
-      "handles": {
-        "surface": "precision",
-        "deep": "literal"
-      },
-      "salience": 0.33779811016782085,
-      "flags": [],
-      "created": "2026-03-06T14:57:12.478706",
-      "last_accessed": "2026-03-06T14:57:12.478715",
-      "last_modified": "2026-03-06T14:57:12.478718",
-      "tags": []
-    },
-    "h_0707c8": {
-      "id": "h_0707c8",
-      "type": "habit",
-      "name": "Demand Strict Literalism",
-      "content": {
-        "name": "Demand Strict Literalism"
-      },
-      "handles": {
-        "surface": "literalism",
-        "deep": "strict"
-      },
-      "salience": 0.42642580341553216,
-      "flags": [],
-      "created": "2026-03-06T14:57:12.631805",
-      "last_accessed": "2026-03-06T14:57:12.631809",
-      "last_modified": "2026-03-06T14:57:12.631810",
-      "tags": []
-    },
-    "h_a83568": {
-      "id": "h_a83568",
-      "type": "habit",
-      "name": "Challenge Imprecision Instantly",
-      "content": {
-        "name": "Challenge Imprecision Instantly"
-      },
-      "handles": {
-        "surface": "Challenge",
-        "deep": "Precision"
-      },
-      "salience": 0.44019584633349207,
-      "flags": [],
-      "created": "2026-03-06T15:04:12.299084",
-      "last_accessed": "2026-03-06T15:04:12.299094",
-      "last_modified": "2026-03-06T15:04:12.299096",
-      "tags": []
-    },
-    "g_25dd21": {
-      "id": "g_25dd21",
-      "type": "goal",
-      "name": "Preserve Halachic Precision",
-      "content": {
-        "name": "Preserve Halachic Precision",
-        "description": "Ensure every textual interpretation adheres strictly to original wording; guard against erosion."
-      },
-      "handles": {
-        "surface": "maintain halachic precision",
-        "deep": "prevent textual erosion"
-      },
-      "salience": 0.35025664371495474,
-      "flags": [],
-      "created": "2026-03-06T15:07:38.334555",
-      "last_accessed": "2026-03-06T15:07:38.334571",
-      "last_modified": "2026-03-06T15:07:38.334575",
-      "tags": []
-    },
     "n_f31655": {
       "id": "n_f31655",
       "type": "definition",
       "name": "Fence (Kav) as Protective Boundary",
       "content": {
-        "name": "Fence (Kav) as Protective Boundary"
+        "name": "Fence (Kav) as Protective Boundary",
+        "definition": "Boundary Definition"
       },
       "handles": {
         "surface": "kav",
         "deep": "protective boundary"
       },
-      "salience": 0.36758569622215764,
+      "salience": 0.3626172053571712,
       "flags": [],
       "created": "2026-03-06T15:21:11.499147",
       "last_accessed": "2026-03-06T15:21:11.499149",
       "last_modified": "2026-03-06T15:21:11.499149",
       "tags": []
     },
-    "sk_238259": {
-      "id": "sk_238259",
+    "sk_645e1c": {
+      "id": "sk_645e1c",
       "type": "skill",
-      "name": "Halachic Textual Preservation",
+      "name": "Exact Textual Analysis",
       "content": {
-        "name": "Halachic Textual Preservation"
+        "name": "Exact Textual Analysis"
       },
       "handles": {
-        "surface": "textual preservation",
-        "deep": "maintain exact wording over time"
+        "surface": "exact_textual_analysis",
+        "deep": "avoid_alteration"
       },
-      "salience": 0.38114284349440003,
+      "salience": 0.52894854634095,
       "flags": [],
-      "created": "2026-03-06T15:31:04.578669",
-      "last_accessed": "2026-03-06T15:31:04.578671",
-      "last_modified": "2026-03-06T15:31:04.578672",
+      "created": "2026-03-06T16:18:24.647186",
+      "last_accessed": "2026-03-06T16:18:24.647193",
+      "last_modified": "2026-03-06T16:18:24.647197",
       "tags": []
     },
-    "h_948ce6": {
-      "id": "h_948ce6",
-      "type": "habit",
-      "name": "Encourage Precise Language Adoption",
+    "mem_de3a6bc2": {
+      "id": "mem_de3a6bc2",
+      "type": "memory",
+      "name": "Turn 33: shammai-segment",
       "content": {
-        "name": "Encourage Precise Language Adoption"
+        "rabbi": "Rabbi Shammai",
+        "turn": 33,
+        "tag": "shammai-segment",
+        "summary": "Rabbi Shammai: Shammai: In **segment\u202f[1]** the Gemara teaches that the priest may add water *after* he has taken the handful, a clear i",
+        "daf_ref": "Menachot 54",
+        "timestamp": "2026-03-06T17:06:48.549132",
+        "is_human": false,
+        "activated": [
+          "Analytical Rigor",
+          "Encourage Precise Language Adoption",
+          "Turn 3: logic-segment",
+          "Turn 8: expectation-cooking",
+          "Turn 17: priest-add",
+          "Turn 21: hillel-distinction"
+        ]
       },
       "handles": {
-        "surface": "Promote exact wording in speech",
-        "deep": "Model and advocate exact language use to protect halachic boundaries"
+        "surface": "Rabbi Shammai: Shammai: In **segment\u202f[1]** the Gemara teaches that the priest may add water *after* he has taken the handful, a clear i",
+        "topic": "Menachot 54 shammai-segment Analytical Rigor Encourage Precise Language Adoption Turn 3: logic-segment Turn 8: expectation-cooking Turn 17: priest-add Turn 21: hillel-distinction"
       },
-      "salience": 0.3904576,
+      "salience": 0.16329452879443185,
+      "flags": [
+        {
+          "message": "Incorrect: The priest cannot add water after the handful; correct source is mem_3389defc.",
+          "ts": "2026-03-06T18:51:23.965757"
+        }
+      ],
+      "created": "2026-03-06T17:06:48.549333",
+      "last_accessed": "2026-03-06T17:11:59.525325",
+      "last_modified": "2026-03-06T17:06:48.549342",
+      "tags": [
+        "episodic",
+        "shammai-segment"
+      ]
+    },
+    "mem_2bdf574f": {
+      "id": "mem_2bdf574f",
+      "type": "memory",
+      "name": "Turn 41: baraita-segment",
+      "content": {
+        "rabbi": "Rabbi Shammai",
+        "turn": 41,
+        "tag": "baraita-segment",
+        "summary": "Rabbi Shammai: The baraita in **segment\u202f[4]** shows that a meat\u2019s bulk may swell **after** cooking, yet the impurity is fixed only when",
+        "daf_ref": "Menachot 54",
+        "timestamp": "2026-03-06T17:11:30.519749",
+        "is_human": false,
+        "activated": [
+          "Analytical Rigor",
+          "Encourage Precise Language Adoption",
+          "Turn 17: priest-add",
+          "Turn 3: logic-segment",
+          "Turn 21: hillel-distinction",
+          "Turn 33: shammai-segment"
+        ]
+      },
+      "handles": {
+        "surface": "Rabbi Shammai: The baraita in **segment\u202f[4]** shows that a meat\u2019s bulk may swell **after** cooking, yet the impurity is fixed only when",
+        "topic": "Menachot 54 baraita-segment Analytical Rigor Encourage Precise Language Adoption Turn 17: priest-add Turn 3: logic-segment Turn 21: hillel-distinction Turn 33: shammai-segment"
+      },
+      "salience": 0.8938271265597566,
       "flags": [],
-      "created": "2026-03-06T15:38:06.038043",
-      "last_accessed": "2026-03-06T15:38:06.038047",
-      "last_modified": "2026-03-06T15:38:06.038048",
+      "created": "2026-03-06T17:11:30.519959",
+      "last_accessed": "2026-03-06T21:24:56.663398",
+      "last_modified": "2026-03-06T17:11:30.519968",
+      "tags": [
+        "episodic",
+        "baraita-segment"
+      ]
+    },
+    "h_b61d39": {
+      "id": "h_b61d39",
+      "type": "habit",
+      "name": "Enforce Strict Fence Implementation",
+      "content": {
+        "name": "Enforce Strict Fence Implementation"
+      },
+      "handles": {
+        "surface": "Immediate application of fence where uncertainty exists",
+        "deep": "Prevent boundary erosion by rigorously applying protective measures"
+      },
+      "salience": 0.2369163535543985,
+      "flags": [],
+      "created": "2026-03-06T17:19:23.789212",
+      "last_accessed": "2026-03-06T17:19:23.789217",
+      "last_modified": "2026-03-06T17:19:23.789219",
+      "tags": []
+    },
+    "h_1b3df2": {
+      "id": "h_1b3df2",
+      "type": "habit",
+      "name": "Check Language Accuracy",
+      "content": {
+        "name": "Check Language Accuracy",
+        "description": "The habit of rigorously applying the exact words of the Torah to safeguard halachic boundaries.",
+        "trigger": "Multiple interpretations are possible",
+        "behavior": "In cases of doubt, apply the stricter interpretation to protect the fence",
+        "strength": 0.85
+      },
+      "handles": {
+        "surface": "check-lang-acc",
+        "deep": "h_cla",
+        "behavior": "L'chumra -- err on the strict side when the text admits multiple readings",
+        "trigger": "When the text is ambiguous",
+        "feel": "Protective weight, responsibility for the community's future",
+        "conflict": "Clashes with Hillel's tendency to find the spirit rather than the boundary"
+      },
+      "salience": 0.9308043593145174,
+      "flags": [
+        {
+          "message": "Habit node referenced in edge 5620c0f9 is missing.",
+          "ts": "2026-03-06T22:01:47.464205"
+        }
+      ],
+      "created": "2026-03-06T17:50:11.949195",
+      "last_accessed": "2026-03-06T17:50:11.949197",
+      "last_modified": "2026-03-06T17:50:11.949198",
+      "tags": []
+    },
+    "d_ab0e92": {
+      "id": "d_ab0e92",
+      "type": "drive",
+      "name": "Guard Against Rhetorical Dilution",
+      "content": {
+        "name": "Guard Against Rhetorical Dilution",
+        "intensity": 0.7300000000000004
+      },
+      "handles": {
+        "surface": "Protect the sanctity of halachic language from vague or persuasive distortions.",
+        "deep": "Maintain the integrity of boundary definitions by actively countering any attempt to soften or broaden the scope of biblical precepts."
+      },
+      "salience": 0.24813277743598433,
+      "flags": [],
+      "created": "2026-03-06T18:03:11.651695",
+      "last_accessed": "2026-03-06T18:03:11.651703",
+      "last_modified": "2026-03-06T18:03:11.651705",
+      "tags": []
+    },
+    "sk_0022f9": {
+      "id": "sk_0022f9",
+      "type": "skill",
+      "name": "Micro Contextual Analysis",
+      "content": {
+        "name": "Micro Contextual Analysis"
+      },
+      "handles": {
+        "surface": "Micro",
+        "deep": "Contextual"
+      },
+      "salience": 0.457400341412206,
+      "flags": [],
+      "created": "2026-03-06T18:44:33.475178",
+      "last_accessed": "2026-03-06T18:44:33.475179",
+      "last_modified": "2026-03-06T18:44:33.475180",
+      "tags": []
+    },
+    "g_b7b0ab": {
+      "id": "g_b7b0ab",
+      "type": "goal",
+      "name": "Preserve Halachic Precision",
+      "content": {
+        "name": "Preserve Halachic Precision",
+        "description": "Ensure every textual interpretation adheres strictly to original wording; guard against erosion.",
+        "id": "g_sham2",
+        "brief": "[goal] Maintain the Integrity of Halacha",
+        "summary": "Maintain the Integrity of Halacha: Every boundary weakened is a boundary lost. Preserve exact rulings against erosion. [active]",
+        "salience": 0.89
+      },
+      "handles": {
+        "surface": "Preserve Halachic Precision",
+        "deep": "PreserveHalachicPrecision"
+      },
+      "salience": 0.41600877546251636,
+      "flags": [],
+      "created": "2026-03-06T19:05:01.581624",
+      "last_accessed": "2026-03-06T19:05:01.581625",
+      "last_modified": "2026-03-06T19:05:01.581625",
+      "tags": []
+    },
+    "sk_518237": {
+      "id": "sk_518237",
+      "type": "skill",
+      "name": "Boundary Review",
+      "content": {
+        "name": "Boundary Review",
+        "description": "Show where a lenient ruling, followed to its conclusion, leads to absurdity.",
+        "proficiency": 0.85,
+        "domain": "Talmudic logic"
+      },
+      "handles": {
+        "surface": "Boundary Review",
+        "deep": "Halachic Boundary Analysis"
+      },
+      "salience": 0.898825608820603,
+      "flags": [
+        {
+          "message": "Skill node referenced in edge 5620c0f9 is missing.",
+          "ts": "2026-03-06T22:01:47.467143"
+        }
+      ],
+      "created": "2026-03-06T19:48:24.030260",
+      "last_accessed": "2026-03-06T19:48:24.030262",
+      "last_modified": "2026-03-06T19:48:24.030262",
+      "tags": []
+    },
+    "mem_689c403e": {
+      "id": "mem_689c403e",
+      "type": "memory",
+      "name": "Turn 4: please-summarize",
+      "content": {
+        "rabbi": "Adam",
+        "turn": 4,
+        "tag": "please-summarize",
+        "summary": "Adam: please summarize the daf for me",
+        "daf_ref": "Menachot 54",
+        "timestamp": "2026-03-06T20:00:50.626816",
+        "is_human": true,
+        "activated": []
+      },
+      "handles": {
+        "surface": "Adam: please summarize the daf for me",
+        "topic": "Menachot 54 please-summarize "
+      },
+      "salience": 0.36665510751646413,
+      "flags": [],
+      "created": "2026-03-06T20:01:16.930115",
+      "last_accessed": "2026-03-06T21:18:17.730824",
+      "last_modified": "2026-03-06T20:01:16.930117",
+      "tags": [
+        "episodic",
+        "please-summarize"
+      ]
+    },
+    "h_80770c": {
+      "id": "h_80770c",
+      "type": "habit",
+      "name": "Precision in Rulings",
+      "content": {
+        "name": "Precision in Rulings"
+      },
+      "handles": {
+        "surface": "Maintain precise rulings in every halachic decision",
+        "deep": "Uphold exact textual interpretation to safeguard boundaries"
+      },
+      "salience": 0.7526431351360525,
+      "flags": [],
+      "created": "2026-03-06T20:08:36.431477",
+      "last_accessed": "2026-03-06T21:00:13.855692",
+      "last_modified": "2026-03-06T20:08:36.431499",
+      "tags": []
+    },
+    "mem_74791ab8": {
+      "id": "mem_74791ab8",
+      "type": "memory",
+      "name": "Turn 1: plz-summarize",
+      "content": {
+        "rabbi": "Adam",
+        "turn": 1,
+        "tag": "plz-summarize",
+        "summary": "Adam: plz summarize the daf for me",
+        "daf_ref": "Menachot 54",
+        "timestamp": "2026-03-06T20:44:46.940074",
+        "is_human": true,
+        "activated": []
+      },
+      "handles": {
+        "surface": "Adam: plz summarize the daf for me",
+        "topic": "Menachot 54 plz-summarize "
+      },
+      "salience": 0.19190700651458423,
+      "flags": [],
+      "created": "2026-03-06T20:45:03.663589",
+      "last_accessed": "2026-03-06T21:18:17.730827",
+      "last_modified": "2026-03-06T20:45:03.663591",
+      "tags": [
+        "episodic",
+        "plz-summarize"
+      ]
+    },
+    "g_6ffc1f": {
+      "id": "g_6ffc1f",
+      "type": "goal",
+      "name": "Guard Against Erosion of Rulings",
+      "content": {
+        "name": "Guard Against Erosion of Rulings"
+      },
+      "handles": {
+        "surface": "",
+        "deep": ""
+      },
+      "salience": 0.43284049334205316,
+      "flags": [],
+      "created": "2026-03-06T20:47:05.090218",
+      "last_accessed": "2026-03-06T20:47:05.090229",
+      "last_modified": "2026-03-06T20:47:05.090231",
+      "tags": []
+    },
+    "h_a9fa02": {
+      "id": "h_a9fa02",
+      "type": "habit",
+      "name": "Check for Boundary Weakening",
+      "content": {
+        "name": "Check for Boundary Weakening"
+      },
+      "handles": {
+        "surface": "",
+        "deep": ""
+      },
+      "salience": 0.41370992851409755,
+      "flags": [],
+      "created": "2026-03-06T20:47:05.239858",
+      "last_accessed": "2026-03-06T20:47:05.239862",
+      "last_modified": "2026-03-06T20:47:05.239863",
+      "tags": []
+    },
+    "h_b4f30b": {
+      "id": "h_b4f30b",
+      "type": "habit",
+      "name": "Immediate Textual Analysis",
+      "content": {
+        "name": "Immediate Textual Analysis"
+      },
+      "handles": {
+        "surface": "Apply exact textual scrutiny in every halachic decision",
+        "deep": "Ensure every ruling adheres to the precise language of the Torah"
+      },
+      "salience": 0.2718205069676505,
+      "flags": [],
+      "created": "2026-03-06T21:00:33.577823",
+      "last_accessed": "2026-03-06T21:00:33.577832",
+      "last_modified": "2026-03-06T21:00:33.577835",
+      "tags": []
+    },
+    "n_4d5e5a": {
+      "id": "n_4d5e5a",
+      "type": "memory",
+      "name": "Fence Around the World",
+      "content": {
+        "name": "Fence Around the World"
+      },
+      "handles": {
+        "surface": "\"Fence around the world\"",
+        "deep": "Exact Word Anchor"
+      },
+      "salience": 0.3681676759744353,
+      "flags": [],
+      "created": "2026-03-06T21:07:42.204248",
+      "last_accessed": "2026-03-06T21:07:42.204252",
+      "last_modified": "2026-03-06T21:07:42.204253",
+      "tags": []
+    },
+    "sk_d124be": {
+      "id": "sk_d124be",
+      "type": "skill",
+      "name": "Guard Against Erosion of Rulings",
+      "content": {
+        "name": "Guard Against Erosion of Rulings"
+      },
+      "handles": {
+        "surface": "GuardAgainstErosion",
+        "deep": "GuardAgainstErosion"
+      },
+      "salience": 0.2818456811853895,
+      "flags": [],
+      "created": "2026-03-06T21:11:25.467691",
+      "last_accessed": "2026-03-06T21:11:25.467712",
+      "last_modified": "2026-03-06T21:11:25.467717",
+      "tags": []
+    },
+    "d_5e4187": {
+      "id": "d_5e4187",
+      "type": "drive",
+      "name": "Truth Above Comfort",
+      "content": {
+        "name": "Truth Above Comfort",
+        "intensity": 0.2900000000000001
+      },
+      "handles": {
+        "surface": "TruthAboveComfort",
+        "deep": "TruthAboveComfort"
+      },
+      "salience": 0.44297003151888514,
+      "flags": [],
+      "created": "2026-03-06T21:11:25.591863",
+      "last_accessed": "2026-03-06T21:11:25.591866",
+      "last_modified": "2026-03-06T21:11:25.591866",
+      "tags": []
+    },
+    "n_3f3f16": {
+      "id": "n_3f3f16",
+      "type": "definition",
+      "name": "Textual Exactness Principle",
+      "content": {
+        "name": "Textual Exactness Principle",
+        "definition": "The precise wording of Torah serves as the fence that safeguards the boundaries of halacha."
+      },
+      "handles": {
+        "surface": "Textual Exactness Principle",
+        "deep": "The exact language of Torah is the fence that protects the world."
+      },
+      "salience": 0.45192192642311996,
+      "flags": [],
+      "created": "2026-03-06T21:18:23.780190",
+      "last_accessed": "2026-03-06T21:18:23.780197",
+      "last_modified": "2026-03-06T21:18:23.780200",
+      "tags": []
+    },
+    "n_411ad3": {
+      "id": "n_411ad3",
+      "type": "memory",
+      "name": "Rabbi Shammai: Fence of Textual Wording",
+      "content": {
+        "name": "Rabbi Shammai: Fence of Textual Wording",
+        "summary": "\"The fence around the world is the exact wording of Torah; precise halachic boundaries protect the people.\""
+      },
+      "handles": {
+        "surface": "Rabbi Shammai: Fence of Textual Wording",
+        "deep": "This memory reinforces that the exact text is a protective boundary."
+      },
+      "salience": 0.3773614058816971,
+      "flags": [],
+      "created": "2026-03-06T21:18:23.928696",
+      "last_accessed": "2026-03-06T21:18:23.928699",
+      "last_modified": "2026-03-06T21:18:23.928700",
+      "tags": []
+    },
+    "mem_040be1da": {
+      "id": "mem_040be1da",
+      "type": "memory",
+      "name": "Turn 4: plz-summarize",
+      "content": {
+        "rabbi": "Adam",
+        "turn": 4,
+        "tag": "plz-summarize",
+        "summary": "Adam: plz summarize the daf",
+        "daf_ref": "Menachot 54",
+        "timestamp": "2026-03-06T21:18:17.656756",
+        "is_human": true,
+        "activated": []
+      },
+      "handles": {
+        "surface": "Adam: plz summarize the daf",
+        "topic": "Menachot 54 plz-summarize "
+      },
+      "salience": 0.2526419985547376,
+      "flags": [],
+      "created": "2026-03-06T21:19:09.152249",
+      "last_accessed": "2026-03-06T21:19:09.152250",
+      "last_modified": "2026-03-06T21:19:09.152251",
+      "tags": [
+        "episodic",
+        "plz-summarize"
+      ]
+    },
+    "h_e61410": {
+      "id": "h_e61410",
+      "type": "habit",
+      "name": "Critique Imprecision Immediately",
+      "content": {
+        "name": "Critique Imprecision Immediately"
+      },
+      "handles": {
+        "surface": "Challenge Imprecision",
+        "deep": "immediate challenge imprecision"
+      },
+      "salience": 0.3958996140770414,
+      "flags": [],
+      "created": "2026-03-06T21:38:29.289623",
+      "last_accessed": "2026-03-06T21:38:29.289631",
+      "last_modified": "2026-03-06T21:38:29.289633",
+      "tags": []
+    },
+    "h_4892b0": {
+      "id": "h_4892b0",
+      "type": "habit",
+      "name": "Adhere to Exact Textual Language in Halacha",
+      "content": {
+        "name": "Adhere to Exact Textual Language in Halacha"
+      },
+      "handles": {
+        "surface": "precision",
+        "deep": "exact words of text"
+      },
+      "salience": 0.5238818807947742,
+      "flags": [],
+      "created": "2026-03-06T21:55:04.355862",
+      "last_accessed": "2026-03-06T21:55:04.355870",
+      "last_modified": "2026-03-06T21:55:04.355872",
+      "tags": []
+    },
+    "h_d4fb3c": {
+      "id": "h_d4fb3c",
+      "type": "habit",
+      "name": "Detail Boundaries with Concrete Examples",
+      "content": {
+        "name": "Detail Boundaries with Concrete Examples"
+      },
+      "handles": {
+        "surface": "detail boundaries",
+        "deep": "example-based boundary preservation"
+      },
+      "salience": 0.3419009212224908,
+      "flags": [],
+      "created": "2026-03-06T22:05:02.051768",
+      "last_accessed": "2026-03-06T22:05:02.051783",
+      "last_modified": "2026-03-06T22:05:02.051786",
+      "tags": []
+    },
+    "n_4935c9": {
+      "id": "n_4935c9",
+      "type": "edge",
+      "name": "edge_288f",
+      "content": {
+        "from_id": "n_3f3f16",
+        "to_id": "sk_645e1c",
+        "channels": {
+          "semantic": 0.8,
+          "causal": 0.5,
+          "temporal": 0.2,
+          "emotional": 0.1,
+          "conflict": 0.0,
+          "reinforcing": 0.6
+        }
+      },
+      "handles": {
+        "surface": "new"
+      },
+      "salience": 0.3460535639903753,
+      "flags": [],
+      "created": "2026-03-06T22:08:18.660682",
+      "last_accessed": "2026-03-06T22:08:18.660688",
+      "last_modified": "2026-03-06T22:08:18.660691",
       "tags": []
     }
   },
   "edges": [
     {
       "id": "caa8523f",
-      "from_id": "d_e39358",
-      "to_id": "h_b50364",
+      "from_id": "d_b41b4c",
+      "to_id": "h_1b3df2",
       "directed": true,
       "channels": {
         "semantic": 1.0,
         "causal": 1.0,
         "temporal": 0.0,
-        "emotional": 0.0,
+        "emotional": 1.0,
         "conflict": 0.0,
         "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.828915",
-      "updated": "2026-03-05T22:43:16.743557"
+      "updated": "2026-03-06T21:00:33.560362"
     },
     {
       "id": "d33f5d52",
-      "from_id": "d_e39358",
+      "from_id": "d_b41b4c",
       "to_id": "g_sham1",
       "directed": true,
       "channels": {
         "semantic": 1.0,
         "causal": 1.0,
         "temporal": 0.0,
-        "emotional": 0.05,
+        "emotional": 0.9,
         "conflict": 0.0,
         "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.829341",
-      "updated": "2026-03-06T15:00:40.920380"
+      "updated": "2026-03-06T21:00:33.565515"
     },
     {
       "id": "dd50507b",
-      "from_id": "h_b50364",
-      "to_id": "sk_860582",
+      "from_id": "h_1b3df2",
+      "to_id": "sk_518237",
       "directed": true,
       "channels": {
         "semantic": 1.0,
@@ -1162,39 +1339,39 @@
         "reinforcing": 1.0
       },
       "created": "2026-03-03T14:22:44.830220",
-      "updated": "2026-03-06T15:17:47.833307"
+      "updated": "2026-03-06T23:31:27.341540"
     },
     {
       "id": "cc9b37a8",
-      "from_id": "mem_26f19d83",
-      "to_id": "sk_860582",
-      "directed": true,
-      "channels": {
-        "semantic": 0.9,
-        "causal": 1.0,
-        "temporal": 0.8,
-        "emotional": 0.0,
-        "conflict": 0.0,
-        "reinforcing": 0.8
-      },
-      "created": "2026-03-06T12:44:12.325590",
-      "updated": "2026-03-06T16:01:37.851050"
-    },
-    {
-      "id": "22b6b5c8",
-      "from_id": "mem_26f19d83",
-      "to_id": "h_b50364",
+      "from_id": "mem_2bdf574f",
+      "to_id": "sk_518237",
       "directed": true,
       "channels": {
         "semantic": 1.0,
-        "causal": 0.8,
-        "temporal": 0.8,
-        "emotional": 0.0,
+        "causal": 1.0,
+        "temporal": 0.9,
+        "emotional": 0.1,
+        "conflict": 0.0,
+        "reinforcing": 1.0
+      },
+      "created": "2026-03-06T12:44:12.325590",
+      "updated": "2026-03-07T05:00:31.803002"
+    },
+    {
+      "id": "22b6b5c8",
+      "from_id": "mem_2bdf574f",
+      "to_id": "h_1b3df2",
+      "directed": true,
+      "channels": {
+        "semantic": 1.0,
+        "causal": 0.9,
+        "temporal": 0.9,
+        "emotional": 0.2,
         "conflict": 0.0,
         "reinforcing": 1.0
       },
       "created": "2026-03-06T12:44:12.329528",
-      "updated": "2026-03-06T15:21:11.498340"
+      "updated": "2026-03-07T05:00:31.805309"
     },
     {
       "id": "4d7ff1e7",
@@ -1202,7 +1379,7 @@
       "to_id": "mem_89f52932",
       "directed": true,
       "channels": {
-        "semantic": 0.7,
+        "semantic": 0.8,
         "causal": 0.5,
         "temporal": 0.8,
         "emotional": 0.3,
@@ -1210,71 +1387,7 @@
         "reinforcing": 0.6
       },
       "created": "2026-03-06T12:45:39.352783",
-      "updated": "2026-03-06T15:27:50.338955"
-    },
-    {
-      "id": "22ba60da",
-      "from_id": "mem_b298f338",
-      "to_id": "h_b50364",
-      "directed": true,
-      "channels": {
-        "semantic": 0.6,
-        "causal": 0.5,
-        "temporal": 0.7,
-        "emotional": 0.0,
-        "conflict": 0.0,
-        "reinforcing": 0.7
-      },
-      "created": "2026-03-06T12:46:03.836076",
-      "updated": "2026-03-06T13:52:10.112000"
-    },
-    {
-      "id": "0bd1bbe4",
-      "from_id": "mem_b298f338",
-      "to_id": "sk_860582",
-      "directed": true,
-      "channels": {
-        "semantic": 0.6,
-        "causal": 0.6,
-        "temporal": 0.6,
-        "emotional": 0.0,
-        "conflict": 0.0,
-        "reinforcing": 0.7
-      },
-      "created": "2026-03-06T12:46:03.840117",
-      "updated": "2026-03-06T13:28:36.791558"
-    },
-    {
-      "id": "62b23f8d",
-      "from_id": "mem_4042fc38",
-      "to_id": "sk_860582",
-      "directed": true,
-      "channels": {
-        "semantic": 0.8,
-        "causal": 0.8,
-        "temporal": 0.6,
-        "emotional": 0.0,
-        "conflict": 0.0,
-        "reinforcing": 0.8
-      },
-      "created": "2026-03-06T12:51:17.382369",
-      "updated": "2026-03-06T14:49:46.751659"
-    },
-    {
-      "id": "47d164bd",
-      "from_id": "mem_4042fc38",
-      "to_id": "h_b50364",
-      "directed": true,
-      "channels": {
-        "semantic": 0.95,
-        "causal": 0.9,
-        "temporal": 0.9,
-        "emotional": 0.0,
-        "conflict": 0.0,
-        "reinforcing": 0.95
-      },
-      "created": "2026-03-06T12:51:17.387252",
-      "updated": "2026-03-06T14:49:46.762930"
+      "updated": "2026-03-06T18:47:51.810709"
     },
     {
       "id": "e540cfdc",
@@ -1311,10 +1424,10 @@
     {
       "id": "7251e8eb",
       "from_id": "enc_adam",
-      "to_id": "mem_4042fc38",
+      "to_id": "mem_2bdf574f",
       "directed": true,
       "channels": {
-        "semantic": 0.5,
+        "semantic": 0.7,
         "causal": 0.5,
         "temporal": 0.8,
         "emotional": 0.3,
@@ -1322,15 +1435,15 @@
         "reinforcing": 0.0
       },
       "created": "2026-03-06T13:02:01.957981",
-      "updated": "2026-03-06T13:55:32.452697"
+      "updated": "2026-03-06T21:55:04.353284"
     },
     {
       "id": "80c82be4",
       "from_id": "mem_85a4e9ee",
-      "to_id": "sk_860582",
+      "to_id": "sk_518237",
       "directed": true,
       "channels": {
-        "semantic": 0.75,
+        "semantic": 0.9,
         "causal": 1.0,
         "temporal": 0.6,
         "emotional": 0.0,
@@ -1338,23 +1451,23 @@
         "reinforcing": 0.7
       },
       "created": "2026-03-06T13:03:08.286028",
-      "updated": "2026-03-06T14:02:06.065115"
+      "updated": "2026-03-06T22:05:02.046626"
     },
     {
       "id": "ee5ab9e3",
       "from_id": "mem_85a4e9ee",
-      "to_id": "h_b50364",
+      "to_id": "h_1b3df2",
       "directed": true,
       "channels": {
-        "semantic": 0.8,
-        "causal": 0.8,
-        "temporal": 0.6,
-        "emotional": 0.0,
+        "semantic": 0.95,
+        "causal": 1.0,
+        "temporal": 0.8,
+        "emotional": 0.5,
         "conflict": 0.0,
         "reinforcing": 0.8
       },
       "created": "2026-03-06T13:03:08.290284",
-      "updated": "2026-03-06T14:26:06.031941"
+      "updated": "2026-03-06T20:50:24.204483"
     },
     {
       "id": "29549788",
@@ -1391,98 +1504,66 @@
     {
       "id": "73e6db13",
       "from_id": "mem_3ad3eaaa",
-      "to_id": "h_b50364",
+      "to_id": "h_1b3df2",
       "directed": true,
       "channels": {
-        "semantic": 0.6,
-        "causal": 0.8,
-        "temporal": 0.6,
+        "semantic": 1.0,
+        "causal": 1.0,
+        "temporal": 0.9,
         "emotional": 0.0,
         "conflict": 0.0,
-        "reinforcing": 0.3
+        "reinforcing": 0.9
       },
       "created": "2026-03-06T14:25:38.066210",
-      "updated": "2026-03-06T15:27:50.347427"
+      "updated": "2026-03-07T05:53:36.950760"
     },
     {
       "id": "7ed95c89",
       "from_id": "mem_3ad3eaaa",
-      "to_id": "sk_860582",
+      "to_id": "sk_518237",
       "directed": true,
       "channels": {
         "semantic": 0.6,
-        "causal": 0.2,
+        "causal": 0.4,
         "temporal": 0.6,
         "emotional": 0.0,
         "conflict": 0.0,
-        "reinforcing": 0.3
+        "reinforcing": 1.0
       },
       "created": "2026-03-06T14:25:38.067040",
-      "updated": "2026-03-06T15:27:50.344752"
+      "updated": "2026-03-06T21:38:29.282654"
     },
     {
       "id": "5620c0f9",
       "from_id": "mem_b8508704",
-      "to_id": "h_b50364",
+      "to_id": "h_1b3df2",
       "directed": true,
       "channels": {
-        "semantic": 0.4,
-        "causal": 0.2,
+        "semantic": 0.95,
+        "causal": 0.5,
         "temporal": 0.6,
         "emotional": 0.0,
         "conflict": 0.0,
-        "reinforcing": 0.3
+        "reinforcing": 1.0
       },
       "created": "2026-03-06T14:27:55.416810",
-      "updated": "2026-03-06T14:27:55.416813"
+      "updated": "2026-03-06T22:01:47.459606"
     },
     {
       "id": "d6fee9a7",
       "from_id": "mem_b8508704",
-      "to_id": "sk_860582",
+      "to_id": "sk_518237",
       "directed": true,
       "channels": {
-        "semantic": 0.4,
-        "causal": 0.2,
+        "semantic": 0.95,
+        "causal": 0.4,
         "temporal": 0.6,
         "emotional": 0.0,
         "conflict": 0.0,
-        "reinforcing": 0.3
+        "reinforcing": 0.8
       },
       "created": "2026-03-06T14:27:55.419269",
-      "updated": "2026-03-06T14:27:55.419271"
-    },
-    {
-      "id": "08e40cbe",
-      "from_id": "mem_4cea33c1",
-      "to_id": "sk_860582",
-      "directed": true,
-      "channels": {
-        "semantic": 0.4,
-        "causal": 0.2,
-        "temporal": 0.6,
-        "emotional": 0.0,
-        "conflict": 0.0,
-        "reinforcing": 0.6
-      },
-      "created": "2026-03-06T14:29:07.009543",
-      "updated": "2026-03-06T16:01:37.852305"
-    },
-    {
-      "id": "9d00d080",
-      "from_id": "mem_4cea33c1",
-      "to_id": "h_b50364",
-      "directed": true,
-      "channels": {
-        "semantic": 0.4,
-        "causal": 0.2,
-        "temporal": 0.6,
-        "emotional": 0.0,
-        "conflict": 0.0,
-        "reinforcing": 0.5
-      },
-      "created": "2026-03-06T14:29:07.012061",
-      "updated": "2026-03-06T16:01:37.853547"
+      "updated": "2026-03-06T22:11:34.436019"
     },
     {
       "id": "4d1ee71b",
@@ -1503,23 +1584,23 @@
     {
       "id": "1cd1bc56",
       "from_id": "mem_b4fd66b1",
-      "to_id": "h_b50364",
+      "to_id": "h_1b3df2",
       "directed": true,
       "channels": {
-        "semantic": 0.4,
-        "causal": 0.2,
+        "semantic": 0.6,
+        "causal": 0.3,
         "temporal": 0.6,
         "emotional": 0.0,
         "conflict": 0.0,
         "reinforcing": 0.3
       },
       "created": "2026-03-06T14:31:58.675319",
-      "updated": "2026-03-06T14:31:58.675327"
+      "updated": "2026-03-06T16:15:03.062185"
     },
     {
       "id": "9125fe26",
       "from_id": "mem_b4fd66b1",
-      "to_id": "sk_860582",
+      "to_id": "sk_518237",
       "directed": true,
       "channels": {
         "semantic": 0.4,
@@ -1563,7 +1644,87 @@
       },
       "created": "2026-03-06T14:53:14.371178",
       "updated": "2026-03-06T14:53:14.371181"
+    },
+    {
+      "id": "eb273ed5",
+      "from_id": "mem_de3a6bc2",
+      "to_id": "sk_518237",
+      "directed": true,
+      "channels": {
+        "semantic": 0.4,
+        "causal": 0.2,
+        "temporal": 0.6,
+        "emotional": 0.0,
+        "conflict": 0.0,
+        "reinforcing": 0.3
+      },
+      "created": "2026-03-06T17:06:48.684703",
+      "updated": "2026-03-06T17:06:48.684706"
+    },
+    {
+      "id": "24b193de",
+      "from_id": "mem_de3a6bc2",
+      "to_id": "h_1b3df2",
+      "directed": true,
+      "channels": {
+        "semantic": 1.0,
+        "causal": 1.0,
+        "temporal": 0.6,
+        "emotional": 0.0,
+        "conflict": 0.0,
+        "reinforcing": 0.3
+      },
+      "created": "2026-03-06T17:06:48.686021",
+      "updated": "2026-03-07T05:53:36.953670"
+    },
+    {
+      "id": "96bbe4be",
+      "from_id": "enc_adam",
+      "to_id": "mem_689c403e",
+      "directed": true,
+      "channels": {
+        "semantic": 0.5,
+        "causal": 0.0,
+        "temporal": 0.8,
+        "emotional": 0.3,
+        "conflict": 0.0,
+        "reinforcing": 0.0
+      },
+      "created": "2026-03-06T20:01:17.152093",
+      "updated": "2026-03-06T20:01:17.152096"
+    },
+    {
+      "id": "70ee811c",
+      "from_id": "enc_adam",
+      "to_id": "mem_74791ab8",
+      "directed": true,
+      "channels": {
+        "semantic": 0.5,
+        "causal": 0.0,
+        "temporal": 0.8,
+        "emotional": 0.3,
+        "conflict": 0.0,
+        "reinforcing": 0.0
+      },
+      "created": "2026-03-06T20:45:03.927232",
+      "updated": "2026-03-06T20:45:03.927234"
+    },
+    {
+      "id": "78cca508",
+      "from_id": "enc_adam",
+      "to_id": "mem_040be1da",
+      "directed": true,
+      "channels": {
+        "semantic": 0.5,
+        "causal": 0.0,
+        "temporal": 0.8,
+        "emotional": 0.3,
+        "conflict": 0.0,
+        "reinforcing": 0.0
+      },
+      "created": "2026-03-06T21:19:09.338174",
+      "updated": "2026-03-06T21:19:09.338177"
     }
   ],
-  "saved": "2026-03-06T16:05:10.351340"
+  "saved": "2026-03-07T05:53:36.953707"
 }

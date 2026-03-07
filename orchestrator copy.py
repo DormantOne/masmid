@@ -89,21 +89,6 @@ class DebateOrchestrator:
 
     # -- Convergence detection -------------------------------------------------
 
-    def _detect_yield(self, text):
-        """Check if a response contains a yield/conclusion signal."""
-        markers = [
-            "the matter rests here",
-            "the matter rests",
-            "i yield",
-            "we yield",
-            "i rest my case",
-            "let us leave this",
-            "nothing further to add",
-            "the debate is concluded",
-        ]
-        text_lower = text.lower()
-        return any(m in text_lower for m in markers)
-
     def _check_convergence(self, window=6, threshold=0.40):
         """Detect when both rabbis are making the same argument.
 
@@ -254,15 +239,6 @@ class DebateOrchestrator:
         self.exchanges.append(ex)
         self.turn += 1
         self._flip_speaker()
-
-        # If convergence was active and the rabbi yielded, stop the debate
-        if converged and self._detect_yield(reply):
-            print(f"[DEBATE] {speaker.name} yielded — stopping auto.", flush=True)
-            self.log.log("debate", "yielded", {
-                "rabbi": speaker.name, "turn": ex["turn"],
-                "text": reply[:120],
-            })
-            self.stop_auto()
 
         # Record episodic memory in the speaker's KG
         try:

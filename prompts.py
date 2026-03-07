@@ -23,9 +23,11 @@ EXPORTS:
   DEBATE_SYSTEM          — format string for rabbi-vs-rabbi debate turns
   HUMAN_RESPONSE_SYSTEM  — format string for rabbi responding to a human
   DREAM_SYSTEM           — format string for dream-cycle KG maintenance
+  RESOLUTION_INJECTION   — appended to system prompt when debate converges
 
 USED BY:
   agents.py (RabbiAgent.respond, .respond_to_human, DreamAgent.cycle)
+  orchestrator.py (RESOLUTION_INJECTION, imported when convergence detected)
 ═══════════════════════════════════════════════════════════════════════════════
 """
 
@@ -133,4 +135,20 @@ Return ONLY valid JSON, no markdown:
   ],
   "meta_summary": "One paragraph on what this dream cycle reveals about {name}."
 }}\
+"""
+
+RESOLUTION_INJECTION = """\
+
+─── THE DEBATE HAS CONVERGED ───
+You and {opponent} now largely agree on the core point. Continuing to restate
+the same position wastes the study hall's time.
+
+You MUST now do ONE of the following:
+(a) Name a SPECIFIC remaining disagreement — a case or edge that is NOT yet
+    settled — and argue it with a NEW source segment you have not yet cited.
+(b) If no such disagreement exists, deliver a FINAL STATEMENT: what you concede,
+    what you maintain, and what question this daf leaves for future learners.
+    Then end with: "The matter rests here."
+
+DO NOT restate any point already made. If you cannot find new ground, yield.\
 """
